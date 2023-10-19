@@ -1,0 +1,40 @@
+
+.heder_about{
+    background: var(--graphite, #272727);
+}
+.section_about{
+    background: var(--graphite, #272727);
+}
+.container_section_about{
+    padding: 8px 0 0 20px;
+    
+    
+}
+.about_foto{
+    
+    background: url(#), rgba(39, 39, 39, 0.80);
+}
+.section_block_about{
+   
+}
+.section_name{
+    margin-bottom: 32px;
+   
+}
+.section_block{
+    margin-bottom: 0px;
+}
+.container_section_about_mission{
+    padding: 0 20px 20px 0;
+}
+.mission_foto{
+    background: url(#);
+}
+.mission_section{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.mission_section_choose{
+    
+}
