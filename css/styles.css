@@ -63,8 +63,8 @@ img {
   }
   .container {
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
 }
 
@@ -154,6 +154,9 @@ img {
 
 /* HEADER */
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -162,9 +165,10 @@ img {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1128px;
+    width: 390px;
     padding-left: 32px;
     padding-right: 32px;
+    margin: 0 auto;
 }
 /* Прихована меню */
  .heder_nav {
@@ -174,6 +178,10 @@ img {
     border: none;
     stroke: #2E2F42;
     background-color: transparent;
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 32px;
 }
  
 
@@ -241,15 +249,13 @@ img {
     margin: 0 auto;
 }
 .foto{
- 
     margin: 0 auto;
     background: url(../images/mob/mob_hero_1x.jpg);
     padding-top: 390px;
     padding-bottom: 415px;
+    background-size: cover;
 } 
-.container_hero{
-    
-}
+
 
 .hero_name{
     
@@ -258,16 +264,16 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--graphite);
     text-align: center;
     margin-bottom: 12px;
 }
 .hero_block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 351px;
 }
 .hero_subtitle{
     font-family: Poppins;
@@ -277,6 +283,7 @@ img {
     line-height: normal;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .hero_button{
     
@@ -306,10 +313,9 @@ img {
     line-height: normal;
     letter-spacing: 3px;
     text-transform: uppercase;
-    padding-top: 20px;
     margin-bottom: 20px;
 }
-.section_block{
+.section_about_text{
     color: var(--white, #EEE);
     font-family: Poppins;
     font-size: 20px;
@@ -323,7 +329,7 @@ img {
     padding: 12px 24px;
     background-color: transparent;
     border: 2px solid var(--orange, #CD7829);
-    margin-bottom: 175px;
+    margin-bottom: 165px;
     color: var(--white, #EEE);
     font-family: Poppins;
     font-size: 16px;
@@ -332,8 +338,12 @@ img {
     line-height: normal;
     letter-spacing: 1px;
 }
-.foto_about{
-    background: var(--graphite, #272727);
+.about_section{
+    background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/about_us_1x.jpg);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    background-color: var(--graphite, #272727);
+    background-position: right top;
 }
 /* SECTION 3 */
 .name_service{
@@ -354,7 +364,9 @@ img {
     
 }
 .foto_service_one{
-    background: url(../images/service_1.jpg), lightgray 50% / cover no-repeat;
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/service_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 220px;
     display: flex;
@@ -363,6 +375,15 @@ img {
     align-items: center;
 
 }
+/* 2x foto має бути знизу всіх фото*/
+@media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx){
+    .foto_service_one{
+        background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/service_2x.jpg);
+    }
+    
+ }
 .foto_service_two{
     background: url(../images/service2-1x.jpg), lightgray 50% / cover no-repeat;
     width: 100%;
@@ -524,10 +545,14 @@ img {
 }
 /* FOOTHER */
 .foother_conteiner{
-    padding: 28px 20px;
-    background: url(../images/foother_1x.jpg), lightgray 50% / cover no-repeat;
-    
-
+    padding: 28px 0;
+    /* background: url(), lightgray 50% / cover no-repeat; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/foother_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Щоб не тягнулась */
+    /* max-width: 390px ;
+       margin: 0 auto; */
 }
 .foother_filter{
     background-color: rgba(0, 0, 0, 0.70);
@@ -538,7 +563,7 @@ img {
 .foother_link{
     margin-bottom: 20px;
 }
-.foother_item{
+.foother_item:not(:last-child){
     margin-bottom: 20px;
 }
 .foother_links{
@@ -550,6 +575,9 @@ img {
     line-height: normal;
     letter-spacing: 1px;
 }
+.address{
+    margin-bottom: 20px;
+}
 .address_contact{
     color: var(--orange, #CD7829);
     font-family: Poppins;
@@ -560,8 +588,7 @@ img {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-.address_social{
-    
+.address_social:not(:last-child){
     margin-bottom: 20px;
 }
 .address_link{
@@ -575,9 +602,9 @@ img {
 }
 .adderss_icons{
     display: flex;
-    
+    align-items: center;
 }
-.address_list{
+.address_list:not(:last-child) {
     margin-right: 24px;
 }
 .address_button{
@@ -597,21 +624,18 @@ img {
     color: var(--orange, #CD7829);
     font-family: Poppins;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.08em;
     display: flex;
+    align-items: center;
     margin-bottom: 12px;
-    
 }
-.adderss_copyright_list{
-    margin-right: 10px;
-}
+
 .adderss_copyright_svg{
-    margin-right: 8px;
+    margin: 0 8px 0 10px;
 }
 .foother_text{
+    max-width: 214px;
     color: var(--white, #EEE);
     font-family: Poppins;
     font-size: 12px;

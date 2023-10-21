@@ -1,0 +1,43 @@
+.reviews_section{
+    background: var(--graphite, #272727);
+    padding: 20px 0 40px 0;
+}
+.section_button_reviews{
+    display: block;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid var(--orange, #CD7829);
+    margin-bottom: 36px;
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    background-color: transparent;
+    margin-left: auto;
+
+}
+.button_reviews{
+    margin: 0 auto 0 0;
+}
+.button_reviews_cont{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.reviews_name{
+    color: var(--white, #EEE);
+    font-family: Orbitron;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.button_reviews_load{
+
+}
