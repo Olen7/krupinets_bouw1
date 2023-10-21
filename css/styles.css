@@ -644,3 +644,6 @@ img {
     line-height: normal;
     letter-spacing: 1px;
 }
+.is_scrolled .header_wrapper{
+    background-color: rgb(255, 0, 0);
+  }
