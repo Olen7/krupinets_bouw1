@@ -1,9 +1,14 @@
 
-.heder_about{
+.body{
     background: var(--graphite, #272727);
+}
+.heder_about{
+    
+    
 }
 .section_about{
     background: var(--graphite, #272727);
+    margin-top: 20px;
 }
 .container_section_about{
     padding: 8px 0 0 20px;
@@ -12,14 +17,25 @@
 }
 .about_foto{
     
-    background: url(../images/about_mission_1x.jpg), rgba(39, 39, 39, 0.80);
-}
-.section_block_about{
-   
+    background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 .section_name{
+    padding-top: 20px;
     margin-bottom: 32px;
-   
+    background-color:linear-gradient(180deg, rgba(39, 39, 39, 0.00) 100%);
+}
+.about_block{
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding-bottom: 240px;
 }
 .section_block{
     color: var(--white, #EEE);
@@ -31,18 +47,70 @@
     letter-spacing: 1px;
     margin-bottom: 0px;
 }
+.section_block:not(:last-child){
+    margin-bottom: 40px;
+}
 .container_section_about_mission{
     padding: 0 20px 20px 0;
 }
 .mission_foto{
-    background: url(#);
+    background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .mission_section{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
+.header_wrappers{
+    background-color: rgb(37 37 37);
+}
+.is_scrolled .header_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+.mission_section_choose{
+    background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section_about_back{
+    padding-top: 56px;
+}
+.buttom_about_fill{
+    
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .about_foto{
+        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_2x.jpg);
+    }
+    .mission_foto{
+        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_2x.jpg);
+    }
+    .mission_section_choose{
+        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_2x.jpg);
+    }
+}
 
-.adderss_copyright{
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 300dpi),
+(min-resolution: 3dppx){
+    .about_foto{
+        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_4x.jpg);
+    }
+    .mission_foto{
+        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_4x.jpg);
+    }
+    .mission_section_choose{
+        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_4x.jpg);
+    }
 
 }

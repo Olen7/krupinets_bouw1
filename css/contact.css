@@ -1,0 +1,58 @@
+/* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+/* header */
+.heder_about_contact{
+    background-color: rgb(37 37 37);
+}
+/* section 1 */
+.section_contact{
+    background-image: url(../images/mob/contact/contact_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 55px;
+    padding: 24px 20px;
+}
+.contact_name{
+    color: var(--orange, #CD7829);
+    font-family: Orbitron;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.address_contact_section{
+
+}
+.contact_item{
+    
+}
+.address_social_contact{
+    display: flex;
+    flex-direction: column;
+    color: #272727;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+}
+.address_link_contact{
+    color: #272727;  
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+}
+.adderss_icons_contact{
+    display: flex;
+    align-items: center;
+} 
+.address_list_contact:not(:last-child){
+    margin-right: 24px;
+}
