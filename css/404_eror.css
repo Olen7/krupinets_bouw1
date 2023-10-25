@@ -1,0 +1,61 @@
+.heder_about {
+    background-color: var(--graphite, #272727);
+}
+
+.eror_conteiner{
+    margin-top: 55px;
+    padding: 60px 60px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/mob/eror/eror_1x.jpg);
+}
+.eror_name{
+    color: var(--orange, #CD7829);
+    font-family: Orbitron;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+}
+.text_name{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.text_name_parahraf{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+}
+.eror_button{
+    border: none;
+    background-color: var(--orange, #CD7829);
+    padding: 12px 24px;
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+}
+.s{
+    display: flex;
+justify-content: center;
+align-items: center;
+}

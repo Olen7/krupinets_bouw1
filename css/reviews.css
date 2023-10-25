@@ -1,5 +1,5 @@
 .reviews_section{
-    background: var(--graphite, #272727);
+    background-color: var(--graphite, #272727);
     padding: 20px 0 40px 0;
 }
 .section_button_reviews{

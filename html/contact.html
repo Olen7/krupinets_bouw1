@@ -89,7 +89,7 @@
     </header>
    <section class="section_contact">
     <h1 class="contact_name">contact us</h1>
-    <div>
+    <div class="contact_section_conteiner">
         <address class="address_contact_section">
             <ul class="contact_item">
                 <li class="address_social_contact">Phone:<a href="tel:+110001111111" class="address_link_contact"> +31621968479</a></li>
@@ -151,7 +151,53 @@
             </li>
         </ul>
     </div>
-    
+    <form class="modal-icon">
+        <div class="modal-form">
+            <label for="name-text" class="name-text">Name*</label>
+            <input 
+            class="icon-person"
+            type="text" 
+            name="user-name"
+            id="name-text"
+            placeholder="Enter your name"
+            required />
+        </div>
+        <div class="modal-form">
+            <label for="phone" class="name-text">Phone*</label>
+                    <input 
+                    class="icon-person"
+                    type="tel" 
+                    name="user-name"
+                    id="phone"
+                    placeholder="Enter your phone"
+                    required />
+                    
+        </div>
+
+        <div class="modal-form">
+            <label for="email" class="name-text">E-mail*</label>
+                <div class="input-person">
+                    <input 
+                    class="icon-person"
+                    type="email" 
+                    name="user-name"
+                    id="email"
+                    placeholder="Enter your mail"
+                    required />
+                </div>
+        </div>
+        <div class="feedback-block">
+            <label class="feedback" for="feedback">Your question*</label>
+                <textarea
+                    name="user-comment" 
+                    id="feedback" 
+                    class="feedback-textarea"
+                    placeholder="Enter your question"
+                    ></textarea>
+        </div>
+            
+            <button class="modal-btn-send" type="submit">Send</button>
+        </form>
    </section>
     <footer class="foother_conteiner foother_filter ">
         <div class="container">
