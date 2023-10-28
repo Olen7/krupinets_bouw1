@@ -59,3 +59,21 @@
 justify-content: center;
 align-items: center;
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .eror_conteiner{
+        background-image: url(../images/mob/eror/eror_2x.jpg);
+    }
+
+}
+
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 300dpi),
+(min-resolution: 3dppx){
+    .eror_conteiner{
+        background-image: url(../images/mob/eror/eror_4x.jpg);
+    }
+
+}

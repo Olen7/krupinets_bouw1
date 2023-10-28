@@ -1,0 +1,271 @@
+@media screen and (min-width: 768px){
+    /* HEADER */
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+    .header__button{
+        display: none;}
+    .container_header{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        }
+        .header_svg{
+            display: inherit;
+        }
+    .heder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    .heder_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .header__id{
+        color: var(--graphite, #272727);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.06em;
+        display: inherit;
+    }
+    .header__id_black{
+        color: var(--white, #EEE);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.06em;
+        display: inherit;
+    }
+    .header__id:hover{
+        color: var(--orange, #CD7829);
+        text-decoration-line: underline;
+    }
+    .header__item{
+        margin-right: 28px;
+    }
+        /* HERO */
+    .section_contact {
+            background-image: url(../images/mob/contact/contact_1x.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 72px;
+            padding: 24px 20px;
+    }
+    .container_section_about{
+        background-color: rgba(39, 39, 39, 0.80);;
+        width: 606px;
+        height: 522px;
+        margin: 0;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .foto{
+        padding-top: 247px;
+        padding-bottom: 354px;
+        background-image: url(../images/tab/tablet_hiro_1x.jpg);
+    }
+    .hero_name{
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .hero_block {
+        max-width: 509px;
+    }
+    .hero_subtitle {
+        font-size: 26px;
+        letter-spacing: 0.04em;
+    }
+        /* ABOUT */
+    .section_name {
+            font-size: 48px;
+            letter-spacing: 0.06em;
+            
+    }
+    .section_name {
+        padding-top: 20px;
+        margin-bottom: 28px;
+        
+    }
+    .section_about_text{
+        margin-bottom: 44px;
+    }
+    /* ABOUT */
+    .about_section {
+        background-image: url(../images/tab/tablet_about_1x.jpg);
+
+    }
+        /* SERVICE */
+    .name_service {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        padding-top: 28px;
+        margin-bottom: 40px;
+    }
+    .service_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        gap: 20px;
+    }
+    .tablet_cont_with{
+        width: 365px;
+        height: 285px;
+        
+    
+    }
+    /* BENEFITS */
+    .benefits{
+        padding-top: 60px;
+        padding-left:32px ;
+        padding-right:32px ;
+    }
+    .benefits_name {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        
+    }
+    .benefits_list {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .benefits_list {
+        justify-content: space-between;
+    }
+    /* PORTFOLIO */
+    .portfolio_name {
+        margin-bottom: 40px;
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .portfolio_text {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        
+    }
+    .portfolio_foto_one {
+        height: 352px;
+        background-image: url(../images/tab/tablet_portfolio1_1x.jpg);
+    }
+    .portfolio_foto_two {
+        height: 352px;
+        background-image: url(../images/tab/tablet_portfolio2_1x.jpg);
+    }
+    .portfolio_foto_three {
+        height: 352px;
+        background-image: url(../images/tab/tablet_portfolio3_1x.jpg);
+    }
+    /* FOOTHER */
+    .foother_conteiner{
+        padding: 40px 32px;
+        
+    }
+    .foother_blok_index{
+        display: flex;
+        align-items: stretch;
+    }
+    .modal-icon_tab{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .feedback_name_index{
+        color: var(--orange, #CD7829);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner_address_icon_tab{
+        padding-top: 52px;
+        
+    }
+    .tab_conteiner_index{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .header__id{
+
+    }
+    /* ABOUT INDEX */
+    .foto_tablet_about_us{
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-image: url(../images/tab/about/tab_about_us1_1x.jpg);
+    }
+    .about_foto{
+        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);
+        
+    }
+    .mission_foto {
+        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);
+    
+    }
+    .container_section_about_mission{
+        width: 606px;
+    }
+    .foto_tab_about_mission{
+        height: 664px;
+        background-image:  url(../images/tab/about/tab_about_us2_1x.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    .mission_section_choose{
+        background-image: url(#);
+    }
+    .mission_tab_section_choose{
+        background-image: url(../images/tab/about/tab_about_us3_1x.jpg);
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    .section_about_choose {
+        
+        margin-top: 0px;
+    }
+    .section_about_back {
+        padding-top: 72px;
+    }
+    .section_name_us {
+        
+        margin-bottom: 20px;
+        
+    }
+    .section_block:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .section_block_mision:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .container_section_about_chose{
+        background-color: rgba(39, 39, 39, 0.8);
+        width: 606px;
+        height: 774px;
+        margin: 0px;
+        padding: 0px 32px;
+    }
+    .section_about_mision{
+        margin: 0px;
+    }
+    
+}

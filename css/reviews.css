@@ -42,3 +42,88 @@
 .button_reviews_load{
 
 }
+.review_write{
+     
+}
+.is-hided {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mob_menu_review {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    padding: 24px 20px;
+}
+.write_menu_name{
+    color: var(--orange, #CD7829);
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.conteiner_h1_button_close{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.review_label_name{
+    color: var(--graphite, #272727);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+.review_write_form{
+    margin-bottom: 14px;
+}
+.mob_close_button_review {
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+.review_label_text{
+    padding: 12px;
+    color: var(--grey-text, #7C7777);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+}
+.review_form{
+    display: flex;
+    flex-direction: column;
+}
+.review_form:not(:last-child) {
+    margin-bottom: 14px;
+}
+.textarea_review{
+    height: 240px;
+}
+.modal_button_reviews_send{
+    background-color: var(--orange, #CD7829);
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    border: none;
+    padding: 12px 24px ;
+}

@@ -6,7 +6,13 @@
     
     
 }
-.section_about{
+.section_about_choose{
+    background: var(--graphite, #272727);
+    margin-top: 20px;
+}
+.section_about_mision{
+    display: flex;
+    flex-direction: row-reverse;
     background: var(--graphite, #272727);
     margin-top: 20px;
 }
@@ -18,15 +24,24 @@
 .about_foto{
     
     background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_1x.jpg);
-    background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: right top;
 }
-.section_name{
+.section_name_us{
+    color: var(--orange, #CD7829);
+    font-family: Orbitron;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 32px;
     background-color:linear-gradient(180deg, rgba(39, 39, 39, 0.00) 100%);
 }
+
 .about_block{
     color: var(--white, #EEE);
     font-family: Poppins;
@@ -34,7 +49,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
+    padding-right: 20px;
     padding-bottom: 240px;
 }
 .section_block{
@@ -44,10 +60,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
+    padding-right: 20px;
     margin-bottom: 0px;
 }
 .section_block:not(:last-child){
+    margin-bottom: 40px;
+}
+.section_block_mision{
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+.section_block_mision:not(:last-child) {
     margin-bottom: 40px;
 }
 .container_section_about_mission{
@@ -57,6 +88,7 @@
     background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .mission_section{

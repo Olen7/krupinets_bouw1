@@ -170,7 +170,7 @@ img {
     padding-right: 32px;
     margin: 0 auto;
 }
-@media screen and (min-width: 394px){
+@media screen and (min-width: 394px) and (max-width: 435px){
     .container_header{
         
         width: 430px;
@@ -321,7 +321,7 @@ img {
     line-height: normal;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .section_about_text{
     color: var(--white, #EEE);
@@ -330,7 +330,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
     margin-bottom: 28px;
 }
 .section_button{
@@ -349,7 +349,6 @@ img {
 .about_section{
     background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/mob_about1_1x.jpg);
     background-repeat: no-repeat;
-    padding-top: 20px;
     background-color: var(--graphite, #272727);
     background-position: right top;
 }
@@ -432,10 +431,12 @@ img {
 }
 /* SECTION 4 */
 .benefits{
-    background: var(--graphite, #272727);
+    padding-top: 28px;
+    padding-left:20px ;
+    padding-right:20px ;
+    background-color: var(--graphite, #272727);
 }
 .benefits_name{
-    padding-top: 28px;
     color: var(--orange, #CD7829);
     /* big title mobile */
     font-family: Orbitron;
@@ -559,7 +560,7 @@ img {
 }
 /* FOOTHER */
 .foother_conteiner{
-    padding: 28px 0;
+    padding: 28px 20px;
     /* background: url(), lightgray 50% / cover no-repeat; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_1x.jpg);
     background-size: cover;
@@ -660,7 +661,53 @@ img {
 }
 .is_scrolled .header_wrapper{
     background-color: rgb(221 221 220);
-  }
+}
+.is_scrolled .header_wrappers{
+    background-color: var(--graphite, #272727);
+}
+.foother_blok_index{
+    
+    flex-direction: column;
+    align-items: center;
+}
+.feedback_name_index{
+    display: none;
+}
+.modal-icon_tab{
+    display: none;
+}
+.modal-form_tab{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    
+
+}
+.name-text_tab{
+    display: block;
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+.icon-person_tab{
+    padding: 12px;
+    color: #7C7777;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    width: 100%;
+    height: 48px;
+}
+
+
     /* 2x foto має бути знизу всіх фото*/
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),

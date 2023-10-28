@@ -8,17 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reviews.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/desktop.css">
-    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="./html/about.html">
     <link rel="stylesheet" href="./html/reviews.html">
     <link rel="stylesheet" href="./html/contact.html">
 
+
 </head>
 <body>
-    <header class=" header heder_about" id="about">
+    <header class="header heder_about header_wrappers">
         <div class="container container_header">
             <nav class="heder">
                 <a href="../index.html" class="heder_svg">
@@ -31,25 +32,25 @@
                 </a>
                 <ul class="heder_nav">
                     <li class="header__item">
-                        <a class="header__id" href="../index.html">Home</a>
+                        <a class="header__id_black" href="../index.html">Home</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id" href="./html/about.html">About Us</a>
+                        <a class="header__id_black" href="../html/about.html">About Us</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id" href="#portfolio">Portfolio</a>
+                        <a class="header__id_black" href="../html/404_eror.html">Portfolio</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id" href="./html/reviews.html">Reviews</a>
+                        <a class="header__id_black" href="../html/reviews.html">Reviews</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id" href="./contact.html">Contacts</a>
+                        <a class="header__id_black" href="../html/contact.html">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <button type="button" class="header__button" data-menu-open>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <path d="M4.5 27H31.5M4.5 18H31.5M4.5 9H31.5" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.5 27H31.5M4.5 18H31.5M4.5 9H31.5" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </button>
             </div>
@@ -67,15 +68,15 @@
                             </svg>
                     </a></li>
                     <li class="mob-menu-items ">
-                        <a href="../index.html" class="mob-menu-item">Home</a></li>
+                        <a href="./index.html" class="mob-menu-item">Home</a></li>
                     <li class="mob-menu-items">
-                        <a href="./about.html" class="mob-menu-item">About Us</a></li>
+                        <a href="../html/about.html" class="mob-menu-item">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="" class="mob-menu-item">Portfoli</a></li>
+                        <a href="../html/404_eror.html" class="mob-menu-item">Portfoli</a></li>
                     <li class="mob-menu-items">
-                            <a href="./reviews.html" class="mob-menu-item">Reviews</a></li>
+                            <a href="../html/reviews.html" class="mob-menu-item">Reviews</a></li>
                     <li class="mob-menu-items">
-                            <a href="./contact.html" class="mob-menu-item">Contacts</a></li>
+                            <a href="../html/contact.html" class="mob-menu-item">Contacts</a></li>
                 </ul>
             </div>
             <div class="mobil_buttons"> 
@@ -89,14 +90,49 @@
     </header>
     <section class="reviews_section">
         <div class="container">
-            <button type="button"  class="section_button_reviews">Write a review</button>
+            <button type="button"  class="section_button_reviews" data-review-open>Write a review</button>
+                <div class="review_write is-hided  mob_menu_review" data-review>
+                    <div class="conteiner_h1_button_close">
+                        <h1 class="write_menu_name">write <p>a review</p></h1>
+                        <button data-review-close class="mob_close_button_review">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z" fill="#272727"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                    <form action="" class="review_write_form">
+                        <div class="review_form">
+                            <label for="your-text" class="review_label_name">Your name*</label>
+                            <input type="text"
+                            class="review_label_text"
+                            name="your-name"
+                            id="your-text"
+                            placeholder="Name"
+                            required />    
+                        </div>
+                        
+                        <div class="review_form">
+                            <label class="review_label_name" for="feedback">Tell us about your experience*</label>
+                            <textarea
+                            name="user-comment" 
+                            id="feedback" 
+                            class="review_label_text textarea_review"
+                            placeholder="Your review"
+                            ></textarea>
+                        </div>
+                        
+
+                    </form>
+                    <button type="button"  class="modal_button_reviews_send" >Send</button>
+                </div>
             <h1 class="reviews_name">reviews</h1>
             <button type="button"  class="button_reviews section_button_reviews">Load more</button>
         </div>
         
     </section>
     <footer class="foother_conteiner foother_filter ">
-        <div class="container">
+        <div class="tab_conteiner_index">
             <div class="foother_blok_one">
                 <a href="../index.html" class="foother_link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="32" viewBox="0 0 60 32" fill="none" class="foother_link">
@@ -120,73 +156,120 @@
                         <a class="foother_links" href="../html/reviews.html">Reviews</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links" href="../html/contact.html">Contacts</a>
+                        <a class="foother_links" href="./html/contact.html">Contacts</a>
                     </li>
                 </ul>
             </div>
-            <address class="address">
-                <p class="address_contact">Contacts</p>
-                <ul class="">
-                    <li class="address_social"><a href="tel:+110001111111" class="address_link">Phone: +31621968479</a></li>
-                    <li class="address_social"><a href="mailto:info@devstudio.com" class="address_link">E-mail: krupinecbouw@gmail.com</a></li>
-                    <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow">Adress: Eliza van Calcarstraat 27,
-                        Amsterdam, Netherlands </a></li>
-                </ul>
-                
-            </address>
-            <ul class="adderss_icons">
-                <li class="address_list">
-                    <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                            <g clip-path="url(#clip0_200_561)">
-                            <path d="M1.89583 3.25H24.1042C25.1507 3.25 26 4.09933 26 5.14583V20.3125C26 20.8153 25.8003 21.2975 25.4447 21.6531C25.0892 22.0086 24.607 22.2083 24.1042 22.2083H1.89583C1.39303 22.2083 0.910814 22.0086 0.555277 21.6531C0.199739 21.2975 0 20.8153 0 20.3125L0 5.14583C0 4.09933 0.849333 3.25 1.89583 3.25ZM1.625 8.02967V20.3125C1.625 20.462 1.74633 20.5833 1.89583 20.5833H24.1042C24.176 20.5833 24.2449 20.5548 24.2957 20.504C24.3465 20.4532 24.375 20.3843 24.375 20.3125V8.02967L14.0617 14.9988C13.4203 15.4321 12.5797 15.4321 11.9383 14.9988L1.625 8.02967ZM1.625 5.14583V6.06883L12.8483 13.6522C12.8931 13.6824 12.9459 13.6986 13 13.6986C13.0541 13.6986 13.1069 13.6824 13.1517 13.6522L24.375 6.06883V5.14583C24.375 5.074 24.3465 5.00512 24.2957 4.95433C24.2449 4.90353 24.176 4.875 24.1042 4.875H1.89583C1.824 4.875 1.75512 4.90353 1.70433 4.95433C1.65353 5.00512 1.625 5.074 1.625 5.14583Z" fill="#CD7829"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_200_561">
-                            <rect width="26" height="26" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                    </a>
+            <div class="conteiner_address_icon_tab">
+                <address class="address">
+                    <p class="address_contact">Contacts</p>
+                    <ul class="">
+                        <li class="address_social"><a href="tel:+110001111111" class="address_link">Phone: +31621968479</a></li>
+                        <li class="address_social"><a href="mailto:info@devstudio.com" class="address_link">E-mail: krupinecbouw@gmail.com</a></li>
+                        <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow">Adress: Eliza van Calcarstraat 27,<p>Amsterdam, Netherlands </p>
+                            </a></li>
+                    </ul>
                     
-                </li>
-                <li class="address_list">
-                    <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
-                            <path d="M14.5 1.5H10.9545C9.38736 1.5 7.88436 2.05312 6.77619 3.03769C5.66802 4.02226 5.04545 5.35761 5.04545 6.75V9.9H1.5V14.1H5.04545V22.5H9.77273V14.1H13.3182L14.5 9.9H9.77273V6.75C9.77273 6.47152 9.89724 6.20445 10.1189 6.00754C10.3405 5.81062 10.6411 5.7 10.9545 5.7H14.5V1.5Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </a>
-                    
-                </li>
-                <li class="address_list">
+                </address>
+                <ul class="adderss_icons">
+                    <li class="address_list">
                         <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <path d="M16.5 5.5H16.51M6 1H16C18.7614 1 21 3.23858 21 6V16C21 18.7614 18.7614 21 16 21H6C3.23858 21 1 18.7614 1 16V6C1 3.23858 3.23858 1 6 1ZM15 10.37C15.1234 11.2022 14.9813 12.0522 14.5938 12.799C14.2063 13.5458 13.5931 14.1514 12.8416 14.5297C12.0901 14.9079 11.2384 15.0396 10.4078 14.9059C9.57713 14.7723 8.80976 14.3801 8.21484 13.7852C7.61992 13.1902 7.22773 12.4229 7.09407 11.5922C6.9604 10.7616 7.09207 9.90989 7.47033 9.15837C7.84859 8.40685 8.45419 7.79374 9.20099 7.40624C9.94778 7.01874 10.7978 6.87659 11.63 7C12.4789 7.12588 13.2649 7.52146 13.8717 8.12831C14.4785 8.73515 14.8741 9.52108 15 10.37Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <g clip-path="url(#clip0_200_561)">
+                                <path d="M1.89583 3.25H24.1042C25.1507 3.25 26 4.09933 26 5.14583V20.3125C26 20.8153 25.8003 21.2975 25.4447 21.6531C25.0892 22.0086 24.607 22.2083 24.1042 22.2083H1.89583C1.39303 22.2083 0.910814 22.0086 0.555277 21.6531C0.199739 21.2975 0 20.8153 0 20.3125L0 5.14583C0 4.09933 0.849333 3.25 1.89583 3.25ZM1.625 8.02967V20.3125C1.625 20.462 1.74633 20.5833 1.89583 20.5833H24.1042C24.176 20.5833 24.2449 20.5548 24.2957 20.504C24.3465 20.4532 24.375 20.3843 24.375 20.3125V8.02967L14.0617 14.9988C13.4203 15.4321 12.5797 15.4321 11.9383 14.9988L1.625 8.02967ZM1.625 5.14583V6.06883L12.8483 13.6522C12.8931 13.6824 12.9459 13.6986 13 13.6986C13.0541 13.6986 13.1069 13.6824 13.1517 13.6522L24.375 6.06883V5.14583C24.375 5.074 24.3465 5.00512 24.2957 4.95433C24.2449 4.90353 24.176 4.875 24.1042 4.875H1.89583C1.824 4.875 1.75512 4.90353 1.70433 4.95433C1.65353 5.00512 1.625 5.074 1.625 5.14583Z" fill="#CD7829"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_200_561">
+                                <rect width="26" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
                                 </svg>
                         </a>
-                    
-                </li>
-                <li class="address_list">
-                    <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <path d="M21 5.44332H19.8889C18.7101 5.44332 17.5797 4.97519 16.7462 4.1419C15.9127 3.30862 15.4444 2.17844 15.4444 1H11V13.7745C11 14.2479 10.879 14.7134 10.6484 15.1269C10.4178 15.5403 10.0854 15.888 9.68259 16.1369C9.27981 16.3857 8.82009 16.5275 8.34708 16.5488C7.87407 16.5701 7.40346 16.4701 6.97996 16.2584C6.55646 16.0467 6.19411 15.7303 5.92733 15.3392C5.66055 14.9482 5.49819 14.4954 5.45567 14.0239C5.41315 13.5525 5.49187 13.078 5.68438 12.6455C5.87688 12.213 6.17676 11.8369 6.55556 11.5529V6.7541C5.23509 7.0672 4.02958 7.7459 3.07719 8.71244C2.12481 9.67897 1.46408 10.8942 1.17074 12.2189C0.877398 13.5436 0.963317 14.9241 1.41865 16.2022C1.87398 17.4803 2.68029 18.6043 3.74518 19.4453C4.81006 20.2864 6.09043 20.8104 7.43953 20.9575C8.78863 21.1045 10.1519 20.8686 11.373 20.2767C12.5942 19.6847 13.6238 18.7609 14.3439 17.6109C15.064 16.4609 15.4454 15.1313 15.4444 13.7745V8.68694C16.7948 9.47009 18.3277 9.88387 19.8889 9.88664H21V5.44332Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    
-                </li>
-                <li class="address_list">
-                    <a href="" target="_blank" rel="noopener noreferrer nofollow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                            <path d="M23.05 3.8252H6.94995C6.12186 3.8275 5.32834 4.15749 4.74279 4.74304C4.15724 5.32859 3.82726 6.1221 3.82495 6.9502V23.0502C3.82726 23.8783 4.15724 24.6718 4.74279 25.2574C5.32834 25.8429 6.12186 26.1729 6.94995 26.1752H23.05C23.8788 26.1752 24.6736 25.846 25.2597 25.2599C25.8457 24.6739 26.175 23.879 26.175 23.0502V6.9502C26.175 6.12139 25.8457 5.32654 25.2597 4.74049C24.6736 4.15444 23.8788 3.8252 23.05 3.8252ZM24.925 23.0502C24.9214 23.5464 24.7227 24.0212 24.3718 24.372C24.021 24.7229 23.5461 24.9216 23.05 24.9252H6.94995C6.45378 24.9216 5.97896 24.7229 5.6281 24.372C5.27725 24.0212 5.07855 23.5464 5.07495 23.0502V6.9502C5.07855 6.45403 5.27725 5.9792 5.6281 5.62835C5.97896 5.27749 6.45378 5.07879 6.94995 5.0752H23.05C23.5461 5.07879 24.021 5.27749 24.3718 5.62835C24.7227 5.9792 24.9214 6.45403 24.925 6.9502V23.0502Z" fill="#CD7829"/>
-                            <path d="M8.0769 13.4349C8.0769 13.1033 8.10166 12.7854 8.33608 12.551C8.65383 12.1153 9.23075 12.1152 9.23075 12.1152C9.23075 12.1152 9.80767 12.1153 9.9198 12.551C10.1038 13.0249 10.1038 13.1033 10.1038 13.4349V21.5599C10.1038 21.8914 10.1038 22.0657 9.9198 22.4437C9.80767 22.6741 9.55148 22.8099 9.21996 22.8099C8.88844 22.8099 8.5705 22.6782 8.33608 22.4437C8.10166 22.2093 8.0769 21.8914 8.0769 21.5599V13.4349Z" fill="#CD7829"/>
-                            <path d="M9.21997 9.67969C9.91033 9.67969 10.47 9.12004 10.47 8.42969C10.47 7.73933 9.91033 7.17969 9.21997 7.17969C8.52961 7.17969 7.96997 7.73933 7.96997 8.42969C7.96997 9.12004 8.52961 9.67969 9.21997 9.67969Z" fill="#CD7829"/>
-                            <path d="M22.1531 16.7129V21.5629C22.1531 21.8945 22.0214 22.2124 21.787 22.4468C21.5526 22.6812 21.2346 22.8129 20.9031 22.8129C20.5716 22.8129 20.1923 22.5004 20.1923 22.5004C20.1923 22.5004 20.1923 21.9235 20.1923 21.5629V16.7129C20.1923 16.1775 19.994 15.379 19.6154 15.0004C19.2368 14.6218 18.2061 14.0188 17.6707 14.0188C17.1353 14.0188 16.0836 14.0449 15.705 14.4235C15.3264 14.8021 15.1281 15.6189 15.1281 16.1543V21.3466C15.1281 21.6781 15.2059 22.2124 14.9715 22.4468C14.7371 22.6812 14.507 22.8129 14.1754 22.8129C13.8439 22.8129 13.7161 22.6812 13.4817 22.4468C13.2473 22.2124 13.1156 21.8945 13.1156 21.5629V13.4379C13.1208 13.108 13.2541 12.7931 13.4874 12.5598C13.7207 12.3264 14.0357 12.1931 14.3656 12.1879C14.5773 12.1821 14.7867 12.2337 14.9715 12.3371C15.1563 12.4405 15.3098 12.592 15.4156 12.7754C16.1029 12.3855 16.8805 12.1829 17.6707 12.1879C18.4609 12.193 19.2359 12.4055 19.9181 12.8042C20.6003 13.2029 21.1659 13.7738 21.5581 14.4598C21.9503 15.1458 22.1555 15.9227 22.1531 16.7129Z" fill="#CD7829"/>
+                        
+                    </li>
+                    <li class="address_list">
+                        <a href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                                <path d="M14.5 1.5H10.9545C9.38736 1.5 7.88436 2.05312 6.77619 3.03769C5.66802 4.02226 5.04545 5.35761 5.04545 6.75V9.9H1.5V14.1H5.04545V22.5H9.77273V14.1H13.3182L14.5 9.9H9.77273V6.75C9.77273 6.47152 9.89724 6.20445 10.1189 6.00754C10.3405 5.81062 10.6411 5.7 10.9545 5.7H14.5V1.5Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </a>
+                        
+                    </li>
+                    <li class="address_list">
+                            <a href="#" target="_blank" rel="noopener noreferrer nofollow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <path d="M16.5 5.5H16.51M6 1H16C18.7614 1 21 3.23858 21 6V16C21 18.7614 18.7614 21 16 21H6C3.23858 21 1 18.7614 1 16V6C1 3.23858 3.23858 1 6 1ZM15 10.37C15.1234 11.2022 14.9813 12.0522 14.5938 12.799C14.2063 13.5458 13.5931 14.1514 12.8416 14.5297C12.0901 14.9079 11.2384 15.0396 10.4078 14.9059C9.57713 14.7723 8.80976 14.3801 8.21484 13.7852C7.61992 13.1902 7.22773 12.4229 7.09407 11.5922C6.9604 10.7616 7.09207 9.90989 7.47033 9.15837C7.84859 8.40685 8.45419 7.79374 9.20099 7.40624C9.94778 7.01874 10.7978 6.87659 11.63 7C12.4789 7.12588 13.2649 7.52146 13.8717 8.12831C14.4785 8.73515 14.8741 9.52108 15 10.37Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                        
+                    </li>
+                    <li class="address_list">
+                        <a href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path d="M21 5.44332H19.8889C18.7101 5.44332 17.5797 4.97519 16.7462 4.1419C15.9127 3.30862 15.4444 2.17844 15.4444 1H11V13.7745C11 14.2479 10.879 14.7134 10.6484 15.1269C10.4178 15.5403 10.0854 15.888 9.68259 16.1369C9.27981 16.3857 8.82009 16.5275 8.34708 16.5488C7.87407 16.5701 7.40346 16.4701 6.97996 16.2584C6.55646 16.0467 6.19411 15.7303 5.92733 15.3392C5.66055 14.9482 5.49819 14.4954 5.45567 14.0239C5.41315 13.5525 5.49187 13.078 5.68438 12.6455C5.87688 12.213 6.17676 11.8369 6.55556 11.5529V6.7541C5.23509 7.0672 4.02958 7.7459 3.07719 8.71244C2.12481 9.67897 1.46408 10.8942 1.17074 12.2189C0.877398 13.5436 0.963317 14.9241 1.41865 16.2022C1.87398 17.4803 2.68029 18.6043 3.74518 19.4453C4.81006 20.2864 6.09043 20.8104 7.43953 20.9575C8.78863 21.1045 10.1519 20.8686 11.373 20.2767C12.5942 19.6847 13.6238 18.7609 14.3439 17.6109C15.064 16.4609 15.4454 15.1313 15.4444 13.7745V8.68694C16.7948 9.47009 18.3277 9.88387 19.8889 9.88664H21V5.44332Z" stroke="#CD7829" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                    </a>
-                    
-                </li>
-            </ul>
-            <button type="button" class="address_button">Consultation</button>
+                        </a>
+                        
+                    </li>
+                    <li class="address_list">
+                        <a href="" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M23.05 3.8252H6.94995C6.12186 3.8275 5.32834 4.15749 4.74279 4.74304C4.15724 5.32859 3.82726 6.1221 3.82495 6.9502V23.0502C3.82726 23.8783 4.15724 24.6718 4.74279 25.2574C5.32834 25.8429 6.12186 26.1729 6.94995 26.1752H23.05C23.8788 26.1752 24.6736 25.846 25.2597 25.2599C25.8457 24.6739 26.175 23.879 26.175 23.0502V6.9502C26.175 6.12139 25.8457 5.32654 25.2597 4.74049C24.6736 4.15444 23.8788 3.8252 23.05 3.8252ZM24.925 23.0502C24.9214 23.5464 24.7227 24.0212 24.3718 24.372C24.021 24.7229 23.5461 24.9216 23.05 24.9252H6.94995C6.45378 24.9216 5.97896 24.7229 5.6281 24.372C5.27725 24.0212 5.07855 23.5464 5.07495 23.0502V6.9502C5.07855 6.45403 5.27725 5.9792 5.6281 5.62835C5.97896 5.27749 6.45378 5.07879 6.94995 5.0752H23.05C23.5461 5.07879 24.021 5.27749 24.3718 5.62835C24.7227 5.9792 24.9214 6.45403 24.925 6.9502V23.0502Z" fill="#CD7829"/>
+                                <path d="M8.0769 13.4349C8.0769 13.1033 8.10166 12.7854 8.33608 12.551C8.65383 12.1153 9.23075 12.1152 9.23075 12.1152C9.23075 12.1152 9.80767 12.1153 9.9198 12.551C10.1038 13.0249 10.1038 13.1033 10.1038 13.4349V21.5599C10.1038 21.8914 10.1038 22.0657 9.9198 22.4437C9.80767 22.6741 9.55148 22.8099 9.21996 22.8099C8.88844 22.8099 8.5705 22.6782 8.33608 22.4437C8.10166 22.2093 8.0769 21.8914 8.0769 21.5599V13.4349Z" fill="#CD7829"/>
+                                <path d="M9.21997 9.67969C9.91033 9.67969 10.47 9.12004 10.47 8.42969C10.47 7.73933 9.91033 7.17969 9.21997 7.17969C8.52961 7.17969 7.96997 7.73933 7.96997 8.42969C7.96997 9.12004 8.52961 9.67969 9.21997 9.67969Z" fill="#CD7829"/>
+                                <path d="M22.1531 16.7129V21.5629C22.1531 21.8945 22.0214 22.2124 21.787 22.4468C21.5526 22.6812 21.2346 22.8129 20.9031 22.8129C20.5716 22.8129 20.1923 22.5004 20.1923 22.5004C20.1923 22.5004 20.1923 21.9235 20.1923 21.5629V16.7129C20.1923 16.1775 19.994 15.379 19.6154 15.0004C19.2368 14.6218 18.2061 14.0188 17.6707 14.0188C17.1353 14.0188 16.0836 14.0449 15.705 14.4235C15.3264 14.8021 15.1281 15.6189 15.1281 16.1543V21.3466C15.1281 21.6781 15.2059 22.2124 14.9715 22.4468C14.7371 22.6812 14.507 22.8129 14.1754 22.8129C13.8439 22.8129 13.7161 22.6812 13.4817 22.4468C13.2473 22.2124 13.1156 21.8945 13.1156 21.5629V13.4379C13.1208 13.108 13.2541 12.7931 13.4874 12.5598C13.7207 12.3264 14.0357 12.1931 14.3656 12.1879C14.5773 12.1821 14.7867 12.2337 14.9715 12.3371C15.1563 12.4405 15.3098 12.592 15.4156 12.7754C16.1029 12.3855 16.8805 12.1829 17.6707 12.1879C18.4609 12.193 19.2359 12.4055 19.9181 12.8042C20.6003 13.2029 21.1659 13.7738 21.5581 14.4598C21.9503 15.1458 22.1555 15.9227 22.1531 16.7129Z" fill="#CD7829"/>
+                                </svg>
+                        </a>
+                        
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+            <div>
+                <div class="foother_blok_index">
+                    <h2 class="feedback_name_index">Feedback</h2>
+                    <form class="modal-icon_tab">
+                        <div class="modal-form_tab">
+                            <label for="name-text" class="name-text_tab">Name*</label>
+                            <input 
+                            class="icon-person_tab"
+                            type="text" 
+                            name="user-name"
+                            id="name-text"
+                            placeholder="Enter your name"
+                            required />
+                        </div>
+                        <div class="modal-form_tab">
+                            <label for="phone" class="name-text_tab">Phone*</label>
+                                    <input 
+                                    class="icon-person_tab"
+                                    type="tel" 
+                                    name="user-name"
+                                    id="phone"
+                                    placeholder="Enter your phone"
+                                    required /> 
+                        </div>
+                        <div class="modal-form_tab">
+                            <label for="email" class="name-text_tab">E-mail*</label>
+                                <div class="input-person">
+                                    <input 
+                                    class="icon-person_tab"
+                                    type="email" 
+                                    name="user-name"
+                                    id="email"
+                                    placeholder="Enter your mail"
+                                    required />
+                                </div>
+                        </div>
+                        </form>
+                        <button type="button" class="address_button">Consultation</button>
+                </div>
+
+                
+            </div>
+            
             <div>
                 <p class="adderss_copyright">Copyright <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="adderss_copyright_svg">
                     <path d="M9.16675 14.1663H10.8334C11.2754 14.1663 11.6994 13.9907 12.0119 13.6782C12.3245 13.3656 12.5001 12.9417 12.5001 12.4997V11.6663H10.8334V12.4997H9.16675V7.49967H10.8334V8.33301H12.5001V7.49967C12.5001 7.05765 12.3245 6.63372 12.0119 6.32116C11.6994 6.0086 11.2754 5.83301 10.8334 5.83301H9.16675C8.72472 5.83301 8.3008 6.0086 7.98824 6.32116C7.67568 6.63372 7.50008 7.05765 7.50008 7.49967V12.4997C7.50008 12.9417 7.67568 13.3656 7.98824 13.6782C8.3008 13.9907 8.72472 14.1663 9.16675 14.1663ZM10.0001 18.333C11.0944 18.333 12.1781 18.1175 13.1891 17.6987C14.2002 17.2799 15.1188 16.6661 15.8926 15.8922C16.6665 15.1184 17.2803 14.1997 17.6991 13.1887C18.1179 12.1777 18.3334 11.094 18.3334 9.99967C18.3334 7.78954 17.4554 5.66992 15.8926 4.10712C14.3298 2.54431 12.2102 1.66634 10.0001 1.66634C8.90573 1.66634 7.8221 1.88189 6.81105 2.30068C5.80001 2.71947 4.88135 3.3333 4.10752 4.10712C2.54472 5.66992 1.66675 7.78954 1.66675 9.99967C1.66675 12.2098 2.54472 14.3294 4.10752 15.8922C5.67033 17.455 7.78994 18.333 10.0001 18.333ZM10.0001 16.6663C8.23197 16.6663 6.53628 15.964 5.28604 14.7137C4.03579 13.4635 3.33341 11.7678 3.33341 9.99967C3.33341 8.23156 4.03579 6.53587 5.28604 5.28563C6.53628 4.03539 8.23197 3.33301 10.0001 3.33301C11.7682 3.33301 13.4639 4.03539 14.7141 5.28563C15.9644 6.53587 16.6667 8.23156 16.6667 9.99967C16.6667 11.7678 15.9644 13.4635 14.7141 14.7137C13.4639 15.964 11.7682 16.6663 10.0001 16.6663Z" fill="#CD7829"/>
@@ -196,8 +279,9 @@
                     a free resource Unsplash</p>
             </div>
             
-        </div>
     </footer >
     <script src="../js/menu.js"></script>
+    <script src="../js/heder.js"></script>
+    <script src="../js/review.js"></script>
 </body>
 </html>
