@@ -144,6 +144,7 @@
     height: 240px;
     border: 1px solid var(--grey-text, #7C7777);
 }
+
 .modal_button_reviews_send{
     background-color: var(--orange, #CD7829);
     color: var(--white, #EEE);

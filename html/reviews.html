@@ -35,23 +35,27 @@
                         <a class="header__id_black" href="../index.html">Home</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black" href="../html/about.html">About Us</a>
+                        <a class="header__id_black " href="./about.html">About Us</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black" href="../html/404_eror.html">Portfolio</a>
+                        <a class="header__id_black" href="./404_eror.html">Portfolio</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black" href="../html/reviews.html">Reviews</a>
+                        <a class="header__id_black" href="./reviews.html">Reviews</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black" href="../html/contact.html">Contacts</a>
+                        <a class="header__id_black" href="./contact.html">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            <ul class="name_lang_list">
+                <li class="name_lang_item"><button type="button" class="name_lang_btn">en</button></li>
+                <li class="name_lang_item"><button type="button" class="name_lang_btn">nl</button></li>
+            </ul>
             <button type="button" class="header__button" data-menu-open>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <path d="M4.5 27H31.5M4.5 18H31.5M4.5 9H31.5" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <path d="M4.5 27H31.5M4.5 18H31.5M4.5 9H31.5" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
             </button>
             </div>
             <div class="mob-menu is-hidden" data-menu> 
@@ -68,15 +72,15 @@
                             </svg>
                     </a></li>
                     <li class="mob-menu-items ">
-                        <a href="./index.html" class="mob-menu-item">Home</a></li>
+                        <a href="../index.html" class="mob-menu-item">Home</a></li>
                     <li class="mob-menu-items">
-                        <a href="../html/about.html" class="mob-menu-item">About Us</a></li>
+                        <a href="./about.html" class="mob-menu-item">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="../html/404_eror.html" class="mob-menu-item">Portfoli</a></li>
+                        <a href="./404_eror.html" class="mob-menu-item">Portfoli</a></li>
                     <li class="mob-menu-items">
-                            <a href="../html/reviews.html" class="mob-menu-item">Reviews</a></li>
+                            <a href="./reviews.html" class="mob-menu-item">Reviews</a></li>
                     <li class="mob-menu-items">
-                            <a href="../html/contact.html" class="mob-menu-item">Contacts</a></li>
+                            <a href="./contact.html" class="mob-menu-item">Contacts</a></li>
                 </ul>
             </div>
             <div class="mobil_buttons"> 
@@ -90,8 +94,12 @@
     </header>
     <section class="reviews_section">
         <div class="container">
-            <button type="button"  class="section_button_reviews" data-review-open>Write a review</button>
-                <div class="review_write is-hided  mob_menu_review" data-review>
+            <div class="tab_box_review">
+                <button type="button"  class="section_button_reviews" data-review-open>Write a review</button>
+                <h1 class="reviews_name">reviews</h1>
+            </div>
+            
+            <div class="review_write is-hided  mob_menu_review" data-review>
                     <div class="review_modal">
                         <button data-review-close class="mob_close_button_review">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -139,7 +147,7 @@
                     </div>
                     
                 </div>
-            <h1 class="reviews_name">reviews</h1>
+            
             <button type="button"  class="button_reviews section_button_reviews">Load more</button>
         </div>
         

@@ -151,7 +151,7 @@ img {
 }
 */
 .body_box{
-    background-color: var(--graphite, #272727);
+    background-c: var(--graphite, #272727);
 }
 
 /* HEADER */

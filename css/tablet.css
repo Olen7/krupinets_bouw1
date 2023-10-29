@@ -88,13 +88,16 @@
     .header__item:not(:last-child){
         margin-right: 34px;
     }
+    .is_scrolled .header_wrapper{
+        background-color: rgb(188 188 186);
+    }
         /* HERO */
     .section_contact {
-            background-image: url(../images/mob/contact/contact_1x.jpg);
+            background-image: url(../images/tab/contact/contact1_1x.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             margin-top: 72px;
-            padding: 24px 20px;
+            padding: 20px 32px 40px;
     }
     .container_section_about{
         background-color: rgba(39, 39, 39, 0.80);;
@@ -140,6 +143,10 @@
     .about_section {
         background-image: url(../images/tab/tablet_about_1x.jpg);
 
+    }
+    .about_section {
+       
+        
     }
         /* SERVICE */
     .name_service {
@@ -337,7 +344,49 @@
     .review_text{
        gap:  8px;
     }
-
+    .tab_box_review{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 72px;
+    }
+    .section_button_reviews {
+        
+        margin-top: 0; 
+    }
+    .reviews_name {
+        
+        margin-bottom: 48px;
+    }
+    /* CONTACT INDEX */
+    .contact_name {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+        margin-bottom: 40px;
+    }
+    .icon-person {
+        width: 590px;
+        
+    }
+    .feedback-textarea {
+        width: 590px;
+       
+    }
+    .address_social_contact {
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .address_link_contact {
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-left: 10px;
+    }
+    .contact_section_conteiner {
+        margin-bottom: 60px;
+    }
 
 
 

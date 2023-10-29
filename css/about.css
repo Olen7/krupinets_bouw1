@@ -110,12 +110,18 @@
     background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 370px 975px;
+    background-position: right top;
+    
 }
 .section_about_back{
     padding-top: 56px;
 }
 .buttom_about_fill{
     
+}
+.container_section_about_chose{
+    padding: 8px 0 0 20px;
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -125,9 +131,11 @@
         background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_2x.jpg);
     }
     .mission_foto{
+        background-size: 370px 784px;
         background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_2x.jpg);
     }
     .mission_section_choose{
+        
         background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_2x.jpg);
     }
 }
