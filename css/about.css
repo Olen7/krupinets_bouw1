@@ -121,6 +121,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
     .about_foto{
+        background-size: 370px 571px;
         background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_2x.jpg);
     }
     .mission_foto{

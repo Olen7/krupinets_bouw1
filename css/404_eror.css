@@ -41,6 +41,17 @@
     letter-spacing: 0.06em;
     margin-bottom: 40px;
 }
+.text_name_parahrafs{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+}
+
 .eror_button{
     border: none;
     background-color: var(--orange, #CD7829);
@@ -59,6 +70,7 @@
 justify-content: center;
 align-items: center;
 }
+/* bu */
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){

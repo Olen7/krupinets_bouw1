@@ -150,7 +150,9 @@ img {
         
 }
 */
-
+.body_box{
+    background-color: var(--graphite, #272727);
+}
 
 /* HEADER */
 .header{
@@ -169,14 +171,16 @@ img {
     padding-left: 32px;
     padding-right: 32px;
     margin: 0 auto;
+    width: 100vw;
+    max-width: 767px;
 }
-@media screen and (min-width: 394px) and (max-width: 435px){
+/* @media screen and (min-width: 394px) and (max-width: 435px){
     .container_header{
         
         width: 430px;
         
     }
-}
+} */
 /* Прихована меню */
  .heder_nav {
     display: none;
@@ -190,8 +194,9 @@ img {
     top: 10px;
     right: 32px;
 }
- 
-
+.name_lang_list{
+    display: none;
+}
 /* mob_menu */
 .mob-menu {
     display: flex;
@@ -510,42 +515,22 @@ img {
     display: flex;
     justify-content: center;
 }
-.portfolio_foto_one{
-    background-image:  url(../images/mob/mob_portfolio1_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.portfolio_img{
     width: 100%;
-    height: 220px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.portfolio_foto_two{
-    background-image: url(../images/mob/mob_portfolio2_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 220px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-.portfolio_foto_three{
-    background-image: url(../images/mob/mob_portfolio3_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     
 }
+.portfolio_foto{
+    position: relative;
+    width: 100%;
+
+}
+.portfolio_foto:not(:last-child){
+    margin-bottom: 16px;
+
+}
+
 .portfolio_text{
+    background: linear-gradient(to bottom right, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) top right / 50% 50% no-repeat;
     color: var(--white, #EEE);
     text-align: center;
     /* big title mobile */
@@ -556,7 +541,10 @@ img {
     line-height: normal;
     letter-spacing: 3px;
     text-transform: uppercase;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 /* FOOTHER */
 .foother_conteiner{
@@ -719,7 +707,7 @@ img {
         background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/mob_about1_2x.jpg);
         background-position: right top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 309px 571px;
     }
     .foto_service_one{
         background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/mob/mob_service1_2x.jpg);
@@ -733,17 +721,7 @@ img {
     .foto_service_four{
         background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/mob/mob_service4_2x.jpg);
     }
-    .portfolio_foto_one{
-        background-image:  url(../images/mob/mob_portfolio1_2x.jpg);
-    }
     
-    .portfolio_foto_two{
-        background-image: url(../images/mob/mob_portfolio2_2x.jpg);
-    
-    }
-    .portfolio_foto_three{
-        background-image: url(../images/mob/mob_portfolio3_2x.jpg);
-    }
     .foother_conteiner{
         background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_2x.jpg);
     }
@@ -777,17 +755,7 @@ img {
     .foto_service_four{
         background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/mob/mob_service4_4x.jpg);
     }
-    .portfolio_foto_one{
-        background-image:  url(../images/mob/mob_portfolio1_4x.jpg);
-    }
-    
-    .portfolio_foto_two{
-        background-image: url(../images/mob/mob_portfolio2_4x.jpg);
-    
-    }
-    .portfolio_foto_three{
-        background-image: url(../images/mob/mob_portfolio3_4x.jpg);
-    }
+
     .foother_conteiner{
         background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_4x.jpg);
     }

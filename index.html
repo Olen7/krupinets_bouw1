@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/desktop.css">
 
 </head>
-<body>
+<body class="body_box">
     <header class="header heder_about header_wrapper">
         <div class="container container_header">
             <nav class="heder">
@@ -48,6 +48,10 @@
                     </li>
                 </ul>
             </nav>
+            <ul class="name_lang_list">
+                <li class="name_lang_item"><button type="button" class="name_lang_btn">en</button></li>
+                <li class="name_lang_item"><button type="button" class="name_lang_btn">nl</button></li>
+            </ul>
             <button type="button" class="header__button" data-menu-open>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M4.5 27H31.5M4.5 18H31.5M4.5 9H31.5" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -149,18 +153,117 @@
         </section>
         <section class="portfolio">
             <h2 class="portfolio_name">Portfolio</h2>
-            <ul>
-                <li class="portfolio_foto_one">
-                    <p class="portfolio_text">bathrooms</p>
-                </li>
-                <li class="portfolio_foto_two">
-                    <p class="portfolio_text">General</p>
-                </li>
-                <li class="portfolio_foto_three">
-                    <p class="portfolio_text">dormer</p>
-                </li>
-            
-            </ul>
+            <div class="portfolio_wrapper">
+                    <div class="portfolio_foto portfolio_one">
+                        <picture>
+                            <source
+                                srcset="
+                                
+                                ./images/desc/desc_portfolio1_1x.jpg 1x,
+                                ./images/desc/desc_portfolio1_2x.jpg 2x,
+                                ./images/desc/desc_portfolio1_4x.jpg 4x
+                            "
+                                media="(min-width: 1440px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/tab/tablet_portfolio1_1x.jpg 1x,
+                                    ./images/tab/tablet_portfolio1_2x.jpg 2x,
+                                    ./images/tab/tablet_portfolio1_4x.jpg 4x
+                            "
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/mob/mob_portfolio1_1x.jpg 1x,
+                                    ./images/mob/mob_portfolio1_2x.jpg 2x,
+                                    ./images/mob/mob_portfolio1_4x.jpg 4x
+                            "
+                            media="(max-width: 767px)"
+                            />
+                            <img
+                                src="./images/mob/mob_portfolio1_1x.jpg "
+                                alt="portfolio picture"
+                                class="portfolio_img portfolio_first"
+                            />
+                          </picture>
+                        
+                        <p class="portfolio_text">bathrooms</p>
+                    </div>
+                    <div class="portfolio_box">
+                        <div class="portfolio_foto">
+                            <picture>
+                                <source
+                                    srcset="
+                                    
+                                    ./images/desc/desc_portfolio2_1x.jpg 1x,
+                                    ./images/desc/desc_portfolio2_2x.jpg 2x,
+                                    ./images/desc/desc_portfolio2_4x.jpg 4x
+                                "
+                                    media="(min-width: 1440px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tab/tablet_portfolio2_1x.jpg 1x,
+                                        ./images/tab/tablet_portfolio2_2x.jpg 2x,
+                                        ./images/tab/tablet_portfolio2_4x.jpg 4x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mob/mob_portfolio2_1x.jpg 1x,
+                                        ./images/mob/mob_portfolio2_2x.jpg 2x,
+                                        ./images/mob/mob_portfolio2_4x.jpg 4x
+                                "
+                                media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mob/mob_portfolio2_1x.jpg "
+                                    alt="portfolio picture"
+                                    class="portfolio_img portfolio_card"
+                                />
+                              </picture>
+                            <p class="portfolio_text">General</p>
+                        </div>
+                        <div class="portfolio_foto">
+                            <picture>
+                                <source
+                                    srcset="
+                                    
+                                    ./images/desc/desc_portfolio3_1x.jpg 1x,
+                                    ./images/desc/desc_portfolio3_2x.jpg 2x,
+                                    ./images/desc/desc_portfolio3_4x.jpg 4x
+                                "
+                                    media="(min-width: 1440px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tab/tablet_portfolio3_1x.jpg 1x,
+                                        ./images/tab/tablet_portfolio3_2x.jpg 2x,
+                                        ./images/tab/tablet_portfolio3_4x.jpg 4x
+                                "
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mob/mob_portfolio3_1x.jpg 1x,
+                                        ./images/mob/mob_portfolio3_2x.jpg 2x,
+                                        ./images/mob/mob_portfolio3_4x.jpg 4x
+                                "
+                                media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mob/mob_portfolio3_1x.jpg "
+                                    alt="portfolio picture"
+                                    class="portfolio_img portfolio_card"
+                                />
+                              </picture>
+                            <p class="portfolio_text">dormer</p>
+                        </div>
+                    </div>
+                    
+            </div>
             
         </section>
     </body>

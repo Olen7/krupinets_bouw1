@@ -1,0 +1,21 @@
+@media screen and (min-width: 1440px){
+    .portfolio_wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+    .portfolio_box{
+        margin-right: 16px;
+        
+    }
+    .portfolio_one{
+        height: 720px;
+    }
+    .portfolio_card{
+        height: 352px;
+    }
+    .portfolio_first{
+        height: 712px;
+    }
+}

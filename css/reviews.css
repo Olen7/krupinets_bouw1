@@ -42,6 +42,22 @@
 .button_reviews_load{
 
 }
+.review_modal{
+    background-color: #FFF;
+    padding: 24px 20px;
+    /* width: 350px; */
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    min-height: 797px;
+}
+
+.upload_file{
+    width: 138px;
+    height: 139px;
+}
 .review_write{
      
 }
@@ -52,12 +68,12 @@
 }
 .mob_menu_review {
     position: fixed;
-    top: 0px;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 100;
     width: 100%;
     height: 100%;
-    background-color: #FFF;
-    padding: 24px 20px;
+    background-color: var(--fill-60, rgba(39, 39, 39, 0.60));
 }
 .write_menu_name{
     color: var(--orange, #CD7829);
@@ -69,12 +85,21 @@
     line-height: normal;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 767px){
+    .write_menu_name {
+        max-width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.review_text{
     margin-bottom: 14px;
 }
-.conteiner_h1_button_close{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.upload_file_box{
+    margin-bottom: 14px;
 }
 
 .review_label_name{
@@ -87,13 +112,14 @@
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
-.review_write_form{
-    margin-bottom: 14px;
-}
+
 .mob_close_button_review {
     border: none;
     background-color: transparent;
     display: flex;
+    position: absolute;
+    top: 24px;
+    right: 20px;
 }
 .review_label_text{
     padding: 12px;
@@ -104,6 +130,7 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.06em;
+    border: 1px solid var(--grey-text, #7C7777);
 }
 .review_form{
     display: flex;
@@ -113,7 +140,9 @@
     margin-bottom: 14px;
 }
 .textarea_review{
+    resize: none;
     height: 240px;
+    border: 1px solid var(--grey-text, #7C7777);
 }
 .modal_button_reviews_send{
     background-color: var(--orange, #CD7829);
