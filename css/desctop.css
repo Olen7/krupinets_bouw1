@@ -1,0 +1,50 @@
+@media screen and (min-width: 1400px){
+    /*HEADER*/
+    .header {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    .heder_svg{
+        display: none;
+    }
+    .container_header{
+        max-width: 1400px;
+        padding-left: 119px;
+        padding-right: 119px;
+
+    }
+    .heder_svg_desctop{
+        display: flex;
+        margin-right:330px;
+    }
+    .header__id{
+        font-size: 20px;
+
+    }
+    .header__item:not(:last-child){
+        margin-right: 36px;
+    }
+    .heder_nav{
+        margin-right: 36px;
+    }
+    .name_lang_btn{
+        font-size: 20px;
+    }
+    /*HERO*/
+    .hero_name{
+        font-size: 60px;
+        letter-spacing: 0.05em;
+    }
+    .hero_block{
+        min-width: 628px;
+    }
+    .hero_subtitle{
+        font-size: 28px;
+        letter-spacing: 0.03em;
+    }
+    .hero_button{
+        font-size: 24px;
+        letter-spacing: 0.04em;
+        padding: 16px 32px;
+    }
+}

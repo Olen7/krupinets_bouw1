@@ -90,6 +90,7 @@
     }
     .is_scrolled .header_wrapper{
         background-color: rgb(188 188 186);
+        transition-duration: 2000ms;
     }
         /* HERO */
     .section_contact {
