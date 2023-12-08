@@ -151,7 +151,7 @@ img {
 }
 */
 .body_box{
-    background-c: var(--graphite, #272727);
+    background-color: var(--graphite, #272727);
 }
 
 /* HEADER */
@@ -496,6 +496,9 @@ img {
     letter-spacing: 1px;
     padding-bottom: 20px;
 }
+.benefits_svg_desktop{
+    display: none;
+}
 /* SECTION 5 */
 .portfolio{
     background: var(--graphite, #272727);
@@ -550,6 +553,9 @@ img {
     transform: translate(-50%, -50%)
 }
 /* FOOTHER */
+.foother_link_desctop{
+    display: none;
+}
 .foother_conteiner{
     padding: 28px 20px;
     /* background: url(), lightgray 50% / cover no-repeat; */

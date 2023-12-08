@@ -246,6 +246,10 @@
         justify-content: space-between;
         margin-bottom: 20px;
     }
+    .foother_tab_amster{
+        display: flex;
+        flex-direction: column;
+    }
     .header__id{
 
     }

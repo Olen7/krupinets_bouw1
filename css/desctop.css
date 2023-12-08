@@ -54,6 +54,7 @@
     .is_scrolled .header_wrapper{
         padding-top: 21px;
         padding-bottom: 21px;
+        z-index: 1;
     }
     /*SECTION 1*/
     .about{
@@ -95,7 +96,7 @@
         height: 285px;
     }
     .service_list{
-        gap: 28px 10px;
+        gap: 28px 5px;
     }
     .service_name{
         font-size: 20px;
@@ -127,6 +128,7 @@
         display: none;
     }
     .benefits_svg_desktop{
+        display: flex;
         padding-top: 60px;
         padding-bottom: 30px;
         box-sizing: content-box;
@@ -137,7 +139,7 @@
         height: 285px;
     }
     .benefits_list{
-        gap:14px;
+        gap:5px;
     }
     .benefits_text{
         font-size: 20px;
@@ -146,5 +148,106 @@
         height:auto;
         line-height: 1.6em; /* 160% */
         padding-bottom:60px;
+    }
+    /* BENEFITS */
+    .portfolio_name{
+        font-size: 60px;
+        letter-spacing: 0.05em;
+    }
+
+
+    .portfolio_one{
+        width: 720px;
+        height: 720px;
+    }
+    .portfolio_wrapper{
+        z-index: 0;
+    }
+    .portfolio_two_thre{
+        width: 720px;
+        height: 352px;
+    }
+    .portfolio_foto:not(:last-child){
+        margin-bottom:10px;
+    }
+    /* FOOTHER */
+    .footer_fedback_block{
+        position: absolute;
+        top: 323%;
+        left: 34%;
+    }
+    .foother_conteiner{
+        padding:  40px 120px;
+    }
+    .conteiner_address_icon_tab{
+        padding-top: 0px;
+    }
+    .foother_link_svg{
+        display: none;
+    }
+    .foother_link_desctop{
+        display: flex;
+        margin-bottom: 28px;
+    }
+    .foother_item:not(:last-child) {
+        margin-bottom: 28px;
+    }
+    .foother_links {
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+    .name-text_tab{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-bottom: 12px;
+    }
+    .icon-person_tab{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        width: 444px;
+        height: 54px;
+    }
+    .modal-form_tab {
+        margin-bottom: 16px;
+    }
+    .address_button{
+        padding: 16px 32px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    .address_contact{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-bottom:28px;
+    }
+    .address_social:not(:last-child){
+        margin-bottom:28px;
+    }
+    .address_link{
+        font-size: 20px;
+    }
+    .address {
+        margin-bottom: 28px;
+    }
+    .foother_desctop_amster{
+        display: flex;
+        flex-direction: column;
+    }
+    .adderss_copyright{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+    .foother_text{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        max-width:610px;
+    }
+    .copyright_desctop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab_conteiner_index {
+        margin-bottom: 120px;
     }
 }
