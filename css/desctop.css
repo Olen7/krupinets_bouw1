@@ -1,5 +1,25 @@
 @media screen and (min-width: 1400px){
     /*HEADER*/
+      .portfolio_wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    .portfolio_box{
+        margin-right: 16px;
+        
+    }
+    .portfolio_one{
+        height: 720px;
+    }
+    .portfolio_card{
+        height: 352px;
+    }
+    .portfolio_first{
+        height: 712px;
+    }
     .header {
         padding-top: 21px;
         padding-bottom: 21px;
@@ -28,6 +48,9 @@
         margin-right: 36px;
     }
     .name_lang_btn{
+        font-size: 20px;
+    }
+    .header__id_black{
         font-size: 20px;
     }
     /*HERO*/
@@ -64,7 +87,7 @@
     .container_section_about{
         padding-left: 120px;
         padding-right: 120px;
-        width: 558px;
+        width: 651px;
         height: 680px;
         box-sizing: content-box;
     }
@@ -97,6 +120,8 @@
     }
     .service_list{
         gap: 28px 5px;
+        justify-content: space-around;
+
     }
     .service_name{
         font-size: 20px;
@@ -140,6 +165,7 @@
     }
     .benefits_list{
         gap:5px;
+        justify-content: space-around;
     }
     .benefits_text{
         font-size: 20px;
@@ -173,10 +199,12 @@
     /* FOOTHER */
     .footer_fedback_block{
         position: absolute;
-        top: 323%;
-        left: 34%;
+        top: 43%;
+        left: 50% ;
+        transform: translate(-50%, -50%);
     }
     .foother_conteiner{
+        position: relative;
         padding:  40px 120px;
     }
     .conteiner_address_icon_tab{
@@ -249,5 +277,67 @@
     }
     .tab_conteiner_index {
         margin-bottom: 120px;
+    }
+    /* ABOUT */
+    .section_about_back{
+        padding-top: 98px;
+    }
+    .section_name_us{
+        font-size: 60px;
+        letter-spacing: 0.05em;
+        margin-bottom:28px;
+    }
+    .about_block{
+        font-size: 24px;
+        letter-spacing: 0.04em;
+        width: 560px;
+        height: 192px;
+        box-sizing: border-box;
+        line-height: 32px;
+    }
+    .foto_tablet_about_us{
+        background-image: url(../images/desc/about/desctop_about_us1_1x.jpg);
+    }
+    .about_foto{
+        background-size: none; 
+     background-image: none;
+    }
+    .section_block_mision{
+        font-size: 24px;
+        letter-spacing: 0.05em;
+
+    }
+    .foto_tab_about_mission {
+        height: 774px;
+        background-image: url(../images/desc/about/desctop_about_us2_1x.jpg);
+        
+    }
+    .section_block{
+        font-size: 24px;
+        letter-spacing: 0.05em;
+    }
+    .container_section_about_mission{
+        padding-right: 120px;
+        width: 771px;
+        height: 774px;
+    }
+    .mission_tab_section_choose {
+        background-image: url(../images/desc/about/desctop_about_us3_1x.jpg);
+    }
+    .container_section_about_chose{
+        padding-left: 120px;
+        padding-right: 0px;
+        width: 771px;
+        height: 795px;
+    }
+    .items_section_block{
+        height: 512px;
+        box-sizing: border-box;
+        line-height: 32px;    
+    }
+    .items_section_block_two{
+        height: 672px;
+        box-sizing: border-box;
+        line-height: 32px;
     }
 }
