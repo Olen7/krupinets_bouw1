@@ -128,7 +128,7 @@
         letter-spacing: 0.05em;
     }
     .foto_service_one{
-        background-image: url(../images/desc/desctop_service1_1x.jpg), lightgray 50%, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/desc/desctop_service1_1x.jpg);
     }
     .foto_service_two{
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%), url(../images/desc/desctop_service2_1x.jpg);
@@ -203,7 +203,7 @@
         left: 50% ;
         transform: translate(-50%, -50%);
     }
-    .foother_conteiner{
+    .foother-conteiner{
         position: relative;
         padding:  40px 120px;
     }
@@ -339,5 +339,161 @@
         height: 672px;
         box-sizing: border-box;
         line-height: 32px;
+    }
+    /* 404 */
+    .eror_name {
+        font-size: 200px;
+        letter-spacing: 0.006em;
+    }
+    
+    .text_name {
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    .text_name_parahrafs{
+        width: 506px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    .text_name_parahraf{
+        width: 506px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    .eror_conteiner {
+        height: auto;
+        background-image: url(../images/desc/eror/desctop_eror_1x.jpg);
+        margin-top: 72px;
+        padding: 60px 120px 256px;
+    }
+    .eror_button {
+        padding: 16px 32px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    
+    /* REVIEW */
+    .tab_box_review {
+        margin-top: 98px;
+    }
+    .container {
+
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .reviews_section {
+        padding: 40px 0 60px 0;
+    }
+    .reviews_name {
+        font-size: 60px;
+        letter-spacing: 0.05em;
+        margin-bottom: 60px;
+    }
+    .section_button_reviews {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 64px;
+        padding: 16px 32px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    /* REVIEW MODAL*/
+    .review_modal {
+        padding: 40px;
+        width: 770px;
+    }
+    .write_menu_name {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .review_text {
+        gap: 14px;
+    }
+    .mob_close_button_review {
+        padding: 10px;
+        top: 30px;
+        right: 30px;
+    }
+    .review_text {
+        margin-bottom: 28px;
+    }
+    .review_label_name {
+        font-size: 24px;
+        letter-spacing: 0.04em;
+        margin-bottom: 12px;
+    }
+    .review_label_text {
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+    .modal_button_reviews_send {
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        padding: 16px 32px;
+    }
+    /* CONTACT */
+    .section_contact {
+        background-image: url(../images/desc/eror/desctop_eror_1x.jpg);
+        margin-top: 98px;
+        padding: 40px 120px 60px;
+    }
+    .contact_name {
+        font-size: 60px;
+        letter-spacing: 0.05em;
+        margin-bottom: 60px;
+    }
+    .conteiner_contact_desctop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .address_social_contact {
+        font-size: 24px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .address_link_contact {
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        margin-left: 0px;
+    }
+    .contact_item{
+        width: 346px;
+    }
+    .name-text {
+        font-size: 20px;
+        letter-spacing: 0.06em;
+    }
+    .icon-person {
+        font-size: 20px;
+        letter-spacing: 0.06em;
+    }
+    .feedback-textarea {
+        font-size: 20px;
+        letter-spacing: 0.06em;
+    }
+    .feedback {
+        font-size: 20px;
+        letter-spacing: 0.06em;
+        margin-bottom: 8px;
+    }
+    .modal-form {
+        margin-bottom: 16px;
+    }
+    .feedback-block {
+        margin-bottom: 16px;
+    }
+    .modal-btn-send {
+        display: flex;
+        width: 336px;
+        height: 48px;
+        padding: 16px 32px;
+        font-size: 24px;
+        letter-spacing: 0.04em;
+        align-items: center;
+        justify-content: center;
     }
 }

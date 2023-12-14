@@ -92,6 +92,7 @@
         background-color: rgb(188 188 186);
         transition-duration: 1000ms;
         
+        
     }
         /* HERO */
     .section_contact {
@@ -144,12 +145,9 @@
     /* ABOUT */
     .about_section {
         background-image: url(../images/tab/tablet_about_1x.jpg);
+        background-size: 586px 680px;
+    }
 
-    }
-    .about_section {
-       
-        
-    }
         /* SERVICE */
     .name_service {
         font-size: 48px;
@@ -200,23 +198,12 @@
         letter-spacing: 0.06em;
         
     }
-    /* .portfolio_foto_one {
-        height: 352px;
-        background-image: url(../images/tab/tablet_portfolio1_1x.jpg);
-    }
-    .portfolio_foto_two {
-        height: 352px;
-        background-image: url(../images/tab/tablet_portfolio2_1x.jpg);
-    }
-    .portfolio_foto_three {
-        height: 352px;
-        background-image: url(../images/tab/tablet_portfolio3_1x.jpg);
-    } */
     /* FOOTHER */
-    .foother_conteiner{
+    .foother-conteiner{
         padding: 40px 32px;
-        
-    }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/tab/foother_tab_1x.jpg);
+}
+    
     .foother_blok_index{
         display: flex;
         align-items: stretch;
@@ -393,9 +380,19 @@
     .contact_section_conteiner {
         margin-bottom: 60px;
     }
-
-
-
+    .adderss_copyright{
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+    
+    .foother_text {
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        max-width:498px;
+    }
+    .address_button{
+        margin-bottom: 40px;
+    }
 
 
 }
