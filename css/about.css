@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row-reverse;
     background: var(--graphite, #272727);
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .container_section_about{
     padding: 8px 0 0 20px;
@@ -29,6 +29,7 @@
     background-position: right top;
 }
 .section_name_us{
+    position: relative;
     color: var(--orange, #CD7829);
     font-family: Orbitron;
     font-size: 32px;
@@ -40,23 +41,25 @@
     padding-top: 20px;
     margin-bottom: 32px;
     background-color:linear-gradient(180deg, rgba(39, 39, 39, 0.00) 100%);
+    z-index: 2;
 }
 
 .about_block{
     color: var(--white, #EEE);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.05em;
     padding-right: 20px;
-    padding-bottom: 240px;
+    padding-bottom: 229px;
+    max-width: 349px;
 }
 .section_block{
     color: var(--white, #EEE);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -70,7 +73,7 @@
 .section_block_mision{
     color: var(--white, #EEE);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -83,7 +86,7 @@
     margin-bottom: 40px;
 }
 .container_section_about_mission{
-    padding: 0 20px 20px 0;
+    padding: 20px 20px 20px 0;
 }
 .mission_foto{
     background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_1x.jpg);
@@ -113,6 +116,24 @@
     background-repeat: no-repeat;
     background-size: 370px 975px;
     background-position: right top;
+
+    
+}
+.section_about_choose{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.section_about_choose::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: -1px 0px 20px 50px rgb(39, 39, 39);
+    z-index: 1; 
     
 }
 .section_about_back{
@@ -125,6 +146,15 @@
 .container_section_about_chose{
     padding: 8px 0 0 20px;
 }
+.scroll{
+    box-shadow: 0px 0px 10px 51px rgb(39, 39, 39);
+}
+body.scrolled .scroll{
+    transition-duration: 500ms;
+    box-shadow: none;
+    z-index: 3;
+}
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
