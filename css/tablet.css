@@ -94,6 +94,9 @@
         
         
     }
+    .scroll {
+        box-shadow: none;
+    }
         /* HERO */
     .section_contact {
             background-image: url(../images/tab/contact/contact1_1x.jpg);
@@ -169,6 +172,18 @@
         
     
     }
+    .foto_service_one{
+        background-image: url(../images/tab/tablet_service1_1x.jpg);
+    }
+    .foto_service_two{
+        background-image: url(../images/tab/tablet_service2_1x.jpg);
+    }
+    .foto_service_three{
+        background-image: url(../images/tab/tablet_service3_1x.jpg);
+    }
+    .foto_service_four{
+        background-image: url(../images/tab/tablet_service4_1x.jpg);
+    }
     /* BENEFITS */
     .benefits{
         padding-top: 60px;
@@ -242,7 +257,7 @@
     }
     /* ABOUT INDEX */
     .foto_tablet_about_us{
-        background-size: auto;
+        background-size: 530px 520px;
         background-repeat: no-repeat;
         background-position: right top;
         background-image: url(../images/tab/about/tab_about_us1_1x.jpg);
@@ -299,6 +314,9 @@
     }
     .section_about_mision{
         margin: 0px;
+    }
+    .section_about_choose::before{
+        display: none;
     }
     /* 404 INDEX */
     .eror_conteiner {
@@ -393,6 +411,36 @@
     .address_button{
         margin-bottom: 40px;
     }
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .foto {
+        background-image: url(../images/tab/tablet_hiro_2x.jpg);
+    }
+    .about_section {
+        background-image: url(../images/tab/tablet_about_2x.jpg);
+    }
+    .foto_tablet_about_us {
+
+        background-image: url(../images/tab/about/tab_about_us1_2x.jpg);
+    }
+
+}  
+    @media (min-device-pixel-ratio: 3),
+(min-resolution: 300dpi),
+(min-resolution: 3dppx){
+    .foto {
+        background-image: url(../images/tab/tablet_hiro_4x.jpg);
+    }
+    .about_section {
+        background-image: url(../images/tab/tablet_about_4x.jpg);
+    }
+    .foto_tablet_about_us {
+
+        background-image: url(../images/tab/about/tab_about_us1_4x.jpg);
+    }
+    
+}
 
 
 }

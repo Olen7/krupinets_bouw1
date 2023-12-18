@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/reviews.css">
+    <!-- <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/reviews.css"> -->
     <link rel="stylesheet" href="./html/about.html">
     <link rel="stylesheet" href="./html/reviews.html">
     <link rel="stylesheet" href="./html/contact.html">
@@ -121,12 +121,10 @@
         <section class="about">
                 <h2 class="name_service container_section">Services</h2>
                 <ul class="service_list">
-                    <li class="foto_service_one tablet_cont_with">
-
-                          </picture><p class="service_name">Bathroom Renovation</p></li>
-                    <li class="foto_service_two tablet_cont_with"><p class="service_name">General Renovation</p></li>
-                    <li class="foto_service_three tablet_cont_with"><p class="service_name">Dormer Constructions</p></li>
-                    <li class="foto_service_four tablet_cont_with"><p class="service_name">Painting and Plastering</p></li>
+                    <li class="foto_service_one tablet_cont_with"><div class="service_conteiner_gradient"><p class="service_name">Bathroom Renovation</p></div></li>
+                    <li class="foto_service_two tablet_cont_with"><div class="service_conteiner_gradient"><p class="service_name">General Renovation</p></div></li>
+                    <li class="foto_service_three tablet_cont_with"><div class="service_conteiner_gradient"><p class="service_name">Dormer Constructions</p></div></li>
+                    <li class="foto_service_four tablet_cont_with"><div class="service_conteiner_gradient"><p class="service_name">Painting and Plastering</p></div></li>
 
                 </ul>
                 
@@ -150,7 +148,7 @@
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="101" height="100" viewBox="0 0 101 100" fill="none" class="benefits_svg_desktop">
                             <path d="M84.875 28.125H75.5V18.75C75.5 17.0924 74.8415 15.5027 73.6694 14.3306C72.4973 13.1585 70.9076 12.5 69.25 12.5H31.75C30.0924 12.5 28.5027 13.1585 27.3306 14.3306C26.1585 15.5027 25.5 17.0924 25.5 18.75V28.125H16.125C13.6386 28.125 11.254 29.1127 9.49587 30.8709C7.73772 32.629 6.75 35.0136 6.75 37.5V81.25C6.75 82.9076 7.40848 84.4973 8.58058 85.6694C9.75268 86.8415 11.3424 87.5 13 87.5H88C89.6576 87.5 91.2473 86.8415 92.4194 85.6694C93.5915 84.4973 94.25 82.9076 94.25 81.25V37.5C94.25 35.0136 93.2623 32.629 91.5041 30.8709C89.746 29.1127 87.3614 28.125 84.875 28.125ZM31.75 18.75H69.25V28.125H31.75V18.75ZM88 81.25H13V53.125H38V68.75H63V53.125H88V81.25ZM44.25 53.125H56.75V62.5H44.25V53.125ZM13 46.875V37.5C13 36.6712 13.3292 35.8763 13.9153 35.2903C14.5013 34.7042 15.2962 34.375 16.125 34.375H84.875C85.7038 34.375 86.4987 34.7042 87.0847 35.2903C87.6708 35.8763 88 36.6712 88 37.5V46.875H13Z" fill="#CD7829"/>
-                          </svg>
+                        </svg>
                     <p class="benefits_text">experience</p></li>
                 <li class="benefits_item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none" class="benefits_svg">
@@ -158,7 +156,7 @@
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="101" height="100" viewBox="0 0 101 100" fill="none" class="benefits_svg_desktop">
                         <path d="M93.9375 38.0039C93.559 36.8374 92.8457 35.8081 91.8865 35.044C90.9273 34.28 89.7645 33.815 88.5429 33.707L65.3437 31.707L56.25 10.082C55.7765 8.94733 54.9779 7.97808 53.9547 7.29632C52.9315 6.61456 51.7295 6.25078 50.5 6.25078C49.2705 6.25078 48.0684 6.61456 47.0452 7.29632C46.022 7.97808 45.2234 8.94733 44.75 10.082L35.6836 31.707L12.457 33.7188C11.2306 33.8218 10.0619 34.2847 9.09746 35.0493C8.13304 35.8139 7.41584 36.8462 7.03579 38.0168C6.65574 39.1874 6.62977 40.4442 6.96112 41.6295C7.29247 42.8148 7.96641 43.8759 8.8984 44.6797L26.5195 60.0781L21.2382 82.9453C20.959 84.142 21.0387 85.3944 21.4673 86.546C21.896 87.6976 22.6546 88.6973 23.6484 89.4201C24.6421 90.1429 25.8269 90.5567 27.0546 90.6098C28.2822 90.663 29.4983 90.353 30.5507 89.7187L50.4726 77.6094L70.4375 89.7187C71.4899 90.353 72.706 90.663 73.9337 90.6098C75.1613 90.5567 76.3461 90.1429 77.3398 89.4201C78.3336 88.6973 79.0922 87.6976 79.5209 86.546C79.9495 85.3944 80.0292 84.142 79.75 82.9453L74.4726 60.0547L92.0898 44.6797C93.0217 43.8731 93.6943 42.809 94.023 41.6212C94.3518 40.4333 94.322 39.1749 93.9375 38.0039ZM87.9922 39.957L70.375 55.332C69.5176 56.0779 68.8797 57.0434 68.5301 58.1247C68.1804 59.2059 68.1322 60.3621 68.3906 61.4687L73.6836 84.375L53.7343 72.2656C52.761 71.6729 51.6434 71.3594 50.5039 71.3594C49.3643 71.3594 48.2467 71.6729 47.2734 72.2656L27.3515 84.375L32.6093 61.4844C32.8677 60.3777 32.8195 59.2216 32.4699 58.1403C32.1202 57.059 31.4824 56.0935 30.625 55.3477L13 39.9805C12.9985 39.9688 12.9985 39.957 13 39.9453L36.2187 37.9375C37.3523 37.8376 38.4371 37.4301 39.3561 36.7589C40.2751 36.0877 40.9934 35.1783 41.4336 34.1289L50.5 12.5312L59.5625 34.1289C60.0026 35.1783 60.7209 36.0877 61.6399 36.7589C62.5589 37.4301 63.6437 37.8376 64.7773 37.9375L88 39.9453V39.9727L87.9922 39.957Z" fill="#CD7829"/>
-                      </svg>
+                    </svg>
                     <p class="benefits_text">innovations</p></li>
                 <li class="benefits_item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none" class="benefits_svg">

@@ -1,5 +1,5 @@
 
-.body{
+.body_box{
     background: var(--graphite, #272727);
 }
 .heder_about{
@@ -40,7 +40,6 @@
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 32px;
-    background-color:linear-gradient(180deg, rgba(39, 39, 39, 0.00) 100%);
     z-index: 2;
 }
 
