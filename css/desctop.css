@@ -301,7 +301,7 @@
     }
     .about_foto{
         background-size: none; 
-     background-image: none;
+        background-image: none;
     }
     .section_block_mision{
         font-size: 24px;
@@ -314,7 +314,7 @@
         
     }
     .section_block{
-        font-size: 24px;
+        font-size: 23px;
         letter-spacing: 0.05em;
     }
     .container_section_about_mission{
@@ -346,6 +346,9 @@
     }
     .about_block{
         max-width: 558px;
+    }
+    .section_block:not(:last-child) {
+        margin-bottom: 15px;
     }
     /* 404 */
     .eror_name {
@@ -408,7 +411,7 @@
     /* REVIEW MODAL*/
     .review_modal {
         padding: 40px;
-        width: 770px;
+        width: 850px;
     }
     .write_menu_name {
         font-size: 48px;
@@ -420,7 +423,7 @@
     .mob_close_button_review {
         padding: 10px;
         top: 30px;
-        right: 30px;
+        right: 104px;
     }
     .review_text {
         margin-bottom: 28px;
@@ -438,6 +441,9 @@
         font-size: 24px;
         letter-spacing: 0.05em;
         padding: 16px 32px;
+    }
+    .upload_file_box{
+        margin-bottom: 28px;
     }
     /* CONTACT */
     .section_contact {

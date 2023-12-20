@@ -1,3 +1,6 @@
+.heder_about {
+    background-color: var(--graphite, #272727);
+}
 .reviews_section{
     background-color: var(--graphite, #272727);
     padding: 20px 0 40px 0;
@@ -99,10 +102,22 @@
     margin-bottom: 14px;
 }
 .upload_file_box{
+    pointer-events: none;
+    text-align: left;
+    color: var(--graphite, #272727);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
     margin-bottom: 14px;
+
 }
 
 .review_label_name{
+    pointer-events: none;
+    text-align: left;
     color: var(--graphite, #272727);
     font-family: Poppins;
     font-size: 16px;
@@ -156,4 +171,32 @@
     letter-spacing: 0.06em;
     border: none;
     padding: 12px 24px ;
+}
+/* TEST */
+input[type="file"]{
+    display: none;
+}
+
+.review_label_cont{
+    pointer-events: auto;
+    overflow: hidden;
+    display: flex;
+    width: 138px;
+    height: 139px;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--text-not-active, #7C7777);
+    margin-top: 4px;
+}
+.review_label_upload{
+    width: 77px;
+    height: 60px;
+    color: var(--text-not-active, #7C7777);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
 }

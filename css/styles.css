@@ -221,6 +221,7 @@ img {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 24px;
+    padding-top: 20px;
 }
 .section_about_text{
     color: var(--white, #EEE);

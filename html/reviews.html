@@ -8,12 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reviews.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/404_eror.css">
-    <link rel="stylesheet" href="./html/about.html">
-    <link rel="stylesheet" href="./html/reviews.html">
-    <link rel="stylesheet" href="./html/contact.html">
-    <link rel="stylesheet" href="./html/404_eror.html">
     <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/desctop.css">
 
@@ -138,14 +132,19 @@
                                 placeholder="Your review"
                                 ></textarea>
                             </div>
-                            <div class="upload_file_box">
-                                <label for="upload_file" class="review_label_name">You can upload photos</label>
+                            <div class="upload_file_box ">You can upload photos
+                                <label for="upload_file" class="review_label_cont" > <div class="review_label_upload">+ Upload</div>
+                                    <!-- <div class="sss" id="upload_file"  onclick="document.getElementById('upload_file').click();">
+                                        <p class="www" id="child"></p></div> -->
+                                    </label>
                                 <input  
                                         type="file" 
                                         id="upload_file"
                                         name="upload_file"
                                         class="upload_file"
                                         > 
+                                
+                                        
 
                             </div>
 
@@ -320,5 +319,6 @@
     <script src="../js/menu.js"></script>
     <script src="../js/heder.js"></script>
     <script src="../js/review.js"></script>
+
 </body>
 </html>

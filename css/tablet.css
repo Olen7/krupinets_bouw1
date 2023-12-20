@@ -353,7 +353,7 @@
         flex-direction: row;
     }
     .review_text{
-       gap:  8px;
+        gap:  8px;
     }
     .tab_box_review{
         display: flex;
@@ -361,12 +361,42 @@
         margin-top: 72px;
     }
     .section_button_reviews {
-        
         margin-top: 0; 
     }
-    .reviews_name {
-        
+    .reviews_name { 
         margin-bottom: 48px;
+    }
+    .review_label_cont{
+        margin-top: 12px;
+    }
+    .review_label_name{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-bottom: 12px;
+    }
+    .upload_file_box{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+    }
+    .write_menu_name{
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .mob_close_button_review {
+        top: 30px;
+        right: 35px;
+    }
+    .textarea_review {
+        height: 307px;
+    }
+    .review_label_cont {
+        width: 189px;
+        height: 191px;
+    }
+    .review_label_upload {
+        font-size: 20px;
+        letter-spacing: 0.05em;
     }
     /* CONTACT INDEX */
     .contact_name {
@@ -376,11 +406,9 @@
     }
     .icon-person {
         width: 590px;
-        
     }
     .feedback-textarea {
         width: 590px;
-       
     }
     .address_social_contact {
         font-size: 20px;

@@ -3,6 +3,9 @@
 .body_box{
     background: var(--graphite, #272727);
 }
+.heder_about {
+    background-color: var(--graphite, #272727);
+}
 .heder_about_contact{
     background-color: rgb(37 37 37);
 }
