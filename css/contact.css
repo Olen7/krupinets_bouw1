@@ -9,15 +9,22 @@
 .heder_about_contact{
     background-color: rgb(37 37 37);
 }
+.header-us{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* section 1 */
 .section_contact{
-    background-image: url(../images/mob/contact/contact_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     margin-top: 55px;
     padding: 24px 20px;
 }
 .contact_name{
+    position: relative;
     color: var(--orange, #CD7829);
     font-family: Orbitron;
     font-size: 32px;
@@ -31,9 +38,14 @@
 .contact_section_conteiner{
     margin-bottom: 40px;
 }
-.address_contact_section{
-
+.about-us-picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+    height: auto;
 }
+
 .contact_item{
     
 }
@@ -146,23 +158,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-    .section_contact{
-        background-image: url(../images/mob/contact/contact_2x.jpg);
-        
-    }
-
-}
-
-
-@media (min-device-pixel-ratio: 3),
-(min-resolution: 300dpi),
-(min-resolution: 3dppx){
-    .section_contact{
-        background-image: url(../images/mob/contact/contact_4x.jpg);
-        
-    }
-
+.conteiner_contact_desctop{
+    position: relative;
 }

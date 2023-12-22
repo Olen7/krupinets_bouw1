@@ -2,31 +2,31 @@
 .body_box{
     background: var(--graphite, #272727);
 }
-.heder_about{
-    
-    
+.heder_about {
+    z-index: 2;
+    background-color: var(--graphite, #272727);
 }
 .section_about_choose{
     background: var(--graphite, #272727);
-    margin-top: 20px;
 }
 .section_about_mision{
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     background: var(--graphite, #272727);
     /* margin-top: 20px; */
 }
+.conteiner-aboutus{
+    width: 100%;
+}
 .container_section_about{
     padding: 8px 0 0 20px;
-    
-    
 }
-.about_foto{
-    
-    background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_1x.jpg);
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position: right top;
+.conteiner-our-miss{
+    max-width: 364px;
+}
+.conteiner-our-mission{
+    max-width: 364px;
 }
 .section_name_us{
     position: relative;
@@ -40,9 +40,15 @@
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 32px;
-    z-index: 2;
+    z-index: 1;
 }
-
+.about-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+}
 .about_block{
     color: var(--white, #EEE);
     font-family: Poppins;
@@ -65,11 +71,14 @@
     letter-spacing: 0.05em;
     padding-right: 20px;
     margin-bottom: 0px;
+    max-width: 364px;
 }
 .section_block:not(:last-child){
     margin-bottom: 40px;
 }
 .section_block_mision{
+    display: flex;
+    justify-content: flex-end;
     color: var(--white, #EEE);
     font-family: Poppins;
     font-size: 18px;
@@ -83,40 +92,47 @@
 }
 .section_block_mision:not(:last-child) {
     margin-bottom: 40px;
+} 
+.section_about_back{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.section_about_back::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: -1px 0px 20px 107px rgb(39, 39, 39);
+    z-index: 1;
 }
 .container_section_about_mission{
     padding: 20px 20px 20px 0;
 }
-.mission_foto{
-    background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
 .mission_section{
+    position: relative;
+    height: 785px;
+    background: rgba(39, 39, 39, 0.80);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
-.header_wrappers{
-    background-color: rgb(37 37 37);
-}
+
 .is_scrolled .header_wrapper{
     position: fixed;
     top: 0;
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
 .mission_section_choose{
-    background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 370px 975px;
-    background-position: right top;
-
-    
+    padding: 10px 0 0 20px;
+    height: 900px;
+    position: relative;
+    background: rgba(39, 39, 39, 0.80);
 }
 .section_about_choose{
     display: block;
@@ -145,9 +161,9 @@
 .container_section_about_chose{
     padding: 8px 0 0 20px;
 }
-.scroll{
+/* .scroll{
     box-shadow: 0px 0px 10px 51px rgb(39, 39, 39);
-}
+} */
 body.scrolled .scroll{
     transition-duration: 500ms;
     box-shadow: none;
@@ -157,32 +173,13 @@ body.scrolled .scroll{
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
-    .about_foto{
-        background-size: 370px 571px;
-        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_2x.jpg);
-    }
-    .mission_foto{
-        background-size: 370px 784px;
-        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_2x.jpg);
-    }
-    .mission_section_choose{
-        
-        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_2x.jpg);
-    }
+
 }
 
 
 @media (min-device-pixel-ratio: 3),
 (min-resolution: 300dpi),
 (min-resolution: 3dppx){
-    .about_foto{
-        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us1_4x.jpg);
-    }
-    .mission_foto{
-        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us2_4x.jpg);
-    }
-    .mission_section_choose{
-        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(../images/mob/about/about_us3_4x.jpg);
-    }
+
 
 }

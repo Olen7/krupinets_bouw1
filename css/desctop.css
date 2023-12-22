@@ -24,6 +24,10 @@
         padding-top: 21px;
         padding-bottom: 21px;
     }
+    .header-us{
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
     .heder_svg{
         display: none;
     }
@@ -87,7 +91,7 @@
     .container_section_about{
         padding-left: 120px;
         padding-right: 120px;
-        width: 651px;
+        width: 558px;
         height: 680px;
         box-sizing: content-box;
     }
@@ -105,16 +109,12 @@
         font-size: 24px;
         letter-spacing: 0.04em;
     }
-    .about_section{
-        background-image: url(../images/desc/desctop_about_1x.jpg);
-        background-size: 1115px 680px;
-    }
     .name_service{
         padding-top: 60px;
         font-size: 60px;
         letter-spacing: 0.05em;
     }
-    .tablet_cont_with{
+    .box-picter-service{
         width: 285px;
         height: 285px;
     }
@@ -127,18 +127,11 @@
         font-size: 20px;
         letter-spacing: 0.05em;
     }
-    .foto_service_one{
-        background-image: url(../images/desc/desctop_service1_1x.jpg);
+    .box-picter-service{
+        margin-bottom: 0;
     }
-    .foto_service_two{
-        background-image:  url(../images/desc/desctop_service2_1x.jpg);
-
-    }
-    .foto_service_three {
-        background-image: url(../images/desc/desctop_service3_1x.jpg);
-    }
-    .foto_service_four {
-        background-image:  url(../images/desc/desctop_service4_1x.jpg);
+    .service_name{
+        margin-bottom: 8px;
     }
     /*BENEFITS*/
     .benefits{
@@ -295,10 +288,7 @@
         box-sizing: border-box;
         line-height: 32px;
     }
-    .foto_tablet_about_us{
-        background-size: 1115px 680px;
-        background-image: url(../images/desc/about/desctop_about_us1_1x.jpg);
-    }
+
     .about_foto{
         background-size: none; 
         background-image: none;
@@ -322,8 +312,8 @@
         width: 771px;
         height: 774px;
     }
-    .mission_tab_section_choose {
-        background-image: url(../images/desc/about/desctop_about_us3_1x.jpg);
+    .about-img{
+        bottom: auto;
     }
     .container_section_about_chose{
         padding-left: 120px;
@@ -349,6 +339,12 @@
     }
     .section_block:not(:last-child) {
         margin-bottom: 15px;
+    }
+    .mission_section_choose{
+        padding: 0;
+    }
+    .section_block{
+        padding-right: 0;
     }
     /* 404 */
     .eror_name {
@@ -447,7 +443,6 @@
     }
     /* CONTACT */
     .section_contact {
-        background-image: url(../images/desc/eror/desctop_eror_1x.jpg);
         margin-top: 98px;
         padding: 40px 120px 60px;
     }
@@ -516,24 +511,6 @@
     .foto {
         background-image: url(../images/desc/desc_hero_2x.jpg);
     }
-    .about_section {
-        background-image: url(../images/desc/desctop_about_2x.jpg);
-    }
-    .foto_service_one{
-        background-image: url(../images/desc/desctop_service1_2x.jpg);
-    }
-    .foto_service_two {
-        background-image: url(../images/desc/desctop_service2_2x.jpg);
-    }
-    .foto_service_three {
-        background-image: url(../images/desc/desctop_service3_2x.jpg);
-    }
-    .foto_service_four {
-        background-image: url(../images/desc/desctop_service4_2x.jpg);
-    }
-    .foto_tablet_about_us{
-        background-image: url(../images/desc/about/desctop_about_us1_2x.jpg);
-    }
 }
 
     
@@ -543,21 +520,6 @@
 (min-resolution: 3dppx){
     .foto {
         background-image: url(../images/desc/desc_hero_4x.jpg);
-    }
-    .about_section {
-        background-image: url(../images/desc/desctop_about_4x.jpg);
-    }
-    .foto_service_one{
-        background-image: url(../images/desc/desctop_service1_4x.jpg);
-    }
-    .foto_service_two {
-        background-image: url(../images/desc/desctop_service2_4x.jpg);
-    }
-    .foto_service_three {
-        background-image: url(../images/desc/desctop_service3_4x.jpg);
-    }
-    .foto_service_four {
-        background-image: url(../images/desc/desctop_service4_4x.jpg);
     }
 
 }

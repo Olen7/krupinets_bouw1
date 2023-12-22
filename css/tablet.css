@@ -5,12 +5,17 @@
         padding-bottom: 20px;
         width: 100%;
     }
+    .header-us{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
     
     .header__button{
         display: none;}
     .container_header{
         display: flex;
-        width: 100%;
+        max-width: 100%;
         align-items: center;
         }
         .header_svg{
@@ -99,15 +104,11 @@
     }
         /* HERO */
     .section_contact {
-            background-image: url(../images/tab/contact/contact1_1x.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
             margin-top: 72px;
             padding: 20px 32px 40px;
     }
     .container_section_about{
-        background-color: rgba(39, 39, 39, 0.80);;
-        width: 606px;
+        width: 638px;
         height: 522px;
         margin: 0;
         padding-left: 32px;
@@ -146,11 +147,9 @@
         margin-bottom: 44px;
     }
     /* ABOUT */
-    .about_section {
-        background-image: url(../images/tab/tablet_about_1x.jpg);
-        background-size: 586px 680px;
+    .section_block{
+        max-width: 590px;
     }
-
         /* SERVICE */
     .name_service {
         font-size: 48px;
@@ -166,24 +165,28 @@
             gap: 28px 24px;
         }
     
-    .tablet_cont_with{
+    .box-picter-service{
         width: 365px;
         height: 285px;
         
     
     }
-    .foto_service_one{
-        background-image: url(../images/tab/tablet_service1_1x.jpg);
+    .foto-service{
+        height: auto;
     }
-    .foto_service_two{
-        background-image: url(../images/tab/tablet_service2_1x.jpg);
+    .service_conteiner_gradient {
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        width: 101%;
+        height: 110px;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%);
     }
-    .foto_service_three{
-        background-image: url(../images/tab/tablet_service3_1x.jpg);
-    }
-    .foto_service_four{
-        background-image: url(../images/tab/tablet_service4_1x.jpg);
-    }
+
     /* BENEFITS */
     .benefits{
         padding-top: 60px;
@@ -256,37 +259,48 @@
 
     }
     /* ABOUT INDEX */
-    .foto_tablet_about_us{
-        background-size: 530px 520px;
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-image: url(../images/tab/about/tab_about_us1_1x.jpg);
-    }
     .about_foto{
-        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);
-        
+        background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);   
     }
-    .mission_foto {
-        background-image: linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);
-    
+    .mission_section{
+        width: 606px;
+        height: 664px;
+    }
+    .conteiner-aboutus {
+        width: auto;
     }
     .container_section_about_mission{
-        width: 606px;
+        padding: 0 32px 20px 0;
+
+    }
+    .conteiner-our-miss{
+        max-width: 494px;
+    }
+    .conteiner-our-mission{
+        max-width: 494px;
+    }
+    .section_name_us{
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .about_block{
+        max-width: 558px;
+    }
+    .about_block{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+    .conteiner-our-miss{
+        max-width: 494px;
+    }
+    .section_block_mision{
+        font-size: 20px;
+        letter-spacing: 0.05em;
     }
     .foto_tab_about_mission{
         height: 664px;
-        background-image:  url(../images/tab/about/tab_about_us2_1x.jpg);
-        background-size: auto;
-        background-repeat: no-repeat;
     }
-    .mission_section_choose{
-        background-image: url(#);
-    }
-    .mission_tab_section_choose{
-        background-image: url(../images/tab/about/tab_about_us3_1x.jpg);
-        background-position: right top;
-        background-repeat: no-repeat;
-    }
+
     .section_about_choose {
         
         margin-top: 0px;
@@ -307,7 +321,7 @@
     }
     .container_section_about_chose{
         background-color: rgba(39, 39, 39, 0.8);
-        width: 606px;
+        width: 638px;
         height: 774px;
         margin: 0px;
         padding: 0px 32px;
@@ -445,13 +459,6 @@
     .foto {
         background-image: url(../images/tab/tablet_hiro_2x.jpg);
     }
-    .about_section {
-        background-image: url(../images/tab/tablet_about_2x.jpg);
-    }
-    .foto_tablet_about_us {
-
-        background-image: url(../images/tab/about/tab_about_us1_2x.jpg);
-    }
 
 }  
     @media (min-device-pixel-ratio: 3),
@@ -459,13 +466,6 @@
 (min-resolution: 3dppx){
     .foto {
         background-image: url(../images/tab/tablet_hiro_4x.jpg);
-    }
-    .about_section {
-        background-image: url(../images/tab/tablet_about_4x.jpg);
-    }
-    .foto_tablet_about_us {
-
-        background-image: url(../images/tab/about/tab_about_us1_4x.jpg);
     }
     
 }
