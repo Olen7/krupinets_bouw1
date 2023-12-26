@@ -1,5 +1,6 @@
 .heder_about {
     background-color: var(--graphite, #272727);
+    z-index: 3;
 }
 .reviews_section{
     background-color: var(--graphite, #272727);
