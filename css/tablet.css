@@ -17,6 +17,7 @@
         display: flex;
         max-width: 100%;
         align-items: center;
+        justify-content: space-between;
         }
         .header_svg{
             display: inherit;
@@ -27,9 +28,13 @@
         justify-content: space-between;
         }
     .heder_nav {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         
     }
     .heder_svg{
@@ -62,6 +67,7 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
+ 
     .header__id{
         color: var(--graphite, #272727);
         font-family: Poppins;
@@ -93,14 +99,20 @@
     .header__item:not(:last-child){
         margin-right: 34px;
     }
-    .is_scrolled .header_wrapper{
+    .header-item-us{
+        width: 80px;
+    }
+    /* .is_scrolled .header_wrapper{
         background-color: rgb(188 188 186);
         transition-duration: 1000ms;
         
         
-    }
+    } */
     .scroll {
         box-shadow: none;
+    }
+    .header .container_header{
+        max-width: 100%;
     }
         /* HERO */
     .section_contact {
@@ -116,9 +128,18 @@
         padding-top: 0px;
         padding-bottom: 0px;
     }
+    .section-about-index{
+        width: 586px;
+        height: 610px;
+        margin: 0;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 0px;
+        padding-bottom: 0px;    
+    }
     .foto{
         padding-top: 247px;
-        padding-bottom: 354px;
+        height: 800px;
         background-image: url(../images/tab/tablet_hiro_1x.jpg);
     }
     .hero_name{
@@ -201,10 +222,9 @@
     .benefits_list {
         margin-top: 40px;
         gap: 20px;
+        justify-content: space-evenly;
     }
-    .benefits_list {
-        justify-content: space-between;
-    }
+
     /* PORTFOLIO */
     .portfolio_name {
         margin-bottom: 40px;
@@ -332,6 +352,9 @@
     .section_about_choose::before{
         display: none;
     }
+    .section_about_back::before{
+        display: none;
+    }
     /* 404 INDEX */
     .eror_conteiner {
         height: 571px;
@@ -452,6 +475,24 @@
     }
     .address_button{
         margin-bottom: 40px;
+    }
+    .button-consu{
+        display: none;
+    }
+    @media (max-height: 430px) {
+        /* Стилі для вікон шириною або висотою до 430px */
+        .header{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .header-us{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .section_contact {
+            margin-top: 52px;
+            padding: 20px 32px 40px;
+        }
     }
     @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),

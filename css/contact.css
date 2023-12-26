@@ -10,7 +10,7 @@
     background-color: rgb(37 37 37);
 }
 .header-us{
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +82,7 @@ width: 100%;
 }
 .input-person{
     padding: 0px;
-}
+}  
 .name-text {
     display: block;
     margin-bottom: 4px;

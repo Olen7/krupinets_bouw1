@@ -39,7 +39,14 @@
     }
     .heder_svg_desctop{
         display: flex;
-        margin-right:330px;
+    }
+    .name_lang_item:first-child::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #EEE;
+        display: block;
+        transform: rotate(90deg);
     }
     .header__id{
         font-size: 20px;
@@ -47,6 +54,10 @@
     }
     .header__item:not(:last-child){
         margin-right: 36px;
+        
+    }
+    .header-item-us{
+        width: 100px;
     }
     .heder_nav{
         margin-right: 36px;
@@ -74,14 +85,22 @@
         letter-spacing: 0.04em;
         padding: 16px 32px;
     }
+    .hero_button:active{
+        transform: scale(0.9);
+    }
     .foto {
         padding-top: 288px;
         background-image:url(../images/desc/desc_hero_1x.jpg);
     }
-    .is_scrolled .header_wrapper{
+    .is_scrolled {
         padding-top: 21px;
         padding-bottom: 21px;
         z-index: 1;
+        
+    }
+    .header .container_header{
+        padding-left: 120px;
+        padding-right: 120px;
     }
     /*SECTION 1*/
     .about{
@@ -89,6 +108,13 @@
         padding-right: 120px;
     }
     .container_section_about{
+        padding-left: 120px;
+        padding-right: 120px;
+        width: 558px;
+        height: 680px;
+        box-sizing: content-box;
+    }
+    .section-about-index{
         padding-left: 120px;
         padding-right: 120px;
         width: 558px;
@@ -108,6 +134,9 @@
         padding: 16px 32px;
         font-size: 24px;
         letter-spacing: 0.04em;
+    }
+    .section_button:active{
+        transform: scale(0.9);
     }
     .name_service{
         padding-top: 60px;
@@ -235,6 +264,9 @@
         padding: 16px 32px;
         font-size: 24px;
         letter-spacing: 0.04em;
+    }
+    .address_button:active{
+        transform: scale(0.9);
     }
     .address_contact{
         font-size: 20px;
@@ -401,6 +433,9 @@
         padding: 16px 32px;
         font-size: 24px;
         letter-spacing: 0.04em;
+    }
+    .section_button_reviews:active{
+        transform: scale(0.9);
     }
     /* REVIEW MODAL*/
     .review_modal {
