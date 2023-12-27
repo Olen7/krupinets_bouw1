@@ -675,6 +675,10 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_1x.jpg);
     background-size: cover;
 }
+.copyrighte{
+    margin-left: 10px;
+    margin-right: 8px;
+}
 
     /* 2x foto має бути знизу всіх фото*/
 @media (min-device-pixel-ratio: 2),

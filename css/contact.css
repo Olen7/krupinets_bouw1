@@ -49,6 +49,9 @@ width: 100%;
 .contact_item{
     
 }
+/* .social-contact-icon{
+    margin-left: 24px;
+} */
 .address_social_contact{
     display: flex;
     flex-direction: column;
@@ -60,6 +63,7 @@ width: 100%;
     line-height: normal;
     letter-spacing: 0.06em;
     margin-bottom: 20px;
+    
 }
 .address_link_contact{
     color: #272727;  
@@ -76,6 +80,9 @@ width: 100%;
 } 
 .address_list_contact:not(:last-child){
     margin-right: 24px;
+}
+.address_list_contact:active{
+    transform: scale(0.9);
 }
 .modal-form {
     margin-bottom: 10px;
