@@ -59,6 +59,7 @@
     .name_lang_btn:hover, .name_lang_btn:focus{
         color: var(--orange, #CD7829);
     }
+    
     .name_lang_btn{
         border: none;
         background: transparent;
@@ -67,7 +68,9 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
- 
+    .active{
+        color: #CD7829;
+    }
     .header__id{
         color: var(--graphite, #272727);
         font-family: Poppins;
@@ -99,6 +102,8 @@
     .header__item:not(:last-child){
         margin-right: 34px;
     }
+
+
     .header-item-us{
         width: 80px;
     }
@@ -209,7 +214,7 @@
     }
 
     /* BENEFITS */
-    .benefits{
+    .benefits-cont-box{
         padding-top: 60px;
         padding-left:32px ;
         padding-right:32px ;
@@ -264,6 +269,7 @@
     }
     .conteiner_address_icon_tab{
         padding-top: 52px;
+        width: 354px;
         
     }
     .tab_conteiner_index{
@@ -435,6 +441,15 @@
         font-size: 20px;
         letter-spacing: 0.05em;
     }
+    .simple-rating{
+        font-size: 50px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+    }
+    .simple-rating-items{
+        justify-content: flex-end;
+    }
     /* CONTACT INDEX */
     .contact_name {
         font-size: 48px;
@@ -494,6 +509,11 @@
             padding: 20px 32px 40px;
         }
     }
+    @media screen and (min-width: 768px) and (max-width: 830px) {
+        .header__item:not(:last-child) {
+            margin-right: 20px;
+          }
+      }
     @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){

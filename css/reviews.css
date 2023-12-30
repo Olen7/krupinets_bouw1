@@ -65,6 +65,59 @@
 .review_write{
      
 }
+.simple-rating{
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.simple-rating::before{
+    content:"★★★★★";
+    display: block;
+}
+.simple-rating-items{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+}
+.simple-rating-item{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.simple-rating-label{
+    
+    /* flex: 0 0 20%; */
+    height: 100%;
+    cursor: pointer;
+    color: #9E9E9E;
+}
+.simple-rating-label::before{
+    content:"★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+.simple-rating-item:checked,
+.simple-rating-item:checked ~ .simple-rating-label{
+    color: var(--orange, #CD7829);
+}
+
+
+.simple-rating-label:hover, 
+.simple-rating-label:hover ~ .simple-rating-label,
+.simple-rating-label:checked ~ .simple-rating-label:hover{
+    color: var(--orange, #CD7829);
+}
 .is-hided {
     opacity: 0;
     visibility: hidden;

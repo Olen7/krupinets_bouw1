@@ -37,26 +37,28 @@
                 </div>
 
                 <ul class="heder_nav">
-                    <li class="header__item">
-                        <a class="header__id" href="./index.html">Home</a>
+                    <li class="header__item lang-en">
+                        <a class="header__id header-home" href="./index.html" >Home</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__id header-item-us" href="./html/about.html">About Us</a>
+                    <li class="header__item lang-en">
+                        <a class="header__id header-item-us header-about-us" href="./html/about.html">About Us</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__id" href="./html/page-translation-issue.html">Portfolio</a>
+                    <li class="header__item lang-en">
+                        <a class="header__id header-portfolio" href="./html/page-translation-issue.html">Portfolio</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__id" href="./html/reviews.html">Reviews</a>
+                    <li class="header__item lang-en">
+                        <a class="header__id header-reviews" href="./html/reviews.html">Reviews</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__id" href="./html/contact.html">Contacts</a>
+                    <li class="header__item lang-en">
+                        <a class="header__id header-contacts" href="./html/contact.html">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <ul class="name_lang_list">
-                <li class="name_lang_item"><button type="button" class="name_lang_btn">en</button></li>
-                <li class="name_lang_item"><button type="button" class="name_lang_btn">nl</button></li>
+                <li class="name_lang_item">
+                    <button type="button" language="english" class="active name_lang_btn btnEnglish">en</button></li>
+                <li class="name_lang_item">
+                    <button  type="button" language="netherlands" class="name_lang_btn btnDutch">nl</button></li>
             </ul>
             <button type="button" class="header__button" data-menu-open>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -75,15 +77,15 @@
                         </svg>
                     </a></li>
                     <li class="mob-menu-items ">
-                        <a href="./index.html" class="mob-menu-item">Home</a></li>
+                        <a href="./index.html" class="mob-menu-item ">Home</a></li>
                     <li class="mob-menu-items">
-                        <a href="./html/about.html" class="mob-menu-item">About Us</a></li>
+                        <a href="./html/about.html" class="mob-menu-item ">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="./html/page-translation-issue.html" class="mob-menu-item">Portfoli</a></li>
+                        <a href="./html/page-translation-issue.html" class="mob-menu-item ">Portfoli</a></li>
                     <li class="mob-menu-items">
-                            <a href="./html/reviews.html" class="mob-menu-item">Reviews</a></li>
+                            <a href="./html/reviews.html" class="mob-menu-item ">Reviews</a></li>
                     <li class="mob-menu-items">
-                            <a href="./html/contact.html" class="mob-menu-item">Contacts</a></li>
+                            <a href="./html/contact.html" class="mob-menu-item ">Contacts</a></li>
                 </ul>
 
             </div>
@@ -96,8 +98,8 @@
                     
                 </button></div>
                 <ul class="name-lang-mob">
-                    <li class="name-lang-item-mob"><button type="button" class="name-lang-btn-mob">en</button></li>
-                    <li class="name-lang-item-mob"><button type="button" class="name-lang-btn-mob">nl</button></li>
+                    <li class="name-lang-item-mob"><button id="button1" type="button" class="active name-lang-btn-mob ">en</button></li>
+                    <li class="name-lang-item-mob"><button id="button2" type="button" class="name-lang-btn-mob">nl</button></li>
                 </ul>
             </div>
         
@@ -105,8 +107,8 @@
     <section class="foto">
         <div class="container_section">
             <h1 class="hero_block hero_name">KRUPINEC BOUW</h1>
-            <p class="hero_block hero_subtitle">realize your dreams with us</p>
-            <a href="./html/contact.html"><button type="button" class="hero hero_button ">Consultation</button></a>
+            <p class="hero_block hero_subtitle title">realize your dreams with us</p>
+            <a href="./html/contact.html"><button type="button" class="description hero hero_button button-consultation ">Consultation</button></a>
         </div>           
     </section>
     <section class="about_section ">
@@ -140,14 +142,14 @@
         </div>
         
         <div class="container_section section-about-index">
-                <h2 class="section_name">About Us</h2>
-                <p class="section_about_text">Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces! </p>
-            <a href="./html/about.html"><button type="button" class="section_button" >Read more</button></a>
+                <h2 class="section_name about-us">About Us</h2>
+                <p class="section_about_text about-us-p">Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces! </p>
+            <a href="./html/about.html"><button type="button" class="section_button about-us-button" >Read more</button></a>
             
         </div>
     </section>
         <section class="about">
-                <h2 class="name_service container_section">Services</h2>
+                <h2 class="name_service container_section services">Services</h2>
                 <ul class="service_list">
                     <li class="box-picter-service">
                         <picture>
@@ -182,7 +184,8 @@
                                 class="foto-service"
                             />
                           </picture>
-                        <div class="service_conteiner_gradient"><p class="service_name">Bathroom Renovation</p></div></li>
+                        <div class="service_conteiner_gradient">
+                            <p class="service_name services-f">Bathroom Renovation</p></div></li>
                     <li class="box-picter-service">
                         <picture>
                             <source
@@ -215,7 +218,8 @@
                                 alt="about picture"
                                 class="foto-service"
                             />
-                        </picture><div class="service_conteiner_gradient"><p class="service_name">General Renovation</p></div></li>
+                        </picture><div class="service_conteiner_gradient">
+                            <p class="service_name services-fo">General Renovation</p></div></li>
                     <li class="box-picter-service">
                         <picture>
                             <source
@@ -248,7 +252,8 @@
                                 alt="about picture"
                                 class="foto-service"
                             />
-                        </picture><div class="service_conteiner_gradient"><p class="service_name">Dormer Constructions</p></div></li>
+                        </picture><div class="service_conteiner_gradient">
+                            <p class="service_name services-fot">Dormer Constructions</p></div></li>
                     <li class="box-picter-service">
                         <picture>
                             <source
@@ -281,14 +286,15 @@
                                 alt="about picture"
                                 class="foto-service"
                             />
-                        </picture><div class="service_conteiner_gradient"><p class="service_name">Painting and Plastering</p></div></li>
+                        </picture><div class="service_conteiner_gradient">
+                            <p class="service_name services-foto">Painting and Plastering</p></div></li>
 
                 </ul>
                 
         </section>
-        <section class="benefits">
+        <section class="benefits-cont-box">
         <div>
-            <h2 class="benefits_name">Benefits</h2>
+            <h2 class="benefits_name benefits">Benefits</h2>
             <ul class="benefits_list">
                 <li class="benefits_item">
                         <svg width="72" height="72" class="benefits_svg">
@@ -297,7 +303,7 @@
                         <svg width="101" height="100" class="benefits_svg_desktop">
                             <use href="./svg/benefit-desc.svg#icon-checkmark"></use>
                         </svg>
-                    <p class="benefits_text">performance quality</p>
+                    <p class="benefits_text benefits-one">performance quality</p>
                 </li>
                 <li class="benefits_item">
                     <svg width="72" height="72" class="benefits_svg">
@@ -306,7 +312,7 @@
                     <svg width="101" height="100" class="benefits_svg_desktop">
                         <use href="./svg/benefit-desc.svg#icon-carbon-tool-box"></use>
                     </svg>
-                    <p class="benefits_text">experience</p></li>
+                    <p class="benefits_text benefits-two">experience</p></li>
                 <li class="benefits_item">
                     <svg width="72" height="72" class="benefits_svg">
                         <use href="./svg/benefit.svg#icon-ph-star"></use>
@@ -314,7 +320,7 @@
                     <svg width="101" height="100" class="benefits_svg_desktop">
                         <use href="./svg/benefit-desc.svg#icon-ph-star"></use>
                     </svg>
-                    <p class="benefits_text">innovations</p></li>
+                    <p class="benefits_text benefits-thre">innovations</p></li>
                 <li class="benefits_item">
                     <svg width="72" height="72" class="benefits_svg">
                         <use href="./svg/benefit.svg#icon-octicon-people"></use>
@@ -322,7 +328,7 @@
                     <svg width="101" height="100" class="benefits_svg_desktop">
                         <use href="./svg/benefit-desc.svg#icon-octicon-people"></use>
                     </svg>
-                    <p class="benefits_text">customer orientation</p></li>
+                    <p class="benefits_text benefits-four">customer orientation</p></li>
             </ul>
             
         </div>
@@ -365,7 +371,7 @@
                             />
                         </picture>
                         
-                        <p class="portfolio_text">bathrooms</p>
+                        <p class="portfolio_text portfolio-badkamers">bathrooms</p>
                     </div>
                     <div class="portfolio_box portfolio_two_thre">
                         <div class="portfolio_foto">
@@ -401,7 +407,7 @@
                                     class="portfolio_img portfolio_card"
                                 />
                             </picture>
-                            <p class="portfolio_text">General</p>
+                            <p class="portfolio_text portfolio-general">general</p>
                         </div>
                         <div class="portfolio_foto">
                             <picture>
@@ -436,7 +442,7 @@
                                     class="portfolio_img portfolio_card"
                                 />
                             </picture>
-                            <p class="portfolio_text">dormer</p>
+                            <p class="portfolio_text portfolio-dormer">dormer</p>
                         </div>
                     </div>
                     
@@ -457,29 +463,29 @@
                 </a>
                 <ul class="">
                     <li class="foother_item">
-                        <a class="foother_links" href="./index.html">Home</a>
+                        <a class="foother_links foother-home" href="./index.html">Home</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links" href="./html/about.html">About Us</a>
+                        <a class="foother_links foother-about-us" href="./html/about.html">About Us</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links" href="./html/page-translation-issue.html">Portfolio</a>
+                        <a class="foother_links foother-portfolio" href="./html/page-translation-issue.html">Portfolio</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links" href="./html/reviews.html">Reviews</a>
+                        <a class="foother_links foother-reviews" href="./html/reviews.html">Reviews</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links" href="./html/contact.html">Contacts</a>
+                        <a class="foother_links foother-contacts" href="./html/contact.html">Contacts</a>
                     </li>
                 </ul>
             </div>
             <div class="conteiner_address_icon_tab">
                 <address class="address">
-                    <p class="address_contact">Contacts</p>
+                    <p class="address_contact foother-contact-section">Contacts</p>
                     <ul class="">
-                        <li class="address_social"><a href="tel:+110001111111" class="address_link">Phone: <span class="foother_desctop_amster">+31621968479</span></a></li>
+                        <li class="address_social"><a href="tel:+110001111111" class="address_link foother-phone">Phone: <span class="foother_desctop_amster">+31621968479</span></a></li>
                         <li class="address_social"><a href="mailto:info@devstudio.com" class="address_link">E-mail: <span class="foother_desctop_amster">krupinecbouw@gmail.com</span> </a></li>
-                        <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow">Adress: <span class="foother_desctop_amster">Eliza van Calcarstraat 27,<span class="foother_tab_amster">Amsterdam, Netherlands </span></span> 
+                        <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow foother-nl">Address: <span class="foother_desctop_amster">Eliza van Calcarstraat 27,<span class="foother_tab_amster">Amsterdam, Netherlands</span></span> 
                             </a></li>
                     </ul>
                     
@@ -528,12 +534,12 @@
         </div>
             <div class="footer_fedback_block">
                 <div class="foother_blok_index">
-                    <h2 class="feedback_name_index">Consultation</h2>
+                    <h2 class="feedback_name_index foother-consultation-feetback">Consultation</h2>
                     <form class="modal-icon_tab">
                         <div class="modal-form_tab">
-                            <label for="name-text" class="name-text_tab">Name*</label>
+                            <label for="name-text" class="name-text_tab foother-name-form">Name*</label>
                             <input 
-                            class="icon-person_tab"
+                            class="icon-person_tab foother-libel-name"
                             type="text" 
                             name="user-name"
                             id="name-text"
@@ -541,9 +547,9 @@
                             required />
                         </div>
                         <div class="modal-form">
-                            <label for="phone" class="name-text_tab">Phone*</label>
+                            <label for="phone" class="name-text_tab foother-phone-form">Phone*</label>
                                     <input 
-                                    class="icon-person_tab"
+                                    class="icon-person_tab foother-libel-phone"
                                     type="tel" 
                                     name="user-name"
                                     id="phone"
@@ -553,10 +559,10 @@
                         </div>
                 
                         <div class="modal-form">
-                            <label for="email" class="name-text_tab">E-mail*</label>
+                            <label for="email" class="name-text_tab foother-mail-form">E-mail*</label>
                                 <div class="input-person">
                                     <input 
-                                    class="icon-person_tab"
+                                    class="icon-person_tab foother-libel-mail"
                                     type="email" 
                                     name="user-name"
                                     id="email"
@@ -565,7 +571,7 @@
                                 </div>
                         </div>
                             
-                            <button class="address_button" type="submit">Consultation</button>
+                            <button class="address_button foother-form-buttom" type="submit">Consultation</button>
                         </form>
                         <a href="./html/contact.html"><button class="button-consu" type="button" >Consultation</button></a>
                         
@@ -575,16 +581,17 @@
             </div>
             
             <div class="copyright_desctop">
-                <p class="adderss_copyright">Copyright <svg width="20" height="20" class="copyrighte">
+                <div class="adderss_copyright ">Copyright
+                    <svg width="20" height="20" class="copyrighte">
                     <use href="./svg/copyright.svg#icon-copyrighte"></use>
-                </svg>  2023. All rights reserved</p>
-        
-                <p class="foother_text">The site contains images from 
+                </svg><p class=" foother-copyright-all">2023. All rights reserved</p></div>
+
+                <p class="foother_text foother-copyright-all-unsplash">The site contains images from 
                     a free resource Unsplash</p>
             </div>
             
     </footer>
-
+    <script src="./js/index-lang.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/heder.js"></script>
 

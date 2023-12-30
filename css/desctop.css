@@ -81,6 +81,7 @@
         letter-spacing: 0.03em;
     }
     .hero_button{
+        width: 233px;
         font-size: 24px;
         letter-spacing: 0.04em;
         padding: 16px 32px;
@@ -163,7 +164,7 @@
         margin-bottom: 8px;
     }
     /*BENEFITS*/
-    .benefits{
+    .benefits-cont-box{
         padding-left: 120px;
         padding-right: 120px;
     }
@@ -230,6 +231,7 @@
         padding:  40px 120px;
     }
     .conteiner_address_icon_tab{
+        width: auto;
         padding-top: 0px;
     }
     .foother_link_svg{
@@ -472,6 +474,10 @@
         padding: 16px 32px;
     }
     .upload_file_box{
+        margin-bottom: 28px;
+    }
+    .simple-rating{
+        font-size: 60px;
         margin-bottom: 28px;
     }
     /* CONTACT */
