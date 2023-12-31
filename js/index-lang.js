@@ -1,4 +1,4 @@
-const langSec = document.querySelector('.name_lang_item');
+const langSec = document.querySelector('.name_lang_item .name-lang-mob');
 const buttons = document.querySelectorAll('button');
 const textTitle = document.querySelector('.title');
 const textDesc = document.querySelector('.button-consultation');
@@ -36,11 +36,17 @@ const textFootherPhoneForm = document.querySelector('.foother-phone-form');
 const textFootherMailForm = document.querySelector('.foother-mail-form');
 const textFootherLibelName = document.querySelector('.foother-libel-name');
 const textFootherLibelPhone = document.querySelector('.foother-libel-phone');
-const textfootherlibelmail = document.querySelector('.foother-libel-mail')
+const textfootherlibelmail = document.querySelector('.foother-libel-mail');
 const textfootherformbuttom = document.querySelector('.foother-form-buttom');
 const textfoothercopyrightall = document.querySelector('.foother-copyright-all');
 const textfoothercopyrightallunsplash = document.querySelector('.foother-copyright-all-unsplash');
-const textfoothernl = document.querySelector('.foother-nl');
+// const textfoothernl = document.querySelector('.foother-nl');
+const textMobHome = document.querySelector('.mob-home');
+const textMobAboutUs = document.querySelector('.mob-about-us');
+const textMobPortfolio = document.querySelector('.mob-portfolio');
+const textMobReviews = document.querySelector('.mob-reviews');
+const textMobContacts = document.querySelector('.mob-contacts');
+const textfootherconsultation = document.querySelector('.button-consultation');
 
 let activeButton = null;
 
@@ -94,7 +100,16 @@ buttons.forEach(button => {
             textfootherformbuttom.textContent = data[attr]['foother-form-buttom'];
             textfoothercopyrightall.textContent = data[attr]['foother-copyright-all'];
             textfoothercopyrightallunsplash.textContent = data[attr]['foother-copyright-all-unsplash'];
-            textfoothernl.textContent = data[attr]['foother-nl'];
+            // textfoothernl.textContent = data[attr]['foother-nl'];
+
+            // Оновлення для ключів мобільної версії
+            textMobHome.textContent = data[attr]['mob-home'];
+            textMobAboutUs.textContent = data[attr]['mob-about-us'];
+            textMobPortfolio.textContent = data[attr]['mob-portfolio'];
+            textMobReviews.textContent = data[attr]['mob-reviews'];
+            textMobContacts.textContent = data[attr]['mob-contacts'];
+            textfootherconsultation.textContent = data[attr]['foother-consultation'];
+
             activeButton = this;
         }
     });
@@ -143,7 +158,13 @@ const data = {
         "foother-form-buttom": "Consultation",
         "foother-copyright-all": "2023. All rights reserved",
         "foother-copyright-all-unsplash": "The site contains images from a free resource Unsplash",
-        "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        // "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        "mob-home":"Home",
+        "mob-about-us":"About Us",
+        "mob-portfolio":"Portfolio",
+        "mob-reviews":"Reviews",
+        "mob-contacts":"Contacts",
+        "foother-consultation": "Consultation",
 
 
     },
@@ -189,12 +210,26 @@ const data = {
         "foother-form-buttom": "Consultatie",
         "foother-copyright-all": "2023. Alle rechten voorbehouden",
         "foother-copyright-all-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
-        "foother-nl": "Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        // "foother-nl": "Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        "mob-home":"Thuis",
+        "mob-about-us":"Over ons",
+        "mob-portfolio":"Portefeuille",
+        "mob-reviews":"Beoordelingen",
+        "mob-contacts":"Contacten",
+        "foother-consultation": "Consultatie",
     }   
 };
 
-
-
+// const textmobhome = document.querySelector('.mob-home');
+// const textmobaboutusl = document.querySelector('.mob-about-us');
+// const textmobportfolio = document.querySelector('.mob-portfolio');
+// const textmobreviews = document.querySelector('.mob-reviews');
+// const textmobcontacts = document.querySelector('.mob-contacts');
+// textmobhome.textContent = data[attr]['mob-home'];
+// textmobaboutus.textContent = data[attr]['mob-portfolio'];
+// textmobportfolio.textContent = data[attr]['mob-portfolio'];
+// textmobreviews.textContent = data[attr]['mob-reviews'];
+// textmobcontacts.textContent = data[attr]['mob-contacts'];
 
 // const langSec = document.querySelector('.name_lang_item');
 // const buttons = document.querySelectorAll('button');

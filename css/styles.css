@@ -163,6 +163,9 @@ img {
     visibility: hidden;
     pointer-events: none;
 }
+.active{
+    color: #CD7829;
+}
 .name-lang-item-mob:active{
     transform: scale(0.9);
 }
@@ -685,9 +688,9 @@ img {
     background: var(--orange);
     border-color: var(--graphite-hover);
 }
-.name-lang-mob .active{
+/* .name-lang-mob .active{
     color: var(--orange);
-}
+} */
 
     /* 2x foto має бути знизу всіх фото*/
 @media (min-device-pixel-ratio: 2),
