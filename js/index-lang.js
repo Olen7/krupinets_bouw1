@@ -1,3 +1,6 @@
+
+
+
 const langSec = document.querySelector('.name_lang_item .name-lang-mob');
 const buttons = document.querySelectorAll('button');
 const textTitle = document.querySelector('.title');
@@ -47,6 +50,7 @@ const textMobPortfolio = document.querySelector('.mob-portfolio');
 const textMobReviews = document.querySelector('.mob-reviews');
 const textMobContacts = document.querySelector('.mob-contacts');
 const textfootherconsultation = document.querySelector('.button-consultation');
+const footherconsultationmob = document.querySelector('.foother-consultation-mob');
 
 let activeButton = null;
 
@@ -109,7 +113,7 @@ buttons.forEach(button => {
             textMobReviews.textContent = data[attr]['mob-reviews'];
             textMobContacts.textContent = data[attr]['mob-contacts'];
             textfootherconsultation.textContent = data[attr]['foother-consultation'];
-
+            footherconsultationmob.textContent = data[attr]['foother-consultation-mob'];
             activeButton = this;
         }
     });
@@ -165,7 +169,7 @@ const data = {
         "mob-reviews":"Reviews",
         "mob-contacts":"Contacts",
         "foother-consultation": "Consultation",
-
+        "foother-consultation-mob": "Consultation",
 
     },
     "netherlands": {
@@ -217,208 +221,6 @@ const data = {
         "mob-reviews":"Beoordelingen",
         "mob-contacts":"Contacten",
         "foother-consultation": "Consultatie",
+        "foother-consultation-mob": "Consultatie",
     }   
 };
-
-// const textmobhome = document.querySelector('.mob-home');
-// const textmobaboutusl = document.querySelector('.mob-about-us');
-// const textmobportfolio = document.querySelector('.mob-portfolio');
-// const textmobreviews = document.querySelector('.mob-reviews');
-// const textmobcontacts = document.querySelector('.mob-contacts');
-// textmobhome.textContent = data[attr]['mob-home'];
-// textmobaboutus.textContent = data[attr]['mob-portfolio'];
-// textmobportfolio.textContent = data[attr]['mob-portfolio'];
-// textmobreviews.textContent = data[attr]['mob-reviews'];
-// textmobcontacts.textContent = data[attr]['mob-contacts'];
-
-// const langSec = document.querySelector('.name_lang_item');
-// const buttons = document.querySelectorAll('button');
-// const textTitle = document.querySelector('.title');
-// const textDesc = document.querySelector('.button-consultation');
-// const textAboutUs = document.querySelector('.about-us'); 
-// const textAboutUsP = document.querySelector('.about-us-p');
-// const aboutUsButton = document.querySelector('.about-us-button');
-// const headerHome = document.querySelector('.header-home');
-// const headerAboutUs = document.querySelector('.header-about-us');
-// const headerPortfolio = document.querySelector('.header-portfolio');
-// const headerReviews = document.querySelector('.header-reviews');
-// const headerContacts = document.querySelector('.header-contacts');
-
-// let activeButton = null;
-
-// buttons.forEach(button => {
-//     button.addEventListener('click', function() {
-//         const attr = this.getAttribute('language');
-
-//         if (activeButton !== this) {
-//             buttons.forEach(btn => btn.classList.remove('active'));
-//             this.classList.add('active');
-//             textTitle.textContent = data[attr].title;
-//             textDesc.textContent = data[attr]['button-consultation'];
-//             textAboutUs.textContent = data[attr]['about-us'];
-//             textAboutUsP.textContent = data[attr]['about-us-p'];
-//             aboutUsButton.textContent = data[attr]['about-us-button'];
-//             headerHome.textContent = data[attr]['header-home']; // Оновлення тексту заголовка "Home"
-//             headerAboutUs.textContent = data[attr]['header-about-us']; // Оновлення тексту заголовка "About Us"
-//             headerPortfolio.textContent = data[attr]['header-portfolio']; // Оновлення тексту заголовка "Portfolio"
-//             headerReviews.textContent = data[attr]['header-reviews']; // Оновлення тексту заголовка "Reviews"
-//             headerContacts.textContent = data[attr]['header-contacts']; // Оновлення тексту заголовка "Contacts"
-//             activeButton = this;
-//         }
-//     });
-// });
-
-// const data = {
-//     "english": {
-//         "header-home":"Home",
-//         "header-about-us":"About Us",
-//         "header-portfolio":"Portfolio",
-//         "header-reviews":"Reviews",
-//         "header-contacts":"Contacts",
-//         "title": "realize your dreams with us",
-//         "button-consultation": "Consultation",
-//         "about-us": "About Us",
-//         "about-us-p": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!",
-//         "about-us-button": "Read more"
-//     },
-//     "netherlands": {
-//         "header-home":"Thuis",
-//         "header-about-us":"Over ons",
-//         "header-portfolio":"Portefeuille",
-//         "header-reviews":"Beoordelingen",
-//         "header-contacts":"Contacten",
-//         "title": "realiseer je dromen met ons.",
-//         "button-consultation": "Consultatie",
-//         "about-us": "Over ons",
-//         "about-us-p": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!",
-//         "about-us-button": "Lees meer"
-//     }
-// };
-
-
-
-
-// const langSec = document.querySelector('.name_lang_item');
-// const buttons = document.querySelectorAll('button');
-// const textTitle = document.querySelector('.title');
-// const textDesc = document.querySelector('.button-consultation');
-// const textAboutUs = document.querySelector('.about-us'); 
-// const textAboutUsP = document.querySelector('.about-us-p');
-// const aboutUsButton = document.querySelector('.about-us-button');
-// const headerHome = document.querySelector('.header-home');
-// const headerAboutUs = document.querySelector('.header-about-us');
-// const headerPortfolio = document.querySelector('.header-portfolio');
-// const headerReviews = document.querySelector('.header-reviews');
-// const headerContacts = document.querySelector('.header-contacts');
-
-// let activeButton = null;
-
-// buttons.forEach(button => {
-//     button.addEventListener('click', function() {
-//         const attr = this.getAttribute('language');
-
-//         if (activeButton !== this) {
-//             buttons.forEach(btn => btn.classList.remove('active'));
-//             this.classList.add('active');
-//             textTitle.textContent = data[attr].title;
-//             textDesc.textContent = data[attr]['button-consultation'];
-//             textAboutUs.textContent = data[attr]['about-us'];
-//             textAboutUsP.textContent = data[attr]['about-us-p'];
-//             aboutUsButton.textContent = data[attr]['about-us-button'];
-//             headerHome.textContent = data[attr]['header-home'];
-//             headerAboutUs.textContent = data[attr]['header-about-us'];
-//             headerPortfolio.textContent = data[attr]['header-portfolio'];
-//             headerReviews.textContent = data[attr]['header-reviews'];
-//             headerContacts.textContent = data[attr]['header-contacts'];
-//             activeButton = this;
-//         }
-//     });
-// });
-
-// const data = {
-//     "english": {
-//         "header-home":"Home",
-//         "header-about-us":"About Us",
-//         "header-portfolio":"Portfolio",
-//         "header-reviews":"Reviews",
-//         "header-contacts":"Contacts",
-//         "title": "realize your dreams with us",
-//         "button-consultation": "Consultation",
-//         "about-us": "About Us",
-//         "about-us-p": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!",
-//         "about-us-button": "Read more",
-//         "services": "Services",
-//         "services-f": "Bathroom Renovation",
-//         "services-fo": "General Renovation",
-//         "services-fot": "Dormer Constructions",
-//         "services-foto": "Painting and Plastering",
-//         "benefits": "Benefits",
-//         "benefits-one": "Performance Quality",
-//         "benefits-two": "Experience",
-//         "benefits-thre": "Innovations",
-//         "benefits-four": "Customer Orientation"
-//     },
-//     "netherlands": {
-//         "header-home":"Thuis",
-//         "header-about-us":"Over ons",
-//         "header-portfolio":"Portefeuille",
-//         "header-reviews":"Beoordelingen",
-//         "header-contacts":"Contacten",
-//         "title": "realiseer je dromen met ons.",
-//         "button-consultation": "Consultatie",
-//         "about-us": "Over ons",
-//         "about-us-p": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!",
-//         "about-us-button": "Lees meer",
-//         "services": "Diensten",
-//         "services-f": "Badkamerrenovatie",
-//         "services-fo": "Algemene renovatie",
-//         "services-fot": "Dakkapelconstructies",
-//         "services-foto": "Schilderen en Stukadoren",
-//         "benefits": "Voordelen",
-//         "benefits-one": "Kwaliteit van Prestaties",
-//         "benefits-two": "Ervaring",
-//         "benefits-thre": "Innovaties",
-//         "benefits-four": "Klantgerichtheid"
-//     }
-// };
-
-
-
-
-
-
-
-// const langSec = document.querySelector('.name_lang_item');
-// const buttons = document.querySelectorAll('button');
-// const textTitle = document.querySelector('.title');
-// const textDesc = document.querySelector('.button-consultation');
-// const aboutUsButton = document.querySelector('.aboutus');
-
-// let activeButton = null;
-
-// buttons.forEach(button => {
-//     button.addEventListener('click', function() {
-//         const attr = this.getAttribute('language');
-
-//         if (activeButton !== this) {
-//             buttons.forEach(btn => btn.classList.remove('active'));
-//             this.classList.add('active');
-//             textTitle.textContent = data[attr].title;
-//             textDesc.textContent = data[attr]['button-consultation'];
-//             activeButton = this;
-//         }
-//     });
-// });
-
-// const data = {
-//     "english": {
-//         "title": "realize your dreams with us",
-//         "button-consultation": "Consultation",
-//         "aboutus": "About Us"
-//     },
-//     "netherlands": {
-//         "title": "realiseer je dromen met ons.",
-//         "button-consultation": "Consultatie",
-//         "aboutus": "Over ons"
-//     }
-// };

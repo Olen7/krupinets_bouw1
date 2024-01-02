@@ -1,7 +1,9 @@
-const langSec = document.querySelector('.name_lang_item');
+const langSec = document.querySelector('.name_lang_item .name-lang-item-mob');
 const buttons = document.querySelectorAll('button');
 // const texthomeaboutnl = document.querySelector('.home-about-nl');
+
 const texthomeusaboutnl = document.querySelector('.home-us-about-nl');
+
 const textaboutusaboutnl = document.querySelector('.about-us-about-nl');
 const textportfolioaboutnl = document.querySelector('.portfolio-about-nl');
 const textreviewsaboutnl = document.querySelector('.reviews-about-nl');
@@ -28,16 +30,17 @@ const inputPhone = document.querySelector('.foother-libel-phone-about');
 const inputMail = document.querySelector('.foother-libel-mail-about');
 const textCopyright = document.querySelector('.foother-copyright-all-about');
 const textUnsplash = document.querySelector('.foother-copyright-all-unsplash-about');
-const aboutUsHeader = document.querySelector('.about-us-about-h');
-const ourMissionHeader = document.querySelector('.our-mission-about-h');
-const whyChooseUsHeader = document.querySelector('.why-choose-us-about-h');
-const ourMissionText = document.querySelector('.our-mission-about-text');
-const ourMissionTextP = document.querySelector('.our-mission-about-text-p');
-const whyChooseUsText = document.querySelector('.why-choose-us-about-t');
-const whyChooseUsTextE = document.querySelector('.why-choose-us-about-te');
-const whyChooseUsTextEx = document.querySelector('.why-choose-us-about-tex');
-const whyChooseUsTextExt = document.querySelector('.why-choose-us-about-text');
-const aboutUsText = document.querySelector('.about-us-about-text');
+const footherformcontactsbuttonsmob = document.querySelector('.foother-form-contacts-buttons-mob');
+const bodycontactusnl = document.querySelector('.body-contact-us-nl');
+const bodycontactphoneabout = document.querySelector('.body-contact-phone-about');
+const bodycontactnameabout = document.querySelector('.body-contact-name-about');
+const bodycontactphoneaboutform = document.querySelector('.body-contact-phone-about-form');
+// const bodycontactyourquestionabout = document.querySelector('.body-contact-your-question-about');
+const bodycontactnameplaceholder = document.querySelector('.body-contact-name-placeholder');
+const bodycontactphoneplaceholder = document.querySelector('.body-contact-phone-placeholder');
+const bodycontactmailplaceholder = document.querySelector('.body-contact-mail-placeholder');
+const bodycontactquestionplaceholder = document.querySelector('.body-contact-question-placeholder');
+const contactsendbuttom = document.querySelector('.contact-send-buttom');
 
 let activeButton = null;
 
@@ -49,7 +52,9 @@ buttons.forEach(button => {
             buttons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             // texthomeaboutnl.textContent = data[attr]['home-about-nl'];
+            
             texthomeusaboutnl.textContent = data[attr]['home-us-about-nl'];
+            
             textaboutusaboutnl.textContent = data[attr]['about-us-about-nl'];
             textportfolioaboutnl.textContent = data[attr]['portfolio-about-nl'];
             textreviewsaboutnl.textContent = data[attr]['reviews-about-nl'];
@@ -75,21 +80,20 @@ buttons.forEach(button => {
             inputPhone.placeholder = data[attr]['foother-libel-phone-about'];
             inputMail.placeholder = data[attr]['foother-libel-mail-about'];
             textCopyright.textContent = data[attr]['foother-copyright-all-about'];
-                textUnsplash.textContent = data[attr]['foother-copyright-all-unsplash-about'];
-                aboutUsHeader.textContent = data[attr]['about-us-about-h'];
-                ourMissionHeader.textContent = data[attr]['our-mission-about-h'];
-                whyChooseUsHeader.textContent = data[attr]['why-choose-us-about-h'];
-                ourMissionText.textContent = data[attr]['our-mission-about-text'];
-                ourMissionTextP.textContent = data[attr]['our-mission-about-text-p'];
-                whyChooseUsText.textContent = data[attr]['why-choose-us-about-t'];
-                whyChooseUsTextE.textContent = data[attr]['why-choose-us-about-te'];
-                whyChooseUsTextEx.textContent = data[attr]['why-choose-us-about-tex'];
-                whyChooseUsTextExt.textContent = data[attr]['why-choose-us-about-text'];
-                aboutUsText.textContent = data[attr]['about-us-about-text'];
+            textUnsplash.textContent = data[attr]['foother-copyright-all-unsplash-about'];
+            footherformcontactsbuttonsmob.textContent = data[attr]['foother-form-contacts-buttons-mob'];
+            bodycontactusnl.textContent = data[attr]['body-contact-us-nl'];
+            bodycontactphoneabout.textContent = data[attr]['body-contact-phone-about'];
+            bodycontactnameabout.textContent = data[attr]['body-contact-name-about'];
+            bodycontactphoneaboutform.textContent = data[attr]['body-contact-phone-about-form'];
+            // bodycontactyourquestionabout.textContent = data[attr]['body-contact-your-question-about'];
+            bodycontactnameplaceholder.placeholder = data[attr]['body-contact-name-placeholder'];
+            bodycontactphoneplaceholder.placeholder = data[attr]['body-contact-phone-placeholder'];
+            bodycontactmailplaceholder.placeholder = data[attr]['body-contact-mail-placeholder'];
+            bodycontactquestionplaceholder.placeholder = data[attr]['body-contact-question-placeholder'];
+            contactsendbuttom.textContent = data[attr]['contact-send-buttom'];   
             
-            
-            
-                activeButton = this;
+            activeButton = this;
                
         }
     });
@@ -123,16 +127,19 @@ const data = {
         "foother-libel-mail-about": "Enter your mail",
         "foother-copyright-all-about": "2023. All rights reserved",
         "foother-copyright-all-unsplash-about": "The site contains images from a free resource Unsplash",
-        "about-us-about-h": "About Us",
-        "our-mission-about-h": "Our Mission",
-        "why-choose-us-about-h": "WHY CHOOSE US",
-        "about-us-about-text": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces! ",
-        "our-mission-about-text": "At Krupinec Bouw, we are on a mission to turn your construction dreams into a tangible reality. Our team of seasoned professionals is unwavering in their commitment to providing high-quality, sustainable, and cost-effective solutions for a diverse range of projects.",
-        "our-mission-about-text-p": "Whether it's home renovations or commercial repairs, we are here to elevate your surroundings to new heights. Discover our array of services, and allow us to infuse fresh vitality into your projects, delivering enduring quality and enhancing the value of your construction endeavors. Your vision and our expertise results in excellence.",
-        "why-choose-us-about-t": "Expertise: Our experienced professionals bring years of knowledge and skill to every project, guaranteeing you expert solutions that stand the test of time, ensuring your peace of mind.",
-        "why-choose-us-about-te": "Quality: We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects.",
-        "why-choose-us-about-tex": "Innovation: We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients",
-        "why-choose-us-about-text": "Client-Centric Approach: Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle.",
+        "foother-form-contacts-buttons-mob":"Consultation",
+        "body-contact-us-nl":"contact us",
+        "body-contact-phone-about":"Phone:",
+        "body-contact-name-about":"Name*",
+        "body-contact-phone-about-form":"Phone*",
+        "body-contact-your-question-about":"Your question*",
+        "body-contact-name-placeholder":"Enter your name",
+        "body-contact-phone-placeholder":"Enter your phone", 
+        "body-contact-mail-placeholder":"Enter your mail", 
+        "body-contact-question-placeholder":"Enter your question",  
+        "contact-send-buttom": "Send",
+
+    
     },
     "netherlands": {
         "home-us-about-nl": "Thuis",
@@ -161,15 +168,16 @@ const data = {
         "foother-libel-mail-about": "Voer uw e-mailadres in",
         "foother-copyright-all-about": "2023. Alle rechten voorbehouden",
         "foother-copyright-all-unsplash-about": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
-        "about-us-about-h": "Over ons",
-        "our-mission-about-h": "Onze missie",
-        "why-choose-us-about-h": "WAAROM ONS KIEZEN",
-        "about-us-about-text": "Welkom bij Krupinec Bouw, uw eerste keuze voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en volledige transformatie van ruimtes!",
-        "our-mission-about-text": "Bij Krupinec Bouw hebben we als missie om uw bouwdromen om te zetten in tastbare realiteit. Ons team van ervaren professionals is vastberaden in hun toewijding om hoogwaardige, duurzame en kosteneffectieve oplossingen te bieden voor een breed scala aan projecten.",
-        "our-mission-about-text-p": "Of het nu gaat om renovaties aan huis of commerciële reparaties, wij zijn er om uw omgeving naar nieuwe hoogten te tillen. Ontdek ons scala aan diensten en laat ons frisse vitaliteit in uw projecten brengen, waarbij we duurzame kwaliteit leveren en de waarde van uw bouwprojecten verhogen. Uw visie en onze expertise leiden tot excellentie.",
-        "why-choose-us-about-t": "Deskundigheid: Onze ervaren professionals brengen jarenlange kennis en vaardigheid mee naar elk project, wat u deskundige oplossingen garandeert die de tand des tijds doorstaan, en zo uw gemoedsrust verzekeren.",
-        "why-choose-us-about-te": "Kwaliteit: We hebben kwaliteit als prioriteit in elk aspect van ons werk. Van de selectie van materialen tot vakmanschap, wij handhaven de hoogste normen om de duurzaamheid en functionaliteit van onze projecten te waarborgen.",
-        "why-choose-us-about-tex": "Innovatie: We blijven vooroplopen in trends en technologieën in de industrie om u innovatieve oplossingen te bieden die voldoen aan de steeds veranderende behoeften van onze klanten.",
-        "why-choose-us-about-text": "Klantgerichte benadering: Uw tevredenheid is onze hoogste prioriteit. We werken nauw met u samen om uw visie en doelen te begrijpen, en we communiceren transparant gedurende de hele levenscyclus van het project.",
+        "foother-form-contacts-buttons-mob":"Consultatie",
+        "body-contact-us-nl":"Neem contact met ons op",
+        "body-contact-phone-about":"Telefoon:", 
+        "body-contact-name-about":"Naam*",
+        "body-contact-phone-about-form":"Telefoon*",
+        "body-contact-your-question-about":"Uw vraag*", 
+        "body-contact-name-placeholder":"Voer uw naam in",
+        "body-contact-phone-placeholder":"Voer uw telefoonnummer in", 
+        "body-contact-mail-placeholder":"Voer uw e-mailadres in", 
+        "body-contact-question-placeholder":"Voer uw vraag in",  
+        "contact-send-buttom": "Verzenden",
     }
 };

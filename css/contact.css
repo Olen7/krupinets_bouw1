@@ -65,6 +65,19 @@ width: 100%;
     margin-bottom: 20px;
     
 }
+.address_social_contact-phone{
+    display: flex;
+    flex-direction: column;
+    color: #272727;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.06em;
+
+    
+}
 .address_link_contact{
     color: #272727;  
     font-family: Poppins;

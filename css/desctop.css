@@ -502,6 +502,14 @@
         align-items: flex-start;
         flex-direction: column;
     }
+    .address_social_contact-phone{
+        font-size: 24px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
     .address_link_contact {
         font-size: 24px;
         letter-spacing: 0.05em;

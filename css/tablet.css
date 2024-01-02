@@ -456,6 +456,12 @@
         letter-spacing: 0.06em;
         margin-bottom: 40px;
     }
+    @media screen and (min-width: 768px) and (max-width: 945px) {
+        .contact_name {
+            font-size: 39px;
+ 
+        }
+    }
     .icon-person {
         width: 590px;
     }
@@ -469,6 +475,14 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+    }
+    .address_social_contact-phone{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
     }
     .address_link_contact {
         font-size: 20px;

@@ -1,7 +1,9 @@
-const langSec = document.querySelector('.name_lang_item');
+const langSec = document.querySelector('.name_lang_item .name-lang-item-mob');
 const buttons = document.querySelectorAll('button');
 // const texthomeaboutnl = document.querySelector('.home-about-nl');
+
 const texthomeusaboutnl = document.querySelector('.home-us-about-nl');
+
 const textaboutusaboutnl = document.querySelector('.about-us-about-nl');
 const textportfolioaboutnl = document.querySelector('.portfolio-about-nl');
 const textreviewsaboutnl = document.querySelector('.reviews-about-nl');
@@ -28,16 +30,17 @@ const inputPhone = document.querySelector('.foother-libel-phone-about');
 const inputMail = document.querySelector('.foother-libel-mail-about');
 const textCopyright = document.querySelector('.foother-copyright-all-about');
 const textUnsplash = document.querySelector('.foother-copyright-all-unsplash-about');
-const aboutUsHeader = document.querySelector('.about-us-about-h');
-const ourMissionHeader = document.querySelector('.our-mission-about-h');
-const whyChooseUsHeader = document.querySelector('.why-choose-us-about-h');
-const ourMissionText = document.querySelector('.our-mission-about-text');
-const ourMissionTextP = document.querySelector('.our-mission-about-text-p');
-const whyChooseUsText = document.querySelector('.why-choose-us-about-t');
-const whyChooseUsTextE = document.querySelector('.why-choose-us-about-te');
-const whyChooseUsTextEx = document.querySelector('.why-choose-us-about-tex');
-const whyChooseUsTextExt = document.querySelector('.why-choose-us-about-text');
-const aboutUsText = document.querySelector('.about-us-about-text');
+const buttonReviewContactsNL = document.querySelector('.rewiew-contacts-button-nl');
+const headingReviewNL = document.querySelector('.rewiew-reviews-nl-h');
+const buttonReviewLoadMoreNL = document.querySelector('.rewiew-reviews-nl-buttons');
+const inputYourName = document.querySelector('.foother-libel-name-about');
+const textareaYourReview = document.querySelector('.textarea-your-review');
+const labelYourName = document.querySelector('.rewiew-your-name-names');
+const labelTellYourReview = document.querySelector('.rewiew-tell-your-review');
+const rewiewwriteareview = document.querySelector('.rewiew-write-a-review');
+const rewiewyourname = document.querySelector('.rewiew-your-name');
+const rewiewtellusabout = document.querySelector('.rewiew-tell-us-about');
+const rewiewsendbuttom = document.querySelector('.rewiew-send-buttom');
 
 let activeButton = null;
 
@@ -49,7 +52,9 @@ buttons.forEach(button => {
             buttons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             // texthomeaboutnl.textContent = data[attr]['home-about-nl'];
+            
             texthomeusaboutnl.textContent = data[attr]['home-us-about-nl'];
+            
             textaboutusaboutnl.textContent = data[attr]['about-us-about-nl'];
             textportfolioaboutnl.textContent = data[attr]['portfolio-about-nl'];
             textreviewsaboutnl.textContent = data[attr]['reviews-about-nl'];
@@ -75,20 +80,17 @@ buttons.forEach(button => {
             inputPhone.placeholder = data[attr]['foother-libel-phone-about'];
             inputMail.placeholder = data[attr]['foother-libel-mail-about'];
             textCopyright.textContent = data[attr]['foother-copyright-all-about'];
-                textUnsplash.textContent = data[attr]['foother-copyright-all-unsplash-about'];
-                aboutUsHeader.textContent = data[attr]['about-us-about-h'];
-                ourMissionHeader.textContent = data[attr]['our-mission-about-h'];
-                whyChooseUsHeader.textContent = data[attr]['why-choose-us-about-h'];
-                ourMissionText.textContent = data[attr]['our-mission-about-text'];
-                ourMissionTextP.textContent = data[attr]['our-mission-about-text-p'];
-                whyChooseUsText.textContent = data[attr]['why-choose-us-about-t'];
-                whyChooseUsTextE.textContent = data[attr]['why-choose-us-about-te'];
-                whyChooseUsTextEx.textContent = data[attr]['why-choose-us-about-tex'];
-                whyChooseUsTextExt.textContent = data[attr]['why-choose-us-about-text'];
-                aboutUsText.textContent = data[attr]['about-us-about-text'];
-            
-            
-            
+            textUnsplash.textContent = data[attr]['foother-copyright-all-unsplash-about'];
+            buttonReviewContactsNL.textContent = data[attr]['rewiew-contacts-button-nl'];
+            headingReviewNL.textContent = data[attr]['rewiew-reviews-nl-h'];
+            buttonReviewLoadMoreNL.textContent = data[attr]['rewiew-reviews-nl-buttons'];
+            labelYourName.placeholder = data[attr]['rewiew-your-name-names'];
+            labelTellYourReview.placeholder = data[attr]['rewiew-tell-your-review'];
+            rewiewwriteareview.textContent = data[attr]['rewiew-write-a-review'];
+            rewiewyourname.textContent = data[attr]['rewiew-your-name'];
+            rewiewtellusabout.textContent = data[attr]['rewiew-tell-us-about'];
+            rewiewsendbuttom.textContent = data[attr]['rewiew-send-buttom'];
+
                 activeButton = this;
                
         }
@@ -123,16 +125,17 @@ const data = {
         "foother-libel-mail-about": "Enter your mail",
         "foother-copyright-all-about": "2023. All rights reserved",
         "foother-copyright-all-unsplash-about": "The site contains images from a free resource Unsplash",
-        "about-us-about-h": "About Us",
-        "our-mission-about-h": "Our Mission",
-        "why-choose-us-about-h": "WHY CHOOSE US",
-        "about-us-about-text": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces! ",
-        "our-mission-about-text": "At Krupinec Bouw, we are on a mission to turn your construction dreams into a tangible reality. Our team of seasoned professionals is unwavering in their commitment to providing high-quality, sustainable, and cost-effective solutions for a diverse range of projects.",
-        "our-mission-about-text-p": "Whether it's home renovations or commercial repairs, we are here to elevate your surroundings to new heights. Discover our array of services, and allow us to infuse fresh vitality into your projects, delivering enduring quality and enhancing the value of your construction endeavors. Your vision and our expertise results in excellence.",
-        "why-choose-us-about-t": "Expertise: Our experienced professionals bring years of knowledge and skill to every project, guaranteeing you expert solutions that stand the test of time, ensuring your peace of mind.",
-        "why-choose-us-about-te": "Quality: We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects.",
-        "why-choose-us-about-tex": "Innovation: We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients",
-        "why-choose-us-about-text": "Client-Centric Approach: Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle.",
+        "rewiew-contacts-button-nl": "Write a review",
+        "rewiew-reviews-nl-h": "reviews",
+        "rewiew-reviews-nl-buttons": "Load more",
+        "rewiew-write-a-review": "write a review",
+        "rewiew-your-name": "Your name*",
+        "rewiew-tell-us-about": "Tell us about your experience*",
+        // "rewiew-you-can-upload-photos": "You can upload photos + Upload",
+        "rewiew-send-buttom": "Send",
+        "rewiew-your-name-names": "Name",
+        "rewiew-tell-your-review": "Your review",
+    
     },
     "netherlands": {
         "home-us-about-nl": "Thuis",
@@ -161,15 +164,15 @@ const data = {
         "foother-libel-mail-about": "Voer uw e-mailadres in",
         "foother-copyright-all-about": "2023. Alle rechten voorbehouden",
         "foother-copyright-all-unsplash-about": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
-        "about-us-about-h": "Over ons",
-        "our-mission-about-h": "Onze missie",
-        "why-choose-us-about-h": "WAAROM ONS KIEZEN",
-        "about-us-about-text": "Welkom bij Krupinec Bouw, uw eerste keuze voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en volledige transformatie van ruimtes!",
-        "our-mission-about-text": "Bij Krupinec Bouw hebben we als missie om uw bouwdromen om te zetten in tastbare realiteit. Ons team van ervaren professionals is vastberaden in hun toewijding om hoogwaardige, duurzame en kosteneffectieve oplossingen te bieden voor een breed scala aan projecten.",
-        "our-mission-about-text-p": "Of het nu gaat om renovaties aan huis of commerciële reparaties, wij zijn er om uw omgeving naar nieuwe hoogten te tillen. Ontdek ons scala aan diensten en laat ons frisse vitaliteit in uw projecten brengen, waarbij we duurzame kwaliteit leveren en de waarde van uw bouwprojecten verhogen. Uw visie en onze expertise leiden tot excellentie.",
-        "why-choose-us-about-t": "Deskundigheid: Onze ervaren professionals brengen jarenlange kennis en vaardigheid mee naar elk project, wat u deskundige oplossingen garandeert die de tand des tijds doorstaan, en zo uw gemoedsrust verzekeren.",
-        "why-choose-us-about-te": "Kwaliteit: We hebben kwaliteit als prioriteit in elk aspect van ons werk. Van de selectie van materialen tot vakmanschap, wij handhaven de hoogste normen om de duurzaamheid en functionaliteit van onze projecten te waarborgen.",
-        "why-choose-us-about-tex": "Innovatie: We blijven vooroplopen in trends en technologieën in de industrie om u innovatieve oplossingen te bieden die voldoen aan de steeds veranderende behoeften van onze klanten.",
-        "why-choose-us-about-text": "Klantgerichte benadering: Uw tevredenheid is onze hoogste prioriteit. We werken nauw met u samen om uw visie en doelen te begrijpen, en we communiceren transparant gedurende de hele levenscyclus van het project.",
+        "rewiew-contacts-button-nl": "Schrijf een recensie",
+        "rewiew-reviews-nl-h": "Beoordelingen",
+        "rewiew-reviews-nl-buttons": "Meer laden",
+        "rewiew-write-a-review": "Schrijf een recensie",
+        "rewiew-your-name": "Uw naam*",
+        "rewiew-tell-us-about": "Vertel ons over uw ervaring*",
+        // "rewiew-you-can-upload-photos": "U kunt foto's uploaden + Upload",
+        "rewiew-send-buttom": "Verzenden",
+        "rewiew-your-name-names": "Naam",
+        "rewiew-tell-your-review": "Uw recensie",
     }
 };
