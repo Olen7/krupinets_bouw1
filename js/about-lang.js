@@ -38,6 +38,7 @@ const whyChooseUsTextE = document.querySelector('.why-choose-us-about-te');
 const whyChooseUsTextEx = document.querySelector('.why-choose-us-about-tex');
 const whyChooseUsTextExt = document.querySelector('.why-choose-us-about-text');
 const aboutUsText = document.querySelector('.about-us-about-text');
+const footherconsultationmob = document.querySelector('.foother-consultation-mob');
 
 let activeButton = null;
 
@@ -86,6 +87,7 @@ buttons.forEach(button => {
                 whyChooseUsTextEx.textContent = data[attr]['why-choose-us-about-tex'];
                 whyChooseUsTextExt.textContent = data[attr]['why-choose-us-about-text'];
                 aboutUsText.textContent = data[attr]['about-us-about-text'];
+                footherconsultationmob.textContent = data[attr]['foother-consultation-mob'];
             
             
             
@@ -133,6 +135,7 @@ const data = {
         "why-choose-us-about-te": "Quality: We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects.",
         "why-choose-us-about-tex": "Innovation: We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients",
         "why-choose-us-about-text": "Client-Centric Approach: Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle.",
+        "foother-consultation-mob": "Consultation",
     },
     "netherlands": {
         "home-us-about-nl": "Thuis",
@@ -171,5 +174,6 @@ const data = {
         "why-choose-us-about-te": "Kwaliteit: We hebben kwaliteit als prioriteit in elk aspect van ons werk. Van de selectie van materialen tot vakmanschap, wij handhaven de hoogste normen om de duurzaamheid en functionaliteit van onze projecten te waarborgen.",
         "why-choose-us-about-tex": "Innovatie: We blijven vooroplopen in trends en technologieën in de industrie om u innovatieve oplossingen te bieden die voldoen aan de steeds veranderende behoeften van onze klanten.",
         "why-choose-us-about-text": "Klantgerichte benadering: Uw tevredenheid is onze hoogste prioriteit. We werken nauw met u samen om uw visie en doelen te begrijpen, en we communiceren transparant gedurende de hele levenscyclus van het project.",
+        "foother-consultation-mob": "Consultatie",
     }
 };

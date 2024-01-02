@@ -30,7 +30,7 @@ const textCopyright = document.querySelector('.foother-copyright-all-about');
 const textUnsplash = document.querySelector('.foother-copyright-all-unsplash-about');
 const textReviewContactsBodyNL = document.querySelector('.rewiew-contacts-body-nl');
 const textReviewContactsBodyNLURL = document.querySelector('.rewiew-contacts-body-nl-url');
-
+const footherconsultationmob = document.querySelector('.foother-consultation-mob');
 
 let activeButton = null;
 
@@ -71,7 +71,7 @@ buttons.forEach(button => {
                 textUnsplash.textContent = data[attr]['foother-copyright-all-unsplash-about'];
                 textReviewContactsBodyNL.textContent = data[attr]['rewiew-contacts-body-nl'];
                 textReviewContactsBodyNLURL.textContent = data[attr]['rewiew-contacts-body-nl-url'];
-            
+                footherconsultationmob.textContent = data[attr]['foother-consultation-mob'];
             
                 activeButton = this;
                
@@ -108,8 +108,8 @@ const data = {
         "foother-copyright-all-about": "2023. All rights reserved",
         "foother-copyright-all-unsplash-about": "The site contains images from a free resource Unsplash",
         "rewiew-contacts-body-nl": "WE CAN’T FIND THIS PAGE",
-        "rewiew-contacts-body-nl-url": "The webpage you are trying to access cannot be found on the server. Please check the URL or try navigation to a different page."
-
+        "rewiew-contacts-body-nl-url": "The webpage you are trying to access cannot be found on the server. Please check the URL or try navigation to a different page.",
+        "foother-consultation-mob": "Consultation",
     
     },
     "netherlands": {
@@ -140,6 +140,7 @@ const data = {
         "foother-copyright-all-about": "2023. Alle rechten voorbehouden",
         "foother-copyright-all-unsplash-about": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
         "rewiew-contacts-body-nl": "WE KUNNEN DEZE PAGINA NIET VINDEN",
-        "rewiew-contacts-body-nl-url": "De webpagina die u probeert te openen, kan niet worden gevonden op de server. Controleer de URL of probeer naar een andere pagina te navigeren."
+        "rewiew-contacts-body-nl-url": "De webpagina die u probeert te openen, kan niet worden gevonden op de server. Controleer de URL of probeer naar een andere pagina te navigeren.",
+        "foother-consultation-mob": "Consultatie",
     }
 };

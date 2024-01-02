@@ -41,6 +41,7 @@ const rewiewwriteareview = document.querySelector('.rewiew-write-a-review');
 const rewiewyourname = document.querySelector('.rewiew-your-name');
 const rewiewtellusabout = document.querySelector('.rewiew-tell-us-about');
 const rewiewsendbuttom = document.querySelector('.rewiew-send-buttom');
+const footherconsultationmob = document.querySelector('.foother-consultation-mob');
 
 let activeButton = null;
 
@@ -90,7 +91,7 @@ buttons.forEach(button => {
             rewiewyourname.textContent = data[attr]['rewiew-your-name'];
             rewiewtellusabout.textContent = data[attr]['rewiew-tell-us-about'];
             rewiewsendbuttom.textContent = data[attr]['rewiew-send-buttom'];
-
+            footherconsultationmob.textContent = data[attr]['foother-consultation-mob'];
                 activeButton = this;
                
         }
@@ -135,6 +136,7 @@ const data = {
         "rewiew-send-buttom": "Send",
         "rewiew-your-name-names": "Name",
         "rewiew-tell-your-review": "Your review",
+        "foother-consultation-mob": "Consultation",
     
     },
     "netherlands": {
@@ -174,5 +176,6 @@ const data = {
         "rewiew-send-buttom": "Verzenden",
         "rewiew-your-name-names": "Naam",
         "rewiew-tell-your-review": "Uw recensie",
+        "foother-consultation-mob": "Consultatie",
     }
 };
