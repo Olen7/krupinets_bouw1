@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <header class="header heder_eror header_wrappers">
+    <header class="header heder_eror  scroll">
         <div class="container container_header">
             <nav class="heder">
                 <a href="../index.html" class="heder_svg">
@@ -29,26 +29,27 @@
                     </svg>
                 </a>
                 <ul class="heder_nav">
+                    
                     <li class="header__item">
-                        <a class="header__id_black home-us-about-nl" href="../index.html">Home</a>
+                        <a class="header__id_black  lang" data-key="home" href="../index.html">Home</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black header-item-us about-us-about-nl" href="./about.html">About Us</a>
+                        <a class="header__id_black header-item-us  lang" data-key="about-us" href="./about.html">About Us</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black portfolio-about-nl" href="./page-translation-issue.html">Portfolio</a>
+                        <a class="header__id_black  lang" data-key="portfolio" href="./page-translation-issue.html">Portfolio</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black reviews-about-nl" href="./reviews.html">Reviews</a>
+                        <a class="header__id_black  lang" data-key="reviews" href="./reviews.html">Reviews</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black contacts-about-nl" href="./contact.html">Contacts</a>
+                        <a class="header__id_black  lang" data-key="contacts" href="./contact.html">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <ul class="name_lang_list">
-                <li class="name_lang_item"><button type="button" language="english" class="name_lang_btn">en</button></li>
-                <li class="name_lang_item"><button type="button" language="netherlands" class="name_lang_btn">nl</button></li>
+                <li class="name_lang_item"><button type="button" language="english" class="name_lang_btn lang-switch">en</button></li>
+                <li class="name_lang_item"><button type="button" language="netherlands" class="name_lang_btn lang-switch">nl</button></li>
             </ul>
             <button type="button" class="header__button" data-menu-open>
                 <svg width="36" height="36">
@@ -56,47 +57,44 @@
                 </svg>
             </button>
             </div>
-            <div class="mob-menu is-hidden" data-menu> 
-                
+            <div class="mob-menu is-hidden" data-menu>                
                 <div class="mobil_button">
-               
                 <ul class="mob-menu-list">
                     <li class="mob-menu-items"> <a href="../index.html" class="heder_svg ">
-                            <svg width="60" height="32">
-                                <use href="../svg/logo.svg#icon-k-b-mobil-tab"></use>
-                            </svg>
+                        <svg width="60" height="32">
+                            <use href="../svg/logo.svg#icon-k-b-mobil-tab"></use>
+                        </svg>
                     </a></li>
                     <li class="mob-menu-items ">
-                        <a href="../index.html" class="mob-menu-item mob-home-about-nl">Home</a></li>
+                        <a href="../index.html" data-key="home" class="mob-menu-item lang">Home</a></li>
                     <li class="mob-menu-items">
-                        <a href="./about.html" class="mob-menu-item mob-about-us-about-nl">About Us</a></li>
+                        <a href="./about.html" data-key="about-us" class="mob-menu-item lang">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="./page-translation-issue.html" class="mob-menu-item mob-portfolio-about-nl">Portfoli</a></li>
+                        <a href="./page-translation-issue.html" data-key="portfolio" class="mob-menu-item lang">Portfoli</a></li>
                     <li class="mob-menu-items">
-                            <a href="./reviews.html" class="mob-menu-item mob-reviews-about-nl">Reviews</a></li>
+                            <a href="./reviews.html" data-key="reviews" class="mob-menu-item lang">Reviews</a></li>
                     <li class="mob-menu-items">
-                            <a href="./contact.html" class="mob-menu-item mob-contacts-about-nl">Contacts</a></li>
+                            <a href="./contact.html" data-key="contacts" class="mob-menu-item lang">Contacts</a></li>
                 </ul>
             </div>
             <div class="mobil_buttons"> 
-                <button data-menu-close class="mob-close-button">
+                <button data-menu-close class="mob-close-button ">
                         <svg width="20" height="20">
                             <use href="../svg/exs.svg#icon-exs"></use>
                         </svg>
             </button></div>
             <ul class="name-lang-mob">
-                <li class="name-lang-item-mob"><button type="button" language="english" class="name-lang-btn-mob">en</button></li>
-                <li class="name-lang-item-mob"><button type="button" language="netherlands" class="name-lang-btn-mob">nl</button></li>
+                <li class="name-lang-item-mob"><button type="button" language="english" class="name-lang-btn-mob lang-switch">en</button></li>
+                <li class="name-lang-item-mob"><button type="button" language="netherlands" class="name-lang-btn-mob lang-switch">nl</button></li>
             </ul>
-              </div>
-        
+            </div>       
     </header>
     <section class="eror_conteiner">
         <h1 class="eror_name">404</h1>
-        <p class="text_name rewiew-contacts-body-nl">WE CAN’T FIND THIS PAGE</p>
-        <p class="text_name_parahrafs rewiew-contacts-body-nl-url">The webpage you are trying to access cannot be found on the server. <p class="text_name_parahraf">Please check the URL or try navigation to a different page.</p>
+        <p class="text_name lang" data-key="text-page">WE CAN’T FIND THIS PAGE</p>
+        <p class="text_name_parahrafs lang" data-key="text-url">The webpage you are trying to access cannot be found on the server. <p class="text_name_parahraf lang" data-key="text-url-nav">Please check the URL or try navigation to a different page.</p>
             </p>
-            <div class="s"><a href="../index.html"><button type="button" class="eror_button">Main page</button></a></div>
+            <div class="s"><a href="../index.html"><button type="button" class="eror_button lang" data-key="button-main-page">Main page</button></a></div>
         
 
 
@@ -115,29 +113,29 @@
                 </a>
                 <ul class="">
                     <li class="foother_item">
-                        <a class="foother_links foother-home-about-nl" href="../index.html">Home</a>
+                        <a class="foother_links lang" data-key="home" href="../index.html">Home</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links foother-about-us-about-nl" href="../html/about.html">About Us</a>
+                        <a class="foother_links lang" data-key="about-us" href="../html/about.html">About Us</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links foother-portfolio-about-nl" href="../html/page-translation-issue.html">Portfolio</a>
+                        <a class="foother_links lang" data-key="portfolio" href="../html/page-translation-issue.html">Portfolio</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links foother-reviews-about-nl" href="../html/reviews.html">Reviews</a>
+                        <a class="foother_links lang" data-key="reviews" href="../html/reviews.html">Reviews</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links foother-contacts-about-nl" href="../html/contact.html">Contacts</a>
+                        <a class="foother_links lang" data-key="contacts" href="../html/contact.html">Contacts</a>
                     </li>
                 </ul>
             </div>
             <div class="conteiner_address_icon_tab">
                 <address class="address">
-                    <p class="address_contact foother-contacts-about">Contacts</p>
+                    <p class="address_contact lang" data-key="contacts">Contacts</p>
                     <ul class="">
-                        <li class="address_social"><a href="tel:+110001111111" class="address_link foother-phone-about">Phone: <span class="foother_desctop_amster">+31621968479</span></a></li>
+                        <li class="address_social"><a href="tel:+110001111111" class="address_link lang" data-key="phone">Phone: <span class="foother_desctop_amster">+31621968479</span></a></li>
                         <li class="address_social"><a href="mailto:info@devstudio.com" class="address_link">E-mail: <span class="foother_desctop_amster">krupinecbouw@gmail.com</span> </a></li>
-                        <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow">Adress: <span class="foother_desctop_amster">Eliza van Calcarstraat 27,<span class="foother_tab_amster">Amsterdam, Netherlands </span></span> 
+                        <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link" target="_blank" rel="noopener noreferrer nofollow" >Adress: <span class="foother_desctop_amster">Eliza van Calcarstraat 27,<span class="foother_tab_amster">Amsterdam, Netherlands </span></span> 
                             </a></li>
                     </ul>
                     
@@ -184,10 +182,10 @@
         </div>
             <div class="footer_fedback_block">
                 <div class="foother_blok_index">
-                    <h2 class="feedback_name_index foother-form-contacts">Consultation</h2>
+                    <h2 class="feedback_name_index lang" data-key="consultation">Consultation</h2>
                     <form class="modal-icon_tab">
                         <div class="modal-form_tab">
-                            <label for="name-text" class="name-text_tab foother-form-name-contacts">Name*</label>
+                            <label for="name-text" class="name-text_tab lang" data-key="name-form">Name*</label>
                             <input 
                             class="icon-person_tab foother-libel-name-about"
                             type="text" 
@@ -197,7 +195,7 @@
                             required />
                         </div>
                         <div class="modal-form">
-                            <label for="phone" class="name-text_tab foother-form-phone-contacts">Phone*</label>
+                            <label for="phone" class="name-text_tab lang" data-key="phone-form">Phone*</label>
                                     <input 
                                     class="icon-person_tab foother-libel-phone-about"
                                     type="tel" 
@@ -221,9 +219,9 @@
                                 </div>
                         </div>
                             
-                            <button class="address_button foother-form-contacts-buttons" type="submit">Consultation</button>
+                            <button class="address_button lang" type="submit" data-key="consultation">Consultation</button>
                         </form>
-                        <a href="../html/contact.html"><button class="button-consu foother-consultation-mob" type="button" >Consultation</button></a>
+                        <a href="../html/contact.html"><button class="button-consu lang" type="button" data-key="consultation">Consultation</button></a>
                         
                 </div>
 
@@ -233,13 +231,13 @@
                 <div class="adderss_copyright ">Copyright
                     <svg width="20" height="20" class="copyrighte">
                     <use href="../svg/copyright.svg#icon-copyrighte"></use>
-                </svg><p class=" foother-copyright-all-about ">2023. All rights reserved</p></div>
+                </svg><p class="lang" data-key="copyright">2023. All rights reserved</p></div>
 
-                <p class="foother_text foother-copyright-all-unsplash-about">The site contains images from 
+                <p class="foother_text lang" data-key="copyright-unsplash">The site contains images from 
                     a free resource Unsplash</p>
             </div>
     </footer>
-    <script src="../js/page-lang-nl.js"></script>
+    <script src="../js/index-lang.js"></script>
     <script src="../js/menu.js"></script>
 </body>
 </html>

@@ -128,15 +128,12 @@ const data = {
         "foother-copyright-all-about": "2023. All rights reserved",
         "foother-copyright-all-unsplash-about": "The site contains images from a free resource Unsplash",
         "foother-form-contacts-buttons-mob":"Consultation",
-        "body-contact-us-nl":"contact us",
+        
         "body-contact-phone-about":"Phone:",
         "body-contact-name-about":"Name*",
         "body-contact-phone-about-form":"Phone*",
         "body-contact-your-question-about":"Your question*",
-        "body-contact-name-placeholder":"Enter your name",
-        "body-contact-phone-placeholder":"Enter your phone", 
-        "body-contact-mail-placeholder":"Enter your mail", 
-        "body-contact-question-placeholder":"Enter your question",  
+         
         "contact-send-buttom": "Send",
 
     
@@ -174,10 +171,7 @@ const data = {
         "body-contact-name-about":"Naam*",
         "body-contact-phone-about-form":"Telefoon*",
         "body-contact-your-question-about":"Uw vraag*", 
-        "body-contact-name-placeholder":"Voer uw naam in",
-        "body-contact-phone-placeholder":"Voer uw telefoonnummer in", 
-        "body-contact-mail-placeholder":"Voer uw e-mailadres in", 
-        "body-contact-question-placeholder":"Voer uw vraag in",  
+         
         "contact-send-buttom": "Verzenden",
     }
 };

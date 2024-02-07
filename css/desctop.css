@@ -193,7 +193,8 @@
     .benefits_text{
         font-size: 20px;
         letter-spacing: 0.05em;
-        width: 230px;
+        /* width: 230px;  поміняв на 100% тому що SVG зменьшується*/
+        width: 100%;
         height:auto;
         line-height: 1.6em; /* 160% */
         padding-bottom:60px;
@@ -296,6 +297,7 @@
         font-size: 20px;
         letter-spacing: 0.05em;
         max-width:610px;
+        text-align: center;
     }
     .copyright_desctop{
         display: flex;
@@ -504,7 +506,7 @@
     }
     .address_social_contact-phone{
         font-size: 24px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         display: flex;
         align-items: flex-start;
         flex-direction: column;

@@ -1,226 +1,202 @@
-
-
-
-const langSec = document.querySelector('.name_lang_item .name-lang-mob');
-const buttons = document.querySelectorAll('button');
-const textTitle = document.querySelector('.title');
-const textDesc = document.querySelector('.button-consultation');
-const textAboutUs = document.querySelector('.about-us'); 
-const textAboutUsP = document.querySelector('.about-us-p');
-const aboutUsButton = document.querySelector('.about-us-button');
-const headerHome = document.querySelector('.header-home');
-const headerAboutUs = document.querySelector('.header-about-us');
-const headerPortfolio = document.querySelector('.header-portfolio');
-const headerReviews = document.querySelector('.header-reviews');
-const headerContacts = document.querySelector('.header-contacts');
-const textServices = document.querySelector('.services');
-const textServicesF = document.querySelector('.services-f');
-const textServicesFo = document.querySelector('.services-fo');
-const textServicesFot = document.querySelector('.services-fot');
-const textServicesFoto = document.querySelector('.services-foto');
-const textBenefits = document.querySelector('.benefits');
-const textBenefitsOne = document.querySelector('.benefits-one');
-const textBenefitsTwo = document.querySelector('.benefits-two');
-const textBenefitsThre = document.querySelector('.benefits-thre');
-const textBenefitsFour = document.querySelector('.benefits-four');
-const textPortfolioBadkamers = document.querySelector('.portfolio-badkamers');
-const textPortfolioGeneral = document.querySelector('.portfolio-general');
-const textPortfolioDormer = document.querySelector('.portfolio-dormer');
-const textFootherHome = document.querySelector('.foother-home');
-const textFootherAboutUs = document.querySelector('.foother-about-us');
-const textFootherPortfolio = document.querySelector('.foother-portfolio');
-const textFootherReviews = document.querySelector('.foother-reviews');
-const textFootherContacts = document.querySelector('.foother-contacts');
-const textFootherContactSection = document.querySelector('.foother-contact-section');
-const textFootherPhone = document.querySelector('.foother-phone');
-const textFootherConsultation = document.querySelector('.foother-consultation-feetback');
-const textFootherNameForm = document.querySelector('.foother-name-form');
-const textFootherPhoneForm = document.querySelector('.foother-phone-form');
-const textFootherMailForm = document.querySelector('.foother-mail-form');
-const textFootherLibelName = document.querySelector('.foother-libel-name');
-const textFootherLibelPhone = document.querySelector('.foother-libel-phone');
-const textfootherlibelmail = document.querySelector('.foother-libel-mail');
-const textfootherformbuttom = document.querySelector('.foother-form-buttom');
-const textfoothercopyrightall = document.querySelector('.foother-copyright-all');
-const textfoothercopyrightallunsplash = document.querySelector('.foother-copyright-all-unsplash');
-// const textfoothernl = document.querySelector('.foother-nl');
-const textMobHome = document.querySelector('.mob-home');
-const textMobAboutUs = document.querySelector('.mob-about-us');
-const textMobPortfolio = document.querySelector('.mob-portfolio');
-const textMobReviews = document.querySelector('.mob-reviews');
-const textMobContacts = document.querySelector('.mob-contacts');
-const textfootherconsultation = document.querySelector('.button-consultation');
-const footherconsultationmob = document.querySelector('.foother-consultation-mob');
-
-let activeButton = null;
-
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        const attr = this.getAttribute('language');
-
-        if (activeButton !== this) {
-            buttons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            textTitle.textContent = data[attr].title;
-            textDesc.textContent = data[attr]['button-consultation'];
-            textAboutUs.textContent = data[attr]['about-us'];
-            textAboutUsP.textContent = data[attr]['about-us-p'];
-            aboutUsButton.textContent = data[attr]['about-us-button'];
-            headerHome.textContent = data[attr]['header-home'];
-            headerAboutUs.textContent = data[attr]['header-about-us'];
-            headerPortfolio.textContent = data[attr]['header-portfolio'];
-            headerReviews.textContent = data[attr]['header-reviews'];
-            headerContacts.textContent = data[attr]['header-contacts'];
-
-            // Оновлення для нових ключів
-            textServices.textContent = data[attr]['services'];
-            textServicesF.textContent = data[attr]['services-f'];
-            textServicesFo.textContent = data[attr]['services-fo'];
-            textServicesFot.textContent = data[attr]['services-fot'];
-            textServicesFoto.textContent = data[attr]['services-foto'];
-            textBenefits.textContent = data[attr]['benefits'];
-            textBenefitsOne.textContent = data[attr]['benefits-one'];
-            textBenefitsTwo.textContent = data[attr]['benefits-two'];
-            textBenefitsThre.textContent = data[attr]['benefits-thre'];
-            textBenefitsFour.textContent = data[attr]['benefits-four'];
-            textPortfolioBadkamers.textContent = data[attr]['portfolio-badkamers'];
-            textPortfolioGeneral.textContent = data[attr]['portfolio-general'];
-            textPortfolioDormer.textContent = data[attr]['portfolio-dormer'];
-            textFootherHome.textContent = data[attr]['foother-home'];
-            textFootherAboutUs.textContent = data[attr]['foother-about-us'];
-            textFootherPortfolio.textContent = data[attr]['foother-portfolio'];
-            textFootherReviews.textContent = data[attr]['foother-reviews'];
-            textFootherContacts.textContent = data[attr]['foother-contacts'];
-            textFootherContactSection.textContent = data[attr]['foother-contact-section'];
-            textFootherPhone.textContent = data[attr]['foother-phone'];
-
-            textFootherConsultation.textContent = data[attr]['foother-consultation-feetback'];
-            textFootherNameForm.textContent = data[attr]['foother-name-form'];
-            textFootherPhoneForm.textContent = data[attr]['foother-phone-form'];
-            textFootherMailForm.textContent = data[attr]['foother-mail-form'];
-            textFootherLibelName.placeholder = data[attr]['foother-libel-name'];
-            textFootherLibelPhone.placeholder = data[attr]['foother-libel-phone'];
-            textfootherlibelmail.placeholder = data[attr]['foother-libel-mail'];
-            textfootherformbuttom.textContent = data[attr]['foother-form-buttom'];
-            textfoothercopyrightall.textContent = data[attr]['foother-copyright-all'];
-            textfoothercopyrightallunsplash.textContent = data[attr]['foother-copyright-all-unsplash'];
-            // textfoothernl.textContent = data[attr]['foother-nl'];
-
-            // Оновлення для ключів мобільної версії
-            textMobHome.textContent = data[attr]['mob-home'];
-            textMobAboutUs.textContent = data[attr]['mob-about-us'];
-            textMobPortfolio.textContent = data[attr]['mob-portfolio'];
-            textMobReviews.textContent = data[attr]['mob-reviews'];
-            textMobContacts.textContent = data[attr]['mob-contacts'];
-            textfootherconsultation.textContent = data[attr]['foother-consultation'];
-            footherconsultationmob.textContent = data[attr]['foother-consultation-mob'];
-            activeButton = this;
-        }
-    });
-});
-
 const data = {
     "english": {
-        "header-home":"Home",
-        "header-about-us":"About Us",
-        "header-portfolio":"Portfolio",
-        "header-reviews":"Reviews",
-        "header-contacts":"Contacts",
+        "home":"Home",
+        "about-us":"About Us",
+        "portfolio":"Portfolio",
+        "reviews":"Reviews",
+        "contacts":"Contacts",
         "title": "realize your dreams with us",
         "button-consultation": "Consultation",
-        "about-us": "About Us",
-        "about-us-p": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!",
-        "about-us-button": "Read more",
+        
+        "about-us-welcome": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!",
+        "read-more-button": "Read more",
         "services": "Services",
-        "services-f": "Bathroom Renovation",
-        "services-fo": "General Renovation",
-        "services-fot": "Dormer Constructions",
-        "services-foto": "Painting and Plastering",
+        "services-bathroom": "Bathroom Renovation",
+        "services-algemene": "General Renovation",
+        "services-dormer": "Dormer Constructions",
+        "services-painting": "Painting and Plastering",
+        
         "benefits": "Benefits",
-        "benefits-one": "Performance Quality",
-        "benefits-two": "Experience",
-        "benefits-thre": "Innovations",
-        "benefits-four": "Customer Orientation",
+        "benefits-performance": "Performance Quality",
+        "benefits-experience": "Experience",
+        "benefits-innovations": "Innovations",
+        "benefits-customer": "Customer Orientation",
+
         "portfolio-badkamers": "bathrooms",
         "portfolio-general": "general",
         "portfolio-dormer": "dormer",
-        "foother-home":"Home",
-        "foother-about-us":"About Us",
-        "foother-portfolio":"Portfolio",
-        "foother-reviews":"Reviews",
-        "foother-contacts":"Contacts",
-        "foother-contact-section":"Contacts",
-        "foother-phone":"Phone: +31621968479",
-        "foother-address":"Address: Eliza van Calcarstraat 27,",
-        "foother-consultation-feetback": "Consultation",
-        "foother-name-form": "Name*",
-        "foother-phone-form": "Phone*",
-        "foother-mail-form": "E-mail*",
-        "foother-libel-name": "Enter your name",
-        "foother-libel-phone": "Enter your phone",
-        "foother-libel-mail": "Enter your mail",
-        "foother-form-buttom": "Consultation",
-        "foother-copyright-all": "2023. All rights reserved",
-        "foother-copyright-all-unsplash": "The site contains images from a free resource Unsplash",
-        // "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
-        "mob-home":"Home",
-        "mob-about-us":"About Us",
-        "mob-portfolio":"Portfolio",
-        "mob-reviews":"Reviews",
-        "mob-contacts":"Contacts",
-        "foother-consultation": "Consultation",
-        "foother-consultation-mob": "Consultation",
 
+
+        
+        "phone":"Phone: +31621968479",
+        // "address":"Adress: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+
+        "consultation": "Consultation",
+        "name-form": "Name*",
+        "phone-form": "Phone*",
+        "mail-form": "E-mail*",
+
+        "libel-name": "Enter your name",
+        "libel-phone": "Enter your phone",
+        "libel-mail": "Enter your mail",
+
+        
+        "copyright": "2023. All rights reserved",
+        "copyright-unsplash": "The site contains images from a free resource Unsplash",
+        // "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        
+
+        "our-mission": "Our Mission",
+        "why-choose-us": "WHY CHOOSE US",
+        
+        "our-mission-text-one": "At Krupinec Bouw, we are on a mission to turn your construction dreams into a tangible reality. Our team of seasoned professionals is unwavering in their commitment to providing high-quality, sustainable, and cost-effective solutions for a diverse range of projects.",
+        "our-mission-text-two": "Whether it's home renovations or commercial repairs, we are here to elevate your surroundings to new heights. Discover our array of services, and allow us to infuse fresh vitality into your projects, delivering enduring quality and enhancing the value of your construction endeavors. Your vision and our expertise results in excellence.",
+        "why-choose-us-one": "Expertise: Our experienced professionals bring years of knowledge and skill to every project, guaranteeing you expert solutions that stand the test of time, ensuring your peace of mind.",
+        "why-choose-us-two": "Quality: We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects.",
+        "why-choose-us-three": "Innovation: We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients",
+        "why-choose-us-four": "Client-Centric Approach: Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle.",
+        
+        "text-page": "WE CAN’T FIND THIS PAGE",
+        "text-url": "The webpage you are trying to access cannot be found on the server. ",
+        "text-url-nav": "Please check the URL or try navigation to a different page.",
+        "button-main-page":  "Main page",
+        
+        "rewiew-button": "Write a review",
+        "buttons-load-more": "Load more",
+        
+        "write-a-review": "write a review",
+        "your-name": "Your name*",
+        "tell-us-about": "Tell us about your experience*",
+        // "upload":"You can upload photos + Upload",
+
+        // "rewiew-you-can-upload-photos": "You can upload photos + Upload",
+        "send": "Send",
+        "your-review": "Your review",
+        
+        "contact-us":"contact us",
+        "phone-nan":"Phone:",
+        "question":"Your question*",
+        "name-placeholder":"Enter your name",
+        "phone-placeholder":"Enter your phone", 
+        "mail-placeholder":"Enter your mail", 
+        "question-placeholder":"Enter your question", 
+        
     },
     "netherlands": {
-        "header-home":"Thuis",
-        "header-about-us":"Over ons",
-        "header-portfolio":"Portefeuille",
-        "header-reviews":"Beoordelingen",
-        "header-contacts":"Contacten",
-        "title": "realiseer je dromen met ons.",
+        "home":"Thuis",
+        "about-us":"Over ons",
+        "portfolio":"Portefeuille",
+        "reviews":"Beoordelingen",
+        "contacts":"Contacten",
+        "title": "realiseer je dromen met ons",
         "button-consultation": "Consultatie",
-        "about-us": "Over ons",
-        "about-us-p": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!",
-        "about-us-button": "Lees meer",
+
+        "about-us-welcome": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!",
+        "read-more-button": "Lees meer",
         "services": "Diensten",
-        "services-f": "Badkamerrenovatie",
-        "services-fo": "Algemene renovatie",
-        "services-fot": "Dakkapelconstructies",
-        "services-foto": "Schilderen en Stukadoren",
+        "services-bathroom": "Badkamerrenovatie",
+        "services-algemene": "Algemene Renovatie",
+        "services-dormer": "Dakkapelconstructies",
+        "services-painting": "Schilderen en Stukadoren",
+        
         "benefits": "Voordelen",
-        "benefits-one": "Kwaliteit van Prestaties",
-        "benefits-two": "Ervaring",
-        "benefits-thre": "Innovaties",
-        "benefits-four": "Klantgerichtheid",
+        "benefits-performance": "Kwaliteit van Prestaties",
+        "benefits-experience": "Ervaring",
+        "benefits-innovations": "Innovaties",
+        "benefits-customer": "Klantgerichtheid",
+
         "portfolio-badkamers": "badkamers",
         "portfolio-general": "algemeen",
         "portfolio-dormer": "dakkapel",
-        "foother-home":"Thuis",
-        "foother-about-us":"Over ons",
-        "foother-portfolio":"Portefeuille",
-        "foother-reviews":"Beoordelingen",
-        "foother-contacts":"Contacten",
-        "foother-contact-section":"Contacten",
-        "foother-phone":"Telefoon: +31621968479",
-        "foother-address":"Adres: Eliza van Calcarstraat 27,",
-        "foother-consultation-feetback": "Consultatie",
-        "foother-name-form": "Naam*",
-        "foother-phone-form": "Telefoon*",
-        "foother-mail-form": "E-mail*",
-        "foother-libel-name": "Voer uw naam in",
-        "foother-libel-phone": "Voer uw telefoonnummer in",
-        "foother-libel-mail": "Voer uw e-mailadres in",
-        "foother-form-buttom": "Consultatie",
-        "foother-copyright-all": "2023. Alle rechten voorbehouden",
-        "foother-copyright-all-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
+
+        "phone":"Telefoon: +31621968479",
+        // "address":"Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+
+        "consultation": "Consultatie",
+        "name-form": "Naam*",
+        "phone-form": "Telefoon*",
+        "mail-form": "E-mail*",
+
+        "libel-name": "Voer uw naam in",
+        "libel-phone": "Voer uw telefoonnummer in",
+        "libel-mail": "Voer uw e-mailadres in",
+
+        
+        "copyright": "2023. Alle rechten voorbehouden",
+        "copyright-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
         // "foother-nl": "Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
-        "mob-home":"Thuis",
-        "mob-about-us":"Over ons",
-        "mob-portfolio":"Portefeuille",
-        "mob-reviews":"Beoordelingen",
-        "mob-contacts":"Contacten",
-        "foother-consultation": "Consultatie",
-        "foother-consultation-mob": "Consultatie",
+        
+
+        "our-mission": "Onze missie",
+        "why-choose-us": "WAAROM ONS KIEZEN",
+        
+        "our-mission-text-one": "Bij Krupinec Bouw hebben we als missie om uw bouwdromen om te zetten in tastbare realiteit. Ons team van ervaren professionals is vastberaden in hun toewijding om hoogwaardige, duurzame en kosteneffectieve oplossingen te bieden voor een breed scala aan projecten.",
+        "our-mission-text-two": "Of het nu gaat om renovaties aan huis of commerciële reparaties, wij zijn er om uw omgeving naar nieuwe hoogten te tillen. Ontdek ons scala aan diensten en laat ons frisse vitaliteit in uw projecten brengen, waarbij we duurzame kwaliteit leveren en de waarde van uw bouwprojecten verhogen. Uw visie en onze expertise leiden tot excellentie.",
+        "why-choose-us-one": "Deskundigheid: Onze ervaren professionals brengen jarenlange kennis en vaardigheid mee naar elk project, wat u deskundige oplossingen garandeert die de tand des tijds doorstaan, en zo uw gemoedsrust verzekeren.",
+        "why-choose-us-two": "Kwaliteit: We hebben kwaliteit als prioriteit in elk aspect van ons werk. Van de selectie van materialen tot vakmanschap, wij handhaven de hoogste normen om de duurzaamheid en functionaliteit van onze projecten te waarborgen.",
+        "why-choose-us-three": "Innovatie: We blijven vooroplopen in trends en technologieën in de industrie om u innovatieve oplossingen te bieden die voldoen aan de steeds veranderende behoeften van onze klanten.",
+        "why-choose-us-four": "Klantgerichte benadering: Uw tevredenheid is onze hoogste prioriteit. We werken nauw met u samen om uw visie en doelen te begrijpen, en we communiceren transparant gedurende de hele levenscyclus van het project.",
+        
+        "text-page": "WE KUNNEN DEZE PAGINA NIET VINDEN",
+        "text-url": "De webpagina die u probeert te openen, kan niet worden gevonden op de server. ",
+        "text-url-nav": "Controleer de URL of probeer naar een andere pagina te navigeren.",
+        "button-main-page":  "Hoofdpagina",
+
+        "rewiew-button": "Schrijf een recensie",
+        "buttons-load-more": "Meer laden",
+        
+        "write-a-review": "Schrijf een recensie",
+        "your-name": "Uw naam*",
+        "tell-us-about": "Vertel ons over uw ervaring*",
+        // "upload":"Je kunt foto's uploaden + Uploaden",
+        // "rewiew-you-can-upload-photos": "U kunt foto's uploaden + Upload",
+        "send": "Verzenden",
+        "your-review": "Uw recensie",
+        
+        "contact-us":"Neem contact met ons op",
+        "phone-nan":"Telefoon:",
+        "question":"Uw vraag*",
+        "name-placeholder":"Voer uw naam in",
+        "phone-placeholder":"Voer uw telefoonnummer in", 
+        "mail-placeholder":"Voer uw e-mailadres in", 
+        "question-placeholder":"Voer uw vraag in", 
+       
     }   
 };
+let currentlang = null;
+const translateElements = document.querySelectorAll(".lang");
+function translate (){
+    translateElements.forEach(element => {
+        const {key}=element.dataset;
+        element.textContent = data[currentlang][key]
+    })
+}
+
+function setLang (){
+    currentlang = localStorage.getItem("lang");
+    if(!currentlang){
+        currentlang = "english";
+        localStorage.setItem("lang", "english");
+    };
+    const activeLangButtons = document.querySelectorAll(`.lang-switch[language=${currentlang}]`);
+    activeLangButtons.forEach(element => element.classList.add("active"))
+    translate()
+};
+setLang()
+const langSwichButtons = document.querySelectorAll(".lang-switch");
+langSwichButtons.forEach(element => element.addEventListener("click", function(event){
+    const isActive = event.target.classList.contains("active");
+    if(!isActive){
+        const lang = event.target.attributes.language.value;
+        localStorage.setItem("lang", lang);
+        langSwichButtons.forEach(element => element.classList.remove("active"));
+        setLang()
+    }
+}))
+
+
+
+
+
+
+
