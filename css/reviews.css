@@ -1,3 +1,12 @@
+:root {
+    --poppins-font:'Poppins', sans-serif;
+    --orbitron-font: 'Orbitron', sans-serif;
+    --ralway-font: 'Raleway', sans-serif;
+    --graphite: #272727;
+    --graphite-hover:#CD7829;
+    --orange: #CD7829;
+    --white: #EEE;
+    }
 .heder_about {
     background-color: var(--graphite, #272727);
     z-index: 3;
@@ -253,4 +262,71 @@ input[type="file"]{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1px;
+}
+.review-list{
+    margin-bottom: 36px;
+}
+.p-group-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.group-wrapper{
+    display: flex;
+    position: relative;
+    width: 215px;
+    height: 89px;
+    
+    border-radius: 10px;
+    
+}
+.review-list-item{
+   
+    margin-bottom: 40px;
+    border-radius: 10px;
+    color: var(--white, #EEE);
+    
+}
+.customer{
+    transform: translateY(20%);
+    margin-right: 20px;
+    background-color: var(--orange);
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67%;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    line-height: 50px;
+    text-align: center;
+}
+.data{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+}
+.name{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+}
+.stars{
+    
+}
+.text-review{
+    padding:10px 0 ;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    
 }

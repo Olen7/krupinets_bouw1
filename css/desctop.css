@@ -482,6 +482,10 @@
         font-size: 60px;
         margin-bottom: 28px;
     }
+    .review_modal {
+        top: 60px;
+
+    }
     /* CONTACT */
     .section_contact {
         margin-top: 98px;

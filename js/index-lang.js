@@ -35,6 +35,11 @@ const data = {
         "name-form": "Name*",
         "phone-form": "Phone*",
         "mail-form": "E-mail*",
+        
+        "name-form-placeholder": "Enter your name",
+        "phone-form-placeholder": "Enter your phone",
+        "mail-form-placeholder": "Enter your mail",
+        "question-form-placeholder":"Enter your question",
 
         "libel-name": "Enter your name",
         "libel-phone": "Enter your phone",
@@ -108,6 +113,11 @@ const data = {
         "portfolio-badkamers": "badkamers",
         "portfolio-general": "algemeen",
         "portfolio-dormer": "dakkapel",
+        
+        "name-form-placeholder": "Voer uw naam in",
+        "phone-form-placeholder": "Voer uw telefoonnummer in",
+        "mail-form-placeholder": "Voer uw e-mailadres in",
+        "question-form-placeholder":"Uw vraag*",
 
         "phone":"Telefoon: +31621968479",
         // "address":"Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
@@ -120,7 +130,7 @@ const data = {
         "libel-name": "Voer uw naam in",
         "libel-phone": "Voer uw telefoonnummer in",
         "libel-mail": "Voer uw e-mailadres in",
-
+        
         
         "copyright": "2023. Alle rechten voorbehouden",
         "copyright-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
@@ -167,7 +177,10 @@ let currentlang = null;
 const translateElements = document.querySelectorAll(".lang");
 function translate (){
     translateElements.forEach(element => {
-        const {key}=element.dataset;
+        const {key, type}=element.dataset;
+        if(type === "placeholder"){
+            return element.placeholder = data[currentlang][key];
+        }
         element.textContent = data[currentlang][key]
     })
 }

@@ -183,13 +183,15 @@
             <div class="footer_fedback_block">
                 <div class="foother_blok_index">
                     <h2 class="feedback_name_index lang" data-key="consultation">Consultation</h2>
-                    <form class="modal-icon_tab">
+                    <form class="modal-icon_tab" id="consultation-form">
                         <div class="modal-form_tab">
                             <label for="name-text" class="name-text_tab lang" data-key="name-form">Name*</label>
                             <input 
-                            class="icon-person_tab foother-libel-name-about"
+                            class="icon-person_tab lang"
+                            data-key="name-form-placeholder"
+                            data-type ="placeholder"
                             type="text" 
-                            name="user-name"
+                            name="name"
                             id="name-text"
                             placeholder="Enter your name"
                             required />
@@ -197,9 +199,11 @@
                         <div class="modal-form">
                             <label for="phone" class="name-text_tab lang" data-key="phone-form">Phone*</label>
                                     <input 
-                                    class="icon-person_tab foother-libel-phone-about"
+                                    class="icon-person_tab lang"
+                                    data-key="phone-form-placeholder"
+                                    data-type ="placeholder"
                                     type="tel" 
-                                    name="user-name"
+                                    name="phone"
                                     id="phone"
                                     placeholder="Enter your phone"
                                     required />
@@ -210,9 +214,11 @@
                             <label for="email" class="name-text_tab">E-mail*</label>
                                 <div class="input-person">
                                     <input 
-                                    class="icon-person_tab foother-libel-mail-about"
+                                    class="icon-person_tab lang"
+                                    data-key="mail-form-placeholder"
+                                    data-type ="placeholder"
                                     type="email" 
-                                    name="user-name"
+                                    name="email"
                                     id="email"
                                     placeholder="Enter your mail"
                                     required />
@@ -239,5 +245,7 @@
     </footer>
     <script src="../js/index-lang.js"></script>
     <script src="../js/menu.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../js/consultation-form.js"></script>
 </body>
 </html>
