@@ -66,7 +66,7 @@ img {
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .is-scrolled{
@@ -329,7 +329,6 @@ img {
     z-index: 1;
     padding: 28px 20px;
     background-color: rgba(0, 0, 0, 0.70);
-    z-index: 2;
 }
 .foother_blok_one{
     margin-bottom: 28px;
@@ -500,12 +499,7 @@ img {
     /* Ваші стилі для блоків */
   }
    
-  .menu {
-    display: none; /* Початковий стан - приховано */
-    flex-direction: column; /* Якщо використовуєте flexbox */
-    max-height: 80vh; /* Максимальна висота меню */
-    overflow-y: auto; /* Дозволяє вертикальний скрол */
-  }
+
   .dropdown-menu {
     display: none; /* Спливаюче меню за замовчуванням приховане */
     position:fixed;/* Фіксована позиція відносно в'юпорта */
@@ -514,9 +508,11 @@ img {
     width: 100vw; /* Ширина вікна дорівнює ширині в'юпорта */
     height: 100vh; /* Висота вікна дорівнює висоті в'юпорта */
     background-color: var(--graphite, #272727);
-    z-index: 1;
+    z-index: 2;
     flex-direction: column;
     overflow-y: auto;
+    
+    
   }
   .project-h{
     font-family: var(--second-family);
@@ -538,6 +534,7 @@ img {
     font-size: 16px;
     letter-spacing: 0.06em;
     color: var(--white);
+    margin-bottom: 20px;
   }
   .block-li{
     margin-bottom: 20px;
@@ -553,6 +550,12 @@ img {
   .sss{
     list-style-type: disc;
      margin-left: 30px;
+  }
+  .picture-block-ul{
+    margin-bottom: 40px;
+  }
+  .picture-menu-block{
+    margin-bottom: 10px;
   }
   
 @media screen and (min-width: 768px){
@@ -584,6 +587,30 @@ img {
     .block-text{
         height: 70px;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 65.95%);
+    }
+    .project-h{
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    .text-block-ul{
+        font-size: 20px;
+        letter-spacing: 0.06em;
+      }
+      .block-li {
+        margin-bottom: 30px;
+    }
+    .picture-menu-block {
+        max-width: 376px;
+        height: 300px;
+    }
+    .picture-block-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 16px;
+    }
+    .picture-menu-block {
+        margin-bottom: 0px;
     }
 }
 @media screen and (min-width: 1400px){
@@ -622,7 +649,23 @@ img {
         letter-spacing: 0.04em;
         height: 64px;
     }
-    
+
+    .project-h{
+        font-size: 60px;
+        letter-spacing: 0.05em;
+        padding: 60px 0 40px 0;
+    }
+    .text-block-ul {
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
+    .text-block-ul {
+        padding: 20px 100px;
+    }
+    .picture-menu-block {
+        max-width: 712px;
+        height: 439px;
+    }
 }
 
 

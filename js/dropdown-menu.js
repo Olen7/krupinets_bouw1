@@ -6,14 +6,14 @@ document.getElementById('portfolio').addEventListener('click', function(e) {
       const menu = document.getElementById(targetId);
       if (menu) {
         const isDisplayed = menu.style.display === 'flex';
-        menu.style.display = isDisplayed ? 'none' : 'flex'; // Переключення між none та flex
-        if (!isDisplayed) {
-          menu.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Скрол до меню
-        }
+        menu.style.display = isDisplayed ? 'none' : 'flex';
+        menu.style.overflowY = isDisplayed ? 'hidden' : 'auto';
       }
-      break; // Вихід з циклу, оскільки знайшли елемент
+      break;
     }
     targetElement = targetElement.parentNode;
   }
 });
+
+
   
