@@ -246,39 +246,68 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.eee{
+.foto-block{
     display: flex;
     /* max-height: 324px; */
     height: 324px;
-    background-color: #29cdac;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
     gap: 16px;
     margin-bottom: 16px;
 }
-.www{
+.foto-block-reverse{
+    /* display: flex; */
+    /* max-height: 324px; */
+    height: 324px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+}
+.block-one{
     width: 183px;
     height: 154px;
-    background-color: #4dcd29;
+    position: relative;
 }
-.sss{
-    width: 183px;
-    height: 154px;
-    background-color: #141a61;
-}
-.aaa{
+
+.block-two{
+    position: relative;
     width: 191px;
     height: 324px;
-    background-color: #e66717;
 }
-.eewwdq{
+.button-batrooms{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
     background-color: transparent;
     color: var(--white, #EEE);
     border: 2px solid var(--orange);
     padding: 12px 24px;
     width: 100%;
     height: 48px;
+}
+ .block-text {
+    height: 45px;
+    width: 101%;
+    display: flex;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%);
+   
 }
 /* FOOTHER */
 .foother_link_desctop{
@@ -300,6 +329,7 @@ img {
     z-index: 1;
     padding: 28px 20px;
     background-color: rgba(0, 0, 0, 0.70);
+    z-index: 2;
 }
 .foother_blok_one{
     margin-bottom: 28px;
@@ -465,58 +495,135 @@ img {
 .apply-styles{
     margin-bottom: 14px;
 }
-/* .name-lang-mob .active{
+.portfolio-item {
+    cursor: pointer;
+    /* Ваші стилі для блоків */
+  }
+   
+  .menu {
+    display: none; /* Початковий стан - приховано */
+    flex-direction: column; /* Якщо використовуєте flexbox */
+    max-height: 80vh; /* Максимальна висота меню */
+    overflow-y: auto; /* Дозволяє вертикальний скрол */
+  }
+  .dropdown-menu {
+    display: none; /* Спливаюче меню за замовчуванням приховане */
+    position:fixed;/* Фіксована позиція відносно в'юпорта */
+    top: 3%; /* Верхній край прилягає до верху в'юпорта */
+    left: 0; /* Лівий край прилягає до лівого краю в'юпорта */
+    width: 100vw; /* Ширина вікна дорівнює ширині в'юпорта */
+    height: 100vh; /* Висота вікна дорівнює висоті в'юпорта */
+    background-color: var(--graphite, #272727);
+    z-index: 1;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .project-h{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
     color: var(--orange);
-} */
+    padding: 40px 0;
+    text-align: center;
+  }
+  .pictures{
+    width: 100%;
+  }
+  .text-block-ul{
+    padding: 20px 40px;
+    font-family: var(--font-family);
+    
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+  }
+  .block-li{
+    margin-bottom: 20px;
+  }
+  .hero-text-li{
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .text-li{ 
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  .sss{
+    list-style-type: disc;
+     margin-left: 30px;
+  }
+  
+@media screen and (min-width: 768px){
+    .foto-block{
+        height: 544px;
+    }
+    .block-one{
+        width: 374px;
+        height: 264px;
+    }
+    .block-two {
+        position: relative;
+        width: 378px;
+        height: 544px;
+        
+    }
+    .foto-block-reverse{
+        height: 544px;
+    }
 
-    /* 2x foto має бути знизу всіх фото*/
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx){
-    .foto{
-        background-image: url(../images/mob/mob_hero_2x.jpg);
+    .hero-name{
+        font-size: 48px;
+        letter-spacing: 0.06em;
     }
-    .foto_service_two{
-        background-image:url(../images/mob/mob_service2_2x.jpg);
+    .portfolio-text {   
+        font-size: 48px;
+        letter-spacing: 0.06em;
     }
-    .foto_service_three{
-        background-image: url(../images/mob/mob_service3_2x.jpg);
+    .block-text{
+        height: 70px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 65.95%);
     }
-    .foto_service_four{
-        background-image:  url(../images/mob/mob_service4_2x.jpg);
+}
+@media screen and (min-width: 1400px){
+    .foto-block{
+        height: 674px;
+    }
+    .block-one{
+        width: 405px;
+        height: 329px;
+    }
+    .block-two {
+        position: relative;
+        width: 1018px;
+        height: 674px;
+        
+    }
+    .foto-block-reverse{
+        height: 674px;
+    }
+    .block-text{
+        font-size: 20px;
+    }
+    .hero-name{
+        font-size: 60px;
+        letter-spacing: 0.05em;
+    }
+    .portfolio-text {   
+        font-size: 60px;
+        letter-spacing: 0.05em;
+        
+    }
+    .button-batrooms {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.04em;
+        height: 64px;
     }
     
-    .foother-conteiner{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_2x.jpg);
-    }
-
 }
 
 
-@media (min-device-pixel-ratio: 3),
-(min-resolution: 300dpi),
-(min-resolution: 3dppx){
-    .foto{
-        
-        background-image: url(../images/mob/mob_hero_4x.jpg);
-        
-    } 
-    .foto_service_two{
-        background-image: url(../images/mob/mob_service2_4x.jpg);
-    }
-    .foto_service_three{
-        background-image: url(../images/mob/mob_service3_4x.jpg);
-    }
-    .foto_service_four{
-        background-image: url(../images/mob/mob_service4_4x.jpg);
-    }
 
-    .foother-conteiner{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_4x.jpg);
-    }
-
-}
-@media screen and (max-width: 736px){
-   
-
-}

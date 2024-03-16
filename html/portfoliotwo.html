@@ -89,15 +89,15 @@
     <section class="container-section"> 
         <h1 class="hero-name">Portfolio</h1>
     </section>
-    <section class="section-batrums" >
+    <section class="section-batrums" id="portfolio">
         <div class="portfolio-foto portfolio-one">
             <picture>
                 <source
                     srcset="
                     
-                    ../images/desc/desc_portfolio1_1x.jpg 1x,
-                    ../images/desc/desc_portfolio1_2x.jpg 2x,
-                    ../images/desc/desc_portfolio1_4x.jpg 4x
+                    ../images/desc/portfolio-index/portfolio-hero1-1x.jpg 1x,
+                    ../images/desc/portfolio-index/portfolio-hero1-2x.jpg 2x,
+                    ../images/desc/portfolio-index/portfolio-hero1-4x.jpg 4x
                 "
                     media="(min-width: 1400px)"
                 />
@@ -126,23 +126,23 @@
             
             <p class="portfolio-text lang" data-key="portfolio-badkamers">bathrooms</p>
         </div>
-        <div class="foto-block" >
-            <div class="block-one">
+        <div class="foto-block" id="portfolio">
+            <div class="block-one portfolio-item"  data-target="menu1">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio1-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio1-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio1-4x.jpg 4x
+                        ../images/desc/portfolio-index/portfolio1-1x.jpg 1x,
+                        ../images/desc/portfolio-index/portfolio1-2x.jpg 2x,
+                        ../images/desc/portfolio-index/portfolio1-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/portfolio1-1x.jpg 1x,
+                            ../images/tab/portfolio-index/portfolio1-2x.jpg 2x,
+                            ../images/tab/portfolio-index/portfolio1-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -160,23 +160,87 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt1</p></div>
+                <p class="block-text">projekt1</p>
+                <div class="dropdown-menu" id="menu1" style="display: none;">
+                      
+                      <h3 class="project-h">PROJECT 1</h3>
+                      <picture>
+                        <source
+                            srcset="
+                            
+                            ../images/desc/portfolio-index/portfolio1-1x.jpg 1x,
+                            ../images/desc/portfolio-index/portfolio1-2x.jpg 2x,
+                            ../images/desc/portfolio-index/portfolio1-4x.jpg 4x
+                        "
+                            media="(min-width: 1400px)"
+                        />
+                        <source
+                            srcset="
+                                ../images/tab/portfolio-index/portfolio1-1x.jpg 1x,
+                                ../images/tab/portfolio-index/portfolio1-2x.jpg 2x,
+                                ../images/tab/portfolio-index/portfolio1-4x.jpg 4x
+                        "
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ../images/mob/portfolio/portfolio1-1x.jpg 1x,
+                                ../images/mob/portfolio/portfolio1-2x.jpg 2x,
+                                ../images/mob/portfolio/portfolio1-4x.jpg 4x
+                        "
+                        media="(max-width: 767px)"
+                        />
+                        <img
+                            src="../images/mob/portfolio/portfolio1-1x.jpg"
+                            alt=""
+                            class="pictures"
+                        />
+                    </picture>
+                    <ul class="text-block-ul">
+                        <li class="block-li"> 
+                            <p class="hero-text-li">Project Overview </p>
+                            <p class="text-li">At Krupinec Bow, we take pride in transforming spaces and making dreams come true. Our latest renovation project is a testament to our commitment to excellence and craftsmanship.</p>
+                        </li>
+                        <li class="block-li"> 
+                            <p class="hero-text-li">Project Details</p>
+                            <p class="text-li">Project Name: [Назва ремонтного проекту]</p>
+                            <p class="text-li">Location: [Місце розташування]</p>
+                            <p class="text-li">Project Type: Residential</p>
+                            <p class="text-li">Project Size: [Розмір проекту у квадратних метрах або кількість кімнат]</p>
+                            <p class="text-li">Completion Date: [Очікувана дата завершення]</p>
+                        </li>
+                        <li class="block-li"> 
+                            <p class="hero-text-li">Scope of Work</p>
+                            <p class="text-li">For this renovation project, we were tasked with revitalizing an outdated space and turning it into a modern, functional, and aesthetically pleasing living area. Our team of skilled craftsmen and designers worked tirelessly to bring the vision to life.</p>
+                        </li>
+                        <ul>
+                            <li class="hero-text-li">Key Features</li>
+                            <li class="text-li sss" >Open Concept Design: We embraced the concept of open living, creating a seamless flow between the kitchen, dining area, and living space. This design maximizes natural light and creates an inviting atmosphere.</li>
+                            <li class="text-li sss" >Modern Kitchen: The heart of the home received a complete makeover with state-of-the-art appliances, custom cabinetry, and luxurious countertops. It's now a chef's dream come true.</li>
+                            <li class="text-li sss" >Stylish Bathrooms: The bathrooms were transformed into spa-like retreats with contemporary fixtures, elegant tiling, and ample storage.</li>
+                            <li class="text-li sss" >Energy Efficiency: We incorporated energy-efficient lighting and HVAC systems to reduce utility costs and minimize the project's environmental footprint.</li>
+                            <li class="text-li sss" >Custom Finishes: Every detail matters. We added custom finishes, from unique light fixtures to hand-selected hardware, to give the space a personalized touch.</li>
+                        </ul>
+                    </ul>
+                    
+                </div>
+            </div>
             <div class="block-one">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio2-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio2-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio2-4x.jpg 4x
+                        ../images/desc/portfolio-index/portfolio2-1x.jpg 1x,
+                        ../images/desc/portfolio-index/portfolio2-2x.jpg 2x,
+                        ../images/desc/portfolio-index/portfolio2-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                            ../images/tab/portfolio-index/portfolio2-1x.jpg 1x,
+                            ../images/tab/portfolio-index/portfolio2-2x.jpg 2x,
+                            ../images/tab/portfolio-index/portfolio2-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -194,23 +258,27 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt2</p></div>
+                <p class="block-text">projekt2</p>
+                <div>
+
+                </div>
+            </div>
             <div class="block-two">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio3-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio3-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio3-4x.jpg 4x
+                        ../images/desc/portfolio-index/portfolio3-1x.jpg 1x,
+                        ../images/desc/portfolio-index/portfolio3-2x.jpg 2x,
+                        ../images/desc/portfolio-index/portfolio3-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio3-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/portfolio3-1x.jpg 1x,
+                            ../images/tab/portfolio-index/portfolio3-2x.jpg 2x,
+                            ../images/tab/portfolio-index/portfolio3-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -247,9 +315,9 @@
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio3-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                                ../images/tab/portfolio-index/portfolio3-1x.jpg 1x,
+                                ../images/tab/portfolio-index/portfolio3-2x.jpg 2x,
+                                ../images/tab/portfolio-index/portfolio3-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -262,7 +330,7 @@
                         media="(max-width: 767px)"
                         />
                         <img
-                            src="../images/mob/portfolio/portfolio3-1x.jpg"
+                            src="../images/tab/portfolio-index/portfolio3-1x.jpg"
                             alt=""
                             class=""
                         />
@@ -282,9 +350,9 @@
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                                ../images/tab/portfolio-index/portfolio1-1x.jpg 1x,
+                                ../images/tab/portfolio-index/portfolio1-2x.jpg 2x,
+                                ../images/tab/portfolio-index/portfolio1-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -316,9 +384,9 @@
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                                ../images/tab/portfolio-index/portfolio2-1x.jpg 1x,
+                                ../images/tab/portfolio-index/portfolio2-2x.jpg 2x,
+                                ../images/tab/portfolio-index/portfolio2-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -349,9 +417,9 @@
                 <source
                     srcset="
                     
-                    ../images/desc/desc_portfolio2_1x.jpg 1x,
-                    ../images/desc/desc_portfolio2_2x.jpg 2x,
-                    ../images/desc/desc_portfolio2_4x.jpg 4x
+                    ../images/desc/portfolio-index/block-one/portfolio-hero2-1x.jpg 1x,
+                    ../images/desc/portfolio-index/block-one/portfolio-hero2-2x.jpg 2x,
+                    ../images/desc/portfolio-index/block-one/portfolio-hero2-4x.jpg 4x
                 "
                     media="(min-width: 1400px)"
                 />
@@ -378,7 +446,7 @@
                 />
             </picture>
             
-            <p class="portfolio-text lang" data-key="">general renovation</p>
+            <p class="portfolio-text" data-key="">general renovation</p>
         </div>
         <div class="foto-block" >
             <div class="block-one">
@@ -386,17 +454,17 @@
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio1-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio1-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio1-4x.jpg 4x
+                        ../images/desc/portfolio-index/block-one/portfolio1-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-one/portfolio1-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-one/portfolio1-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                        ../images/tab/portfolio-index/block-one/portfolio1-1x.jpg 1x,
+                        ../images/tab/portfolio-index/block-one/portfolio1-2x.jpg 2x,
+                        ../images/tab/portfolio-index/block-one/portfolio1-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -414,23 +482,23 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt111</p></div>
+                <p class="block-text">projekt7</p></div>
             <div class="block-one">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio2-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio2-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio2-4x.jpg 4x
+                        ../images/desc/portfolio-index/block-one/portfolio2-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-one/portfolio2-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-one/portfolio2-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                        ../images/tab/portfolio-index/block-one/portfolio2-1x.jpg 1x,
+                        ../images/tab/portfolio-index/block-one/portfolio2-2x.jpg 2x,
+                        ../images/tab/portfolio-index/block-one/portfolio2-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -448,23 +516,23 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt2</p></div>
+                <p class="block-text">projekt8</p></div>
             <div class="block-two">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio3-1x.jpg 1xwww,
-                        ../images/desc/portfolio/desc-portfolio3-2x.jpg 2xwww,
-                        ../images/desc/portfolio/desc-portfolio3-4x.jpg 4xww
+                        ../images/desc/portfolio-index/block-one/portfolio3-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-one/portfolio3-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-one/portfolio3-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio3-1x.jpg 1xwww,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2xwww,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4xwww
+                        ../images/tab/portfolio-index/block-one/portfolio3-1x.jpg 1x,
+                        ../images/tab/portfolio-index/block-one/portfolio3-2x.jpg 2x,
+                        ../images/tab/portfolio-index/block-one/portfolio3-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -482,7 +550,7 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt3</p></div>
+                <p class="block-text">projekt9</p></div>
         </div>
         
         
@@ -493,17 +561,17 @@
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio3-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio3-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio3-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-one/portfolio3-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-one/portfolio3-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-one/portfolio3-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio3-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-one/portfolio3-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-one/portfolio3-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-one/portfolio3-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -521,24 +589,24 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt4</p>
+                    <p class="block-text">projekt10</p>
                 </div>
                 <div class="block-one">
                     <picture>
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio1-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio1-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio1-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-one/portfolio1-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-one/portfolio1-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-one/portfolio1-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-one/portfolio1-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-one/portfolio1-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-one/portfolio1-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -556,23 +624,23 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt5</p></div>
+                    <p class="block-text">projekt11</p></div>
                 <div class="block-one">
                     <picture>
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio2-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio2-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio2-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-one/portfolio2-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-one/portfolio2-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-one/portfolio2-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-one/portfolio2-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-one/portfolio2-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-one/portfolio2-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -590,7 +658,7 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt6</p></div>
+                    <p class="block-text">projekt12</p></div>
                 
             </div>
         
@@ -603,9 +671,9 @@
                 <source
                     srcset="
                     
-                    ../images/desc/desc_portfolio3_1x.jpg 1x,
-                    ../images/desc/desc_portfolio3_2x.jpg 2x,
-                    ../images/desc/desc_portfolio3_4x.jpg 4x
+                    ../images/desc/portfolio-index/block-two/portfolio-hero3-1x.jpg 1x,
+                    ../images/desc/portfolio-index/block-two/portfolio-hero3-2x.jpg 2x,
+                    ../images/desc/portfolio-index/block-two/portfolio-hero3-4x.jpg 4x
                 "
                     media="(min-width: 1400px)"
                 />
@@ -632,7 +700,7 @@
                 />
             </picture>
             
-            <p class="portfolio-text lang" data-key="">dormer construction</p>
+            <p class="portfolio-text" data-key="">dormer construction</p>
         </div>
         <div class="foto-block" >
             <div class="block-one">
@@ -640,17 +708,17 @@
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio1-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio1-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio1-4x.jpg 4x
+                        ../images/desc/portfolio-index/block-two/portfolio1-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-two/portfolio1-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-two/portfolio1-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-two/portfolio1-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-two/portfolio1-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-two/portfolio1-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -668,23 +736,23 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt1QQQ</p></div>
+                <p class="block-text">projekt13</p></div>
             <div class="block-one">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio2-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio2-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio2-4x.jpg 4x
+                        ../images/desc/portfolio-index/block-two/portfolio2-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-two/portfolio2-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-two/portfolio2-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                        ../images/tab/portfolio-index/block-two/portfolio2-1x.jpg 1x,
+                        ../images/tab/portfolio-index/block-two/portfolio2-2x.jpg 2x,
+                        ../images/tab/portfolio-index/block-two/portfolio2-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -702,23 +770,23 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt2</p></div>
+                <p class="block-text">projekt14</p></div>
             <div class="block-two">
                 <picture>
                     <source
                         srcset="
                         
-                        ../images/desc/portfolio/desc-portfolio3-1x.jpg 1x,
-                        ../images/desc/portfolio/desc-portfolio3-2x.jpg 2x,
-                        ../images/desc/portfolio/desc-portfolio3-4x.jpg 4x
+                        ../images/desc/portfolio-index/block-two/portfolio3-1x.jpg 1x,
+                        ../images/desc/portfolio-index/block-two/portfolio3-2x.jpg 2x,
+                        ../images/desc/portfolio-index/block-two/portfolio3-4x.jpg 4x
                     "
                         media="(min-width: 1400px)"
                     />
                     <source
                         srcset="
-                            ../images/tab/portfolio/tab-portfolio3-1x.jpg 1x,
-                            ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                            ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                        ../images/tab/portfolio-index/block-two/portfolio3-1x.jpg 1x,
+                        ../images/tab/portfolio-index/block-two/portfolio3-2x.jpg 2x,
+                        ../images/tab/portfolio-index/block-two/portfolio3-4x.jpg 4x
                     "
                     media="(min-width: 768px)"
                     />
@@ -736,7 +804,7 @@
                         class=""
                     />
                 </picture>
-                <p class="block-text">projekt3</p></div>
+                <p class="block-text">projekt15</p></div>
         </div>
         
         
@@ -747,17 +815,17 @@
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio3-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio3-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio3-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-two/portfolio3-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-two/portfolio3-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-two/portfolio3-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio3-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-two/portfolio3-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-two/portfolio3-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-two/portfolio3-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -775,24 +843,24 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt4</p>
+                    <p class="block-text">projekt16</p>
                 </div>
                 <div class="block-one">
                     <picture>
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio1-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio1-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio1-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-two/portfolio1-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-two/portfolio1-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-two/portfolio1-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio1-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio1-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio1-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-two/portfolio1-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-two/portfolio1-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-two/portfolio1-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -810,23 +878,23 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt5</p></div>
+                    <p class="block-text">projekt17</p></div>
                 <div class="block-one">
                     <picture>
                         <source
                             srcset="
                             
-                            ../images/desc/portfolio/desc-portfolio2-1x.jpg 1x,
-                            ../images/desc/portfolio/desc-portfolio2-2x.jpg 2x,
-                            ../images/desc/portfolio/desc-portfolio2-4x.jpg 4x
+                            ../images/desc/portfolio-index/block-two/portfolio2-1x.jpg 1x,
+                            ../images/desc/portfolio-index/block-two/portfolio2-2x.jpg 2x,
+                            ../images/desc/portfolio-index/block-two/portfolio2-4x.jpg 4x
                         "
                             media="(min-width: 1400px)"
                         />
                         <source
                             srcset="
-                                ../images/tab/portfolio/tab-portfolio2-1x.jpg 1x,
-                                ../images/tab/portfolio/tab-portfolio2-2x.jpg 2x,
-                                ../images/tab/portfolio/tab-portfolio2-4x.jpg 4x
+                            ../images/tab/portfolio-index/block-two/portfolio2-1x.jpg 1x,
+                            ../images/tab/portfolio-index/block-two/portfolio2-2x.jpg 2x,
+                            ../images/tab/portfolio-index/block-two/portfolio2-4x.jpg 4x
                         "
                         media="(min-width: 768px)"
                         />
@@ -844,7 +912,7 @@
                             class=""
                         />
                     </picture>
-                    <p class="block-text">projekt6</p></div>
+                    <p class="block-text">projekt18</p></div>
                 
             </div>
         
@@ -1000,6 +1068,8 @@
         <script src="../js/about-open-menu.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="../js/consultation-form.js"></script>
+
         <script src="../js/portfolio-open-button.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
 </body>
 </html>
