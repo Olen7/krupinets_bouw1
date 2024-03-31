@@ -4,13 +4,21 @@
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
     }
+   .is-scrolled {
+    background-color: rgb(218, 218, 218); /* Напівпрозорий чорний колір при скролі */
+      }
     .header-us{
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
     }
-    
+    .heder_about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .header__button{
         display: none;}
     .container_header{
@@ -44,6 +52,7 @@
         display: flex;
     
     }
+    
     .name_lang_item:first-child{
         display: flex;
         align-items: center;
@@ -51,8 +60,20 @@
     .name_lang_item:first-child::after{
         content: "";
         width: 16px;
-        height: 1px;
-        background-color: #EEE;
+        height: 1px; 
+        background-color: var(--graphite);
+        display: block;
+        transform: rotate(90deg);
+    }
+    .name_lang_item_black:first-child{
+        display: flex;
+        align-items: center;
+    }
+    .name_lang_item_black:first-child::after{
+        content: "";
+        width: 16px;
+        height: 1px; 
+        background-color: var(--white);
         display: block;
         transform: rotate(90deg);
     }
@@ -63,7 +84,15 @@
     .name_lang_btn{
         border: none;
         background: transparent;
-        color: var(--white, #EEE);
+        color: var(--graphite);
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .name_lang_btn_black{
+        border: none;
+        background: transparent;
+        color: var(--white);
         font-size: 16px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -126,12 +155,12 @@
     }
     .container_section_about{
         width: 638px;
-        height: 522px;
         margin: 0;
         padding-left: 32px;
         padding-right: 32px;
         padding-top: 0px;
         padding-bottom: 0px;
+        min-height: 522px;
     }
     .section-about-index{
         width: 586px;
@@ -165,7 +194,7 @@
             
     }
     .section_name {
-        padding-top: 20px;
+        padding-top: 40px;
         margin-bottom: 28px;
         
     }
@@ -176,11 +205,26 @@
     .section_block{
         max-width: 590px;
     }
+    .about-img-one{
+        background-image:  url(../images/tab/about/tab_about_us1_1x.jpg);
+        min-width: 529px;
+        min-height:522px;
+    }
+    .about-picture-left{
+        min-width: 555px;
+        min-height: 100%;
+        background-image:  url(../images/tab/about/tab_about_us2_1x.jpg);
+    }
+    .about-img-three{
+        min-width: 530px;
+        background-image:  url(../images/tab/about/tab_about_us3_1x.jpg);
+
+    }
         /* SERVICE */
     .name_service {
         font-size: 48px;
         letter-spacing: 0.06em;
-        padding-top: 28px;
+        padding: 28px 32px 0 0;
         margin-bottom: 40px;
     }
     
@@ -192,17 +236,17 @@
         }
     
     .box-picter-service{
-        width: 365px;
-        height: 285px;
+        min-width: 365px;
+        min-height: 285px;
         
     
     }
     .foto-service{
         height: auto;
+        margin-bottom: 0;
     }
     .service_conteiner_gradient {
         position: absolute;
-        top: 89%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -227,7 +271,7 @@
     .benefits_list {
         margin-top: 40px;
         gap: 20px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     /* PORTFOLIO */
@@ -290,10 +334,11 @@
     }
     .mission_section{
         width: 606px;
-        height: 664px;
+        min-height: 664px;
     }
     .conteiner-aboutus {
         width: auto;
+        min-height: 528px;
     }
     .container_section_about_mission{
         padding: 0 32px 20px 0;
@@ -309,10 +354,9 @@
         font-size: 48px;
         letter-spacing: 0.06em;
     }
+    
     .about_block{
         max-width: 558px;
-    }
-    .about_block{
         font-size: 20px;
         letter-spacing: 0.05em;
     }
@@ -324,7 +368,7 @@
         letter-spacing: 0.05em;
     }
     .foto_tab_about_mission{
-        height: 664px;
+        min-height: 664px;
     }
 
     .section_about_choose {
@@ -332,6 +376,7 @@
         margin-top: 0px;
     }
     .section_about_back {
+        min-height: 522px;
         padding-top: 72px;
     }
     .section_name_us {
@@ -348,7 +393,6 @@
     .container_section_about_chose{
         background-color: rgba(39, 39, 39, 0.8);
         width: 638px;
-        height: 774px;
         margin: 0px;
         padding: 0px 32px;
     }
@@ -508,24 +552,7 @@
     .button-consu{
         display: none;
     }
-    @media (max-height: 430px) {
-        /* Стилі для вікон шириною або висотою до 430px */
-        .header{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .header-us{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .section_contact {
-            margin-top: 52px;
-            padding: 20px 32px 40px;
-        }
-        .header__item:not(:last-child) {
-            margin-right: 16px;
-          }
-    }
+   
     @media screen and (min-width: 768px) and (max-width: 830px) {
         .header__item:not(:last-child) {
             margin-right: 20px;
@@ -537,7 +564,15 @@
     .foto {
         background-image: url(../images/tab/tablet_hiro_2x.jpg);
     }
-
+    .about-img-one{
+        background-image:  url(../images/tab/about/tab_about_us1_2x.jpg);
+    }
+    .about-picture-left{
+        background-image:  url(../images/tab/about/tab_about_us2_2x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images/tab/about/tab_about_us3_2x.jpg);
+    }
 }  
     @media (min-device-pixel-ratio: 3),
 (min-resolution: 300dpi),
@@ -545,8 +580,76 @@
     .foto {
         background-image: url(../images/tab/tablet_hiro_4x.jpg);
     }
-    
+    .about-img-one{
+        background-image:  url(../images/tab/about/tab_about_us1_4x.jpg);
+    }
+    .about-picture-left{
+        background-image:  url(../images/tab/about/tab_about_us2_4x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images/tab/about/tab_about_us3_4x.jpg);
+    }
+}
+@media (max-height: 430px) {
+    /* Стилі для вікон шириною або висотою до 430px */
+    .header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .header-us{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section_contact {
+        margin-top: 52px;
+        padding: 20px 32px 40px;
+    }
+    .header__item:not(:last-child) {
+        margin-right: 16px;
+      }
+      .section_about_back {
+        padding-top: 52px;
+    }
 }
 
+}
+@media screen and (min-width: 1000px){
+    .benefits_item{
+        width: 210px;
+    }
+    .container_section_about{
+        width: 740px;
+    }
+    .container_section_about_chose{
+        width: 740px;
+    }
+    .mission_section{
+        width: 740px; 
+    }
 
+}
+@media screen and (min-width: 1200px){
+    .benefits_item{
+        width: 260px;
+    }
+    .container_section_about{
+        width: 860px
+    }
+    .container_section_about_chose{
+        width: 860px;
+    }
+    .mission_section{
+        width: 860px; 
+    }
+}
+@media screen and (min-width: 1300px){
+    .container_section_about{
+        width: 960px
+    }
+    .container_section_about_chose{
+        width: 960px;
+    }
+    .mission_section{
+        width:960px; 
+    }
 }

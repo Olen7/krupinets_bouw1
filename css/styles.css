@@ -164,7 +164,8 @@ img {
     pointer-events: none;
 }
 .active{
-    color: #CD7829;
+    font-weight: 700;
+    /* color: #CD7829; */
 }
 .name-lang-item-mob:active{
     transform: scale(0.9);
@@ -200,7 +201,8 @@ img {
     border-color: var(--graphite-hover);
 }
 .name_lang_btn:active{
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
+    transition: color 0.5s ease;
 }
 /* SECTION 1 */
 .container_section{
@@ -252,7 +254,7 @@ img {
     display: block;
     padding:12px 24px;
     background: var(--orange);
-    border: none;
+    border: 2px solid transparent;
     color: var(--white, #EEE);
     font-family: Poppins;
     font-size: 16px;
@@ -260,6 +262,11 @@ img {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1px;
+}
+.hero_button:hover{
+    background: var(--white, #EEE);
+    color: var(--orange);
+    border-color: var(--orange);
 }
 .hero_button:active{
     transform: scale(0.9);
@@ -301,6 +308,9 @@ img {
     line-height: normal;
     letter-spacing: 1px;
 }
+.section_button:hover{
+    background-color: var(--orange, #CD7829);
+}
 .section_button:active{
     transform: scale(0.9);
 }
@@ -316,7 +326,6 @@ img {
     } */
 .container_section_about{
     position: relative;
-    height: 571px;
     background: rgba(39, 39, 39, 0.80);
 }
 .section-about-index{
@@ -328,13 +337,6 @@ img {
     position: absolute;
         top: 0;
         right: 0;
-        max-width: 100%; /* Щоб зображення не виходило за межі контейнера */
-        height: auto;
-}
-.about-picture-left{
-    position: absolute;
-        top: 0;
-        left: 0;
         max-width: 100%; /* Щоб зображення не виходило за межі контейнера */
         height: auto;
 }
@@ -353,7 +355,7 @@ img {
     text-transform: uppercase;
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 20px;
+    padding: 20px 20px 0 0;
     margin-bottom: 20px;
 }
 .service_list{
@@ -418,16 +420,25 @@ img {
     gap: 20px;
 }
 .benefits_item{
+    color: var(--white, #EEE);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--orange, #CD7829);
 }
+.benefits_item:hover{
+    border: 1px solid var(--orange, #CD7829);
+    --color1: #EEE;
+    color: var(--orange, #CD7829);
+}
 .benefits_svg{
     padding-top: 20px;
     margin-bottom: 8px;
 
+}
+.benefits_text:hover{
+    color: var(--orange, #CD7829);
 }
 .benefits_text{
     display: flex;
@@ -437,7 +448,7 @@ img {
     justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
-    color: var(--white, #EEE);
+    
     text-align: center;
     text-overflow: ellipsis;
     whitespace: nowrap;
@@ -696,6 +707,12 @@ img {
 } */
 
     /* 2x foto має бути знизу всіх фото*/
+
+
+
+.hidden{
+    display: none;
+}
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
@@ -715,6 +732,7 @@ img {
     .foother-conteiner{
         background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_2x.jpg);
     }
+    
 
 }
 
@@ -740,7 +758,7 @@ img {
     .foother-conteiner{
         background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_4x.jpg);
     }
-
+    
 }
 @media screen and (max-width: 736px){
    

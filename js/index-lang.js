@@ -85,6 +85,10 @@ const data = {
         "phone-placeholder":"Enter your phone", 
         "mail-placeholder":"Enter your mail", 
         "question-placeholder":"Enter your question", 
+        "see-more":"See more",
+        "general-renovation":"general renovation",
+        "dormer-construction":"dormer construction",
+        
         
     },
     "netherlands": {
@@ -170,7 +174,10 @@ const data = {
         "phone-placeholder":"Voer uw telefoonnummer in", 
         "mail-placeholder":"Voer uw e-mailadres in", 
         "question-placeholder":"Voer uw vraag in", 
-       
+
+        "see-more":"Zie meer",
+        "general-renovation":"algemene renovatie",
+        "dormer-construction":"dakkapelconstructie",
     }   
 };
 let currentlang = null;

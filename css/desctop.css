@@ -32,7 +32,7 @@
         display: none;
     }
     .container_header{
-        max-width: 1400px;
+        /* max-width: 1400px; */
         padding-left: 119px;
         padding-right: 119px;
 
@@ -44,7 +44,13 @@
         content: "";
         width: 20px;
         height: 2px;
-        background-color: #EEE;
+        display: block;
+        transform: rotate(90deg);
+    }
+    .name_lang_item_black:first-child::after {
+        content: "";
+        width: 20px;
+        height: 2px;
         display: block;
         transform: rotate(90deg);
     }
@@ -105,14 +111,15 @@
     }
     /*SECTION 1*/
     .about{
+        min-height: 490px;
         padding-left: 120px;
         padding-right: 120px;
     }
     .container_section_about{
         padding-left: 120px;
-        padding-right: 120px;
-        width: 558px;
-        height: 680px;
+        padding-right: 0px;
+        width: 651px;
+        min-height: 680px;
         box-sizing: content-box;
     }
     .section-about-index{
@@ -125,6 +132,7 @@
     .section_name{
         font-size: 60px;
         letter-spacing: 0.05em;
+        padding-top: 80px;
     }
   
     .section_about_text{
@@ -140,28 +148,30 @@
         transform: scale(0.9);
     }
     .name_service{
-        padding-top: 60px;
+        
+        padding: 60px 0 0 0;
         font-size: 60px;
         letter-spacing: 0.05em;
     }
     .box-picter-service{
-        width: 285px;
-        height: 285px;
+        min-width: 285px;
+        min-height: 285px;
+        margin-bottom: 0;
     }
     .service_list{
         gap: 28px 5px;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
     .service_name{
         font-size: 20px;
         letter-spacing: 0.05em;
     }
-    .box-picter-service{
-        margin-bottom: 0;
-    }
     .service_name{
         margin-bottom: 8px;
+    }
+    .service_conteiner_gradient {
+        top: 89%;
     }
     /*BENEFITS*/
     .benefits-cont-box{
@@ -175,6 +185,7 @@
     .benefits_svg{
         display: none;
     }
+   
     .benefits_svg_desktop{
         display: flex;
         padding-top: 60px;
@@ -188,7 +199,7 @@
     }
     .benefits_list{
         gap:5px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .benefits_text{
         font-size: 20px;
@@ -308,8 +319,24 @@
         margin-bottom: 120px;
     }
     /* ABOUT */
+    .about-img-one{
+        background-image:  url(../images/desc/about/desctop_about_us1_1x.jpg);
+        min-width: 1115px;
+        min-height:680px;
+    }
+    .about-picture-left{
+        min-width: 1115px;
+        min-height: 100%;
+        background-image:  url(../images/desc/about/desctop_about_us2_1x.jpg);
+    }
+    .about-img-three{
+        min-width: 1115px;
+        min-height: 100%;
+        background-image:  url(../images//desc/about/desctop_about_us3_1x.jpg);
+
+    }
     .section_about_back{
-        padding-top: 98px;
+        padding-top: 97px;
     }
     .section_name_us{
         font-size: 60px;
@@ -334,9 +361,9 @@
         letter-spacing: 0.05em;
 
     }
-    .foto_tab_about_mission {
+    /* .foto_tab_about_mission {
         height: 774px;
-    }
+    } */
     .section_block{
         font-size: 23px;
         letter-spacing: 0.05em;
@@ -344,7 +371,7 @@
     .container_section_about_mission{
         padding-right: 120px;
         width: 771px;
-        height: 774px;
+        min-height: 774px;
     }
     .about-img{
         bottom: auto;
@@ -353,15 +380,13 @@
         padding-left: 120px;
         padding-right: 0px;
         width: 771px;
-        height: 795px;
+        min-height: 980px;
     }
     .items_section_block{
-        height: 512px;
         box-sizing: border-box;
         line-height: 32px;    
     }
     .items_section_block_two{
-        height: 672px;
         box-sizing: border-box;
         line-height: 32px;
     }
@@ -376,6 +401,7 @@
     }
     .mission_section_choose{
         padding: 0;
+        min-height: 980px;
     }
     .section_block{
         padding-right: 0;
@@ -564,6 +590,17 @@
     .foto {
         background-image: url(../images/desc/desc_hero_2x.jpg);
     }
+    .about-img-one{
+        background-image:  url(../images/desc/about/desctop_about_us1_2x.jpg);
+
+    }
+    .about-picture-left{
+        background-image:  url(../images/desc/about/desctop_about_us2_2x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images//desc/about/desctop_about_us3_2x.jpg);
+
+    }
 }
 
     
@@ -574,6 +611,58 @@
     .foto {
         background-image: url(../images/desc/desc_hero_4x.jpg);
     }
+    .about-img-one{
+        background-image:  url(../images/desc/about/desctop_about_us1_4x.jpg);
+    }
+    .about-picture-left{
+        background-image:  url(../images/desc/about/desctop_about_us2_4x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images//desc/about/desctop_about_us3_4x.jpg);
 
+    }
 }
+}
+
+@media screen and (min-width: 1700px){
+    .benefits_list{
+        
+    }
+    .benefits_item {
+        width: 325px;
+        height: 285px;
+    }
+    .foto {
+        background-image: url(../images/desc/desc_hero_4K.jpg);
+    }
+    .section-about-index {
+        padding-right: 320px;
+    }
+    .container_section_about{
+        width: 880px;
+    }
+    .container_section_about_mission {
+        width: 880px;
+    }
+    .container_section_about_chose{
+        width: 880px;
+    }
+}
+@media screen and (min-width: 1900px){
+    .benefits_item {
+        width: 400px;
+        height: 285px;
+    }
+    .section-about-index {
+        padding-right: 520px;
+    }
+    .container_section_about{
+        width: 1120px;
+    }
+    .container_section_about_mission {
+        width: 1120px;
+    }
+    .container_section_about_chose{
+        width: 1120px;
+    }
 }

@@ -3,8 +3,16 @@
     background: var(--graphite, #272727);
 }
 .heder_about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
     z-index: 2;
     background-color: var(--graphite, #272727);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .section_about_choose{
     background: var(--graphite, #272727);
@@ -20,6 +28,7 @@
     width: 100%;
 }
 .container_section_about{
+    min-height: 571px;
     padding: 8px 0 0 20px;
 }
 .conteiner-our-miss{
@@ -42,12 +51,22 @@
     margin-bottom: 32px;
     z-index: 1;
 }
+.about-img-one{
+    background-image: url(../images/mob/about/about_us1_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 370px;
+    min-height: 571px;
+    position: absolute;
+    right: 0;
+}
 .about-img{
     position: absolute;
     bottom: 0;
     right: 0;
     max-width: 100%;
     height: auto;
+    
 }
 .about_block{
     color: var(--white, #EEE);
@@ -58,7 +77,6 @@
     line-height: normal;
     letter-spacing: 0.05em;
     padding-right: 20px;
-    padding-bottom: 229px;
     max-width: 349px;
 }
 .section_block{
@@ -94,6 +112,8 @@
     margin-bottom: 40px;
 } 
 .section_about_back{
+    min-height: 571px;
+    padding-top: 56px;
     display: block;
     width: 100%;
     height: auto;
@@ -114,7 +134,6 @@
 }
 .mission_section{
     position: relative;
-    height: 785px;
     background: rgba(39, 39, 39, 0.80);
     display: flex;
     align-items: flex-end;
@@ -130,7 +149,6 @@
 }
 .mission_section_choose{
     padding: 10px 0 0 20px;
-    height: 900px;
     position: relative;
     background: rgba(39, 39, 39, 0.80);
 }
@@ -151,16 +169,10 @@
     z-index: 1; 
     
 }
-.section_about_back{
-    
-    padding-top: 56px;
-}
 .buttom_about_fill{
     
 }
-.container_section_about_chose{
-    padding: 8px 0 0 20px;
-}
+
 /* .scroll{
     box-shadow: 0px 0px 10px 51px rgb(39, 39, 39);
 } */
@@ -169,10 +181,40 @@ body.scrolled .scroll{
     box-shadow: none;
     z-index: 3;
 }
-
+.about-picture-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 370px;
+    min-height: 100%;
+    height: auto;
+    background-image:  url(../images/mob/about/about_us2_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-img-three{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 370px;
+    min-height: 100%;
+    height: auto;
+    background-image:  url(../images/mob/about/about_us3_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
+    .about-img-one{
+        background-image:  url(../images/mob/about/about_us1_2x.jpg);
+    }
+    .about-picture-left{
+        background-image:  url(../images/mob/about/about_us2_2x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images/mob/about/about_us3_2x.jpg);
+    }
 
 }
 
@@ -180,6 +222,13 @@ body.scrolled .scroll{
 @media (min-device-pixel-ratio: 3),
 (min-resolution: 300dpi),
 (min-resolution: 3dppx){
-
-
+    .about-img-one{
+        background-image:  url(../images/mob/about/about_us1_4x.jpg);
+    }
+    .about-picture-left{
+        background-image:  url(../images/mob/about/about_us2_4x.jpg);
+    }
+    .about-img-three{
+        background-image:  url(../images/mob/about/about_us3_4x.jpg);
+    }
 }
