@@ -432,7 +432,7 @@ img {
     height: 48px;
 }
 .foother-conteiner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(/images/mob/foother_1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../images/mob/foother_1x.jpg);
     background-size: cover;
 }
 .copyrighte{
