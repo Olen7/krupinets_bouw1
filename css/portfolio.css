@@ -68,7 +68,17 @@ img {
     padding-bottom: 10px;
     z-index: 3;
 }
-
+.heder_about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    background-color: var(--graphite, #272727);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;}
 .is-scrolled{
     z-index:3;
 }
@@ -269,15 +279,25 @@ img {
 
 }
 .block-one{
-    width: 183px;
+    width: 47vw;
     height: 154px;
     position: relative;
+}
+.block-one img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
 }
 
 .block-two{
     position: relative;
-    width: 191px;
+    width: 49vw;
     height: 324px;
+}
+.block-two img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
 }
 .button-batrooms{
     font-family: var(--font-family);
@@ -291,6 +311,13 @@ img {
     width: 100%;
     height: 48px;
 }
+.button-batrooms:hover{
+    background-color: var(--orange);
+}
+.button-batrooms:active{
+    transform: scale(0.98);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
  .block-text {
     height: 45px;
     width: 101%;
@@ -301,7 +328,7 @@ img {
     transform: translateX(-50%);
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.06em;
     color: var(--white);
     align-items: center;
@@ -394,6 +421,7 @@ img {
     letter-spacing: 1px;
 }
 .address_button:active{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(0.9);
 }
 .button-consu{
@@ -409,7 +437,11 @@ img {
     line-height: normal;
     letter-spacing: 1px;
 }
+.button-consu:hover{
+    background: transparent;
+}
 .button-consu:active{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(0.9);
 }
 .adderss_copyright{
@@ -503,12 +535,12 @@ img {
         height: 544px;
     }
     .block-one{
-        width: 374px;
+        width: 48.5vw;
         height: 264px;
     }
     .block-two {
         position: relative;
-        width: 378px;
+        width: 48.5vw;
         height: 544px;
         
     }
@@ -525,6 +557,7 @@ img {
         letter-spacing: 0.06em;
     }
     .block-text{
+        font-size: 24px;
         height: 70px;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 65.95%);
     }
@@ -560,12 +593,12 @@ img {
         height: 674px;
     }
     .block-one{
-        width: 405px;
+        width: 29vw;
         height: 329px;
     }
     .block-two {
         position: relative;
-        width: 1018px;
+        width: 72.5vw;
         height: 674px;
         
     }
@@ -573,7 +606,7 @@ img {
         height: 674px;
     }
     .block-text{
-        font-size: 20px;
+        font-size: 26px;
     }
     .hero-name{
         font-size: 60px;

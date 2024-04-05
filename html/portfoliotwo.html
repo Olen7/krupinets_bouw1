@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/desctop.css">
 </head>
 <body>
-    <header class="header heder_about scroll">
+    <header class="heder_about">
         <div class="container container_header">
             <nav class="heder">
                 <a href="../index.html" class="heder_svg">
@@ -34,7 +35,7 @@
                         <a class="header__id_black header-item-us  lang" data-key="about-us" href="./about.html">About Us</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__id_black  lang" data-key="portfolio" href="./page-translation-issue.html">Portfolio</a>
+                        <a class="header__id_black  lang" data-key="portfolio" href="./portfoliotwo.html">Portfolio</a>
                     </li>
                     <li class="header__item">
                         <a class="header__id_black  lang" data-key="reviews" href="./reviews.html">Reviews</a>
@@ -45,8 +46,8 @@
                 </ul>
             </nav>
             <ul class="name_lang_list">
-                <li class="name_lang_item"><button type="button" language="english" class="name_lang_btn lang-switch">en</button></li>
-                <li class="name_lang_item"><button type="button" language="netherlands" class="name_lang_btn lang-switch">nl</button></li>
+                <li class="name_lang_item_black"><button type="button" language="english" class="name_lang_btn_black lang-switch">en</button></li>
+                <li class="name_lang_item_black"><button type="button" language="netherlands" class="name_lang_btn_black lang-switch">nl</button></li>
             </ul>
             <button type="button" class="header__button" data-menu-open>
                 <svg width="36" height="36">
@@ -67,7 +68,7 @@
                     <li class="mob-menu-items">
                         <a href="./about.html" data-key="about-us" class="mob-menu-item lang">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="./page-translation-issue.html" data-key="portfolio" class="mob-menu-item lang">Portfoli</a></li>
+                        <a href="./portfoliotwo.html" data-key="portfolio" class="mob-menu-item lang">Portfoli</a></li>
                     <li class="mob-menu-items">
                             <a href="./reviews.html" data-key="reviews" class="mob-menu-item lang">Reviews</a></li>
                     <li class="mob-menu-items">
@@ -89,7 +90,7 @@
     <section class="container-section"> 
         <h1 class="hero-name lang" data-key="portfolio">Portfolio</h1>
     </section>
-    <section class="section-batrums" id="portfolio">
+    <section class="section-batrums" id="portfolio-bathrooms">
         <div class="portfolio-foto portfolio-one">
             <picture>
                 <source
@@ -350,7 +351,7 @@
         
         <button type="button" class="button-batrooms lang" data-key="see-more"  id="toggleButton">See more</button>
     </section>
-    <section class="section-batrums" >
+    <section class="section-batrums" id="portfolio-general">
         <div class="portfolio-foto portfolio-one">
             <picture>
                 <source
@@ -604,7 +605,7 @@
         
         <button type="button" class="button-batrooms lang" data-key="see-more" id="toggleButtonOne">See more</button>
     </section>
-    <section class="section-batrums" >
+    <section class="section-batrums" id="portfolio-dormer">
         <div class="portfolio-foto portfolio-one">
             <picture>
                 <source
@@ -877,7 +878,7 @@
                         <a class="foother_links lang" data-key="about-us" href="../html/about.html">About Us</a>
                     </li>
                     <li class="foother_item">
-                        <a class="foother_links lang" data-key="portfolio" href="../html/page-translation-issue.html">Portfolio</a>
+                        <a class="foother_links lang" data-key="portfolio" href="../html/portfoliotwo.html">Portfolio</a>
                     </li>
                     <li class="foother_item">
                         <a class="foother_links lang" data-key="reviews" href="../html/reviews.html">Reviews</a>
@@ -995,7 +996,7 @@
                 <div class="adderss_copyright ">Copyright
                     <svg width="20" height="20" class="copyrighte">
                     <use href="../svg/copyright.svg#icon-copyrighte"></use>
-                </svg><p class="lang" data-key="copyright">2023. All rights reserved</p></div>
+                </svg><p class="lang" data-key="copyright">2024. All rights reserved</p></div>
 
                 <p class="foother_text lang" data-key="copyright-unsplash">The site contains images from 
                     a free resource Unsplash</p>
@@ -1003,11 +1004,11 @@
             
             
     </footer>
-    <script src="../js/index-lang.js"></script>
+        <script src="../js/index-lang.js"></script>
         <script src="../js/about-open-menu.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="../js/consultation-form.js"></script>
-
-        <script src="../js/portfolio-open-button.js"></script>
+        <!-- <script src="../js/heder.js"></script> -->
+        <script src="../js/portfolio.js"></script>
 </body>
 </html>

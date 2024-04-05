@@ -46,7 +46,7 @@ const data = {
         "libel-mail": "Enter your mail",
 
         
-        "copyright": "2023. All rights reserved",
+        "copyright": "2024. All rights reserved",
         "copyright-unsplash": "The site contains images from a free resource Unsplash",
         // "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
         
@@ -136,7 +136,7 @@ const data = {
         "libel-mail": "Voer uw e-mailadres in",
         
         
-        "copyright": "2023. Alle rechten voorbehouden",
+        "copyright": "2024. Alle rechten voorbehouden",
         "copyright-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
         // "foother-nl": "Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
         

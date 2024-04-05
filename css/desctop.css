@@ -40,6 +40,9 @@
     .heder_svg_desctop{
         display: flex;
     }
+    .name_lang_btn_black{
+        font-size: 20px;
+    }
     .name_lang_item:first-child::after {
         content: "";
         width: 20px;
@@ -154,7 +157,7 @@
         letter-spacing: 0.05em;
     }
     .box-picter-service{
-        min-width: 285px;
+        min-width: 20.358vw;
         min-height: 285px;
         margin-bottom: 0;
     }
@@ -170,8 +173,15 @@
     .service_name{
         margin-bottom: 8px;
     }
-    .service_conteiner_gradient {
+    /* .service_conteiner_gradient {
         top: 89%;
+    } */
+    .description-service{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     /*BENEFITS*/
     .benefits-cont-box{
@@ -194,7 +204,7 @@
     
     }
     .benefits_item{
-        width: 285px;
+        width: 20.358vw;
         height: 285px;
     }
     .benefits_list{
@@ -218,14 +228,14 @@
 
 
     .portfolio_one{
-        width: 720px;
+        width: 52.632vw;
         height: 720px;
     }
     .portfolio_wrapper{
         z-index: 0;
     }
     .portfolio_two_thre{
-        width: 720px;
+        width: 52.632vw;
         height: 352px;
     }
     .portfolio_foto:not(:last-child){
@@ -281,6 +291,7 @@
     }
     .address_button:active{
         transform: scale(0.9);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .address_contact{
         font-size: 20px;
@@ -466,6 +477,7 @@
     }
     .section_button_reviews:active{
         transform: scale(0.9);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     /* REVIEW MODAL*/
     .review_modal {
@@ -482,7 +494,7 @@
     .mob_close_button_review {
         padding: 10px;
         top: 30px;
-        right: 104px;
+        right: 35px;
     }
     .review_text {
         margin-bottom: 28px;
@@ -601,6 +613,9 @@
         background-image:  url(../images//desc/about/desctop_about_us3_2x.jpg);
 
     }
+    .section_contact {
+        background-image: url(../images/desc/contact/contact1_2x.jpg.jpg);
+    }
 }
 
     
@@ -621,25 +636,28 @@
         background-image:  url(../images//desc/about/desctop_about_us3_4x.jpg);
 
     }
+    .section_contact {
+        background-image: url(../images/desc/contact/contact1_4x.jpg.jpg);
+    }
 }
 }
 
 @media screen and (min-width: 1700px){
-    .benefits_list{
+    /* .benefits_list{
         
     }
     .benefits_item {
         width: 325px;
         height: 285px;
-    }
+    } */
     .foto {
         background-image: url(../images/desc/desc_hero_4K.jpg);
     }
-    .section-about-index {
+    /* .section-about-index {
         padding-right: 320px;
-    }
+    } */
     .container_section_about{
-        width: 880px;
+        width: 760px;
     }
     .container_section_about_mission {
         width: 880px;
@@ -647,22 +665,42 @@
     .container_section_about_chose{
         width: 880px;
     }
+    .section_contact {
+        background-image: url(../images/desc/contact/contact1_4k-1.jpg);
+    }
 }
 @media screen and (min-width: 1900px){
-    .benefits_item {
+    /* .benefits_item {
         width: 400px;
         height: 285px;
-    }
+    } */
     .section-about-index {
         padding-right: 520px;
     }
     .container_section_about{
-        width: 1120px;
+        width: 1000px;
     }
     .container_section_about_mission {
         width: 1120px;
     }
     .container_section_about_chose{
         width: 1120px;
+    }
+    
+    
+}
+@media screen and (min-width: 2050px){
+
+    .container_section_about{
+        width: 1200px;
+    }
+    .container_section_about_mission {
+        width: 1320px;
+    }
+    .container_section_about_chose{
+        width: 1320px;
+    }
+    .section_contact {
+        background-image: url(../images/desc/contact/contact1_4k-2.jpg);
     }
 }

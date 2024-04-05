@@ -148,10 +148,15 @@
     .header .container_header{
         max-width: 100%;
     }
+    .heder_eror{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
         /* HERO */
     .section_contact {
             margin-top: 72px;
             padding: 20px 32px 40px;
+            background-image: url(../images/tab/contact/contact1_1x.jpg);
     }
     .container_section_about{
         width: 638px;
@@ -236,7 +241,7 @@
         }
     
     .box-picter-service{
-        min-width: 365px;
+        min-width: 44vw;
         min-height: 285px;
         
     
@@ -256,7 +261,10 @@
         justify-content: center;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%);
     }
-
+    .description-service{
+        font-size: 20px;
+        line-height: 1.5;
+    }
     /* BENEFITS */
     .benefits-cont-box{
         padding-top: 60px;
@@ -273,7 +281,9 @@
         gap: 20px;
         justify-content: space-between;
     }
-
+    .benefits_item{
+        width: 20.9vw;
+    }
     /* PORTFOLIO */
     .portfolio_name {
         margin-bottom: 40px;
@@ -573,6 +583,9 @@
     .about-img-three{
         background-image:  url(../images/tab/about/tab_about_us3_2x.jpg);
     }
+    .section_contact {
+        background-image: url(../images/tab/contact/contact1_2x.jpg);
+    }
 }  
     @media (min-device-pixel-ratio: 3),
 (min-resolution: 300dpi),
@@ -588,6 +601,9 @@
     }
     .about-img-three{
         background-image:  url(../images/tab/about/tab_about_us3_4x.jpg);
+    }
+    .section_contact {
+        background-image: url(../images/tab/contact/contact1_4x.jpg);
     }
 }
 @media (max-height: 430px) {
@@ -613,10 +629,25 @@
 }
 
 }
-@media screen and (min-width: 1000px){
-    .benefits_item{
-        width: 210px;
+@media screen and (min-width: 900px){
+    .section-about-index{
+        width: 786px;
     }
+    .foto {
+        background-image: url(../images/tab/tablet_hiro_4K.jpg);
+    }
+    .eror_conteiner  {
+        background-image: url(../images/tab/eror/tablet_eror_4k-1.jpg);
+    }
+    .section_contact {
+        background-image: url(../images/tab/contact/contact1_4k-1.jpg);
+    }
+
+}
+@media screen and (min-width: 1000px){
+    /* .benefits_item{
+        width: 210px;
+    } */
     .container_section_about{
         width: 740px;
     }
@@ -626,12 +657,21 @@
     .mission_section{
         width: 740px; 
     }
+    .section-about-index{
+        width: 886px;
+    }
+    .eror_conteiner  {
+        background-image: url(../images/tab/eror/tablet_eror_4k-2.jpg);
+    }
+    .section_contact {
+        background-image: url(../images/tab/contact/contact1_4k-2.jpg);
+    }
 
 }
 @media screen and (min-width: 1200px){
-    .benefits_item{
+    /* .benefits_item{
         width: 260px;
-    }
+    } */
     .container_section_about{
         width: 860px
     }
@@ -640,6 +680,9 @@
     }
     .mission_section{
         width: 860px; 
+    }
+    .foto {
+        background-image: url(../images/tab/tablet_hiro_4K_2.jpg);
     }
 }
 @media screen and (min-width: 1300px){
