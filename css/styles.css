@@ -480,9 +480,7 @@ img {
     margin-bottom: 8px;
 
 }
-.benefits_text:hover{
-    color: var(--orange, #CD7829);
-}
+
 .benefits_text{
     display: flex;
     width: 158px;
