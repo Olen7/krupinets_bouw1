@@ -270,7 +270,7 @@ img {
     position: relative;
     padding: 28px 20px;
     /* background: url(), lightgray 50% / cover no-repeat; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../images/mob/foother_1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../images/mob/foother_1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* Щоб не тягнулась */
@@ -503,7 +503,7 @@ img {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
     .foother-conteiner{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(/images/mob/foother_2x.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../images/mob/foother_2x.jpg);
     }
 
 }
@@ -511,7 +511,7 @@ img {
 (min-resolution: 300dpi),
 (min-resolution: 3dppx){
     .foother-conteiner{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(/images/mob/foother_4x.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(../../images/mob/foother_4x.jpg);
     }
 
 }
