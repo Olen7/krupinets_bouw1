@@ -58,15 +58,25 @@ fetch(`https://krupinets-bouw-admin.onrender.com/api/portfolios?locale=${locale}
 .catch(error => console.log(error.message))
 
 
-
 document.getElementById('toggleButton').addEventListener('click', function() {
-    let section = document.getElementById('additionalSection');
-    if (section.style.display === 'none') {
-      section.style.display = 'flex';
-    } else {
-      section.style.display = 'none';
-    }
-  });
+  let section = document.getElementById('additionalSection');
+  let button = document.getElementById('toggleButton'); // Отримуємо доступ до кнопки
+  if (section.style.display === 'none') {
+    section.style.display = 'flex';
+    button.textContent = 'See less'; // Змінюємо текст кнопки на "Закрити меню"
+  } else {
+    section.style.display = 'none';
+    button.textContent = 'See more'; // Змінюємо текст кнопки назад на "Відкрити меню"
+  }
+});
+// document.getElementById('toggleButton').addEventListener('click', function() {
+//     let section = document.getElementById('additionalSection');
+//     if (section.style.display === 'none') {
+//       section.style.display = 'flex';
+//     } else {
+//       section.style.display = 'none';
+//     }
+//   });
   
   document.getElementById('toggleButtonOne').addEventListener('click', function() {
     let section = document.getElementById('additionalSectionOne');
