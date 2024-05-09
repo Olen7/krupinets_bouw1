@@ -338,6 +338,10 @@
     .header__id{
 
     }
+    .foother_links:hover{
+        color: var(--orange, #CD7829);
+        text-decoration-line: underline;
+    }
     /* ABOUT INDEX */
     .about_foto{
         background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);   

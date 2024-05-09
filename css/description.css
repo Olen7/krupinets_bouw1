@@ -1,0 +1,44 @@
+
+.heder_about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    background-color: var(--graphite, #272727);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.section-hero{
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/mob/mob_service1_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.hero-text{
+    color: var(--orange, #CD7829);
+    font-family: Orbitron;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.name-section-text{
+    color: var(--white, #EEE);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+}

@@ -88,6 +88,12 @@ const data = {
         "see-more":"See more",
         "general-renovation":"general renovation",
         "dormer-construction":"dormer construction",
+
+        "service-removal":"",
+        "service-installation":"",
+        "service-tile":"",
+        "service-electrical":"",
+        "service-ventilation":"",
         
         
     },

@@ -45,16 +45,9 @@
     position: absolute;
     top: 0;
     left: 0;
-width: 100%;
+    width: 100%;
     height: auto;
-}
-
-.contact_item{
-    
-}
-/* .social-contact-icon{
-    margin-left: 24px;
-} */
+} 
 .address_social_contact{
     display: flex;
     flex-direction: column;
@@ -193,6 +186,9 @@ width: 100%;
 }
 .conteiner_contact_desctop{
     position: relative;
+}
+.social-contact-icon:hover{
+    --color1: coral;
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),

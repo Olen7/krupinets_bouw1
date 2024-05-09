@@ -57,26 +57,75 @@ fetch(`https://krupinets-bouw-admin.onrender.com/api/portfolios?locale=${locale}
   })
 .catch(error => console.log(error.message))
 
+// let currentLanguage = 'en'; // Початкове значення мови
 
-document.getElementById('toggleButton').addEventListener('click', function() {
-  let section = document.getElementById('additionalSection');
-  let button = document.getElementById('toggleButton'); // Отримуємо доступ до кнопки
-  if (section.style.display === 'none') {
-    section.style.display = 'flex';
-    button.textContent = 'See less'; // Змінюємо текст кнопки на "Закрити меню"
-  } else {
-    section.style.display = 'none';
-    button.textContent = 'See more'; // Змінюємо текст кнопки назад на "Відкрити меню"
-  }
-});
+// // Функція для зміни мови (це лише приклад, вам потрібно адаптувати це під вашу логіку зміни мови)
+// function changeLanguage(lang) {
+//   currentLanguage = lang;
+//   // Тут може бути код, який оновлює тексти на сторінці згідно вибраної мови
+// }
+
 // document.getElementById('toggleButton').addEventListener('click', function() {
-//     let section = document.getElementById('additionalSection');
-//     if (section.style.display === 'none') {
-//       section.style.display = 'flex';
-//     } else {
-//       section.style.display = 'none';
+//   let section = document.getElementById('additionalSection');
+//   let button = document.getElementById('toggleButton');
+
+//   // Тексти для кнопки в залежності від мови
+//   let texts = {
+//     en: {
+//       open: 'Open Menu',
+//       close: 'Close Menu'
+//     },
+//     nl: {
+//       open: 'Meer zien',
+//       close: 'Minder zien'
 //     }
-//   });
+//   };
+
+//   if (section.style.display === 'none') {
+//     section.style.display = 'flex';
+//     button.textContent = texts[currentLanguage].close; // Встановлюємо текст згідно поточної мови
+//   } else {
+//     section.style.display = 'none';
+//     button.textContent = texts[currentLanguage].open; // Встановлюємо текст згідно поточної мови
+//   }
+// });
+// document.getElementById('toggleButton').addEventListener('click', function() {
+//   let section = document.getElementById('additionalSection');
+//   let button = document.getElementById('toggleButton');
+//   // Визначаємо поточну мову (припускаємо, що вона зберігається у тегу <html>)
+//   let currentLang = document.documentElement.lang;
+  
+//   // Тексти для різних мов
+//   let openText = currentLang === 'en' ? 'See more' : 'Meer zien';
+//   let closeText = currentLang === 'en' ? 'See less' : 'Minder zien';
+
+//   if (section.style.display === 'none') {
+//     section.style.display = 'flex';
+//     button.textContent = closeText; // Встановлюємо текст для кнопки в залежності від мови
+//   } else {
+//     section.style.display = 'none';
+//     button.textContent = openText; // Встановлюємо текст для кнопки в залежності від мови
+//   }
+// });
+// document.getElementById('toggleButton').addEventListener('click', function() {
+//   let section = document.getElementById('additionalSection');
+//   let button = document.getElementById('toggleButton'); // Отримуємо доступ до кнопки
+//   if (section.style.display === 'none') {
+//     section.style.display = 'flex';
+//     button.textContent = 'See less'; // Змінюємо текст кнопки на "Закрити меню"
+//   } else {
+//     section.style.display = 'none';
+//     button.textContent = 'See more'; // Змінюємо текст кнопки назад на "Відкрити меню"
+//   }
+// });
+document.getElementById('toggleButton').addEventListener('click', function() {
+    let section = document.getElementById('additionalSection');
+    if (section.style.display === 'none') {
+      section.style.display = 'flex';
+    } else {
+      section.style.display = 'none';
+    }
+  });
   
   document.getElementById('toggleButtonOne').addEventListener('click', function() {
     let section = document.getElementById('additionalSectionOne');

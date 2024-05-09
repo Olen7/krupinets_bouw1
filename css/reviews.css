@@ -209,6 +209,11 @@
     position: absolute;
     top: 24px;
     right: 20px;
+    --color1:var(--graphite);
+}
+.mob_close_button_review:hover{
+    --color1:var(--graphite-hover);
+    
 }
 .mob_close_button_review:active{
     transform: scale(0.9);
@@ -249,6 +254,12 @@
     letter-spacing: 0.06em;
     border: none;
     padding: 12px 24px ;
+    border: 2px solid transparent;
+}
+.modal_button_reviews_send:hover{
+    background: var(--white, #EEE);
+    color: var(--orange);
+    border-color: var(--orange);
 }
 .modal_button_reviews_send:active{
     transform: scale(0.9);
