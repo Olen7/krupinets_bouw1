@@ -258,8 +258,6 @@ img {
 }
 .foto-block{
     display: flex;
-    /* max-height: 324px; */
-    height: 324px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
@@ -282,6 +280,9 @@ img {
     width: 47vw;
     height: 154px;
     position: relative;
+}
+.block-one.full-width{
+    width: 100vw;
 }
 .block-one img{
     width: 100%;
@@ -531,9 +532,6 @@ img {
   
   
 @media screen and (min-width: 768px){
-    .foto-block{
-        height: 544px;
-    }
     .block-one{
         width: 48.5vw;
         height: 264px;
