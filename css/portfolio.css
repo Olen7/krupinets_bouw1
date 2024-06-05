@@ -239,6 +239,7 @@ img {
 .portfolio-foto{
     position: relative;
     margin-bottom: 16px;
+
 }
 .portfolio-text {
     background: linear-gradient(to bottom right, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #2B2B2B 30%, rgba(39, 39, 39, 0.00) 50%) top right / 50% 50% no-repeat;
@@ -280,6 +281,8 @@ img {
     width: 47vw;
     height: 154px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .block-one.full-width{
     width: 100vw;
@@ -536,6 +539,12 @@ img {
         width: 48.5vw;
         height: 264px;
     }
+    .block-one.full-width{
+        height: 364px;
+    }
+    .block-one.full-width .block-text{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 90.95%);
+    }
     .block-two {
         position: relative;
         width: 48.5vw;
@@ -590,9 +599,12 @@ img {
     .foto-block{
         height: 674px;
     }
+    .block-one.full-width{
+        height: 674px;
+    }
     .block-one{
         width: 29vw;
-        height: 329px;
+        min-height: 329px;
     }
     .block-two {
         position: relative;

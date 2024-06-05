@@ -349,7 +349,24 @@ input[type="file"]{
     color: var(--white);
 }
 .stars{
-    
+    display: flex;
+    gap: 1px;
+}
+.review-star{
+    width: 30px;
+    height: 30px;
+    color: #9E9E9E;
+}
+.review-star.fill{
+    color: var(--orange);
+}
+.review-star::before{
+    content:"★";
+    display: block;
+    transition: color 0.3s ease 0s;
+    position: relative;
+    top: -5px;
+    font-size: 34px;
 }
 .text-review{
     padding:10px 0 ;

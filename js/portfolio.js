@@ -32,39 +32,8 @@ for (let i = 0; i < data.length; i += 1) {
   if(data.length === 3){
     className = i < 2 ? "block-one" : "block-two";
   }
-  block.insertAdjacentHTML("beforeend", `<div class="${className}">
-  <picture>
-      <source
-          srcset="
-          
-          ${image},
-          ${image},
-          ${image}
-      "
-          media="(min-width: 1400px)"
-      />
-      <source
-          srcset="
-          ${image},
-          ${image},
-          ${image}
-      "
-      media="(min-width: 768px)"
-      />
-      <source
-          srcset="
-          ${image},
-          ${image},
-          ${image}
-      "
-      media="(max-width: 767px)"
-      />
-      <img
-          src="${image}"
-          alt=""
-          class=""
-      />
-  </picture>
+  block.insertAdjacentHTML("beforeend", `<div style="background-image:url(${image})" class="${className}">
+  
   <p class="block-text">${name}</p></div>`)
 }
 };

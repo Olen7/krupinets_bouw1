@@ -89,12 +89,29 @@ const data = {
         "general-renovation":"general renovation",
         "dormer-construction":"dormer construction",
 
-        "service-removal":"",
-        "service-installation":"",
-        "service-tile":"",
-        "service-electrical":"",
-        "service-ventilation":"",
+        "service-bathroom-removal":"- Removal of old plumbing fixtures and tiles.",
+        "service-bathroom-installation":"- Installation of new plumbing fixtures.",
+        "service-bathroom-tile":"- Tile laying for floors and walls.",
+        "service-bathroom-electrical":"- Electrical work including installation of light fixtures and outlets.",
+        "service-bathroom-ventilation":"- Installation of heating and ventilation systems.",
+         
+        "service-general-complete":"- Complete interior updates: living rooms, kitchens, hallways.",
+        "service-general-flooring":"- Flooring renovations including parquet, laminate, tile, and PVC installation.",
+        "service-general-replacement":"- Replacement of windows and doors.",
+        "service-general-insulation":"- Insulation of walls and floors.",
+        "service-general-interior":"- Interior finishing works.",
+
+        "service-dormer-inspection":"- Inspection and repair of rafters and battens.",
+        "service-dormer-replacement":"- Replacement or restoration of roofing materials.",
+        "service-dormer-insulation":"- Insulation of roof and attic.",
+        "service-dormer-installation":"- Installation of attic window systems.",
+        "service-dormer-rainwater":"- Rainwater drainage and gutter installation.",
         
+        "service-painting-surface":"- Surface preparation: filling, priming.",
+        "service-painting-interior":"- Interior and exterior painting.",
+        "service-painting-decorative":"- Decorative plastering: textured, Venetian.",
+        "service-painting-antifungal":"- Antifungal and moisture-resistant treatments.",
+        "service-painting-restoration":"- Restoration work on building facades.",
         
     },
     "netherlands": {
@@ -184,6 +201,30 @@ const data = {
         "see-more":"Zie meer",
         "general-renovation":"algemene renovatie",
         "dormer-construction":"dakkapelconstructie",
+
+        "service-bathroom-removal":"- Verwijdering van oude sanitairarmaturen en tegels",
+        "service-bathroom-installation":"- Installatie van nieuwe sanitairarmaturen.",
+        "service-bathroom-tile":"- Tegelzetten voor vloeren en muren.",
+        "service-bathroom-electrical":"- Elektrisch werk, inclusief installatie van verlichtingsarmaturen en stopcontacten.",
+        "service-bathroom-ventilation":"- Installatie van verwarmings- en ventilatiesystemen.",
+
+        "service-general-complete":"- Volledige interieurupdates: woonkamers, keukens, gangen.",
+        "service-general-flooring":"- Renovaties van vloeren, inclusief parket, laminaat, tegels en PVC-installatie.",
+        "service-general-replacement":"- Vervanging van ramen en deuren.",
+        "service-general-insulation":"- Isolatie van muren en vloeren.",
+        "service-general-interior":"- Afwerking van het interieur.",
+
+       "service-dormer-inspection":"- Inspectie en reparatie van spanten en latten.",
+        "service-dormer-replacement":"- Vervanging of herstel van dakbedekkingsmaterialen.",
+        "service-dormer-insulation":"- Isolatie van het dak en de zolder.",
+        "service-dormer-installation":"- Installatie van zolderraamsystemen.",
+        "service-dormer-rainwater":"- Installatie van regenwaterafvoer en dakgoot.",
+        
+        "service-painting-surface":"- Oppervlaktevoorbereiding: vullen, grondverven.",
+        "service-painting-interior":"- Schilderen van interieur en exterieur.",
+        "service-painting-decorative":"- Decoratief pleisterwerk: gestructureerd, Venetiaans.",
+        "service-painting-antifungal":"- Antischimmel- en vochtbestendige behandelingen.",
+        "service-painting-restoration":"- Restauratiewerkzaamheden aan gevels van gebouwen.",
     }   
 };
 let currentlang = null;

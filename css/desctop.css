@@ -177,11 +177,11 @@
         top: 89%;
     } */
     .description-service{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
-        padding-top: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     /*BENEFITS*/
     .benefits-cont-box{
@@ -642,6 +642,11 @@
 }
 }
 
+@media screen and (min-width: 1600px){
+    .description-service{
+        font-size: 16px;
+    }
+}
 @media screen and (min-width: 1700px){
     /* .benefits_list{
         
@@ -686,7 +691,9 @@
     .container_section_about_chose{
         width: 1120px;
     }
-    
+    .description-service{
+        font-size: 18px;
+    }
     
 }
 @media screen and (min-width: 2050px){
@@ -702,5 +709,8 @@
     }
     .section_contact {
         background-image: url(../images/desc/contact/contact1_4k-2.jpg);
+    }
+    .description-service{
+        font-size: 20px;
     }
 }
