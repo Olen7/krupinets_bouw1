@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/css/portfolio.css"> -->
     <link rel="stylesheet" href="../../css/portfolio-css/project-one.css">
-    
     <link rel="stylesheet" href="../../css/tablet.css">
     <link rel="stylesheet" href="../../css/desctop.css">
     <link rel="icon" href="../../svg/kb-icon.png" type="image/x-icon">
@@ -20,16 +18,14 @@
                 <a href="../../index.html" class="heder_svg">
                         <svg width="60" height="32">
                             <use href="../../svg/logo.svg#icon-k-b-mobil-tab"></use>
-                        </svg>
-                        
+                        </svg>                        
                 </a>
                 <a href="../../index.html" class="heder_svg_desctop">
                     <svg width="108" height="56">
                         <use href="../../svg/logo.svg#icon-k-b-desctop"></use>
                     </svg>
                 </a>
-                <ul class="heder_nav">
-                    
+                <ul class="heder_nav">                  
                     <li class="header__item">
                         <a class="header__id_black  lang" data-key="home" href="../../index.html">Home</a>
                     </li>
@@ -89,11 +85,10 @@
             </ul>
             </div>       
     </header>                  
-        <h1 class="project-h">PROJECT 1</h1>
-        <picture>
+        <h1 class="project-h" id="project-name"></h1>
+        <!-- <picture>
           <source
-              srcset="
-              
+              srcset="             
               ../../images/desc/portfolio-index/portfolio-hero1-1x.jpg 1x,
               ../../images/desc/portfolio-index/portfolio-hero1-2x.jpg 2x,
               ../../images/desc/portfolio-index/portfolio-hero1-4x.jpg 4x
@@ -121,9 +116,16 @@
               alt=""
               class="pictures"
           />
-      </picture>
-      <ul class="text-block-ul">
-          <li class="block-li"> 
+      </picture> -->
+      <img
+              src=""
+              id="project-main-image"
+              alt=""
+              class="pictures"
+          />
+        
+      <div class="text-block-ul" id="project-description">
+          <!-- <li class="block-li"> 
               <p class="hero-text-li">Project Overview </p>
               <p class="text-li">At Krupinec Bow, we take pride in transforming spaces and making dreams come true. Our latest renovation project is a testament to our commitment to excellence and craftsmanship.</p>
           </li>
@@ -146,11 +148,10 @@
               <li class="text-li sss" >Stylish Bathrooms: The bathrooms were transformed into spa-like retreats with contemporary fixtures, elegant tiling, and ample storage.</li>
               <li class="text-li sss" >Energy Efficiency: We incorporated energy-efficient lighting and HVAC systems to reduce utility costs and minimize the project's environmental footprint.</li>
               <li class="text-li sss" >Custom Finishes: Every detail matters. We added custom finishes, from unique light fixtures to hand-selected hardware, to give the space a personalized touch.</li>
-          </ul>
-         
-      </ul>
-      <ul class="picture-block-ul">
-          <li class="picture-menu-block">
+          </ul>         -->
+      </div>
+      <ul class="picture-block-ul" id="project-additional-images">
+          <!-- <li class="picture-menu-block">
               <picture>
               <source
               srcset="
@@ -189,7 +190,6 @@
                 ../../images/desc/portfolio/menu/menu-one/portfolio-menu-2-1x.jpg 1x,
                 ../../images/desc/portfolio/menu/menu-one/portfolio-menu-2-2x.jpg 2x,
                 ../../images/desc/portfolio/menu/menu-one/portfolio-menu-2-4x.jpg 4x
-              
           "
               media="(min-width: 1400px)"
           />
@@ -222,8 +222,7 @@
                   srcset="
                     ../../images/desc/portfolio/menu/menu-one/portfolio-menu-3-1x.jpg 1x,
                     ../../images/desc/portfolio/menu/menu-one/portfolio-menu-3-2x.jpg 2x,
-                    ../../images/desc/portfolio/menu/menu-one/portfolio-menu-3-4x.jpg 4x
-                  
+                    ../../images/desc/portfolio/menu/menu-one/portfolio-menu-3-4x.jpg 4x   
               "
                   media="(min-width: 1400px)"
               />
@@ -281,9 +280,8 @@
                   alt=""
                   class=""
               />
-          </picture></li>
+          </picture></li> -->
       </ul>
-
       <footer class="foother-conteiner foother-filter">
         <div class="tab_conteiner_index">
             <div class="foother_blok_one">
@@ -322,7 +320,6 @@
                         <li class="address_social"><a href="https://maps.app.goo.gl/ggd8AtM1EWtGRx5m6" class="address_link"  target="_blank" rel="noopener noreferrer nofollow">Adress: <span class="foother_desctop_amster">Eliza van Calcarstraat 27,<span class="foother_tab_amster">Amsterdam, Netherlands </span></span> 
                             </a></li>
                     </ul>
-                    
                 </address>
                 <ul class="adderss_icons">
                     <li class="address_list">
@@ -358,8 +355,7 @@
                             <svg width="30" height="30">
                                 <use href="../../svg/social.svg#icon-linkedin" ></use>
                             </svg> 
-                        </a> 
-                        
+                        </a>  
                     </li>
                 </ul>
             </div>
@@ -390,10 +386,8 @@
                                     name="phone"
                                     id="phone"
                                     placeholder="Enter your phone"
-                                    required />
-                                    
+                                    required />    
                         </div>
-                
                         <div class="modal-form">
                             <label for="email" class="name-text_tab lang" data-key="mail-form">E-mail*</label>
                                 <div class="input-person">
@@ -408,30 +402,24 @@
                                     required />
                                 </div>
                         </div>
-                            
                             <button class="address_button lang" data-key="consultation" type="submit">Consultation</button>
                         </form>
-                        <a href="../contact.html"><button class="button-consu lang" data-key="consultation" type="button">Consultation</button></a>
-                        
-                </div>
-
-                
+                        <a href="../contact.html"><button class="button-consu lang" data-key="consultation" type="button">Consultation</button></a> 
+                </div> 
             </div>
             <div class="copyright_desctop">
                 <div class="adderss_copyright ">Copyright
                     <svg width="20" height="20" class="copyrighte">
                     <use href="../../svg/copyright.svg#icon-copyrighte"></use>
                 </svg><p class="lang" data-key="copyright">2024. All rights reserved</p></div>
-
                 <p class="foother_text lang" data-key="copyright-unsplash">The site contains images from 
                     a free resource Unsplash</p>
-            </div>
-            
-            
+            </div>   
     </footer>
         <script src="../../js/index-lang.js"></script>
         <script src="../../js/about-open-menu.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="../../js/consultation-form.js"></script>
+        <script src="../js/project-one.js"></script>
 </body>
 </html>

@@ -200,7 +200,7 @@ const data = {
 
         "see-more":"Zie meer",
         "general-renovation":"algemene renovatie",
-        "dormer-construction":"dakkapelconstructie",
+        "dormer-construction":"dakkapel constructie",
 
         "service-bathroom-removal":"- Verwijdering van oude sanitairarmaturen en tegels",
         "service-bathroom-installation":"- Installatie van nieuwe sanitairarmaturen.",

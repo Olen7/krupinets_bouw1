@@ -461,7 +461,7 @@ img {
     .picture-block-ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 16px;
         flex-direction: row;
     }

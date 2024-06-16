@@ -5,11 +5,9 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: flex-start;
-
     }
     .portfolio_box{
         margin-right: 16px;
-        
     }
     .portfolio_one{
         height: 720px;
@@ -32,10 +30,8 @@
         display: none;
     }
     .container_header{
-        /* max-width: 1400px; */
         padding-left: 119px;
         padding-right: 119px;
-
     }
     .heder_svg_desctop{
         display: flex;
@@ -59,11 +55,9 @@
     }
     .header__id{
         font-size: 20px;
-
     }
     .header__item:not(:last-child){
-        margin-right: 36px;
-        
+        margin-right: 36px;   
     }
     .header-item-us{
         width: 100px;
@@ -98,15 +92,14 @@
     .hero_button:active{
         transform: scale(0.9);
     }
-    .foto {
+    .foto{
         padding-top: 288px;
         background-image:url(../images/desc/desc_hero_1x.jpg);
     }
     .is_scrolled {
         padding-top: 21px;
         padding-bottom: 21px;
-        z-index: 1;
-        
+        z-index: 1;  
     }
     .header .container_header{
         padding-left: 120px;
@@ -150,8 +143,7 @@
     .section_button:active{
         transform: scale(0.9);
     }
-    .name_service{
-        
+    .name_service{ 
         padding: 60px 0 0 0;
         font-size: 60px;
         letter-spacing: 0.05em;
@@ -164,7 +156,6 @@
     .service_list{
         gap: 28px 5px;
         justify-content: space-between;
-
     }
     .service_name{
         font-size: 20px;
@@ -173,9 +164,6 @@
     .service_name{
         margin-bottom: 8px;
     }
-    /* .service_conteiner_gradient {
-        top: 89%;
-    } */
     .description-service{
         font-size: 14px;
         line-height: 1.5;
@@ -195,13 +183,11 @@
     .benefits_svg{
         display: none;
     }
-   
     .benefits_svg_desktop{
         display: flex;
         padding-top: 60px;
         padding-bottom: 30px;
         box-sizing: content-box;
-    
     }
     .benefits_item{
         width: 20.358vw;
@@ -214,7 +200,6 @@
     .benefits_text{
         font-size: 20px;
         letter-spacing: 0.05em;
-        /* width: 230px;  поміняв на 100% тому що SVG зменьшується*/
         width: 100%;
         height:auto;
         line-height: 1.6em; /* 160% */
@@ -225,8 +210,6 @@
         font-size: 60px;
         letter-spacing: 0.05em;
     }
-
-
     .portfolio_one{
         width: 52.632vw;
         height: 720px;
@@ -344,7 +327,6 @@
         min-width: 1115px;
         min-height: 100%;
         background-image:  url(../images//desc/about/desctop_about_us3_1x.jpg);
-
     }
     .section_about_back{
         padding-top: 97px;
@@ -362,7 +344,6 @@
         box-sizing: border-box;
         line-height: 32px;
     }
-
     .about_foto{
         background-size: none; 
         background-image: none;
@@ -370,11 +351,7 @@
     .section_block_mision{
         font-size: 24px;
         letter-spacing: 0.05em;
-
     }
-    /* .foto_tab_about_mission {
-        height: 774px;
-    } */
     .section_block{
         font-size: 23px;
         letter-spacing: 0.05em;
@@ -448,13 +425,11 @@
         font-size: 24px;
         letter-spacing: 0.04em;
     }
-    
     /* REVIEW */
     .tab_box_review {
         margin-top: 98px;
     }
     .container {
-
         padding-left: 120px;
         padding-right: 120px;
     }
@@ -480,6 +455,15 @@
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     /* REVIEW MODAL*/
+    .text-review {
+        font-size: 24px;
+    }
+    .customer{
+        line-height: 130%;
+    }
+    .review-cont-section {
+        margin: 0 120px;
+    }
     .review_modal {
         padding: 40px;
         width: 850px;
@@ -522,7 +506,6 @@
     }
     .review_modal {
         top: 60px;
-
     }
     /* CONTACT */
     .section_contact {
@@ -548,11 +531,9 @@
     }
     .address_social_contact-phone{
         font-size: 24px;
-        /* margin-bottom: 20px; */
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-
     }
     .address_link_contact {
         font-size: 24px;
@@ -595,8 +576,7 @@
         align-items: center;
         justify-content: center;
     }
-
-    @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
     .foto {
@@ -604,14 +584,12 @@
     }
     .about-img-one{
         background-image:  url(../images/desc/about/desctop_about_us1_2x.jpg);
-
     }
     .about-picture-left{
         background-image:  url(../images/desc/about/desctop_about_us2_2x.jpg);
     }
     .about-img-three{
         background-image:  url(../images//desc/about/desctop_about_us3_2x.jpg);
-
     }
     .section_contact {
         background-image: url(../images/desc/contact/contact1_2x.jpg.jpg);
@@ -634,33 +612,21 @@
     }
     .about-img-three{
         background-image:  url(../images//desc/about/desctop_about_us3_4x.jpg);
-
     }
     .section_contact {
         background-image: url(../images/desc/contact/contact1_4x.jpg.jpg);
     }
 }
 }
-
 @media screen and (min-width: 1600px){
     .description-service{
         font-size: 16px;
     }
 }
 @media screen and (min-width: 1700px){
-    /* .benefits_list{
-        
-    }
-    .benefits_item {
-        width: 325px;
-        height: 285px;
-    } */
     .foto {
         background-image: url(../images/desc/desc_hero_4K.jpg);
     }
-    /* .section-about-index {
-        padding-right: 320px;
-    } */
     .container_section_about{
         width: 760px;
     }
@@ -675,10 +641,6 @@
     }
 }
 @media screen and (min-width: 1900px){
-    /* .benefits_item {
-        width: 400px;
-        height: 285px;
-    } */
     .section-about-index {
         padding-right: 520px;
     }
@@ -694,10 +656,8 @@
     .description-service{
         font-size: 18px;
     }
-    
 }
 @media screen and (min-width: 2050px){
-
     .container_section_about{
         width: 1200px;
     }

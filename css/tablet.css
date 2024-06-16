@@ -448,6 +448,9 @@
         letter-spacing: 0.05em;
     }
     /* REVIEW INDEX */
+    .review-cont-section{
+        margin: 0 32px;
+    }
     .review_modal{
         top: 98px;
         width: 700px;
@@ -511,6 +514,31 @@
     }
     .simple-rating-items{
         justify-content: flex-end;
+    }
+    .group-wrapper {
+        min-width: 275px;
+        height: 108px;
+    }
+    .customer{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: var(--white);
+        width: 90px;
+        height: 90px;
+        transform: translateY(10%);
+    }
+    .date{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .text-review {
+        padding: 20px 0;
+        font-size: 20px;
     }
     /* CONTACT INDEX */
     .contact_name {

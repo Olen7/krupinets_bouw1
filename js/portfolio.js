@@ -6,13 +6,13 @@ const locale = currentlang === "english" ? "en" : "nl";
 function renderFotoBlock (block, data){
   const deliter = data.length < 3 ? 2 : 1;
   if(device === "desktop"){
-   block.style.height = `${674 / deliter}px`;
+   block.style.height = `${120 / deliter}vw`;
   }
   if(device === "tablet"){
-   block.style.height = `${544 / deliter}px`;
+   block.style.height = `${120 / deliter}vw`;
   }
   if(device === "mobile"){
-   block.style.height = `${324 / deliter}px`;
+   block.style.height = `${100 / deliter}vw`;
   }
 if(data.length === 2){
    block.style.flexDirection = "row";
@@ -21,7 +21,7 @@ for (let i = 0; i < data.length; i += 1) {
   const item = data[i];
   const attributes = item.attributes;
   const name = attributes.name;
-  const image = attributes.additional_images.data[0].attributes.formats.small.url;
+  const image = attributes.main_image.data.attributes.formats.small.url;
   let className = "";
   if(data.length === 1){
     className = "block-one full-width"
@@ -33,9 +33,10 @@ for (let i = 0; i < data.length; i += 1) {
     className = i < 2 ? "block-one" : "block-two";
   }
   block.insertAdjacentHTML("beforeend", `<div style="background-image:url(${image})" class="${className}">
-  
-  <p class="block-text">${name}</p></div>`)
+  <a href="./project-one.html?id=${item.id}" class="portfolio-item-link">
+  <p class="block-text">${name}</p></a></div>`)
 }
+
 };
 function renderItems(section, data){
   const fotoBlock = section.querySelector(".foto-block");
