@@ -484,8 +484,8 @@ img {
         padding: 20px 100px;
     }
     .picture-menu-block {
-        max-width: 49.2vw;
-        height: 429px;
+        max-width: 49vw;
+        min-height: 25vw;
     }
 }
 @media (min-device-pixel-ratio: 2),

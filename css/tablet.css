@@ -128,6 +128,7 @@
     .header__id:hover{
         color: var(--orange, #CD7829);
         text-decoration-line: underline;
+        transition: 0.3s ease, visibility 0.3s ease;
     }
     .header__item:not(:last-child){
         margin-right: 34px;
@@ -342,10 +343,7 @@
     .header__id{
 
     }
-    .foother_links:hover{
-        color: var(--orange, #CD7829);
-        text-decoration-line: underline;
-    }
+    
     /* ABOUT INDEX */
     .about_foto{
         background-image:linear-gradient(rgba(39, 39, 39, 0.80),rgba(39, 39, 39, 0.80)), url(#);   

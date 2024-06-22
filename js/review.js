@@ -28,7 +28,7 @@ element.addEventListener("click", function(event){
     function renderReview({grade, text, username, updatedAt}){
       return `<li class="review-list-item">
       <div class="group-wrapper">
-      <div class="customer">J</div>
+      <div class="customer">${username.slice(0,1)}</div>
       <div class="p-group-wrapper">
       <p class="date">${updatedAt.slice(0,10)}</p>
       <p class="name">${username}</p>
