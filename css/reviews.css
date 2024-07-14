@@ -303,7 +303,7 @@ input[type="file"]{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 48px;
-    line-height: 67%;
+    /* line-height: 67%; */
     letter-spacing: 0.02em;
     color: var(--white);
     line-height: 50px;
