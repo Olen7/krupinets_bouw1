@@ -361,3 +361,9 @@ input[type="file"]{
 .review-cont-section{
     margin: 0 20px;
 }
+.comment{
+    display: none;
+}
+.is-hidden {
+    display: none;
+  }

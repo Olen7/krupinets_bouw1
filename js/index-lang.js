@@ -67,7 +67,7 @@ const data = {
         "button-main-page":  "Main page",
         
         "rewiew-button": "Write a review",
-        "buttons-load-more": "Load more",
+        // "buttons-load-more": "Load more",
         
         "write-a-review": "write a review",
         "your-name": "Your name*",
@@ -112,7 +112,9 @@ const data = {
         "service-painting-decorative":"- Decorative plastering: textured, Venetian.",
         "service-painting-antifungal":"- Antifungal and moisture-resistant treatments.",
         "service-painting-restoration":"- Restoration work on building facades.",
-        
+        "loadMore": "Load More",
+        "seeLess": "See Less",
+        "seeMore": "See More"
     },
     "netherlands": {
         "home":"Thuis",
@@ -180,13 +182,12 @@ const data = {
         "button-main-page":  "Hoofdpagina",
 
         "rewiew-button": "Schrijf een recensie",
-        "buttons-load-more": "Meer laden",
+        // "buttons-load-more": "loadMore",
         
         "write-a-review": "Schrijf een recensie",
         "your-name": "Uw naam*",
         "tell-us-about": "Vertel ons over uw ervaring*",
-        // "upload":"Je kunt foto's uploaden + Uploaden",
-        // "rewiew-you-can-upload-photos": "U kunt foto's uploaden + Upload",
+
         "send": "Verzenden",
         "your-review": "Uw recensie",
         
@@ -225,6 +226,11 @@ const data = {
         "service-painting-decorative":"- Decoratief pleisterwerk: gestructureerd, Venetiaans.",
         "service-painting-antifungal":"- Antischimmel- en vochtbestendige behandelingen.",
         "service-painting-restoration":"- Restauratiewerkzaamheden aan gevels van gebouwen.",
+    
+
+        
+    
+    
     }   
 };
 let currentlang = null;

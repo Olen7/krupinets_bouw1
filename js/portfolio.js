@@ -6,13 +6,13 @@ const locale = currentlang === "english" ? "en" : "nl";
 function renderFotoBlock (block, data){
   const deliter = data.length < 3 ? 2 : 1;
   if(device === "desktop"){
-   block.style.height = `${120 / deliter}vw`;
+   block.style.height = `${674 / deliter}px`;
   }
   if(device === "tablet"){
-   block.style.height = `${120 / deliter}vw`;
+   block.style.height = `${544 / deliter}px`;
   }
   if(device === "mobile"){
-   block.style.height = `${100 / deliter}vw`;
+   block.style.height = `${324 / deliter}px`;
   }
 if(data.length === 2){
    block.style.flexDirection = "row";
