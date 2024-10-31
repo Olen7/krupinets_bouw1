@@ -5,14 +5,41 @@ const bathroomsItems = [];
 const locale = currentlang === "english" ? "en" : "nl";
 function renderFotoBlock (block, data){
   const deliter = data.length < 3 ? 2 : 1;
+  console.log("data", data);
+  console.log("deliter", deliter);
   if(device === "desktop"){
-   block.style.height = `${674 / deliter}px`;
+    let deliter = 0;
+    if(data.length === 3){
+      block.style.height = '674px';
+    }else if(data.length === 2){
+      block.style.height = '430px';
+    }else if(data.length === 1){
+      block.style.height = '430px';
+    }
+    console.log(device);
+    console.log("data", data);
+  console.log("deliter", deliter);
   }
   if(device === "tablet"){
-   block.style.height = `${544 / deliter}px`;
+    let deliter = 0;
+    if(data.length === 3){
+      block.style.height = '674px';
+    }else if(data.length === 2){
+      block.style.height = '264px';
+    }else if(data.length === 1){
+      block.style.height = '352px';
+    }
   }
   if(device === "mobile"){
-   block.style.height = `${324 / deliter}px`;
+    let deliter = 0;
+    if(data.length === 3){
+      block.style.height = '324px';
+    }else if(data.length === 2){
+      block.style.height = '30vw';
+    }else if(data.length === 1){
+      block.style.height = '55vw';
+    }
+    
   }
 if(data.length === 2){
    block.style.flexDirection = "row";
@@ -46,11 +73,10 @@ function renderItems(section, data){
 
     fotoBlock.classList.add("hidden");
     fotoBlockReverse.classList.add("hidden");
-    toggleBtn.classList.add("hidden");
     return
   }
-  if(data.length < 4 ){
-    toggleBtn.classList.add("hidden");
+  if(data.length >= 4 ){
+    toggleBtn.classList.remove("hidden");
   };
  const fotoBlockItems = data.slice(0, 3);
  renderFotoBlock(fotoBlock, fotoBlockItems);

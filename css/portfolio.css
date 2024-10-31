@@ -280,7 +280,7 @@ img {
 }
 .block-one{
     width: 47vw;
-    height: 154px;
+    height: 13.73vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,6 +299,8 @@ img {
     position: relative;
     width: 49vw;
     height: 324px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .block-two img{
     width: 100%;

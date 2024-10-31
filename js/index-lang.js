@@ -67,7 +67,7 @@ const data = {
         "button-main-page":  "Main page",
         
         "rewiew-button": "Write a review",
-        // "buttons-load-more": "Load more",
+        "buttons-load-more": "Load more",
         
         "write-a-review": "write a review",
         "your-name": "Your name*",
@@ -182,7 +182,7 @@ const data = {
         "button-main-page":  "Hoofdpagina",
 
         "rewiew-button": "Schrijf een recensie",
-        // "buttons-load-more": "loadMore",
+        "buttons-load-more": "Meer loden",
         
         "write-a-review": "Schrijf een recensie",
         "your-name": "Uw naam*",

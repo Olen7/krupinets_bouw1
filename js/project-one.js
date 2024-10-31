@@ -18,7 +18,8 @@ fetch(`https://krupinets-bouw-admin.onrender.com/api/portfolios/${id}?locale=${l
     projectMainImageElement.src = mainImage
     const description = attributes.description
     const projectDescriptionElement = document.getElementById("project-description")
-    projectDescriptionElement.textContent = description;
+    projectDescriptionElement.innerHTML = description;
+    console.log(description);
    const additionalImages = attributes.additional_images.data
    const projectAdditionalImagesElement = document.getElementById("project-additional-images")
    for (const image of additionalImages) {

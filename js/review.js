@@ -1,7 +1,8 @@
 (() => {
   const token = "0a13a8cfa8298be921810716f96cc6f35e35dd00606b292746c1ecf038f34e7ada48f241a439786e1b5edd268be17d01d0ba9ccdaddfbddc7fae7840fc1a5150eda4b2d8cd453ef1869d461cf77e4bcb9ce86e6739413a4296d75ce9f0c9e97ba840b52c480442d3a29e537b1e7dcfede3b5182c7c1d14a474d3a3e7b285b4aa";
-  let currentLang = "english"; // Змінна для зберігання поточної мови
+  
 
+  const locale = currentlang === "english" ? "en" : "nl";
   const refs = {
     openModalBtn: document.querySelector("[data-review-open]"),
     closeModalBtn: document.querySelector("[data-review-close]"),
@@ -128,18 +129,18 @@
 
   function getLocaleText(key) {
     const texts = {
-      english: {
-        loadMore: "Load More",
-        seeLess: "See Less",
-        seeMore: "See More"
+      en: {
+        loadMore: "Load more EN",
+        seeLess: "See less EN",
+        
       },
-      dutch: {
-        loadMore: "Zie meer",
-        seeLess: "Zie minder",
-        seeMore: "Zie meer"
+      nl: {
+        loadMore: "Meer loden NL",
+        seeLess: "Minder zien NL",
+       
       }
     };
-    return texts[currentLang][key];
+    return texts[locale][key];
   }
 
   function changeLanguage(lang) {

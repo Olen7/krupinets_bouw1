@@ -64,7 +64,7 @@ img {
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    z-index: 1;
 }
 
 .is-scrolled{
