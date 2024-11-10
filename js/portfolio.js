@@ -5,8 +5,6 @@ const bathroomsItems = [];
 const locale = currentlang === "english" ? "en" : "nl";
 function renderFotoBlock (block, data){
   const deliter = data.length < 3 ? 2 : 1;
-  console.log("data", data);
-  console.log("deliter", deliter);
   if(device === "desktop"){
     let deliter = 0;
     if(data.length === 3){
@@ -17,13 +15,11 @@ function renderFotoBlock (block, data){
       block.style.height = '430px';
     }
     console.log(device);
-    console.log("data", data);
-  console.log("deliter", deliter);
   }
   if(device === "tablet"){
     let deliter = 0;
     if(data.length === 3){
-      block.style.height = '674px';
+      block.style.height = '545px';
     }else if(data.length === 2){
       block.style.height = '264px';
     }else if(data.length === 1){
@@ -31,9 +27,10 @@ function renderFotoBlock (block, data){
     }
   }
   if(device === "mobile"){
+    console.log("mobile");
     let deliter = 0;
     if(data.length === 3){
-      block.style.height = '324px';
+      block.style.height = '255px';
     }else if(data.length === 2){
       block.style.height = '30vw';
     }else if(data.length === 1){
