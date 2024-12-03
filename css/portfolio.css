@@ -129,9 +129,7 @@ img {
 .mobil_button{
     width: 308px;
 }
-.mobil_buttons{
-    
-}
+
 .mob-close-button{
     border: none;
     background-color: transparent;
@@ -280,7 +278,7 @@ img {
 }
 .block-one{
     width: 47vw;
-    height: 13.73vh;
+    height: 47.5%;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -298,7 +296,7 @@ img {
 .block-two{
     position: relative;
     width: 49vw;
-    height: 324px;
+    height: 355px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -616,12 +614,12 @@ img {
         height: 100%;
     }
     .block-one{
-        width: 29vw;
+        width: 39vw;
         min-height: 329px;
     }
     .block-two {
         position: relative;
-        width: 72.5vw;
+        width: 60vw;
         height: 674px;
         
     }

@@ -3,65 +3,55 @@ const generalSection = document.getElementById("portfolio-general");
 const dormerSection = document.getElementById("portfolio-dormer");
 const bathroomsItems = [];
 const locale = currentlang === "english" ? "en" : "nl";
-function renderFotoBlock (block, data){
-  const deliter = data.length < 3 ? 2 : 1;
-  if(device === "desktop"){
-    let deliter = 0;
-    if(data.length === 3){
-      block.style.height = '674px';
-    }else if(data.length === 2){
-      block.style.height = '430px';
-    }else if(data.length === 1){
-      block.style.height = '430px';
+
+function renderFotoBlock(block, data) {
+  const deviceHeightMap = {
+    desktop: { 1: '430px', 2: '430px', 3: '674px' },
+    tablet: { 1: '352px', 2: '264px', 3: '545px' },
+    mobile: { 1: '55vw', 2: '30vw', 3: '355px' },
+  };
+
+  const heights = deviceHeightMap[device] || {};
+  block.style.height = heights[data.length] || 'auto';
+
+  if (data.length === 2) {
+    block.style.flexDirection = "row";
+  }
+
+  for (let i = 0; i < data.length; i += 1) {
+    const item = data[i];
+    const attributes = item.attributes;
+    const name = attributes.name;
+
+    // Вибір найкращого доступного формату
+    let image = attributes.main_image.data.attributes.formats.large?.url || 
+                attributes.main_image.data.attributes.url; // Оригінал
+    console.log("Фото URL:", image);
+
+    // Динамічна оптимізація зображення
+    image = image.replace('/upload/', '/upload/w_1920,h_1080,c_limit,q_auto,f_auto/');
+
+    let className = "";
+    if (data.length === 1) {
+      className = "block-one full-width";
+    } else if (data.length === 2) {
+      className = "block-one";
+    } else if (data.length === 3) {
+      className = i < 2 ? "block-one" : "block-two";
     }
-    console.log(device);
+
+    block.insertAdjacentHTML(
+      "beforeend",
+      `<div class="${className}">
+        <a href="./project-one.html?id=${item.id}" class="portfolio-item-link">
+          <img src="${image}" alt="${name}" class="portfolio-image">
+          <p class="block-text">${name}</p>
+        </a>
+      </div>`
+    );
   }
-  if(device === "tablet"){
-    let deliter = 0;
-    if(data.length === 3){
-      block.style.height = '545px';
-    }else if(data.length === 2){
-      block.style.height = '264px';
-    }else if(data.length === 1){
-      block.style.height = '352px';
-    }
-  }
-  if(device === "mobile"){
-    console.log("mobile");
-    let deliter = 0;
-    if(data.length === 3){
-      block.style.height = '255px';
-    }else if(data.length === 2){
-      block.style.height = '30vw';
-    }else if(data.length === 1){
-      block.style.height = '55vw';
-    }
-    
-  }
-if(data.length === 2){
-   block.style.flexDirection = "row";
-}
-for (let i = 0; i < data.length; i += 1) {
-  const item = data[i];
-  const attributes = item.attributes;
-  const name = attributes.name;
-  const image = attributes.main_image.data.attributes.formats.small.url;
-  let className = "";
-  if(data.length === 1){
-    className = "block-one full-width"
-  }
-  if(data.length === 2){
-    className = "block-one"
-  }
-  if(data.length === 3){
-    className = i < 2 ? "block-one" : "block-two";
-  }
-  block.insertAdjacentHTML("beforeend", `<div style="background-image:url(${image})" class="${className}">
-  <a href="./project-one.html?id=${item.id}" class="portfolio-item-link">
-  <p class="block-text">${name}</p></a></div>`)
 }
 
-};
 function renderItems(section, data){
   const fotoBlock = section.querySelector(".foto-block");
   const fotoBlockReverse = section.querySelector(".foto-block-reverse");
@@ -92,9 +82,10 @@ fetch(`https://krupinets-bouw-admin.onrender.com/api/portfolios?locale=${locale}
   .then(response => response.json())
   .then(result => {
     const data = result.data;
+    console.log("Отримані дані з API:", data);
     const bathroomsItems = data.filter(item => item.attributes.type === "bathrooms");
     const generalItems = data.filter(item => item.attributes.type === "general-renovation");
-    const dormerItems = data.filter(item => item.attributes.type === "dormer-renovation");
+    const dormerItems = data.filter(item => item.attributes.type === "dormer-constructions");
     renderItems(bathroomsSection, bathroomsItems)
     renderItems(generalSection, generalItems)
     renderItems(dormerSection, dormerItems)
