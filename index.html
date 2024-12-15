@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://res.cloudinary.com data: blob:;">
+
     <title>KRUPINEC BOUW</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
@@ -40,7 +42,7 @@
                         <a class="header__id header-item-us header-about-us lang" data-key="about-us" href="./html/about.html">About Us</a>
                     </li>
                     <li class="header__item lang-en">
-                        <a class="header__id header-portfolio lang" data-key="portfolio" href="./html/portfoliotwo.html">Portfolio</a>
+                        <a class="header__id header-portfolio lang" data-key="portfolio" href="./html/portfoliotwo.html" onmouseover="prefetchData()">Portfolio</a>
                     </li>
                     <li class="header__item lang-en">
                         <a class="header__id header-reviews lang" data-key="reviews" href="./html/reviews.html">Reviews</a>
@@ -77,7 +79,7 @@
                     <li class="mob-menu-items">
                         <a href="./html/about.html" data-key="about-us" class="mob-menu-item lang">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="./html/portfoliotwo.html" data-key="portfolio" class="mob-menu-item  lang">Portfolio</a></li>
+                        <a href="./html/portfoliotwo.html" data-key="portfolio" class="mob-menu-item   lang" onmouseover="prefetchData()">Portfolio</a></li>
                     <li class="mob-menu-items">
                             <a href="./html/reviews.html" data-key="reviews" class="mob-menu-item  lang">Reviews</a></li>
                     <li class="mob-menu-items">
