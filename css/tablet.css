@@ -340,9 +340,6 @@
         display: flex;
         flex-direction: column;
     }
-    .header__id{
-
-    }
     
     /* ABOUT INDEX */
     .about_foto{
@@ -660,7 +657,81 @@
       .section_about_back {
         padding-top: 52px;
     }
-}
+    /* hero section index  */
+    .foto{
+        background-position: center -220px;
+        padding-top: 150px;
+        height: 500px;
+    }
+    .section_name {
+        padding-top: 20px;
+        margin-bottom: 18px;
+    }
+    .section_name {
+        font-size: 38px;
+        letter-spacing: 0.06em;
+    }
+    .section_about_text {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        margin-bottom: 18px;
+    }
+    .section-about-index {
+        height: 410px
+    }
+    .about_section{
+        position: relative;
+    overflow: hidden;
+    }
+    .name_service {
+        font-size: 38px;
+        letter-spacing: 0.06em;
+        padding: 20px 32px 0 0;
+        margin-bottom: 18px;
+    }
+    .box-picter-service{
+        min-height:auto;
+        height:230px;
+    }
+    .service_conteiner_gradient {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex
+;
+        width: 101%;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 75.95%);
+        
+    }
+    .description-service p{
+        font-size: calc(8px + 0.8vw);
+    }
+    .benefits_name {
+        font-size: 38px;
+        letter-spacing: 0.06em;
+    }
+    .benefits-cont-box {
+        padding-top: 20px;
+    }
+    .portfolio_name {
+        margin-bottom: 38px;
+        font-size: 38px;
+        letter-spacing: 0.06em;
+    }
+    .portfolio {
+        padding-top: 30px;
+    }
+    .portfolio_img{
+        height: 300px;
+    }
+    .portfolio_text {
+        font-size: 38px;
+        letter-spacing: 0.06em;
+    }
 
 }
 @media screen and (min-width: 800px){
@@ -736,4 +807,4 @@
     .mission_section{
         width:960px; 
     }
-}
+}}

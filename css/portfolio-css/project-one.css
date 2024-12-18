@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-color: var(--graphite, #272727);
@@ -512,7 +513,7 @@ img {
     }
 
 }
-@media (min-device-pixel-ratio: 3),
+ @media (min-device-pixel-ratio: 3),
 (min-resolution: 300dpi),
 (min-resolution: 3dppx){
     .foother-conteiner{

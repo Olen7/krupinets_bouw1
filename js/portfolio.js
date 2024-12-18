@@ -6,7 +6,7 @@ const locale = currentlang === "english" ? "en" : "nl";
 
 function renderFotoBlock(block, data) {
   const deviceHeightMap = {
-    desktop: { 1: '430px', 2: '430px', 3: '674px' },
+    desktop: { 1: '674px', 2: '430px', 3: '674px' },
     tablet: { 1: '352px', 2: '264px', 3: '545px' },
     mobile: { 1: '55vw', 2: '30vw', 3: '355px' },
   };
@@ -142,7 +142,6 @@ toggleBtn.forEach(btn => btn.addEventListener("click", function(event){
        event.target.textContent = currentlang === "english" ? "See more" : "Zie meer";
     }
 }))
-
 
 
 

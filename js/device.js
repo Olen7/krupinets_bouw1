@@ -7,3 +7,16 @@ if(window.innerWidth < 768){
 }else{
     device = "desktop"
 }
+console.log(device);
+
+
+//код для того щоб бачити розмір свого екрану
+function logScreenSize() {
+    console.log(`Ширина: ${window.innerWidth}px, Висота: ${window.innerHeight}px`);
+  }
+
+  // Викликаємо функцію при завантаженні сторінки
+  logScreenSize();
+
+  // Додаємо обробник події для відстеження зміни розміру вікна
+  window.addEventListener('resize', logScreenSize);
