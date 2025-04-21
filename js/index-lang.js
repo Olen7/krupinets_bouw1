@@ -267,7 +267,7 @@ langSwichButtons.forEach(element => element.addEventListener("click", function(e
 }))
 
 
-class StorageObserver {
+export default class StorageObserver {
     constructor(key) {
       this.key = key;
       this.subscribers = [];
@@ -297,7 +297,5 @@ class StorageObserver {
       return localStorage.getItem(this.key);
     }
   }
-  
-  export default StorageObserver;
   
 
