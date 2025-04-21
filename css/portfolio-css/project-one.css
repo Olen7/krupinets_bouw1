@@ -248,13 +248,14 @@ img {
      margin-left: 30px;
   }
   .picture-block-ul {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
   .picture-menu-block{
     width: 100vw;
     margin-bottom: 10px;
+    height: 45vw;
   }
   .picture-menu-block img{
     width: 100%;
@@ -476,11 +477,10 @@ img {
         height: 300px;
     }
     .picture-block-ul {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
         gap: 16px;
-        flex-direction: row;
     }
     .picture-menu-block {
         margin-bottom: 0px;
