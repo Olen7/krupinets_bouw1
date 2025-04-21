@@ -42,7 +42,7 @@
                         <a class="header__id header-item-us header-about-us lang" data-key="about-us" href="./html/about.html">About Us</a>
                     </li>
                     <li class="header__item lang-en">
-                        <a class="header__id header-portfolio lang" data-key="portfolio" href="./html/portfoliotwo.html" onmouseover="prefetchData()">Portfolio</a>
+                        <a class="header__id header-portfolio lang" data-key="portfolio" href="./html/portfoliotwo.html" id="link-prefetch"">Portfolio</a>
                     </li>
                     <li class="header__item lang-en">
                         <a class="header__id header-reviews lang" data-key="reviews" href="./html/reviews.html">Reviews</a>
@@ -79,7 +79,7 @@
                     <li class="mob-menu-items">
                         <a href="./html/about.html" data-key="about-us" class="mob-menu-item lang">About Us</a></li>
                     <li class="mob-menu-items">
-                        <a href="./html/portfoliotwo.html" data-key="portfolio" class="mob-menu-item   lang" onmouseover="prefetchData()">Portfolio</a></li>
+                        <a href="./html/portfoliotwo.html" data-key="portfolio" class="mob-menu-item   lang" id="link-prefetch">Portfolio</a></li>
                     <li class="mob-menu-items">
                             <a href="./html/reviews.html" data-key="reviews" class="mob-menu-item  lang">Reviews</a></li>
                     <li class="mob-menu-items">
@@ -629,18 +629,20 @@
                 <div class="adderss_copyright ">Copyright
                     <svg width="20" height="20" class="copyrighte">
                     <use href="./svg/copyright.svg#icon-copyrighte"></use>
-                </svg><p class=" lang" data-key="copyright">2024. All rights reserved</p></div>
+                </svg><p class=" lang" data-key="copyright" id="copyright-text"></p></div>
 
                 <p class="foother_text lang" data-key="copyright-unsplash">The site contains images from 
                     a free resource Unsplash</p>
             </div>
             
     </footer>
-    <script src="./js/index-lang.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/heder.js"></script>
+    <script type="module" src="./js/index-lang.js"></script>
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/heder.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./js/consultation-form.js"></script>
-    <script src="./js/form.js"></script>
+    <script type="module" src="./js/consultation-form.js"></script>
+    <script type="module" src="./js/form.js"></script>
+    <script type="module" src="./js/updateCopyright.js"></script>
+    <script type="module" src="./js/prefetch.js"></script>
 </body>
 </html>

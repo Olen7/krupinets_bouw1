@@ -518,7 +518,7 @@
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 60px;
-        line-height: 120%;
+        line-height: normal;
         letter-spacing: 0.02em;
         color: var(--white);
         width: 90px;

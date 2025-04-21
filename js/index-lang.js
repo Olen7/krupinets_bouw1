@@ -112,9 +112,9 @@ const data = {
         "service-painting-decorative":"- Decorative plastering: textured, Venetian.",
         "service-painting-antifungal":"- Antifungal and moisture-resistant treatments.",
         "service-painting-restoration":"- Restoration work on building facades.",
-        "loadMore": "Load More",
-        "seeLess": "See Less",
-        "seeMore": "See More"
+        // "loadMore": "Load More",
+        // "seeLess": "See Less",
+        // "seeMore": "See More"
     },
     "netherlands": {
         "home":"Thuis",
@@ -226,11 +226,6 @@ const data = {
         "service-painting-decorative":"- Decoratief pleisterwerk: gestructureerd, Venetiaans.",
         "service-painting-antifungal":"- Antischimmel- en vochtbestendige behandelingen.",
         "service-painting-restoration":"- Restauratiewerkzaamheden aan gevels van gebouwen.",
-    
-
-        
-    
-    
     }   
 };
 let currentlang = null;
@@ -253,9 +248,12 @@ function setLang (){
     };
     const activeLangButtons = document.querySelectorAll(`.lang-switch[language=${currentlang}]`);
     activeLangButtons.forEach(element => element.classList.add("active"))
+    
     translate()
+
 };
 setLang()
+
 const langSwichButtons = document.querySelectorAll(".lang-switch");
 langSwichButtons.forEach(element => element.addEventListener("click", function(event){
     const isActive = event.target.classList.contains("active");
@@ -264,12 +262,42 @@ langSwichButtons.forEach(element => element.addEventListener("click", function(e
         localStorage.setItem("lang", lang);
         langSwichButtons.forEach(element => element.classList.remove("active"));
         setLang()
+ 
     }
 }))
 
 
-
-
-
-
+class StorageObserver {
+    constructor(key) {
+      this.key = key;
+      this.subscribers = [];
+  
+      // Слухаємо зміну в localStorage (в інших вкладках)
+      window.addEventListener("storage", (e) => {
+        if (e.key === this.key) {
+          this.notify(e.newValue);
+        }
+      });
+    }
+  
+    subscribe(callback) {
+      this.subscribers.push(callback);
+    }
+  
+    notify(newValue) {
+      this.subscribers.forEach((cb) => cb(newValue));
+    }
+  
+    set(value) {
+      localStorage.setItem(this.key, value);
+      this.notify(value); // сповіщаємо підписників у цій же вкладці
+    }
+  
+    get() {
+      return localStorage.getItem(this.key);
+    }
+  }
+  
+  export default StorageObserver;
+  
 
