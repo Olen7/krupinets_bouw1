@@ -1,3 +1,4 @@
+import { updatePhone } from"./updateUserInfo/changeUserInfo.js"
 const data = {
     "english": {
         "home":"Home",
@@ -28,8 +29,7 @@ const data = {
 
 
         
-        "phone":"Phone: +31621968479",
-        // "address":"Adress: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        "phone":`Phone: ${localStorage.getItem("phone")}`,
 
         "consultation": "Consultation",
         "name-form": "Name*",
@@ -46,9 +46,8 @@ const data = {
         "libel-mail": "Enter your mail",
 
         
-        "copyright": "2024. All rights reserved",
+        "copyright": `${localStorage.getItem("date")}. All rights reserved`,
         "copyright-unsplash": "The site contains images from a free resource Unsplash",
-        // "foother-nl": "Address: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
         
 
         "our-mission": "Our Mission",
@@ -72,9 +71,7 @@ const data = {
         "write-a-review": "write a review",
         "your-name": "Your name*",
         "tell-us-about": "Tell us about your experience*",
-        // "upload":"You can upload photos + Upload",
 
-        // "rewiew-you-can-upload-photos": "You can upload photos + Upload",
         "send": "Send",
         "your-review": "Your review",
         
@@ -112,9 +109,6 @@ const data = {
         "service-painting-decorative":"- Decorative plastering: textured, Venetian.",
         "service-painting-antifungal":"- Antifungal and moisture-resistant treatments.",
         "service-painting-restoration":"- Restoration work on building facades.",
-        // "loadMore": "Load More",
-        // "seeLess": "See Less",
-        // "seeMore": "See More"
     },
     "netherlands": {
         "home":"Thuis",
@@ -148,8 +142,7 @@ const data = {
         "mail-form-placeholder": "Voer uw e-mailadres in",
         "question-form-placeholder":"Uw vraag*",
 
-        "phone":"Telefoon: +31621968479",
-        // "address":"Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
+        "phone":`Telefoon: ${localStorage.getItem("phone")}`,
 
         "consultation": "Consultatie",
         "name-form": "Naam*",
@@ -161,9 +154,8 @@ const data = {
         "libel-mail": "Voer uw e-mailadres in",
         
         
-        "copyright": "2024. Alle rechten voorbehouden",
+        "copyright": `${localStorage.getItem("date")}. Alle rechten voorbehouden`,
         "copyright-unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash.",
-        // "foother-nl": "Adres: Eliza van Calcarstraat 27, Amsterdam, Netherlands",
         
 
         "our-mission": "Onze missie",
