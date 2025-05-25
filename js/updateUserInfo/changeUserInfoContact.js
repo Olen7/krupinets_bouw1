@@ -1,3 +1,8 @@
+const contact = {
+  address: "Ericastraat 7 1214 EJ Hilversum",
+  phone: "+31625351815",
+  email: "krupinecbouw@gmail.com",
+};
 export function updatePhoneContact() {
   const updatePhoneEl = document.querySelector("#update-phone-contact");
   console.log(updatePhoneEl);
