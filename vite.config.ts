@@ -10,6 +10,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    // SVG icon sprites are referenced via <use href="...#icon-name">, which breaks
+    // if Vite inlines them as base64 data URIs (fragment refs into data: URLs are blocked).
+    assetsInlineLimit: 0,
+  },
   test: {
     environment: 'jsdom',
     globals: true,

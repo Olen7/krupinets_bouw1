@@ -1,0 +1,9 @@
+import type { ReactNode } from 'react'
+
+export function SectionHeading({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return (
+    <h2 className={`font-heading text-3xl tracking-wide text-white tablet:text-5xl desktop:text-6xl ${className}`}>
+      {children}
+    </h2>
+  )
+}
