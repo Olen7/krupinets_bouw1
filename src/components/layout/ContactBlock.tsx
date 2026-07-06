@@ -1,10 +1,18 @@
 import { contactInfo } from '@/lib/contactInfo'
 
-export function ContactBlock({ heading = 'Contacts' }: { heading?: string }) {
+export function ContactBlock({
+  heading = 'Contacts',
+  variant = 'white',
+}: {
+  heading?: string
+  variant?: 'white' | 'dark'
+}) {
+  const textColor = variant === 'dark' ? 'text-graphite' : 'text-white'
+
   return (
     <div>
-      <p className="font-body text-lg text-white">{heading}</p>
-      <ul className="mt-2 flex flex-col gap-1 text-sm text-white">
+      <p className={`font-body text-lg ${textColor}`}>{heading}</p>
+      <ul className={`mt-2 flex flex-col gap-1 text-sm ${textColor}`}>
         <li>
           <a href={`tel:${contactInfo.phone}`}>Phone: {contactInfo.phone}</a>
         </li>

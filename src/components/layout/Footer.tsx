@@ -3,17 +3,24 @@ import logo from '@/assets/icons/logo.svg'
 import copyright from '@/assets/icons/copyright.svg'
 import footerMobile1x from '@/assets/layout/footer-mobile-1x.jpg'
 import footerMobile2x from '@/assets/layout/footer-mobile-2x.jpg'
+import footerTablet1x from '@/assets/layout/footer-tablet-1x.jpg'
+import footerTablet2x from '@/assets/layout/footer-tablet-2x.jpg'
 import { NAV_LINKS } from './Header'
 import { ContactBlock } from './ContactBlock'
 import { SocialLinks } from '@/components/ui/SocialLinks'
 import { ConsultationForm } from '@/features/contact/ConsultationForm'
+import { ResponsiveBackground } from '@/components/ui/ResponsiveBackground'
 
 export function Footer() {
   return (
-    <footer
-      className="bg-graphite bg-cover bg-center text-white"
-      style={{ backgroundImage: `image-set(url(${footerMobile1x}) 1x, url(${footerMobile2x}) 2x)` }}
-    >
+    <footer className="relative bg-graphite text-white">
+      <ResponsiveBackground
+        sources={{
+          mobile: { src1x: footerMobile1x, src2x: footerMobile2x },
+          tablet: { src1x: footerTablet1x, src2x: footerTablet2x },
+        }}
+        className="bg-cover bg-center"
+      />
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-10 tablet:px-8 desktop:px-[120px]">
         <div className="flex flex-wrap items-start justify-between gap-10">
           <div className="flex flex-col gap-6">
