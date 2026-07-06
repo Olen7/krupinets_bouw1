@@ -3,6 +3,8 @@ import { Layout } from '@/components/layout/Layout'
 import { HomePage } from '@/pages/HomePage'
 import { AboutPage } from '@/pages/AboutPage'
 import { ContactPage } from '@/pages/ContactPage'
+import { PortfolioPage } from '@/pages/PortfolioPage'
+import { ProjectDetailPage } from '@/pages/ProjectDetailPage'
 import { FeedbackSuccessPage } from '@/pages/FeedbackSuccessPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
 
@@ -17,8 +19,8 @@ export function AppRouter() {
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="contact" element={<ContactPage />} />
-        <Route path="portfolio" element={<ComingSoon title="Portfolio" />} />
-        <Route path="portfolio/:id" element={<ComingSoon title="Project detail" />} />
+        <Route path="portfolio" element={<PortfolioPage />} />
+        <Route path="portfolio/:id" element={<ProjectDetailPage />} />
         <Route path="reviews" element={<ComingSoon title="Reviews" />} />
         <Route path="feedback-success" element={<FeedbackSuccessPage />} />
         <Route path="*" element={<NotFoundPage />} />
