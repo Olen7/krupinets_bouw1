@@ -1,17 +1,19 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { consultationSchema, type ConsultationFormValues } from './contactForm.schema'
+import { useTranslation } from 'react-i18next'
+import { createConsultationSchema, type ConsultationFormValues } from './contactForm.schema'
 import { sendConsultation } from '@/lib/emailjs'
 import { useEmailSubmit } from './useEmailSubmit'
 import { Button } from '@/components/ui/Button'
 
 export function ConsultationForm() {
+  const { t } = useTranslation('common')
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<ConsultationFormValues>({ resolver: zodResolver(consultationSchema) })
+  } = useForm<ConsultationFormValues>({ resolver: zodResolver(createConsultationSchema(t)) })
 
   const { submit, isSubmitting, error } = useEmailSubmit(sendConsultation)
 
@@ -22,16 +24,16 @@ export function ConsultationForm() {
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
-      <h2 className="font-heading text-2xl text-white">Consultation</h2>
+      <h2 className="font-heading text-2xl text-white">{t('consultation.heading')}</h2>
 
       <div>
         <label htmlFor="consultation-name" className="block text-sm text-white">
-          Name*
+          {t('consultation.name')}
         </label>
         <input
           id="consultation-name"
           type="text"
-          placeholder="Enter your name"
+          placeholder={t('consultation.namePlaceholder')}
           className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
           {...register('name')}
         />
@@ -40,12 +42,12 @@ export function ConsultationForm() {
 
       <div>
         <label htmlFor="consultation-phone" className="block text-sm text-white">
-          Phone*
+          {t('consultation.phone')}
         </label>
         <input
           id="consultation-phone"
           type="tel"
-          placeholder="Enter your phone"
+          placeholder={t('consultation.phonePlaceholder')}
           className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
           {...register('phone')}
         />
@@ -54,22 +56,22 @@ export function ConsultationForm() {
 
       <div>
         <label htmlFor="consultation-email" className="block text-sm text-white">
-          E-mail*
+          {t('consultation.email')}
         </label>
         <input
           id="consultation-email"
           type="email"
-          placeholder="Enter your mail"
+          placeholder={t('consultation.emailPlaceholder')}
           className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
           {...register('email')}
         />
         {errors.email && <p className="text-sm text-orange">{errors.email.message}</p>}
       </div>
 
-      {error && <p className="text-sm text-orange">{error}</p>}
+      {error && <p className="text-sm text-orange">{t('consultation.submitError')}</p>}
 
       <Button type="submit" disabled={isSubmitting}>
-        Consultation
+        {t('consultation.submit')}
       </Button>
     </form>
   )

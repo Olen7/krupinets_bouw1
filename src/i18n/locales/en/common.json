@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "portfolio": "Portfolio",
+    "reviews": "Reviews",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "unsplash": "The site contains images from a free resource Unsplash"
+  },
+  "contactBlock": {
+    "heading": "Contacts",
+    "phone": "Phone:",
+    "email": "E-mail:",
+    "address": "Address:"
+  },
+  "consultation": {
+    "heading": "Consultation",
+    "name": "Name*",
+    "phone": "Phone*",
+    "email": "E-mail*",
+    "namePlaceholder": "Enter your name",
+    "phonePlaceholder": "Enter your phone",
+    "emailPlaceholder": "Enter your mail",
+    "submit": "Consultation",
+    "nameRequired": "Name is required",
+    "phoneRequired": "Phone is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Enter a valid email",
+    "submitError": "Something went wrong. Please try again."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "WE CAN'T FIND THIS PAGE",
+    "urlHint": "The webpage you are trying to access cannot be found on the server. Please check the URL or try navigation to a different page.",
+    "mainPageButton": "Main page"
+  },
+  "feedbackSuccess": {
+    "title": "Your feedback form has been sent!",
+    "message": "Wait until an employee contacts you!",
+    "backButton": "Back to the Website"
+  }
+}

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import close from '@/assets/icons/close.svg'
 import { useUi } from '@/hooks/useUi'
 import { LanguageSwitcher } from './LanguageSwitcher'
@@ -6,6 +7,7 @@ import { NAV_LINKS } from './Header'
 
 export function MobileMenu() {
   const { isMenuOpen, closeMenu } = useUi()
+  const { t } = useTranslation('common')
 
   if (!isMenuOpen) return null
 
@@ -30,7 +32,7 @@ export function MobileMenu() {
                   `font-body text-lg text-white ${isActive ? 'text-orange' : ''}`
                 }
               >
-                {link.label}
+                {t(`nav.${link.key}`)}
               </NavLink>
             </li>
           ))}

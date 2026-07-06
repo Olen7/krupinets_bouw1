@@ -1,0 +1,15 @@
+{
+  "heading": "Portefeuille",
+  "categories": {
+    "bathrooms": "badkamers",
+    "general": "algemeen",
+    "dormer": "dakkapel"
+  },
+  "seeMore": "Zie meer",
+  "seeLess": "Zie minder",
+  "loading": "Projecten laden…",
+  "error": "Deze categorie kon niet worden geladen.",
+  "empty": "Nog geen projecten in deze categorie.",
+  "loadingProject": "Project laden…",
+  "notFound": "Dit project kon niet worden gevonden."
+}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/Button'
 import { ResponsiveBackground } from '@/components/ui/ResponsiveBackground'
 import errorMobile1x from '@/assets/error/error-mobile-1x.jpg'
@@ -9,6 +10,8 @@ import errorDesktop1x from '@/assets/error/error-desktop-1x.jpg'
 import errorDesktop2x from '@/assets/error/error-desktop-2x.jpg'
 
 export function NotFoundPage() {
+  const { t } = useTranslation('common')
+
   return (
     <section className="relative flex min-h-[70vh] flex-col items-center justify-center gap-4 px-5 text-center">
       <ResponsiveBackground
@@ -19,14 +22,11 @@ export function NotFoundPage() {
         }}
         className="bg-cover bg-center"
       />
-      <h1 className="font-heading text-7xl text-orange">404</h1>
-      <p className="font-heading text-xl text-white">WE CAN&apos;T FIND THIS PAGE</p>
-      <p className="max-w-md font-body text-white">
-        The webpage you are trying to access cannot be found on the server. Please check the URL
-        or try navigation to a different page.
-      </p>
+      <h1 className="font-heading text-7xl text-orange">{t('notFound.title')}</h1>
+      <p className="font-heading text-xl text-white">{t('notFound.message')}</p>
+      <p className="max-w-md font-body text-white">{t('notFound.urlHint')}</p>
       <Link to="/">
-        <Button>Main page</Button>
+        <Button>{t('notFound.mainPageButton')}</Button>
       </Link>
     </section>
   )

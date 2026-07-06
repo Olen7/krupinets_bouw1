@@ -1,12 +1,13 @@
+import { useTranslation } from 'react-i18next'
+
 const LANGUAGES = [
   { code: 'en', label: 'en' },
   { code: 'nl', label: 'nl' },
 ] as const
 
 export function LanguageSwitcher({ className = '' }: { className?: string }) {
-  // Stub for Phase 1: renders the en/nl buttons with no-op switching.
-  // Phase 5 wires this up to react-i18next's i18n.changeLanguage().
-  const activeLanguage = 'en'
+  const { i18n } = useTranslation()
+  const activeLanguage = i18n.language
 
   return (
     <ul className={`flex gap-2 ${className}`}>
@@ -15,6 +16,7 @@ export function LanguageSwitcher({ className = '' }: { className?: string }) {
           <button
             type="button"
             aria-pressed={activeLanguage === code}
+            onClick={() => i18n.changeLanguage(code)}
             className={`rounded-full border border-orange px-4 py-1 text-sm uppercase ${
               activeLanguage === code ? 'bg-orange text-white' : 'text-white'
             }`}

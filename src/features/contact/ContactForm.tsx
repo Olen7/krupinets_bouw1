@@ -1,17 +1,19 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { contactSchema, type ContactFormValues } from './contactForm.schema'
+import { useTranslation } from 'react-i18next'
+import { createContactSchema, type ContactFormValues } from './contactForm.schema'
 import { sendContact } from '@/lib/emailjs'
 import { useEmailSubmit } from './useEmailSubmit'
 import { Button } from '@/components/ui/Button'
 
 export function ContactForm() {
+  const { t } = useTranslation(['contact', 'common'])
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<ContactFormValues>({ resolver: zodResolver(contactSchema) })
+  } = useForm<ContactFormValues>({ resolver: zodResolver(createContactSchema(t)) })
 
   const { submit, isSubmitting, error } = useEmailSubmit(sendContact)
 
@@ -24,12 +26,12 @@ export function ContactForm() {
     <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
       <div>
         <label htmlFor="contact-name" className="block text-sm text-graphite">
-          Name*
+          {t('consultation.name', { ns: 'common' })}
         </label>
         <input
           id="contact-name"
           type="text"
-          placeholder="Enter your name"
+          placeholder={t('consultation.namePlaceholder', { ns: 'common' })}
           className="w-full rounded border border-placeholder bg-white px-3 py-2 text-graphite"
           {...register('name')}
         />
@@ -38,12 +40,12 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-phone" className="block text-sm text-graphite">
-          Phone*
+          {t('consultation.phone', { ns: 'common' })}
         </label>
         <input
           id="contact-phone"
           type="tel"
-          placeholder="Enter your phone"
+          placeholder={t('consultation.phonePlaceholder', { ns: 'common' })}
           className="w-full rounded border border-placeholder bg-white px-3 py-2 text-graphite"
           {...register('phone')}
         />
@@ -52,12 +54,12 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-email" className="block text-sm text-graphite">
-          E-mail*
+          {t('consultation.email', { ns: 'common' })}
         </label>
         <input
           id="contact-email"
           type="email"
-          placeholder="Enter your mail"
+          placeholder={t('consultation.emailPlaceholder', { ns: 'common' })}
           className="w-full rounded border border-placeholder bg-white px-3 py-2 text-graphite"
           {...register('email')}
         />
@@ -66,21 +68,21 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-question" className="block text-sm text-graphite">
-          Your question*
+          {t('form.question')}
         </label>
         <textarea
           id="contact-question"
-          placeholder="Enter your question"
+          placeholder={t('form.questionPlaceholder')}
           className="w-full rounded border border-placeholder bg-white px-3 py-2 text-graphite"
           {...register('question')}
         />
         {errors.question && <p className="text-sm text-orange">{errors.question.message}</p>}
       </div>
 
-      {error && <p className="text-sm text-orange">{error}</p>}
+      {error && <p className="text-sm text-orange">{t('form.submitError')}</p>}
 
       <Button type="submit" disabled={isSubmitting}>
-        Send
+        {t('form.submit')}
       </Button>
     </form>
   )

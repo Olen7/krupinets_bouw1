@@ -1,11 +1,13 @@
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { reviewFormSchema, type ReviewFormValues } from './reviewForm.schema'
+import { useTranslation } from 'react-i18next'
+import { createReviewFormSchema, type ReviewFormValues } from './reviewForm.schema'
 import { useSubmitReviewMutation } from './useSubmitReviewMutation'
 import { StarRating } from '@/components/ui/StarRating'
 import { Button } from '@/components/ui/Button'
 
 export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
+  const { t } = useTranslation('reviews')
   const {
     register,
     handleSubmit,
@@ -13,7 +15,7 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
     reset,
     formState: { errors },
   } = useForm<ReviewFormValues>({
-    resolver: zodResolver(reviewFormSchema),
+    resolver: zodResolver(createReviewFormSchema(t)),
     defaultValues: { grade: 5 },
   })
 
@@ -37,12 +39,12 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
 
       <div>
         <label htmlFor="review-name" className="block text-sm text-white">
-          Name*
+          {t('form.name')}
         </label>
         <input
           id="review-name"
           type="text"
-          placeholder="Enter your name"
+          placeholder={t('form.namePlaceholder')}
           className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
           {...register('username')}
         />
@@ -51,23 +53,21 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
 
       <div>
         <label htmlFor="review-text" className="block text-sm text-white">
-          Your review*
+          {t('form.text')}
         </label>
         <textarea
           id="review-text"
-          placeholder="Share your experience"
+          placeholder={t('form.textPlaceholder')}
           className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
           {...register('text')}
         />
         {errors.text && <p className="text-sm text-orange">{errors.text.message}</p>}
       </div>
 
-      {mutation.isError && (
-        <p className="text-sm text-orange">Something went wrong. Please try again.</p>
-      )}
+      {mutation.isError && <p className="text-sm text-orange">{t('form.submitError')}</p>}
 
       <Button type="submit" disabled={mutation.isPending}>
-        Submit review
+        {t('form.submit')}
       </Button>
     </form>
   )

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { ResponsiveBackground, type ResponsiveBackgroundProps } from '@/components/ui/ResponsiveBackground'
 import { useProjectsByCategory } from './useProjectsQuery'
 import { PortfolioGrid } from './PortfolioGrid'
@@ -19,6 +20,7 @@ export function PortfolioCategorySection({
   heroSources,
 }: PortfolioCategorySectionProps) {
   const { data, isLoading, isError } = useProjectsByCategory(locale, category)
+  const { t } = useTranslation('portfolio')
 
   return (
     <section id={id} className="flex flex-col gap-6 pb-10">
@@ -28,8 +30,8 @@ export function PortfolioCategorySection({
       </div>
 
       <div className="px-5 tablet:px-8 desktop:px-[120px]">
-        {isLoading && <p className="font-body text-white">Loading projects…</p>}
-        {isError && <p className="font-body text-orange">Couldn&apos;t load this category.</p>}
+        {isLoading && <p className="font-body text-white">{t('loading')}</p>}
+        {isError && <p className="font-body text-orange">{t('error')}</p>}
         {data && <PortfolioGrid items={data} />}
       </div>
     </section>

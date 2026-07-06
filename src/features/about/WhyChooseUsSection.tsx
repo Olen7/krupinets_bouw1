@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { ResponsiveImage } from '@/components/ui/ResponsiveImage'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import whyMobile1x from '@/assets/about/whychoose-mobile-1x.jpg'
@@ -10,26 +11,11 @@ import whyDesktop1x from '@/assets/about/whychoose-desktop-1x.jpg'
 import whyDesktop2x from '@/assets/about/whychoose-desktop-2x.jpg'
 import whyDesktop4x from '@/assets/about/whychoose-desktop-4x.jpg'
 
-const reasons = [
-  {
-    title: 'Expertise',
-    text: 'Our experienced professionals bring years of knowledge and skill to every project, guaranteeing you expert solutions that stand the test of time, ensuring your peace of mind.',
-  },
-  {
-    title: 'Quality',
-    text: 'We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects.',
-  },
-  {
-    title: 'Innovation',
-    text: 'We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients',
-  },
-  {
-    title: 'Client-Centric Approach',
-    text: "Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle.",
-  },
-]
+const REASON_KEYS = ['expertise', 'quality', 'innovation', 'clientCentric'] as const
 
 export function WhyChooseUsSection() {
+  const { t } = useTranslation('about')
+
   return (
     <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:flex-row desktop:items-center desktop:px-[120px]">
       <ResponsiveImage
@@ -42,11 +28,12 @@ export function WhyChooseUsSection() {
         }}
       />
       <div className="flex flex-col gap-4 desktop:w-1/2">
-        <SectionHeading>Why Choose Us</SectionHeading>
+        <SectionHeading>{t('whyChooseUs.heading')}</SectionHeading>
         <ul className="flex flex-col gap-3">
-          {reasons.map((reason) => (
-            <li key={reason.title} className="font-body text-white">
-              <span className="font-semibold">{reason.title}:</span> {reason.text}
+          {REASON_KEYS.map((key) => (
+            <li key={key} className="font-body text-white">
+              <span className="font-semibold">{t(`whyChooseUs.${key}.title`)}:</span>{' '}
+              {t(`whyChooseUs.${key}.text`)}
             </li>
           ))}
         </ul>

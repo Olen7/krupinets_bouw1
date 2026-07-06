@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { ResponsiveImage } from '@/components/ui/ResponsiveImage'
 import { MissionSection } from '@/features/about/MissionSection'
 import { WhyChooseUsSection } from '@/features/about/WhyChooseUsSection'
@@ -12,6 +13,8 @@ import introDesktop2x from '@/assets/about/intro-desktop-2x.jpg'
 import introDesktop4x from '@/assets/about/intro-desktop-4x.jpg'
 
 export function AboutPage() {
+  const { t } = useTranslation('about')
+
   return (
     <>
       <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:flex-row desktop:items-center desktop:px-[120px]">
@@ -25,12 +28,8 @@ export function AboutPage() {
           }}
         />
         <div className="flex flex-col gap-4 desktop:w-1/2">
-          <h1 className="font-heading text-4xl text-orange">About Us</h1>
-          <p className="font-body text-white">
-            Welcome to Krupinec Bouw, your premier destination for superior construction repairs.
-            We are a passionate and dedicated team specializing in the art of restoration,
-            enhancement, and complete transformation of spaces!
-          </p>
+          <h1 className="font-heading text-4xl text-orange">{t('intro.heading')}</h1>
+          <p className="font-body text-white">{t('intro.text')}</p>
         </div>
       </section>
 

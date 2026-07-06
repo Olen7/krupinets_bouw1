@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import logo from '@/assets/icons/logo.svg'
 import burger from '@/assets/icons/burger.svg'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
@@ -6,16 +7,17 @@ import { useUi } from '@/hooks/useUi'
 import { LanguageSwitcher } from './LanguageSwitcher'
 
 export const NAV_LINKS = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About Us' },
-  { to: '/portfolio', label: 'Portfolio' },
-  { to: '/reviews', label: 'Reviews' },
-  { to: '/contact', label: 'Contacts' },
+  { to: '/', key: 'home' },
+  { to: '/about', key: 'aboutUs' },
+  { to: '/portfolio', key: 'portfolio' },
+  { to: '/reviews', key: 'reviews' },
+  { to: '/contact', key: 'contacts' },
 ] as const
 
 export function Header() {
   const isScrolled = useScrollPosition()
   const { openMenu } = useUi()
+  const { t } = useTranslation('common')
 
   return (
     <header
@@ -43,7 +45,7 @@ export function Header() {
                     `font-body text-sm text-white ${isActive ? 'text-orange' : ''}`
                   }
                 >
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </NavLink>
               </li>
             ))}

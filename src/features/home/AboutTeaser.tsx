@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/Button'
 import { ResponsiveImage } from '@/components/ui/ResponsiveImage'
 import { SectionHeading } from '@/components/ui/SectionHeading'
@@ -12,6 +13,8 @@ import teaserDesktop2x from '@/assets/about/teaser-desktop-2x.jpg'
 import teaserDesktop4x from '@/assets/about/teaser-desktop-4x.jpg'
 
 export function AboutTeaser() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:flex-row desktop:items-center desktop:px-[120px]">
       <ResponsiveImage
@@ -24,14 +27,10 @@ export function AboutTeaser() {
         }}
       />
       <div className="flex flex-col gap-4 desktop:w-1/2">
-        <SectionHeading>About Us</SectionHeading>
-        <p className="font-body text-white">
-          Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We
-          are a passionate and dedicated team specializing in the art of restoration, enhancement,
-          and complete transformation of spaces!
-        </p>
+        <SectionHeading>{t('aboutTeaser.heading')}</SectionHeading>
+        <p className="font-body text-white">{t('aboutTeaser.text')}</p>
         <Button href="/about" variant="outline" className="self-start">
-          Read more
+          {t('aboutTeaser.readMore')}
         </Button>
       </div>
     </section>

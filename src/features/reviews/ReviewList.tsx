@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useReviewsQuery } from './useReviewsQuery'
 import { ReviewCard } from './ReviewCard'
 
@@ -7,17 +8,18 @@ const PAGE_SIZE = 2
 export function ReviewList() {
   const { data, isLoading, isError } = useReviewsQuery()
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const { t } = useTranslation('reviews')
 
   if (isLoading) {
-    return <p className="font-body text-white">Loading reviews…</p>
+    return <p className="font-body text-white">{t('loading')}</p>
   }
 
   if (isError) {
-    return <p className="font-body text-orange">Couldn&apos;t load reviews right now.</p>
+    return <p className="font-body text-orange">{t('error')}</p>
   }
 
   if (!data || data.length === 0) {
-    return <p className="font-body text-white">No reviews yet — be the first to write one!</p>
+    return <p className="font-body text-white">{t('empty')}</p>
   }
 
   const isFullyExpanded = visibleCount >= data.length
@@ -41,7 +43,7 @@ export function ReviewList() {
           onClick={handleToggle}
           className="font-body text-sm text-orange underline underline-offset-4"
         >
-          {isFullyExpanded ? 'Show less' : 'Show more'}
+          {isFullyExpanded ? t('showLess') : t('showMore')}
         </button>
       )}
     </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/Button'
 import { ResponsiveBackground } from '@/components/ui/ResponsiveBackground'
 import heroMobile1x from '@/assets/hero/hero-mobile-1x.jpg'
@@ -8,6 +9,8 @@ import heroDesktop1x from '@/assets/hero/hero-desktop-1x.jpg'
 import heroDesktop2x from '@/assets/hero/hero-desktop-2x.jpg'
 
 export function HeroSection() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="relative flex h-[600px] items-center tablet:h-[700px] desktop:h-[800px]">
       <ResponsiveBackground
@@ -22,10 +25,8 @@ export function HeroSection() {
         <h1 className="font-heading text-4xl text-white tablet:text-6xl desktop:text-7xl">
           KRUPINEC BOUW
         </h1>
-        <p className="font-body text-lg text-white tablet:text-2xl">
-          realize your dreams with us
-        </p>
-        <Button href="/contact">Consultation</Button>
+        <p className="font-body text-lg text-white tablet:text-2xl">{t('hero.subtitle')}</p>
+        <Button href="/contact">{t('hero.consultationButton')}</Button>
       </div>
     </section>
   )

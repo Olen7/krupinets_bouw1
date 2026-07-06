@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "subtitle": "realiseer je dromen met ons",
+    "consultationButton": "Consultatie"
+  },
+  "aboutTeaser": {
+    "heading": "Over ons",
+    "text": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!",
+    "readMore": "Lees meer"
+  },
+  "services": {
+    "heading": "Diensten",
+    "bathroom": {
+      "title": "Badkamerrenovatie",
+      "bullets": [
+        "- Verwijdering van oude sanitairarmaturen en tegels",
+        "- Installatie van nieuwe sanitairarmaturen.",
+        "- Tegelzetten voor vloeren en muren.",
+        "- Elektrisch werk, inclusief installatie van verlichtingsarmaturen en stopcontacten.",
+        "- Installatie van verwarmings- en ventilatiesystemen."
+      ]
+    },
+    "general": {
+      "title": "Algemene Renovatie",
+      "bullets": [
+        "- Volledige interieurupdates: woonkamers, keukens, gangen.",
+        "- Renovaties van vloeren, inclusief parket, laminaat, tegels en PVC-installatie.",
+        "- Vervanging van ramen en deuren.",
+        "- Isolatie van muren en vloeren.",
+        "- Afwerking van het interieur."
+      ]
+    },
+    "dormer": {
+      "title": "Dakkapelconstructies",
+      "bullets": [
+        "- Inspectie en reparatie van spanten en latten.",
+        "- Vervanging of herstel van dakbedekkingsmaterialen.",
+        "- Isolatie van het dak en de zolder.",
+        "- Installatie van zolderraamsystemen.",
+        "- Installatie van regenwaterafvoer en dakgoot."
+      ]
+    },
+    "painting": {
+      "title": "Schilderen en Stukadoren",
+      "bullets": [
+        "- Oppervlaktevoorbereiding: vullen, grondverven.",
+        "- Schilderen van interieur en exterieur.",
+        "- Decoratief pleisterwerk: gestructureerd, Venetiaans.",
+        "- Antischimmel- en vochtbestendige behandelingen.",
+        "- Restauratiewerkzaamheden aan gevels van gebouwen."
+      ]
+    }
+  },
+  "benefits": {
+    "heading": "Voordelen",
+    "performance": "kwaliteit van prestaties",
+    "experience": "ervaring",
+    "innovations": "innovaties",
+    "customer": "klantgerichtheid"
+  },
+  "portfolioTeaser": {
+    "heading": "Portefeuille",
+    "bathrooms": "badkamers",
+    "general": "algemeen",
+    "dormer": "dakkapel"
+  }
+}

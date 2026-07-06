@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "subtitle": "realize your dreams with us",
+    "consultationButton": "Consultation"
+  },
+  "aboutTeaser": {
+    "heading": "About Us",
+    "text": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!",
+    "readMore": "Read more"
+  },
+  "services": {
+    "heading": "Services",
+    "bathroom": {
+      "title": "Bathroom Renovation",
+      "bullets": [
+        "- Removal of old plumbing fixtures and tiles.",
+        "- Installation of new plumbing fixtures.",
+        "- Tile laying for floors and walls.",
+        "- Electrical work including installation of light fixtures and outlets.",
+        "- Installation of heating and ventilation systems."
+      ]
+    },
+    "general": {
+      "title": "General Renovation",
+      "bullets": [
+        "- Complete interior updates: living rooms, kitchens, hallways.",
+        "- Flooring renovations including parquet, laminate, tile, and PVC installation.",
+        "- Replacement of windows and doors.",
+        "- Insulation of walls and floors.",
+        "- Interior finishing works."
+      ]
+    },
+    "dormer": {
+      "title": "Dormer Constructions",
+      "bullets": [
+        "- Inspection and repair of rafters and battens.",
+        "- Replacement or restoration of roofing materials.",
+        "- Insulation of roof and attic.",
+        "- Installation of attic window systems.",
+        "- Rainwater drainage and gutter installation."
+      ]
+    },
+    "painting": {
+      "title": "Painting and Plastering",
+      "bullets": [
+        "- Surface preparation: filling, priming.",
+        "- Interior and exterior painting.",
+        "- Decorative plastering: textured, Venetian.",
+        "- Antifungal and moisture-resistant treatments.",
+        "- Restoration work on building facades."
+      ]
+    }
+  },
+  "benefits": {
+    "heading": "Benefits",
+    "performance": "performance quality",
+    "experience": "experience",
+    "innovations": "innovations",
+    "customer": "customer orientation"
+  },
+  "portfolioTeaser": {
+    "heading": "Portfolio",
+    "bathrooms": "bathrooms",
+    "general": "general",
+    "dormer": "dormer"
+  }
+}

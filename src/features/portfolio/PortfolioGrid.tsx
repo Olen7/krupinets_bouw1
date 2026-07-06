@@ -1,12 +1,14 @@
+import { useTranslation } from 'react-i18next'
 import { useDisclosure } from '@/hooks/useDisclosure'
 import { ProjectCard } from './ProjectCard'
 import type { PortfolioListItem } from './portfolio.types'
 
 export function PortfolioGrid({ items }: { items: PortfolioListItem[] }) {
   const { isOpen, toggle } = useDisclosure(false)
+  const { t } = useTranslation('portfolio')
 
   if (items.length === 0) {
-    return <p className="font-body text-white">No projects in this category yet.</p>
+    return <p className="font-body text-white">{t('empty')}</p>
   }
 
   const visible = items.slice(0, 3)
@@ -27,7 +29,7 @@ export function PortfolioGrid({ items }: { items: PortfolioListItem[] }) {
           onClick={toggle}
           className="font-body text-sm text-orange underline underline-offset-4"
         >
-          {isOpen ? 'See less' : 'See more'}
+          {isOpen ? t('seeLess') : t('seeMore')}
         </button>
       )}
     </div>

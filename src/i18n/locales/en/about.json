@@ -1,0 +1,18 @@
+{
+  "intro": {
+    "heading": "About Us",
+    "text": "Welcome to Krupinec Bouw, your premier destination for superior construction repairs. We are a passionate and dedicated team specializing in the art of restoration, enhancement, and complete transformation of spaces!"
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "textOne": "At Krupinec Bouw, we are on a mission to turn your construction dreams into a tangible reality. Our team of seasoned professionals is unwavering in their commitment to providing high-quality, sustainable, and cost-effective solutions for a diverse range of projects.",
+    "textTwo": "Whether it's home renovations or commercial repairs, we are here to elevate your surroundings to new heights. Discover our array of services, and allow us to infuse fresh vitality into your projects, delivering enduring quality and enhancing the value of your construction endeavors. Your vision and our expertise results in excellence."
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Us",
+    "expertise": { "title": "Expertise", "text": "Our experienced professionals bring years of knowledge and skill to every project, guaranteeing you expert solutions that stand the test of time, ensuring your peace of mind." },
+    "quality": { "title": "Quality", "text": "We prioritize quality in every aspect of our work. From materials selection to craftsmanship, we uphold the highest standards to ensure the longevity and functionality of our projects." },
+    "innovation": { "title": "Innovation", "text": "We stay at the forefront of industry trends and technologies to bring you innovative solutions that meet the evolving needs of our clients" },
+    "clientCentric": { "title": "Client-Centric Approach", "text": "Your satisfaction is our top priority. We work closely with you to understand your vision and goals, and we communicate transparently throughout the project's lifecycle." }
+  }
+}

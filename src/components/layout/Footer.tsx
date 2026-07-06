@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import logo from '@/assets/icons/logo.svg'
 import copyright from '@/assets/icons/copyright.svg'
 import footerMobile1x from '@/assets/layout/footer-mobile-1x.jpg'
@@ -12,6 +13,8 @@ import { ConsultationForm } from '@/features/contact/ConsultationForm'
 import { ResponsiveBackground } from '@/components/ui/ResponsiveBackground'
 
 export function Footer() {
+  const { t } = useTranslation('common')
+
   return (
     <footer className="relative bg-graphite text-white">
       <ResponsiveBackground
@@ -35,7 +38,7 @@ export function Footer() {
                 {NAV_LINKS.map((link) => (
                   <li key={link.to}>
                     <NavLink to={link.to} className="font-body text-sm text-white">
-                      {link.label}
+                      {t(`nav.${link.key}`)}
                     </NavLink>
                   </li>
                 ))}
@@ -55,15 +58,13 @@ export function Footer() {
 
         <div className="flex flex-col gap-2 border-t border-placeholder pt-6">
           <div className="flex items-center gap-2 text-sm">
-            <span>Copyright</span>
+            <span>{t('footer.copyright')}</span>
             <svg width="20" height="20">
               <use href={`${copyright}#icon-copyrighte`} />
             </svg>
             <span>{new Date().getFullYear()}</span>
           </div>
-          <p className="text-xs text-placeholder">
-            The site contains images from a free resource Unsplash
-          </p>
+          <p className="text-xs text-placeholder">{t('footer.unsplash')}</p>
         </div>
       </div>
     </footer>

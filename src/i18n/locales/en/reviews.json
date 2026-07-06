@@ -1,0 +1,19 @@
+{
+  "heading": "Reviews",
+  "writeReviewButton": "Write a review",
+  "showMore": "Show more",
+  "showLess": "Show less",
+  "loading": "Loading reviews…",
+  "error": "Couldn't load reviews right now.",
+  "empty": "No reviews yet — be the first to write one!",
+  "form": {
+    "name": "Name*",
+    "namePlaceholder": "Enter your name",
+    "text": "Your review*",
+    "textPlaceholder": "Share your experience",
+    "submit": "Submit review",
+    "nameRequired": "Name is required",
+    "textRequired": "Review text is required",
+    "submitError": "Something went wrong. Please try again."
+  }
+}

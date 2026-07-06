@@ -1,0 +1,18 @@
+{
+  "intro": {
+    "heading": "Over ons",
+    "text": "Welkom bij Krupinec Bouw, uw toonaangevende bestemming voor hoogwaardige bouwreparaties. Wij zijn een gepassioneerd en toegewijd team gespecialiseerd in de kunst van restauratie, verbetering en complete transformatie van ruimtes!"
+  },
+  "mission": {
+    "heading": "Onze missie",
+    "textOne": "Bij Krupinec Bouw hebben we als missie om uw bouwdromen om te zetten in tastbare realiteit. Ons team van ervaren professionals is vastberaden in hun toewijding om hoogwaardige, duurzame en kosteneffectieve oplossingen te bieden voor een breed scala aan projecten.",
+    "textTwo": "Of het nu gaat om renovaties aan huis of commerciële reparaties, wij zijn er om uw omgeving naar nieuwe hoogten te tillen. Ontdek ons scala aan diensten en laat ons frisse vitaliteit in uw projecten brengen, waarbij we duurzame kwaliteit leveren en de waarde van uw bouwprojecten verhogen. Uw visie en onze expertise leiden tot excellentie."
+  },
+  "whyChooseUs": {
+    "heading": "Waarom ons kiezen",
+    "expertise": { "title": "Deskundigheid", "text": "Onze ervaren professionals brengen jarenlange kennis en vaardigheid mee naar elk project, wat u deskundige oplossingen garandeert die de tand des tijds doorstaan, en zo uw gemoedsrust verzekeren." },
+    "quality": { "title": "Kwaliteit", "text": "We hebben kwaliteit als prioriteit in elk aspect van ons werk. Van de selectie van materialen tot vakmanschap, wij handhaven de hoogste normen om de duurzaamheid en functionaliteit van onze projecten te waarborgen." },
+    "innovation": { "title": "Innovatie", "text": "We blijven vooroplopen in trends en technologieën in de industrie om u innovatieve oplossingen te bieden die voldoen aan de steeds veranderende behoeften van onze klanten." },
+    "clientCentric": { "title": "Klantgerichte benadering", "text": "Uw tevredenheid is onze hoogste prioriteit. We werken nauw met u samen om uw visie en doelen te begrijpen, en we communiceren transparant gedurende de hele levenscyclus van het project." }
+  }
+}

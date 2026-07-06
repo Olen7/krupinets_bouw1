@@ -1,0 +1,10 @@
+{
+  "heading": "Neem contact met ons op",
+  "form": {
+    "question": "Uw vraag*",
+    "questionPlaceholder": "Voer uw vraag in",
+    "questionRequired": "Vraag is verplicht",
+    "submit": "Verzenden",
+    "submitError": "Er is iets misgegaan. Probeer het opnieuw."
+  }
+}

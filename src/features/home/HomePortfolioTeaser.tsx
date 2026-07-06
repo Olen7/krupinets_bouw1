@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { ResponsiveImage, type ResponsiveImageProps } from '@/components/ui/ResponsiveImage'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 
@@ -33,14 +34,14 @@ import teaser3Desktop2x from '@/assets/portfolio/teaser-3-desktop-2x.jpg'
 import teaser3Desktop4x from '@/assets/portfolio/teaser-3-desktop-4x.jpg'
 
 interface TeaserTile {
-  label: string
+  labelKey: string
   anchor: string
   sources: ResponsiveImageProps['sources']
 }
 
 const tiles: TeaserTile[] = [
   {
-    label: 'bathrooms',
+    labelKey: 'bathrooms',
     anchor: 'portfolio-bathrooms',
     sources: {
       mobile: { src1x: cat1Mobile1x, src2x: cat1Mobile2x, src4x: cat1Mobile4x },
@@ -49,7 +50,7 @@ const tiles: TeaserTile[] = [
     },
   },
   {
-    label: 'general',
+    labelKey: 'general',
     anchor: 'portfolio-general',
     sources: {
       mobile: { src1x: cat2Mobile1x, src2x: cat2Mobile2x, src4x: cat2Mobile4x },
@@ -58,7 +59,7 @@ const tiles: TeaserTile[] = [
     },
   },
   {
-    label: 'dormer',
+    labelKey: 'dormer',
     anchor: 'portfolio-dormer',
     sources: {
       mobile: { src1x: cat3Mobile1x, src2x: cat3Mobile2x, src4x: cat3Mobile4x },
@@ -69,9 +70,11 @@ const tiles: TeaserTile[] = [
 ]
 
 export function HomePortfolioTeaser() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:px-[120px]">
-      <SectionHeading>Portfolio</SectionHeading>
+      <SectionHeading>{t('portfolioTeaser.heading')}</SectionHeading>
       <div className="grid grid-cols-1 gap-4 tablet:grid-cols-3">
         {tiles.map((tile) => (
           <Link
@@ -79,9 +82,13 @@ export function HomePortfolioTeaser() {
             to={`/portfolio#${tile.anchor}`}
             className="group relative overflow-hidden rounded"
           >
-            <ResponsiveImage alt={tile.label} sources={tile.sources} className="h-56 w-full object-cover" />
+            <ResponsiveImage
+              alt={t(`portfolioTeaser.${tile.labelKey}`)}
+              sources={tile.sources}
+              className="h-56 w-full object-cover"
+            />
             <p className="absolute inset-x-0 bottom-0 bg-black/60 py-2 text-center font-body capitalize text-white">
-              {tile.label}
+              {t(`portfolioTeaser.${tile.labelKey}`)}
             </p>
           </Link>
         ))}

@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Thuis",
+    "aboutUs": "Over ons",
+    "portfolio": "Portefeuille",
+    "reviews": "Beoordelingen",
+    "contacts": "Contacten"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "unsplash": "De website bevat afbeeldingen van een gratis bron, Unsplash."
+  },
+  "contactBlock": {
+    "heading": "Contacten",
+    "phone": "Telefoon:",
+    "email": "E-mail:",
+    "address": "Adres:"
+  },
+  "consultation": {
+    "heading": "Consultatie",
+    "name": "Naam*",
+    "phone": "Telefoon*",
+    "email": "E-mail*",
+    "namePlaceholder": "Voer uw naam in",
+    "phonePlaceholder": "Voer uw telefoonnummer in",
+    "emailPlaceholder": "Voer uw e-mailadres in",
+    "submit": "Consultatie",
+    "nameRequired": "Naam is verplicht",
+    "phoneRequired": "Telefoon is verplicht",
+    "emailRequired": "E-mail is verplicht",
+    "emailInvalid": "Voer een geldig e-mailadres in",
+    "submitError": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "WE KUNNEN DEZE PAGINA NIET VINDEN",
+    "urlHint": "De webpagina die u probeert te openen, kan niet worden gevonden op de server. Controleer de URL of probeer naar een andere pagina te navigeren.",
+    "mainPageButton": "Hoofdpagina"
+  },
+  "feedbackSuccess": {
+    "title": "Uw feedbackformulier is verzonden!",
+    "message": "Wacht tot een medewerker contact met u opneemt!",
+    "backButton": "Terug naar de website"
+  }
+}

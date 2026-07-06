@@ -1,0 +1,19 @@
+{
+  "heading": "Beoordelingen",
+  "writeReviewButton": "Schrijf een recensie",
+  "showMore": "Toon meer",
+  "showLess": "Toon minder",
+  "loading": "Beoordelingen laden…",
+  "error": "Beoordelingen konden niet worden geladen.",
+  "empty": "Nog geen beoordelingen — schrijf de eerste!",
+  "form": {
+    "name": "Naam*",
+    "namePlaceholder": "Voer uw naam in",
+    "text": "Uw recensie*",
+    "textPlaceholder": "Deel uw ervaring",
+    "submit": "Recensie versturen",
+    "nameRequired": "Naam is verplicht",
+    "textRequired": "Recensietekst is verplicht",
+    "submitError": "Er is iets misgegaan. Probeer het opnieuw."
+  }
+}

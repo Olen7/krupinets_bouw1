@@ -1,23 +1,19 @@
 import { useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useProjectQuery } from '@/features/portfolio/useProjectQuery'
 import { parseProjectDescription } from '@/features/portfolio/descriptionParser'
 
-const LOCALE = 'en'
-
 export function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>()
-  const { data, isLoading, isError } = useProjectQuery(id, LOCALE)
+  const { t, i18n } = useTranslation('portfolio')
+  const { data, isLoading, isError } = useProjectQuery(id, i18n.language)
 
   if (isLoading) {
-    return <p className="px-5 py-20 text-center font-body text-white">Loading project…</p>
+    return <p className="px-5 py-20 text-center font-body text-white">{t('loadingProject')}</p>
   }
 
   if (isError || !data) {
-    return (
-      <p className="px-5 py-20 text-center font-body text-orange">
-        This project couldn&apos;t be found.
-      </p>
-    )
+    return <p className="px-5 py-20 text-center font-body text-orange">{t('notFound')}</p>
   }
 
   const sections = parseProjectDescription(data.description)

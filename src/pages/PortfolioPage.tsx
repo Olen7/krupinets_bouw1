@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { PortfolioCategorySection } from '@/features/portfolio/PortfolioCategorySection'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 
@@ -22,21 +23,21 @@ import cat3Tablet2x from '@/assets/portfolio/category-3-tablet-2x.jpg'
 import cat3Desktop1x from '@/assets/portfolio/category-3-desktop-1x.jpg'
 import cat3Desktop2x from '@/assets/portfolio/category-3-desktop-2x.jpg'
 
-// TODO(i18n): locale is hardcoded until Phase 5 wires react-i18next's active language through.
-const LOCALE = 'en'
-
 export function PortfolioPage() {
+  const { t, i18n } = useTranslation('portfolio')
+  const locale = i18n.language
+
   return (
     <>
       <div className="px-5 py-10 tablet:px-8 desktop:px-[120px]">
-        <SectionHeading>Portfolio</SectionHeading>
+        <SectionHeading>{t('heading')}</SectionHeading>
       </div>
 
       <PortfolioCategorySection
         id="portfolio-bathrooms"
-        title="bathrooms"
+        title={t('categories.bathrooms')}
         category="bathrooms"
-        locale={LOCALE}
+        locale={locale}
         heroSources={{
           mobile: { src1x: cat1Mobile1x, src2x: cat1Mobile2x },
           tablet: { src1x: cat1Tablet1x, src2x: cat1Tablet2x },
@@ -45,9 +46,9 @@ export function PortfolioPage() {
       />
       <PortfolioCategorySection
         id="portfolio-general"
-        title="general"
+        title={t('categories.general')}
         category="general-renovation"
-        locale={LOCALE}
+        locale={locale}
         heroSources={{
           mobile: { src1x: cat2Mobile1x, src2x: cat2Mobile2x },
           tablet: { src1x: cat2Tablet1x, src2x: cat2Tablet2x },
@@ -56,9 +57,9 @@ export function PortfolioPage() {
       />
       <PortfolioCategorySection
         id="portfolio-dormer"
-        title="dormer"
+        title={t('categories.dormer')}
         category="dormer-constructions"
-        locale={LOCALE}
+        locale={locale}
         heroSources={{
           mobile: { src1x: cat3Mobile1x, src2x: cat3Mobile2x },
           tablet: { src1x: cat3Tablet1x, src2x: cat3Tablet2x },

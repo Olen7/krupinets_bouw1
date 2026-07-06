@@ -1,0 +1,10 @@
+{
+  "heading": "contact us",
+  "form": {
+    "question": "Your question*",
+    "questionPlaceholder": "Enter your question",
+    "questionRequired": "Question is required",
+    "submit": "Send",
+    "submitError": "Something went wrong. Please try again."
+  }
+}

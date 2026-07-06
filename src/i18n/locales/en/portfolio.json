@@ -1,0 +1,15 @@
+{
+  "heading": "Portfolio",
+  "categories": {
+    "bathrooms": "bathrooms",
+    "general": "general",
+    "dormer": "dormer"
+  },
+  "seeMore": "See more",
+  "seeLess": "See less",
+  "loading": "Loading projects…",
+  "error": "Couldn't load this category.",
+  "empty": "No projects in this category yet.",
+  "loadingProject": "Loading project…",
+  "notFound": "This project couldn't be found."
+}
