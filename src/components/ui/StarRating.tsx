@@ -17,6 +17,8 @@ interface InteractiveStarRatingProps {
 export type StarRatingProps = ReadOnlyStarRatingProps | InteractiveStarRatingProps
 
 export function StarRating(props: StarRatingProps) {
+  const [hoverValue, setHoverValue] = useState<number | null>(null)
+
   if (props.readOnly) {
     return (
       <p aria-label={`${props.value} out of 5 stars`} className="flex gap-1 text-[30px] leading-none">
@@ -34,13 +36,13 @@ export function StarRating(props: StarRatingProps) {
   }
 
   const { value, onChange, name } = props
-  const [hoverValue, setHoverValue] = useState<number | null>(null)
   const displayValue = hoverValue ?? value
 
   return (
     <div
       role="radiogroup"
       aria-label="Rating"
+      tabIndex={0}
       className="flex gap-1 text-[30px] leading-none"
       onMouseLeave={() => setHoverValue(null)}
     >
