@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
 import { PortfolioCategorySection } from '@/features/portfolio/PortfolioCategorySection'
-import { SectionHeading } from '@/components/ui/SectionHeading'
 
 import cat1Mobile1x from '@/assets/portfolio/category-1-mobile-1x.jpg'
 import cat1Mobile2x from '@/assets/portfolio/category-1-mobile-2x.jpg'
@@ -29,9 +28,9 @@ export function PortfolioPage() {
 
   return (
     <>
-      <div className="px-5 py-10 tablet:px-8 desktop:px-[120px]">
-        <SectionHeading>{t('heading')}</SectionHeading>
-      </div>
+      <h1 className="py-10 text-center font-heading text-[32px] uppercase tracking-[0.09em] text-orange tablet:text-[48px] tablet:tracking-[0.06em] desktop:text-[60px] desktop:tracking-[0.05em]">
+        {t('heading')}
+      </h1>
 
       <PortfolioCategorySection
         id="portfolio-bathrooms"
@@ -49,6 +48,7 @@ export function PortfolioPage() {
         title={t('categories.general')}
         category="general-renovation"
         locale={locale}
+        reverse
         heroSources={{
           mobile: { src1x: cat2Mobile1x, src2x: cat2Mobile2x },
           tablet: { src1x: cat2Tablet1x, src2x: cat2Tablet2x },
@@ -60,6 +60,7 @@ export function PortfolioPage() {
         title={t('categories.dormer')}
         category="dormer-constructions"
         locale={locale}
+        reverse
         heroSources={{
           mobile: { src1x: cat3Mobile1x, src2x: cat3Mobile2x },
           tablet: { src1x: cat3Tablet1x, src2x: cat3Tablet2x },

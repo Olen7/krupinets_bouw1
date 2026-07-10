@@ -1,10 +1,10 @@
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from 'react'
 
 const baseStyles =
-  'inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-base font-semibold tracking-wide transition-transform active:scale-90'
+  'inline-flex items-center justify-center px-6 py-3 font-body text-base font-semibold tracking-wide transition-transform active:scale-90'
 
 const variantStyles = {
-  primary: 'bg-orange text-white hover:bg-graphite border-2 border-orange',
+  primary: 'bg-orange text-white hover:bg-white hover:text-orange border-2 border-orange',
   outline: 'bg-transparent text-white border-2 border-white hover:bg-white hover:text-graphite',
 } as const
 

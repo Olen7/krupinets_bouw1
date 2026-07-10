@@ -23,8 +23,8 @@ export function HomePage() {
       <HeroSection />
       <AboutTeaser />
 
-      <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:px-[120px]">
-        <SectionHeading>{t('services.heading')}</SectionHeading>
+      <section className="flex flex-col gap-7 px-5 pb-0 pt-7 tablet:gap-10 tablet:px-8 tablet:pt-7 desktop:px-[120px] desktop:pt-[60px]">
+        <SectionHeading className="text-right">{t('services.heading')}</SectionHeading>
         <ul className="grid grid-cols-1 gap-4 tablet:grid-cols-2 desktop:grid-cols-4">
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
@@ -32,7 +32,7 @@ export function HomePage() {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:px-[120px]">
+      <section className="flex flex-col gap-7 px-5 pb-0 pt-7 tablet:gap-10 tablet:px-8 tablet:pt-7 desktop:px-[120px] desktop:pt-[60px]">
         <SectionHeading>{t('benefits.heading')}</SectionHeading>
         <ul className="grid grid-cols-2 gap-4 desktop:grid-cols-4">
           {benefits.map((benefit) => (

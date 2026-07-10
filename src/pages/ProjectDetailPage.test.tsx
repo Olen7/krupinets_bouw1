@@ -19,7 +19,7 @@ function renderProjectDetail(id: number) {
 }
 
 describe('ProjectDetailPage', () => {
-  it('renders the project name, main image, description sections, and gallery from the API response', async () => {
+  it('renders the project name, main image, scope of work, key features, and gallery from the API response', async () => {
     renderProjectDetail(7)
 
     expect(await screen.findByText('Project 7')).toBeInTheDocument()
@@ -30,10 +30,10 @@ describe('ProjectDetailPage', () => {
       'https://res.cloudinary.com/demo/image/upload/v1/project-7.jpg',
     )
 
-    expect(screen.getByText('Overview')).toBeInTheDocument()
-    expect(screen.getByText('A short project description.')).toBeInTheDocument()
-    expect(screen.getByText('Materials')).toBeInTheDocument()
-    expect(screen.getByText('Oak, tile, glass.')).toBeInTheDocument()
+    expect(screen.getByText('First paragraph of work.')).toBeInTheDocument()
+    expect(screen.getByText('Second paragraph of work.')).toBeInTheDocument()
+    expect(screen.getByText('A freestanding bath.', { exact: false })).toBeInTheDocument()
+    expect(screen.getByText('A walk-in shower.', { exact: false })).toBeInTheDocument()
 
     expect(screen.getByAltText('Project 7 additional view')).toHaveAttribute(
       'src',

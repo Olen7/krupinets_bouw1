@@ -7,7 +7,7 @@ export function ContactBlock({ variant = 'white' }: { variant?: 'white' | 'dark'
 
   return (
     <div>
-      <p className={`font-body text-lg ${textColor}`}>{t('contactBlock.heading')}</p>
+      <p className="font-body text-lg text-orange">{t('contactBlock.heading')}</p>
       <ul className={`mt-2 flex flex-col gap-1 text-sm ${textColor}`}>
         <li>
           <a href={`tel:${contactInfo.phone}`}>

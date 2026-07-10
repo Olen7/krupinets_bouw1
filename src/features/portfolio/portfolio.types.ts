@@ -2,12 +2,23 @@ import type { StrapiImageCollectionRelation, StrapiImageRelation } from '@/types
 
 export type PortfolioCategory = 'bathrooms' | 'general-renovation' | 'dormer-constructions'
 
-export interface PortfolioAttributes {
+export interface PortfolioTranslatableAttributes {
   name: string
+  locale: string
+  location: string
+  project_size: string
+  scope_of_work: string
+  key_features: string
+}
+
+export interface PortfolioAttributes extends PortfolioTranslatableAttributes {
   type: PortfolioCategory
-  description: string
+  display_order: number | null
   main_image: StrapiImageRelation
   additional_images: StrapiImageCollectionRelation
+  localizations?: {
+    data: { id: number; attributes: PortfolioTranslatableAttributes }[]
+  }
 }
 
 export interface PortfolioListItem {
@@ -17,10 +28,23 @@ export interface PortfolioListItem {
   imageUrl: string
 }
 
+export interface KeyFeature {
+  title: string
+  text: string
+}
+
+export interface PortfolioTranslation {
+  name: string
+  location: string
+  projectSize: string
+  scopeOfWork: string[]
+  keyFeatures: KeyFeature[]
+}
+
 export interface PortfolioDetail {
   id: number
-  name: string
+  defaultLocale: string
+  translations: Partial<Record<string, PortfolioTranslation>>
   mainImageUrl: string
-  description: string
   additionalImageUrls: string[]
 }

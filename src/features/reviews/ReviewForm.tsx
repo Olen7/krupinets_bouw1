@@ -38,27 +38,27 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
       />
 
       <div>
-        <label htmlFor="review-name" className="block text-sm text-white">
+        <label htmlFor="review-name" className="mb-1 block font-body text-base tracking-[0.06em] text-graphite">
           {t('form.name')}
         </label>
         <input
           id="review-name"
           type="text"
           placeholder={t('form.namePlaceholder')}
-          className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
+          className="w-full border border-placeholder px-3 py-3 font-body text-base tracking-[0.06em] text-placeholder"
           {...register('username')}
         />
         {errors.username && <p className="text-sm text-orange">{errors.username.message}</p>}
       </div>
 
       <div>
-        <label htmlFor="review-text" className="block text-sm text-white">
+        <label htmlFor="review-text" className="mb-1 block font-body text-base tracking-[0.06em] text-graphite">
           {t('form.text')}
         </label>
         <textarea
           id="review-text"
           placeholder={t('form.textPlaceholder')}
-          className="w-full rounded border border-placeholder bg-transparent px-3 py-2 text-white"
+          className="h-[240px] w-full resize-none border border-placeholder px-3 py-3 font-body text-base tracking-[0.06em] text-placeholder"
           {...register('text')}
         />
         {errors.text && <p className="text-sm text-orange">{errors.text.message}</p>}
@@ -66,7 +66,7 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
 
       {mutation.isError && <p className="text-sm text-orange">{t('form.submitError')}</p>}
 
-      <Button type="submit" disabled={mutation.isPending}>
+      <Button type="submit" disabled={mutation.isPending} className="self-start">
         {t('form.submit')}
       </Button>
     </form>

@@ -11,5 +11,12 @@
   "error": "Deze categorie kon niet worden geladen.",
   "empty": "Nog geen projecten in deze categorie.",
   "loadingProject": "Project laden…",
-  "notFound": "Dit project kon niet worden gevonden."
+  "notFound": "Dit project kon niet worden gevonden.",
+  "backToPortfolio": "Terug naar Portefeuille",
+  "meta": {
+    "location": "Locatie",
+    "projectSize": "Projectgrootte"
+  },
+  "scopeOfWork": "Omvang van het werk",
+  "keyFeatures": "Belangrijkste kenmerken"
 }

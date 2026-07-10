@@ -11,7 +11,12 @@ function project(
     attributes: {
       name,
       type,
-      description: '**Overview**\nA short project description.\n\n**Materials**\nOak, tile, glass.',
+      display_order: null,
+      locale: 'en',
+      location: 'Amsterdam, Netherlands',
+      project_size: '15 m²',
+      scope_of_work: 'First paragraph of work.\n\nSecond paragraph of work.',
+      key_features: '- **Bathtub:** A freestanding bath.\n\n- **Shower:** A walk-in shower.',
       main_image: {
         data: {
           id: id * 10,

@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const STAR_VALUES = [1, 2, 3, 4, 5]
 
 interface ReadOnlyStarRatingProps {
@@ -17,10 +19,14 @@ export type StarRatingProps = ReadOnlyStarRatingProps | InteractiveStarRatingPro
 export function StarRating(props: StarRatingProps) {
   if (props.readOnly) {
     return (
-      <p aria-label={`${props.value} out of 5 stars`} className="flex gap-1 text-orange">
+      <p aria-label={`${props.value} out of 5 stars`} className="flex gap-1 text-[30px] leading-none">
         {STAR_VALUES.map((star) => (
-          <span key={star} aria-hidden="true">
-            {star <= props.value ? '★' : '☆'}
+          <span
+            key={star}
+            aria-hidden="true"
+            className={star <= props.value ? 'text-orange' : 'text-placeholder'}
+          >
+            ★
           </span>
         ))}
       </p>
@@ -28,11 +34,24 @@ export function StarRating(props: StarRatingProps) {
   }
 
   const { value, onChange, name } = props
+  const [hoverValue, setHoverValue] = useState<number | null>(null)
+  const displayValue = hoverValue ?? value
 
   return (
-    <div role="radiogroup" aria-label="Rating" className="flex gap-1">
+    <div
+      role="radiogroup"
+      aria-label="Rating"
+      className="flex gap-1 text-[30px] leading-none"
+      onMouseLeave={() => setHoverValue(null)}
+    >
       {STAR_VALUES.map((star) => (
-        <label key={star} className="cursor-pointer text-2xl text-orange">
+        <label
+          key={star}
+          onMouseEnter={() => setHoverValue(star)}
+          className={`cursor-pointer transition-colors ${
+            star <= displayValue ? 'text-orange' : 'text-placeholder'
+          }`}
+        >
           <input
             type="radio"
             name={name}
@@ -41,7 +60,7 @@ export function StarRating(props: StarRatingProps) {
             onChange={() => onChange(star)}
             className="sr-only"
           />
-          <span aria-hidden="true">{star <= value ? '★' : '☆'}</span>
+          <span aria-hidden="true">★</span>
         </label>
       ))}
     </div>

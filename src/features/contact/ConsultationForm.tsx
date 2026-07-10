@@ -24,7 +24,7 @@ export function ConsultationForm() {
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
-      <h2 className="font-heading text-2xl text-white">{t('consultation.heading')}</h2>
+      <h2 className="font-heading text-2xl text-orange">{t('consultation.heading')}</h2>
 
       <div>
         <label htmlFor="consultation-name" className="block text-sm text-white">

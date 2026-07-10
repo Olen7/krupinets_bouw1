@@ -30,8 +30,8 @@ export function ReviewList() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-6">
-      <ul className="flex w-full flex-col gap-4">
+    <div className="flex flex-col">
+      <ul className="flex w-full flex-col gap-10">
         {visibleReviews.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}
@@ -41,7 +41,7 @@ export function ReviewList() {
         <button
           type="button"
           onClick={handleToggle}
-          className="font-body text-sm text-orange underline underline-offset-4"
+          className="mt-9 self-start border-2 border-orange bg-transparent px-6 py-3 font-body text-base font-semibold tracking-wide text-white transition-colors hover:bg-orange"
         >
           {isFullyExpanded ? t('showLess') : t('showMore')}
         </button>

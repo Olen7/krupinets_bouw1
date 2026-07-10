@@ -11,5 +11,12 @@
   "error": "Couldn't load this category.",
   "empty": "No projects in this category yet.",
   "loadingProject": "Loading project…",
-  "notFound": "This project couldn't be found."
+  "notFound": "This project couldn't be found.",
+  "backToPortfolio": "Back to Portfolio",
+  "meta": {
+    "location": "Location",
+    "projectSize": "Project size"
+  },
+  "scopeOfWork": "Scope of work",
+  "keyFeatures": "Key features"
 }

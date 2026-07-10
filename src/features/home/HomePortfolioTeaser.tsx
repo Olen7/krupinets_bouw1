@@ -39,6 +39,25 @@ interface TeaserTile {
   sources: ResponsiveImageProps['sources']
 }
 
+// Desktop layout: General/Dormer stacked on the left, Bathrooms large on the right
+const DESKTOP_PLACEMENT: Record<string, string> = {
+  general: 'desktop:col-start-1 desktop:row-start-1',
+  dormer: 'desktop:col-start-1 desktop:row-start-2',
+  bathrooms: 'desktop:col-start-2 desktop:row-start-1 desktop:row-span-2',
+}
+
+// Desktop: four-corner gradient "spotlight" behind the tile label from the legacy design
+const DESKTOP_LABEL_BACKGROUND = [
+  'linear-gradient(to bottom right, #2B2B2B 30%, rgba(39, 39, 39, 0) 50%) bottom right / 50% 50% no-repeat',
+  'linear-gradient(to bottom left, #2B2B2B 30%, rgba(39, 39, 39, 0) 50%) bottom left / 50% 50% no-repeat',
+  'linear-gradient(to top left, #2B2B2B 30%, rgba(39, 39, 39, 0) 50%) top left / 50% 50% no-repeat',
+  'linear-gradient(to top right, #2B2B2B 30%, rgba(39, 39, 39, 0) 50%) top right / 50% 50% no-repeat',
+].join(', ')
+
+// Mobile/tablet: radial gradient "halo" behind the tile label from the legacy design
+const COMPACT_LABEL_BACKGROUND =
+  'radial-gradient(50% 50% at 50% 50%, #272727 42.71%, rgba(39, 39, 39, 0) 100%)'
+
 const tiles: TeaserTile[] = [
   {
     labelKey: 'bathrooms',
@@ -73,21 +92,32 @@ export function HomePortfolioTeaser() {
   const { t } = useTranslation('home')
 
   return (
-    <section className="flex flex-col gap-6 px-5 py-10 tablet:px-8 desktop:px-[120px]">
-      <SectionHeading>{t('portfolioTeaser.heading')}</SectionHeading>
-      <div className="grid grid-cols-1 gap-4 tablet:grid-cols-3">
+    <section className="flex flex-col gap-7 pb-0 pt-[60px] tablet:gap-10 ">
+      <SectionHeading className="text-center">{t('portfolioTeaser.heading')}</SectionHeading>
+      <div className="grid grid-cols-1 gap-4 desktop:grid-cols-2 desktop:grid-rows-2">
         {tiles.map((tile) => (
           <Link
             key={tile.anchor}
             to={`/portfolio#${tile.anchor}`}
-            className="group relative overflow-hidden rounded"
+            className={`group relative overflow-hidden rounded ${DESKTOP_PLACEMENT[tile.labelKey]}`}
           >
             <ResponsiveImage
               alt={t(`portfolioTeaser.${tile.labelKey}`)}
               sources={tile.sources}
-              className="h-56 w-full object-cover"
+              className="h-56 w-full object-cover tablet:h-[352px] desktop:h-full"
             />
-            <p className="absolute inset-x-0 bottom-0 bg-black/60 py-2 text-center font-body capitalize text-white">
+            {/* Halo shadow behind the label: radial on mobile/tablet, four-corner on desktop */}
+            <span
+              aria-hidden="true"
+              className="absolute left-1/2 top-1/2 h-20 w-64 -translate-x-1/2 -translate-y-1/2 tablet:h-[129px] tablet:w-[712px] desktop:hidden"
+              style={{ background: COMPACT_LABEL_BACKGROUND }}
+            />
+            <span
+              aria-hidden="true"
+              className="absolute left-1/2 top-1/2 hidden h-[220px] w-[500px] -translate-x-1/2 -translate-y-1/2 desktop:block"
+              style={{ background: DESKTOP_LABEL_BACKGROUND }}
+            />
+            <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-heading text-[32px] uppercase tracking-[3px] text-offwhite tablet:text-[48px] tablet:leading-[60px] desktop:text-[60px] desktop:leading-[75px]">
               {t(`portfolioTeaser.${tile.labelKey}`)}
             </p>
           </Link>

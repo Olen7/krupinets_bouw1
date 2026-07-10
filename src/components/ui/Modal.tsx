@@ -5,9 +5,12 @@ export interface ModalProps {
   onClose: () => void
   children: ReactNode
   labelledBy?: string
+  panelClassName?: string
 }
 
-export function Modal({ isOpen, onClose, children, labelledBy }: ModalProps) {
+const defaultPanelClassName = 'max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-lg bg-graphite p-6 text-white'
+
+export function Modal({ isOpen, onClose, children, labelledBy, panelClassName }: ModalProps) {
   useEffect(() => {
     if (!isOpen) return
 
@@ -34,7 +37,7 @@ export function Modal({ isOpen, onClose, children, labelledBy }: ModalProps) {
         role="dialog"
         aria-modal="true"
         aria-labelledby={labelledBy}
-        className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-lg bg-graphite p-6 text-white"
+        className={panelClassName ?? defaultPanelClassName}
       >
         {children}
       </div>

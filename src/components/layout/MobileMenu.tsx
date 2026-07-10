@@ -29,7 +29,9 @@ export function MobileMenu() {
                 to={link.to}
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `font-body text-lg text-white ${isActive ? 'text-orange' : ''}`
+                  `font-body text-lg transition-colors border-b-2 hover:text-orange hover:border-orange ${
+                    isActive ? 'text-orange border-orange' : 'text-white border-transparent'
+                  }`
                 }
               >
                 {t(`nav.${link.key}`)}
@@ -39,7 +41,7 @@ export function MobileMenu() {
         </ul>
       </nav>
 
-      <LanguageSwitcher className="justify-center" />
+      <LanguageSwitcher className="justify-center" isScrolled />
     </div>
   )
 }

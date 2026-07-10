@@ -11,7 +11,7 @@
     "namePlaceholder": "Enter your name",
     "text": "Your review*",
     "textPlaceholder": "Share your experience",
-    "submit": "Submit review",
+    "submit": "Send",
     "nameRequired": "Name is required",
     "textRequired": "Review text is required",
     "submitError": "Something went wrong. Please try again."

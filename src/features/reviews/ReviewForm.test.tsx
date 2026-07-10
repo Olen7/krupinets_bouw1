@@ -16,7 +16,7 @@ describe('ReviewForm', () => {
     const user = userEvent.setup()
     renderWithProviders(<ReviewForm onSuccess={vi.fn()} />)
 
-    await user.click(screen.getByRole('button', { name: 'Submit review' }))
+    await user.click(screen.getByRole('button', { name: 'Send' }))
 
     expect(await screen.findByText('Name is required')).toBeInTheDocument()
     expect(screen.getByText('Review text is required')).toBeInTheDocument()
@@ -29,7 +29,7 @@ describe('ReviewForm', () => {
 
     await user.type(screen.getByLabelText('Name*'), 'Jane Doe')
     await user.type(screen.getByLabelText('Your review*'), 'Excellent craftsmanship.')
-    await user.click(screen.getByRole('button', { name: 'Submit review' }))
+    await user.click(screen.getByRole('button', { name: 'Send' }))
 
     await waitFor(() => expect(onSuccess).toHaveBeenCalled())
   })
