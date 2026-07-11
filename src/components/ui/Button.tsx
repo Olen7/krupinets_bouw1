@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
 const baseStyles =
   'inline-flex items-center justify-center px-6 py-3 font-body text-base font-semibold tracking-wide transition-transform active:scale-90'
@@ -29,6 +30,15 @@ export function Button({ variant = 'primary', className = '', children, ...props
 
   if ('href' in props && props.href !== undefined) {
     const { href, ...anchorProps } = props as ButtonAsAnchor
+
+    if (href.startsWith('/')) {
+      return (
+        <Link to={href} className={classes} {...anchorProps}>
+          {children}
+        </Link>
+      )
+    }
+
     return (
       <a href={href} className={classes} {...anchorProps}>
         {children}
