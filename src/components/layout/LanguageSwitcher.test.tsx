@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest'
-import { screen } from '@testing-library/react'
+import { cleanup, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import i18n from '@/i18n'
 import { renderWithProviders } from '@/test/utils/renderWithProviders'
@@ -17,6 +17,7 @@ function renderHeader() {
 
 describe('LanguageSwitcher', () => {
   afterEach(async () => {
+    cleanup()
     await i18n.changeLanguage('en')
   })
 

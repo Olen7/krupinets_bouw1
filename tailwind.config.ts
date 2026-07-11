@@ -6,6 +6,8 @@ export default {
     screens: {
       tablet: '768px',
       desktop: '1400px',
+      'desktop-lg': '1920px',
+      'desktop-xl': '2560px',
     },
     extend: {
       colors: {

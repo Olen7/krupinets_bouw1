@@ -3,6 +3,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import emailjs from '@emailjs/browser'
 import { renderWithProviders } from '@/test/utils/renderWithProviders'
+import { env } from '@/lib/env'
 import { ConsultationForm } from './ConsultationForm'
 
 vi.mock('@emailjs/browser', () => ({
@@ -53,8 +54,8 @@ describe('ConsultationForm', () => {
 
     await waitFor(() => {
       expect(emailjs.send).toHaveBeenCalledWith(
-        'service_e883bz7',
-        'template_mhvau7b',
+        env.emailjsServiceId,
+        env.emailjsConsultationTemplateId,
         expect.objectContaining({
           name: 'Jane Doe',
           phone: '0612345678',

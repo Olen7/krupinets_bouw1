@@ -30,9 +30,9 @@ export function AboutPage() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-graphite/80 tablet:w-[82.682%] desktop:w-[771px]" />
+        <div className="absolute inset-0 bg-graphite/80 tablet:w-[82.682%] desktop:w-[53.542%]" />
 
-        <div className="relative z-10 flex min-h-[571px] w-[98.667%] flex-col mt-[20px] px-5 tablet:ml-8 tablet:min-h-[610px] tablet:w-[78.906%] tablet:px-0 desktop:ml-[120px] desktop:min-h-[680px] desktop:w-[45.208%]">
+        <div className="relative z-10 flex min-h-[571px] w-[98.667%] flex-col mt-[20px] px-5 max-[767px]:landscape:min-h-[100dvh] tablet:ml-8 tablet:min-h-[610px] tablet:w-[78.906%] tablet:px-0 desktop:ml-[120px] desktop:min-h-[680px] desktop:w-[45.208%]">
           <h1 className="mb-6 font-heading text-[32px] uppercase tracking-[0.09em] text-orange tablet:text-5xl desktop:text-6xl">
             {t('intro.heading')}
           </h1>

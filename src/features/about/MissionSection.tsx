@@ -27,9 +27,9 @@ export function MissionSection() {
         />
       </div>
 
-      <div className="absolute inset-y-0 right-0 bg-graphite/80 tablet:w-[82.682%] desktop:w-[771px]" />
+      <div className="absolute inset-y-0 right-0 w-full bg-graphite/80 tablet:w-[82.682%] desktop:w-[53.542%]" />
 
-      <div className="relative z-10 ml-auto mt-[20px] flex min-h-[571px] w-[98.667%] flex-col items-end gap-10 px-5 text-right tablet:mr-8 tablet:min-h-[610px] tablet:w-[78.906%] tablet:px-0 desktop:mr-[120px] desktop:min-h-[680px] desktop:w-[45.208%]">
+      <div className="relative z-10 ml-auto mt-[20px] flex min-h-[571px] w-[98.667%] flex-col items-end gap-10 px-5 text-right max-[767px]:landscape:min-h-[100dvh] tablet:mr-8 tablet:min-h-[610px] tablet:w-[78.906%] tablet:px-0 desktop:mr-[120px] desktop:min-h-[680px] desktop:w-[45.208%]">
         <h2 className="font-heading text-[32px] uppercase tracking-[0.09em] text-orange tablet:text-5xl desktop:text-6xl">
           {t('mission.heading')}
         </h2>

@@ -15,7 +15,7 @@ export function HeroSection() {
   const { t } = useTranslation('home')
 
   return (
-    <section className="relative flex h-[844px] items-center tablet:h-[700px] desktop:h-[800px]">
+    <section className="relative flex h-[844px] items-center tablet:h-[700px] desktop:h-[800px] max-[767px]:landscape:h-[100dvh]">
       <ResponsiveBackground
         sources={{
           mobile: { src1x: heroMobile1x, src2x: heroMobile2x, src3x: heroMobile4x },

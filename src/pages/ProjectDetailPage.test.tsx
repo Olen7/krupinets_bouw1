@@ -9,7 +9,10 @@ function renderProjectDetail(id: number) {
 
   return render(
     <QueryClientProvider client={queryClient}>
-      <MemoryRouter initialEntries={[`/portfolio/${id}`]}>
+      <MemoryRouter
+        initialEntries={[`/portfolio/${id}`]}
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <Routes>
           <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
         </Routes>

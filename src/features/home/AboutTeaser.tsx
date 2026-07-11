@@ -32,9 +32,9 @@ export function AboutTeaser() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-graphite/80 tablet:w-[79.147%] desktop:w-1/2" />
+      <div className="absolute inset-0 bg-graphite/80 tablet:w-[79.147%] desktop:w-[53.542%]" />
 
-      <div className="relative z-10 flex min-h-[571px] w-full flex-col mt-[20px] px-5 tablet:ml-8 tablet:min-h-[610px] tablet:w-[38.75%] tablet:px-0 desktop:ml-[120px] desktop:min-h-[680px]">
+      <div className="relative z-10 flex min-h-[571px] w-full flex-col mt-[20px] px-5 max-[767px]:landscape:min-h-[100dvh] tablet:ml-8 tablet:min-h-[610px] tablet:w-[38.75%] tablet:px-0 desktop:ml-[120px] desktop:min-h-[680px]">
         <SectionHeading className="mb-6">{t('aboutTeaser.heading')}</SectionHeading>
         <p className="mb-7 font-body text-xl font-normal leading-normal tracking-[0.05em] text-offwhite">
           {t('aboutTeaser.text')}
