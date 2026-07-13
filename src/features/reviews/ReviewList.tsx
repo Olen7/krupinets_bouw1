@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useReviewsQuery } from './useReviewsQuery'
 import { ReviewCard } from './ReviewCard'
 
-const PAGE_SIZE = 2
+const PAGE_SIZE = 5
 
 export function ReviewList() {
   const { data, isLoading, isError } = useReviewsQuery()

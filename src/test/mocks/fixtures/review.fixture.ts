@@ -15,7 +15,7 @@ export function makeReview(id: number, overrides: Partial<ReviewAttributes> = {}
 }
 
 export const reviewsListFixture: StrapiCollectionResponse<ReviewAttributes> = {
-  data: [makeReview(1), makeReview(2), makeReview(3)],
+  data: [1, 2, 3, 4, 5, 6, 7].map((id) => makeReview(id)),
   meta: {},
 }
 

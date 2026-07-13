@@ -15,7 +15,7 @@ export function Layout() {
       <Header />
       <MobileMenu />
       <div className="flex min-h-screen flex-col">
-        <main className={`flex-1 ${isHomePage ? '' : 'pt-14 tablet:pt-[72px] desktop:pt-[98px]'}`}>
+        <main className={`flex-1 ${isHomePage ? '' : 'pt-[var(--header-h)]'}`}>
           <Outlet />
         </main>
         <Footer />

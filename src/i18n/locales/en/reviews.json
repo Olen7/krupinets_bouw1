@@ -14,6 +14,9 @@
     "submit": "Send",
     "nameRequired": "Name is required",
     "textRequired": "Review text is required",
-    "submitError": "Something went wrong. Please try again."
+    "submitError": "Something went wrong. Please try again.",
+    "successTitle": "Thank you!",
+    "successMessage": "Your review has been submitted.",
+    "successClose": "Close"
   }
 }

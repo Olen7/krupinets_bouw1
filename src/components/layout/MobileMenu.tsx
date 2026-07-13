@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import close from '@/assets/icons/close.svg'
@@ -8,6 +9,16 @@ import { NAV_LINKS } from './Header'
 export function MobileMenu() {
   const { isMenuOpen, closeMenu } = useUi()
   const { t } = useTranslation('common')
+
+  useEffect(() => {
+    if (!isMenuOpen) return
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [isMenuOpen])
 
   if (!isMenuOpen) return null
 

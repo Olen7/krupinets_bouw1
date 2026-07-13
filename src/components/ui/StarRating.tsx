@@ -21,7 +21,10 @@ export function StarRating(props: StarRatingProps) {
 
   if (props.readOnly) {
     return (
-      <p aria-label={`${props.value} out of 5 stars`} className="flex gap-1 text-[30px] leading-none">
+      <p
+        aria-label={`${props.value} out of 5 stars`}
+        className="flex gap-1 text-xl leading-none tablet:text-2xl desktop:text-[30px]"
+      >
         {STAR_VALUES.map((star) => (
           <span
             key={star}

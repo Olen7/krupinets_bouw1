@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslation } from 'react-i18next'
@@ -20,12 +21,25 @@ export function ReviewForm({ onSuccess }: { onSuccess: () => void }) {
   })
 
   const mutation = useSubmitReviewMutation()
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const onSubmit = handleSubmit(async (values) => {
     await mutation.mutateAsync(values)
     reset({ username: '', text: '', grade: 5 })
-    onSuccess()
+    setIsSubmitted(true)
   })
+
+  if (isSubmitted) {
+    return (
+      <div className="flex flex-col items-center gap-4 py-6 text-center">
+        <p className="font-body text-xl font-semibold text-graphite">{t('form.successTitle')}</p>
+        <p className="font-body text-graphite">{t('form.successMessage')}</p>
+        <Button type="button" onClick={onSuccess}>
+          {t('form.successClose')}
+        </Button>
+      </div>
+    )
+  }
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>

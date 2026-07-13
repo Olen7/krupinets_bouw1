@@ -7,3 +7,26 @@
     @apply bg-graphite font-body text-white;
   }
 }
+
+:root {
+  --header-h: 56px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-h: 72px;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --header-h: 98px;
+  }
+}
+
+/* Short viewports (mobile landscape) need a compact header regardless of width */
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --header-h: 48px;
+  }
+}

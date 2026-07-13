@@ -23,7 +23,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 h-14 tablet:h-[72px] desktop:h-[98px] transition-colors ${
+      className={`fixed inset-x-0 top-0 z-40 h-[var(--header-h)] transition-colors ${
         isScrolled ? 'bg-graphite/90 shadow-md' : 'bg-transparent'
       }`}
     >

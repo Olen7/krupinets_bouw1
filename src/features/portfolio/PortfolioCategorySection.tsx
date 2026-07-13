@@ -51,7 +51,7 @@ function CollagePhoto({ item, variant }: { item: PortfolioListItem; variant: Pho
         loading="lazy"
         className="h-full w-full object-cover transition-transform group-hover:scale-105"
       />
-      <span className="absolute bottom-0 left-1/2 flex h-[45px] w-[101%] -translate-x-1/2 items-center justify-center bg-gradient-to-t from-[#151515] to-transparent px-2 text-center font-body text-[18px] font-semibold tracking-[0.06em] text-white tablet:h-[70px] tablet:text-2xl desktop:text-[26px]">
+      <span className="absolute bottom-0 left-1/2 flex h-[45px] w-[101%] -translate-x-1/2 items-center justify-center bg-gradient-to-t from-[#151515] to-transparent px-2 text-center font-body text-xs font-semibold tracking-[0.06em] text-white tablet:h-[70px] tablet:text-base desktop:text-lg">
         {item.name}
       </span>
     </Link>

@@ -22,7 +22,7 @@ describe('ReviewForm', () => {
     expect(screen.getByText('Review text is required')).toBeInTheDocument()
   })
 
-  it('submits the review and calls onSuccess', async () => {
+  it('shows a success message after submitting, then calls onSuccess when closed', async () => {
     const user = userEvent.setup()
     const onSuccess = vi.fn()
     renderWithProviders(<ReviewForm onSuccess={onSuccess} />)
@@ -31,6 +31,10 @@ describe('ReviewForm', () => {
     await user.type(screen.getByLabelText('Your review*'), 'Excellent craftsmanship.')
     await user.click(screen.getByRole('button', { name: 'Send' }))
 
+    expect(await screen.findByText('Thank you!')).toBeInTheDocument()
+    expect(onSuccess).not.toHaveBeenCalled()
+
+    await user.click(screen.getByRole('button', { name: 'Close' }))
     await waitFor(() => expect(onSuccess).toHaveBeenCalled())
   })
 })
